@@ -1,0 +1,62 @@
+digraph {
+
+node [shape=ellipse,color = green,style = unfilled,fixedsize = false];
+N11 [label="/home/scuzee/Montage/bin/mViewer"];
+N10 [label="/home/scuzee/Montage/bin/mShrink"];
+N9 [label="/home/scuzee/Montage/bin/mAdd"];
+N8 [label="/home/scuzee/Montage/bin/mImgtbl"];
+N7 [label="/home/scuzee/Montage/bin/mBgExec"];
+N6 [label="/home/scuzee/Montage/bin/mBgModel"];
+N5 [label="/home/scuzee/Montage/bin/mDiffFitExec"];
+N4 [label="/home/scuzee/Montage/bin/mOverlaps"];
+N3 [label="/home/scuzee/Montage/bin/mImgtbl"];
+N2 [label="/home/scuzee/Montage/bin/mProjExec"];
+N1 [label="/home/scuzee/Montage/bin/mImgtbl"];
+N0 [label="/home/scuzee/Montage/bin/mHdr"];
+
+node [shape=box,color=blue,style=unfilled,fixedsize=false];
+F7 [label = "corrections_j.tbl"];
+F1 [label = "jband.fits"];
+F6 [label = "pimages.tbl"];
+F0 [label = "jsmall.fits"];
+F4 [label = "cimages.tbl"];
+F5 [label = "proj_set"];
+F8 [label = "fits_j.tbl"];
+F2 [label = "region.hdr"];
+F11 [label = "raw_set"];
+F9 [label = "diffs_j.tbl"];
+F3 [label = "corr_set"];
+F10 [label = "rimages.tbl"];
+
+F0 -> N11;
+F1 -> N10;
+N10 -> F0;
+F2 -> N9;
+F3 -> N9;
+F4 -> N9;
+N9 -> F1;
+F3 -> N8;
+N8 -> F4;
+F5 -> N7;
+F6 -> N7;
+F7 -> N7;
+N7 -> F3;
+F6 -> N6;
+F8 -> N6;
+N6 -> F7;
+F2 -> N5;
+F5 -> N5;
+F9 -> N5;
+N5 -> F8;
+F6 -> N4;
+N4 -> F9;
+F5 -> N3;
+N3 -> F6;
+F10 -> N2;
+F2 -> N2;
+F11 -> N2;
+N2 -> F5;
+F11 -> N1;
+N1 -> F10;
+N0 -> F2;
+}
