@@ -1,0 +1,65 @@
+{
+	"define" : {
+		"BLAST_EXE" : "./blastall",     # Executable enabling legacy BLAST invocation
+		"BLAST_ALGO":  "blastn",        # Name of legacy BLAST algorithm
+		"BLAST_DB":	"nt",               # BLAST database
+		"SPLIT_BLAST": "./split_fasta", # Input partitioning script
+		"CAT_BLAST": "./cat_blast",     # Output concatenation script
+		"SEQ_PER_SPLIT": 10,            # Number of sequences per split
+		"TOTAL_SEQ": 200                # Total number of sequences in input
+	},
+
+	"rules": [
+	{
+		"command": template("{SPLIT_BLAST} {SEQ_PER_SPLIT} small.fasta"),
+		"inputs": [
+			"small.fasta",
+			SPLIT_BLAST
+		],
+		"outputs": [template("small.fasta.{x}") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT))],
+		"local_job": true,
+	},
+	{
+		"command": template(
+			"{BLAST_EXE} -p {BLAST_ALGO} -d {BLAST_DB}/nt -i small.fasta.{x} -o small.fasta.{x}.out 2> small.fasta.{x}.err"
+		),
+		"inputs": [
+			BLAST_EXE,
+			BLAST_DB,
+			template("small.fasta.{x}")
+		],
+		"outputs": [
+			template("small.fasta.{x}.out"),
+			template("small.fasta.{x}.err"),
+		]
+	} for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT)),
+	{
+		"command": format(
+			"%s output.fasta %s",
+			CAT_BLAST,
+			join([template("small.fasta.{x}.out") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT))]),
+		),
+		"inputs": [
+			CAT_BLAST,
+			template("small.fasta.{x}.out") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT)),
+		],
+		"output": [
+			"output.fasta"
+		],
+		"local_job": true,
+	},
+	{
+		"command": format(
+			"cat %s > output.fasta.err",
+			join([template("small.fasta.{x}.err") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT))]),
+		),
+		"inputs": [
+			template("small.fasta.{x}.err") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT)),
+		],
+		"output": [
+			"output.fasta.err"
+		],
+		"local_job": true,
+	},
+	],
+}

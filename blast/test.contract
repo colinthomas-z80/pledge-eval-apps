@@ -1,0 +1,11 @@
+
+#Process Tree:
+├─ PID 0 0 [./test]
+        XR </home/scuzee/Programming/makeflow-examples/blast> (3 files) [exec: 1, read: 4]
+                #	Executable: ./test  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast/nt",
+                #	Readable files: test, test
+    ├─ PID 134093 1 [./blastall]
+          XR </home/scuzee/Programming/makeflow-examples/blast> (3 files) [exec: 1, read: 251]
+                    #	Executable: ./blastall -p blastn -d nt -i small.fasta  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Readable files: nt.nin, small.fasta, blastall
+CWD:  /home/scuzee/Programming/makeflow-examples/blast

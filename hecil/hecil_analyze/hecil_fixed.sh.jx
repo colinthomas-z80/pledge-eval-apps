@@ -1,0 +1,60 @@
+: pileup.txt Split_Pileup.sh Create_SubsetPileup.sh pileup.txt Split_Pileup.sh Create_SubsetPileup.sh 
+	./Split_Pileup.sh pileup.txt 2 | ./Split_Pileup.sh pileup.txt 2
+
+pileup.txt : samtools ref.fasta Out.bam 
+	./samtools mpileup -s -f ref.fasta Out.bam | /usr/bin/tee pileup.txt
+
+Out.sam : sam_cat.sh Out.8.sam Out.6.sam Out.5.sam Out.4.sam Out.3.sam Out.0.sam Out.8.sam Out.5.sam 
+	./sam_cat.sh Out.0.sam Out.1.sam Out.2.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.7.sam Out.8.sam Out.9.sam | /usr/bin/tee Out.sam
+
+: ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.9 bwa 
+	./bwa mem ref.fasta query.fastq.9 | /usr/bin/tee Out.9.sam
+
+Out.8.sam : ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.8 bwa 
+	./bwa mem ref.fasta query.fastq.8 | /usr/bin/tee Out.8.sam
+
+: ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.7 bwa 
+	./bwa mem ref.fasta query.fastq.7 | /usr/bin/tee Out.7.sam
+
+Out.6.sam : ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.6 bwa 
+	./bwa mem ref.fasta query.fastq.6 | /usr/bin/tee Out.6.sam
+
+Out.5.sam : ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.5 bwa 
+	./bwa mem ref.fasta query.fastq.5 | /usr/bin/tee Out.5.sam
+
+Out.4.sam : ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.4 bwa 
+	./bwa mem ref.fasta query.fastq.4 | /usr/bin/tee Out.4.sam
+
+Out.3.sam : ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.3 bwa 
+	./bwa mem ref.fasta query.fastq.3 | /usr/bin/tee Out.3.sam
+
+: ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.2 bwa 
+	./bwa mem ref.fasta query.fastq.2 | /usr/bin/tee Out.2.sam
+
+: ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.1 bwa 
+	./bwa mem ref.fasta query.fastq.1 | /usr/bin/tee Out.1.sam
+
+Out.0.sam : ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb query.fastq.0 bwa 
+	./bwa mem ref.fasta query.fastq.0 | /usr/bin/tee Out.0.sam
+
+ref.fasta : ref.fastq convert_fastq.py 
+	./convert_fastq.py, /usr/bin/python3 ref.fastq | /usr/bin/tee ref.fasta
+
+query.fastq : ref.fastq fastq_generate.pl 
+	./fastq_generate.pl 1000 100 ref.fastq | /usr/bin/tee query.fastq
+
+ref.fastq : fastq_generate.pl 
+	./fastq_generate.pl 1000 100 | /usr/bin/tee ref.fastq
+
+Out.bam : samtools View.bam 
+	./samtools sort -o Out.bam View.bam
+
+View.bam : samtools Out.sam 
+	./samtools view -o View.bam -bS Out.sam
+
+ref.fasta.sa ref.fasta.pac ref.fasta.bwt ref.fasta.ann ref.fasta.amb : ref.fasta bwa 
+	./bwa index ref.fasta
+
+query.fastq.9 query.fastq.8 query.fastq.7 query.fastq.6 query.fastq.5 query.fastq.4 query.fastq.3 query.fastq.2 query.fastq.1 query.fastq.0 : query.fastq fastq_reduce 
+	/usr/bin/perl fastq_reduce query.fastq 10
+

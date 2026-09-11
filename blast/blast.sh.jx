@@ -1,0 +1,170 @@
+{
+  "rules": [
+    {
+      "command": "./split_fasta 2 test.fasta",
+      "outputs": [
+        "test.fasta.0",
+        "test.fasta.1",
+        "test.fasta.2",
+        "test.fasta.3",
+        "test.fasta.4",
+        "test.fasta.5",
+        "test.fasta.6",
+        "test.fasta.7",
+        "test.fasta.8",
+        "test.fasta.9"
+      ],
+      "inputs": [
+        "split_fasta",
+        "test.fasta"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.0 -out test.fasta.0.out",
+      "outputs": [
+        "test.fasta.0.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.0"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.1 -out test.fasta.1.out",
+      "outputs": [
+        "test.fasta.1.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.1"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.2 -out test.fasta.2.out",
+      "outputs": [
+        "test.fasta.2.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.2"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.3 -out test.fasta.3.out",
+      "outputs": [
+        "test.fasta.3.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.3"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.4 -out test.fasta.4.out",
+      "outputs": [
+        "test.fasta.4.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.4"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.5 -out test.fasta.5.out",
+      "outputs": [
+        "test.fasta.5.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.5"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.6 -out test.fasta.6.out",
+      "outputs": [
+        "test.fasta.6.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.6"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.7 -out test.fasta.7.out",
+      "outputs": [
+        "test.fasta.7.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.phr",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.7"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.8 -out test.fasta.8.out",
+      "outputs": [
+        "test.fasta.8.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.8"
+      ]
+    },
+    {
+      "command": "./blastp -db swissprot/swissprot -query test.fasta.9 -out test.fasta.9.out",
+      "outputs": [
+        "test.fasta.9.out"
+      ],
+      "inputs": [
+        "blastp",
+        "swissprot/swissprot.pdb",
+        "swissprot/swissprot.pin",
+        "swissprot/swissprot.psq",
+        "test.fasta.9"
+      ]
+    },
+    {
+      "command": "./cat_blast output.fasta test.fasta.1.out test.fasta.2.out test.fasta.3.out test.fasta.4.out test.fasta.5.out test.fasta.6.out test.fasta.7.out test.fasta.8.out test.fasta.9.out",
+      "outputs": [],
+      "inputs": [
+        "cat_blast",
+        "test.fasta.1.out",
+        "test.fasta.2.out",
+        "test.fasta.3.out",
+        "test.fasta.4.out",
+        "test.fasta.5.out",
+        "test.fasta.6.out",
+        "test.fasta.7.out",
+        "test.fasta.8.out",
+        "test.fasta.9.out"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ls *.dot | while read p; do dot -Tsvg $p -o $(echo $p | sed "s/dot/svg/"); done

@@ -1,0 +1,37 @@
+
+
+test.fasta.0 test.fasta.1 test.fasta.2 test.fasta.3 test.fasta.4 test.fasta.5 test.fasta.6 test.fasta.7 test.fasta.8 test.fasta.9 : test.fasta split_fasta
+	LOCAL ./split_fasta 2 test.fasta
+
+test.fasta.0.out  : blastp test.fasta.0 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.0 -out test.fasta.0.out
+
+test.fasta.1.out  : blastp test.fasta.1 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.1 -out test.fasta.1.out
+
+test.fasta.2.out  : blastp test.fasta.2 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.2 -out test.fasta.2.out
+
+test.fasta.3.out  : blastp test.fasta.3 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.3 -out test.fasta.3.out
+
+test.fasta.4.out  : blastp test.fasta.4 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.4 -out test.fasta.4.out
+
+test.fasta.5.out  : blastp test.fasta.5 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.5 -out test.fasta.5.out
+
+test.fasta.6.out  : blastp test.fasta.6 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.6 -out test.fasta.6.out
+
+test.fasta.7.out  : blastp test.fasta.7 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.7 -out test.fasta.7.out
+
+test.fasta.8.out  : blastp test.fasta.8 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.8 -out test.fasta.8.out
+
+test.fasta.9.out  : blastp test.fasta.9 swissprot
+	./blastp -db swissprot/swissprot -query test.fasta.9 -out test.fasta.9.out
+
+output.fasta : cat_blast test.fasta.0.out test.fasta.1.out test.fasta.2.out test.fasta.3.out test.fasta.4.out test.fasta.5.out test.fasta.6.out test.fasta.7.out test.fasta.8.out test.fasta.9.out
+	LOCAL ./cat_blast output.fasta test.fasta.0.out test.fasta.1.out test.fasta.2.out test.fasta.3.out test.fasta.4.out test.fasta.5.out test.fasta.6.out test.fasta.7.out test.fasta.8.out test.fasta.9.out

@@ -1,0 +1,41 @@
+all: test.fasta.0 test.fasta.1 test.fasta.2 test.fasta.3 test.fasta.4 test.fasta.5 test.fasta.6 test.fasta.7 test.fasta.8 test.fasta.9 pipe\:[743097] test.fasta.0.out test.fasta.1.out test.fasta.2.out test.fasta.3.out test.fasta.4.out test.fasta.5.out test.fasta.6.out test.fasta.7.out test.fasta.8.out test.fasta.9.out output.fasta
+
+test.fasta.0 test.fasta.1 test.fasta.2 test.fasta.3 test.fasta.4 test.fasta.5 test.fasta.6 test.fasta.7 test.fasta.8 test.fasta.9 &: split_fasta test.fasta
+	 ./split_fasta 2 test.fasta
+
+pipe\:[743097] &:
+	 /usr/bin/seq 0 9
+
+test.fasta.0.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.0
+	 ./blastp -db swissprot/swissprot -query test.fasta.0 -out test.fasta.0.out
+
+test.fasta.1.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.1
+	 ./blastp -db swissprot/swissprot -query test.fasta.1 -out test.fasta.1.out
+
+test.fasta.2.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.2
+	 ./blastp -db swissprot/swissprot -query test.fasta.2 -out test.fasta.2.out
+
+test.fasta.3.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.3
+	 ./blastp -db swissprot/swissprot -query test.fasta.3 -out test.fasta.3.out
+
+test.fasta.4.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.4
+	 ./blastp -db swissprot/swissprot -query test.fasta.4 -out test.fasta.4.out
+
+test.fasta.5.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.5
+	 ./blastp -db swissprot/swissprot -query test.fasta.5 -out test.fasta.5.out
+
+test.fasta.6.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.6
+	 ./blastp -db swissprot/swissprot -query test.fasta.6 -out test.fasta.6.out
+
+test.fasta.7.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.phr swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.7
+	 ./blastp -db swissprot/swissprot -query test.fasta.7 -out test.fasta.7.out
+
+test.fasta.8.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.8
+	 ./blastp -db swissprot/swissprot -query test.fasta.8 -out test.fasta.8.out
+
+test.fasta.9.out &: blastp swissprot/swissprot.pdb swissprot/swissprot.pin swissprot/swissprot.psq test.fasta.9
+	 ./blastp -db swissprot/swissprot -query test.fasta.9 -out test.fasta.9.out
+
+output.fasta &: cat_blast test.fasta.1.out test.fasta.2.out test.fasta.3.out test.fasta.4.out test.fasta.5.out test.fasta.6.out test.fasta.7.out test.fasta.8.out test.fasta.9.out
+	 ./cat_blast output.fasta test.fasta.1.out test.fasta.2.out test.fasta.3.out test.fasta.4.out test.fasta.5.out test.fasta.6.out test.fasta.7.out test.fasta.8.out test.fasta.9.out
+

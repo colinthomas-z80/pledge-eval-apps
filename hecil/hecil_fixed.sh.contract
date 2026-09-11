@@ -1,0 +1,642 @@
+
+#Process Tree:
+├─ PID 0 0 [./hecil_fixed.sh]
+        R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 5]
+                #	Readable files: 
+        XRW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [exec: 1, read: 29, write: 1]
+                #	Executable: ./hecil_fixed.sh  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil/samtools-src",
+                #	Writable files: Out.3.sam
+                #	Readable files: hecil_fixed.sh, hecil_fixed.sh
+    ├─ PID 108006 1 [./fastq_generate.pl]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (2 files) [exec: 1, read: 3]
+                    #	Executable: ./fastq_generate.pl 1000 100  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: fastq_generate.pl, fastq_generate.pl
+          E </proc/108006> (0 files) [xxx]
+                    # 	Writable files: *pipe:[519898]
+    ├─ PID 108008 1 [./fastq_generate.pl]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (3 files) [exec: 1, read: 34]
+                    #	Executable: ./fastq_generate.pl 1000 100 ref.fastq  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: fastq_generate.pl, ref.fastq, fastq_generate.pl
+          E </proc/108008> (0 files) [xxx]
+                    # 	Writable files: *pipe:[523117]
+    ├─ PID 108010 1 [./convert_fastq.py, /usr/bin/python3]
+                    RMPESX </usr> (139 files) [enoent: 54, exec: 1, mmap: 38, mmapsh: 1, read: 161, stat: 158]
+                                        #	Executable: python3 ./convert_fastq.py ref.fastq  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (3 files) [exec: 1, read: 40]
+                    #	Executable: ./convert_fastq.py ref.fastq  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: convert_fastq.py, ref.fastq, convert_fastq.py
+          E </proc/108010> (0 files) [xxx]
+                    # 	Writable files: *pipe:[523126]
+    ├─ PID 108012 1 [/usr/bin/perl]
+                    RMPEX </usr> (21 files) [enoent: 15, exec: 1, mmap: 13, read: 9, stat: 1]
+                                        #	Executable: perl fastq_reduce query.fastq 10  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (102 files) [read: 35, write: 100]
+                    #	Writable files: query.fastq.0, query.fastq.0*, query.fastq.1, query.fastq.1*, query.fastq.2, query.fastq.2*, query.fastq.3, query.fastq.3*, query.fastq.4, query.fastq.4*, query.fastq.5, query.fastq.5*, query.fastq.6, query.fastq.6*, query.fastq.7, query.fastq.7*, query.fastq.8, query.fastq.8*, query.fastq.9, query.fastq.9*, query.fastq.10, query.fastq.10*, query.fastq.11, query.fastq.11*, query.fastq.12, query.fastq.12*, query.fastq.13, query.fastq.13*, query.fastq.14, query.fastq.14*, query.fastq.15, query.fastq.15*, query.fastq.16, query.fastq.16*, query.fastq.17, query.fastq.17*, query.fastq.18, query.fastq.18*, query.fastq.19, query.fastq.19*, query.fastq.20, query.fastq.20*, query.fastq.21, query.fastq.21*, query.fastq.22, query.fastq.22*, query.fastq.23, query.fastq.23*, query.fastq.24, query.fastq.24*, query.fastq.25, query.fastq.25*, query.fastq.26, query.fastq.26*, query.fastq.27, query.fastq.27*, query.fastq.28, query.fastq.28*, query.fastq.29, query.fastq.29*, query.fastq.30, query.fastq.30*, query.fastq.31, query.fastq.31*, query.fastq.32, query.fastq.32*, query.fastq.33, query.fastq.33*, query.fastq.34, query.fastq.34*, query.fastq.35, query.fastq.35*, query.fastq.36, query.fastq.36*, query.fastq.37, query.fastq.37*, query.fastq.38, query.fastq.38*, query.fastq.39, query.fastq.39*, query.fastq.40, query.fastq.40*, query.fastq.41, query.fastq.41*, query.fastq.42, query.fastq.42*, query.fastq.43, query.fastq.43*, query.fastq.44, query.fastq.44*, query.fastq.45, query.fastq.45*, query.fastq.46, query.fastq.46*, query.fastq.47, query.fastq.47*, query.fastq.48, query.fastq.48*, query.fastq.49, query.fastq.49*, query.fastq.50, query.fastq.50*, query.fastq.51, query.fastq.51*, query.fastq.52, query.fastq.52*, query.fastq.53, query.fastq.53*, query.fastq.54, query.fastq.54*, query.fastq.55, query.fastq.55*, query.fastq.56, query.fastq.56*, query.fastq.57, query.fastq.57*, query.fastq.58, query.fastq.58*, query.fastq.59, query.fastq.59*, query.fastq.60, query.fastq.60*, query.fastq.61, query.fastq.61*, query.fastq.62, query.fastq.62*, query.fastq.63, query.fastq.63*, query.fastq.64, query.fastq.64*, query.fastq.65, query.fastq.65*, query.fastq.66, query.fastq.66*, query.fastq.67, query.fastq.67*, query.fastq.68, query.fastq.68*, query.fastq.69, query.fastq.69*, query.fastq.70, query.fastq.70*, query.fastq.71, query.fastq.71*, query.fastq.72, query.fastq.72*, query.fastq.73, query.fastq.73*, query.fastq.74, query.fastq.74*, query.fastq.75, query.fastq.75*, query.fastq.76, query.fastq.76*, query.fastq.77, query.fastq.77*, query.fastq.78, query.fastq.78*, query.fastq.79, query.fastq.79*, query.fastq.80, query.fastq.80*, query.fastq.81, query.fastq.81*, query.fastq.82, query.fastq.82*, query.fastq.83, query.fastq.83*, query.fastq.84, query.fastq.84*, query.fastq.85, query.fastq.85*, query.fastq.86, query.fastq.86*, query.fastq.87, query.fastq.87*, query.fastq.88, query.fastq.88*, query.fastq.89, query.fastq.89*, query.fastq.90, query.fastq.90*, query.fastq.91, query.fastq.91*, query.fastq.92, query.fastq.92*, query.fastq.93, query.fastq.93*, query.fastq.94, query.fastq.94*, query.fastq.95, query.fastq.95*, query.fastq.96, query.fastq.96*, query.fastq.97, query.fastq.97*, query.fastq.98, query.fastq.98*, query.fastq.99, query.fastq.99*
+                    #	Readable files: fastq_reduce, query.fastq
+    ├─ PID 108013 1 [./bwa]
+          XRW </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 40, write: 41]
+                    #	Executable: ./bwa index ref.fasta  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Writable files: ref.fasta.pac, ref.fasta.pac*, ref.fasta.ann, ref.fasta.ann*, ref.fasta.amb, ref.fasta.amb*, ref.fasta.bwt, ref.fasta.bwt*, ref.fasta.sa, ref.fasta.sa*
+                    #	Readable files: ref.fasta, ref.fasta.pac, ref.fasta.bwt, bwa
+    ├─ PID 108014 1 [/usr/bin/seq]
+                    RMPEX </usr> (6 files) [enoent: 3, exec: 1, mmap: 5, read: 3, stat: 6]
+                                        #	Executable: seq 0 9  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    E </proc/108014> (0 files) [xxx]
+                    # 	Writable files: *pipe:[524012]
+    ├─ PID 108015 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.0  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.0, bwa
+          E </proc/108015> (0 files) [xxx]
+                    # 	Writable files: *pipe:[525342]
+                    # 	Writable files: *pipe:[519035]
+    ├─ PID 108021 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.1  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.1, bwa
+          E </proc/108021> (0 files) [xxx]
+                    # 	Writable files: *pipe:[519912]
+    ├─ PID 108027 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.2  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.2, bwa
+          E </proc/108027> (0 files) [xxx]
+                    # 	Writable files: *pipe:[526339]
+                    # 	Writable files: *pipe:[519035]
+    ├─ PID 108033 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.3  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.3, bwa
+          E </proc/108033> (0 files) [xxx]
+                    # 	Writable files: *pipe:[524483]
+                    # 	Writable files: *pipe:[519035]
+    ├─ PID 108039 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.4  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.4, bwa
+          E </proc/108039> (0 files) [xxx]
+                    # 	Writable files: *pipe:[526340]
+    ├─ PID 108045 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.5  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.5, bwa
+          E </proc/108045> (0 files) [xxx]
+                    # 	Writable files: *pipe:[525372]
+    ├─ PID 108051 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.6  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.6, bwa
+          E </proc/108051> (0 files) [xxx]
+                    # 	Writable files: *pipe:[523141]
+                    # 	Writable files: *pipe:[519035]
+    ├─ PID 108057 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.7  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.7, bwa
+          E </proc/108057> (0 files) [xxx]
+                    # 	Writable files: *pipe:[524484]
+    ├─ PID 108063 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.8  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.8, bwa
+          E </proc/108063> (0 files) [xxx]
+                    # 	Writable files: *pipe:[526344]
+    ├─ PID 108069 1 [./bwa]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (7 files) [exec: 1, read: 31]
+                    #	Executable: ./bwa mem ref.fasta query.fastq.9  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: ref.fasta.bwt, ref.fasta.sa, ref.fasta.ann, ref.fasta.amb, ref.fasta.pac, query.fastq.9, bwa
+          E </proc/108069> (0 files) [xxx]
+                    # 	Writable files: *pipe:[518080]
+    ├─ PID 108075 1 [./sam_cat.sh]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (3 files) [exec: 1, read: 6]
+                    #	Executable: ./sam_cat.sh Out.0.sam Out.1.sam Out.2.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.7.sam Out.8.sam Out.9.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: sam_cat.sh, sam_cat.sh
+        ├─ PID 108077 2 [/usr/bin/grep]
+                        RPSX </usr> (5 files) [exec: 1, mmap: 9, mmapsh: 1, read: 6]
+                                                #	Executable: grep -v ^@PG Out.0.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+            R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 3]
+                        #	Readable files: Out.0.sam
+            E </proc/108077> (0 files) [xxx]
+                        # 	Writable files: *pipe:[519059]
+        ├─ PID 108079 2 [/usr/bin/grep, /usr/bin/cat]
+                        RPSX </usr> (6 files) [exec: 2, mmap: 7, mmapsh: 1, read: 6]
+                                                #	Executable: grep -v ^@  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                                #	Executable: cat Out.1.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                        E </proc/108079> (0 files) [xxx]
+                        # 	Readable files: pipe:[525396]
+                        # 	Writable files: *pipe:[519059]
+        ├─ PID 108080 2 [/usr/bin/cat]
+                        RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 1, stat: 5]
+                                                #	Executable: cat Out.2.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+        ├─ PID 108081 2 [/usr/bin/grep]
+                        RMPSX </usr> (6 files) [exec: 1, mmap: 8, mmapsh: 1, read: 4, stat: 1]
+                                                #	Executable: grep -v ^@  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                        E </proc/108081> (0 files) [xxx]
+                        # 	Readable files: pipe:[519936]
+                        # 	Writable files: *pipe:[519059]
+        ├─ PID 108082 2 [/usr/bin/cat, /usr/bin/grep]
+                        RMPEX </usr> (7 files) [enoent: 3, exec: 2, mmap: 3, read: 3, stat: 4]
+                                                #	Executable: cat Out.3.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                                #	Executable: grep -v ^@  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+            R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 2]
+                        #	Readable files: Out.3.sam
+        ├─ PID 108084 2 [/usr/bin/cat, /usr/bin/grep]
+                        RMPEX </usr> (7 files) [enoent: 3, exec: 2, mmap: 5, read: 1, stat: 6]
+                                                #	Executable: cat Out.4.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                                #	Executable: grep -v ^@  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+            R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 1]
+                        #	Readable files: Out.4.sam
+        ├─ PID 108086 2 [/usr/bin/grep]
+                        MPEX </usr> (6 files) [enoent: 3, exec: 1, mmap: 7, stat: 6]
+                                                #	Executable: grep -v ^@  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+            R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 1]
+                        #	Readable files: Out.5.sam
+        ├─ PID 108087 2 [/usr/bin/cat]
+                        RPSX </usr> (5 files) [exec: 1, mmap: 7, mmapsh: 1, read: 5]
+                                                #	Executable: cat Out.5.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                        E </proc/108087> (0 files) [xxx]
+                        # 	Readable files: pipe:[523146]
+                        # 	Writable files: *pipe:[519059]
+        ├─ PID 108088 2 [/usr/bin/grep]
+                        RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 2, stat: 5]
+                                                #	Executable: grep -v ^@  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+            R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 1]
+                        #	Readable files: Out.6.sam
+        ├─ PID 108089 2 [/usr/bin/cat]
+                        RMPSX </usr> (5 files) [exec: 1, mmap: 8, mmapsh: 1, read: 5, stat: 1]
+                                                #	Executable: cat Out.6.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                        E </proc/108089> (0 files) [xxx]
+                        # 	Readable files: pipe:[524515]
+                        # 	Writable files: *pipe:[519059]
+        ├─ PID 108091 2 [/usr/bin/grep, /usr/bin/cat]
+                        RPSX </usr> (6 files) [exec: 2, mmap: 5, mmapsh: 1, read: 6]
+                                                #	Executable: grep -v ^@  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                                #	Executable: cat Out.7.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                        E </proc/108091> (0 files) [xxx]
+                        # 	Readable files: pipe:[518104]
+                        # 	Writable files: *pipe:[519059]
+        ├─ PID 108092 2 [/usr/bin/cat]
+                        RMPESX </usr> (7 files) [enoent: 3, exec: 1, mmap: 8, mmapsh: 1, read: 1, stat: 6]
+                                                #	Executable: cat Out.8.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+            R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 1]
+                        #	Readable files: Out.8.sam
+        ├─ PID 108095 2 [/usr/bin/grep, /usr/bin/cat]
+                        RPESX </usr> (6 files) [enoent: 1, exec: 2, mmap: 6, mmapsh: 1, read: 6]
+                                                #	Executable: grep -v ^@  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                                #	Executable: cat Out.9.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                        E </proc/108095> (0 files) [xxx]
+                        # 	Readable files: pipe:[525404]
+                        # 	Writable files: *pipe:[519059]
+    ├─ PID 108096 1 [./samtools]
+          XRW </home/scuzee/Programming/makeflow-examples/hecil> (3 files) [exec: 1, read: 21, write: 4]
+                    #	Executable: ./samtools view -o View.bam -bS Out.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Writable files: View.bam, View.bam*
+                    #	Readable files: Out.sam, samtools
+    ├─ PID 108097 1 [./samtools]
+          XRW </home/scuzee/Programming/makeflow-examples/hecil> (3 files) [exec: 1, read: 9, write: 4]
+                    #	Executable: ./samtools sort -o Out.bam View.bam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Writable files: Out.bam, Out.bam*
+                    #	Readable files: View.bam, samtools
+    ├─ PID 108099 1 [./samtools]
+          XRW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [exec: 1, read: 32, write: 12]
+                    #	Executable: ./samtools mpileup -s -f ref.fasta Out.bam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Writable files: ref.fasta.fai, ref.fasta.fai*
+                    #	Readable files: ref.fasta, ref.fasta.fai, Out.bam, samtools
+          E </proc/108099> (0 files) [xxx]
+                    # 	Writable files: *pipe:[519070]
+    ├─ PID 108101 1 [./Split_Pileup.sh]
+          XR </home/scuzee/Programming/makeflow-examples/hecil> (3 files) [exec: 1, read: 8]
+                    #	Executable: ./Split_Pileup.sh pileup.txt 2  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    #	Readable files: Split_Pileup.sh, Split_Pileup.sh
+          E </proc/108101> (0 files) [xxx]
+                    # 	Readable files: pipe:[519072]
+                    # 	Readable files: pipe:[524057]
+        ├─ PID 108102 2 [/usr/bin/awk]
+                        RMPESX </usr> (13 files) [enoent: 3, exec: 1, mmap: 29, mmapsh: 1, read: 16, stat: 6]
+                                                #	Executable: awk {print $1} pileup.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+            R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 52]
+                        #	Readable files: pileup.txt
+            E </proc/108102> (0 files) [xxx]
+                        # 	Writable files: *pipe:[523154]
+        ├─ PID 108103 2 [/usr/bin/uniq]
+                        RMPEX </usr> (6 files) [enoent: 3, exec: 1, mmap: 5, read: 3, stat: 6]
+                                                #	Executable: uniq  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+            W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 1]
+                        #	Writable files: List_RefHeader.txt, List_RefHeader.txt*
+            E </proc/108103> (0 files) [xxx]
+                        # 	Readable files: pipe:[523154]
+            ├─ PID 108105 3 [/usr/bin/awk]
+                            RMPX </usr> (8 files) [exec: 1, mmap: 9, read: 2, stat: 8]
+                                                        #	Executable: awk {print $1}  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                            EM </home/scuzee/miniconda3> (2 files) [enoent: 2, stat: 2]
+              R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 1]
+                            #	Readable files: List_RefHeader.txt
+            ├─ PID 108106 3 [/usr/bin/wc]
+                            RMPESX </usr> (17 files) [enoent: 7, exec: 1, mmap: 25, mmapsh: 1, read: 13, stat: 3]
+                                                        #	Executable: wc -l List_RefHeader.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                            E </proc/108106> (0 files) [xxx]
+                            # 	Readable files: pipe:[519072]
+                            # 	Writable files: *pipe:[519072]
+                            # 	Readable files: pipe:[518125]
+        ├─ PID 108107 2 [/usr/bin/expr]
+                        RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 9, read: 5, stat: 6]
+                                                #	Executable: expr 75 / 2  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                        E </proc/108107> (0 files) [xxx]
+                        # 	Writable files: *pipe:[524057]
+        ├─ PID 108108 2 [./Create_SubsetPileup.sh]
+            XR </home/scuzee/Programming/makeflow-examples/hecil> (3 files) [exec: 1, read: 5]
+                        #	Executable: ./Create_SubsetPileup.sh List_RefHeader.txt pileup.txt 75 37  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                        #	Readable files: Create_SubsetPileup.sh, Create_SubsetPileup.sh
+            E </proc/108108> (0 files) [xxx]
+                        # 	Readable files: pipe:[524058]
+                        # 	Readable files: pipe:[524059]
+                        # 	Readable files: pipe:[524060]
+                        # 	Readable files: pipe:[523156]
+                        # 	Readable files: pipe:[524061]
+                        # 	Readable files: pipe:[524531]
+                        # 	Readable files: pipe:[524532]
+                        # 	Readable files: pipe:[524534]
+            ├─ PID 108109 3 [/usr/bin/sed]
+                            RMPESX </usr> (10 files) [enoent: 3, exec: 1, mmap: 17, mmapsh: 1, read: 10, stat: 6]
+                                                        #	Executable: sed -n 1p List_RefHeader.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+              R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 3]
+                            #	Readable files: List_RefHeader.txt
+              E </proc/108109> (0 files) [xxx]
+                            # 	Writable files: *pipe:[524058]
+            ├─ PID 108110 3 [/usr/bin/sed]
+                            RMPESX </usr> (10 files) [enoent: 3, exec: 1, mmap: 17, mmapsh: 1, read: 10, stat: 6]
+                                                        #	Executable: sed -n 37p List_RefHeader.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+              R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 3]
+                            #	Readable files: List_RefHeader.txt
+              E </proc/108110> (0 files) [xxx]
+                            # 	Writable files: *pipe:[524059]
+                ├─ PID 108112 4 [/usr/bin/head]
+                                RMPEX </usr> (16 files) [enoent: 3, exec: 1, mmap: 10, read: 3, stat: 7]
+                                                                #	Executable: head -1  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                EM </home/scuzee/miniconda3> (2 files) [enoent: 2, stat: 2]
+                R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 4]
+                                #	Readable files: pileup.txt
+                ├─ PID 108113 4 [/usr/bin/awk]
+                                RMPESX </usr> (11 files) [enoent: 2, exec: 1, mmap: 11, mmapsh: 1, read: 3, stat: 7]
+                                                                #	Executable: awk -F : {print $1}  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                ├─ PID 108116 4 [/usr/bin/grep, /usr/bin/awk]
+                                RMPEX </usr> (16 files) [enoent: 3, exec: 2, mmap: 10, read: 4, stat: 4]
+                                                                #	Executable: grep -n SEQ_ID:49:FLOW_LANE:1:49:1:1 pileup.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                                                #	Executable: awk -F : {print $1}  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 4]
+                                #	Readable files: pileup.txt
+                ├─ PID 108117 4 [/usr/bin/tail]
+                                RMPEX </usr> (15 files) [enoent: 3, exec: 1, mmap: 15, read: 2, stat: 6]
+                                                                #	Executable: tail -1  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                E </proc/108117> (0 files) [xxx]
+                                # 	Readable files: pipe:[523157]
+            ├─ PID 108119 3 [/usr/bin/sed]
+                            RPSX </usr> (7 files) [exec: 1, mmap: 17, mmapsh: 1, read: 10]
+                                                        #	Executable: sed -n 1,2418p pileup.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+              RW </home/scuzee/Programming/makeflow-examples/hecil> (2 files) [read: 52, write: 25]
+                            #	Writable files: Pileup_Set1.txt, Pileup_Set1.txt*
+                            #	Readable files: pileup.txt
+            ├─ PID 108120 3 [/usr/bin/sed]
+                            RPSX </usr> (7 files) [exec: 1, mmap: 17, mmapsh: 1, read: 10]
+                                                        #	Executable: sed -n 38p List_RefHeader.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+              R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 3]
+                            #	Readable files: List_RefHeader.txt
+              E </proc/108120> (0 files) [xxx]
+                            # 	Writable files: *pipe:[524061]
+            ├─ PID 108121 3 [/usr/bin/sed]
+                            RPSX </usr> (7 files) [exec: 1, mmap: 17, mmapsh: 1, read: 10]
+                                                        #	Executable: sed -n 74p List_RefHeader.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+              R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 3]
+                            #	Readable files: List_RefHeader.txt
+              E </proc/108121> (0 files) [xxx]
+                            # 	Writable files: *pipe:[524531]
+                ├─ PID 108123 4 [/usr/bin/awk, /usr/bin/head]
+                                RMPEX </usr> (12 files) [enoent: 2, exec: 2, mmap: 12, read: 4, stat: 5]
+                                                                #	Executable: awk -F : {print $1}  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                                                #	Executable: head -1  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                EM </home/scuzee/miniconda3> (3 files) [enoent: 2, stat: 4]
+                R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 1]
+                                #	Readable files: pileup.txt
+                E </proc/108123> (0 files) [xxx]
+                                # 	Writable files: *pipe:[519081]
+                ├─ PID 108124 4 [/usr/bin/grep]
+                                RMPEX </usr> (14 files) [enoent: 5, exec: 1, mmap: 15, read: 1, stat: 8]
+                                                                #	Executable: grep -n SEQ_ID:51:FLOW_LANE:1:51:1:1 pileup.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                E </proc/108124> (0 files) [xxx]
+                                # 	Writable files: *pipe:[519082]
+                ├─ PID 108127 4 [/usr/bin/awk]
+                                RMPEX </usr> (14 files) [enoent: 2, exec: 1, mmap: 12, read: 2, stat: 3]
+                                                                #	Executable: awk -F : {print $1}  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                R </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [read: 4]
+                                #	Readable files: pileup.txt
+                E </proc/108127> (0 files) [xxx]
+                                # 	Writable files: *pipe:[524535]
+                ├─ PID 108128 4 [/usr/bin/grep, /usr/bin/tail]
+                                RMPEX </usr> (13 files) [enoent: 3, exec: 2, mmap: 13, read: 1, stat: 6]
+                                                                #	Executable: grep -n SEQ_ID:99:FLOW_LANE:1:99:1:1 pileup.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                                                                #	Executable: tail -1  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+            ├─ PID 108130 3 [/usr/bin/sed]
+                            RPSX </usr> (7 files) [exec: 1, mmap: 17, mmapsh: 1, read: 10]
+                                                        #	Executable: sed -n 2419,4817p pileup.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+              RW </home/scuzee/Programming/makeflow-examples/hecil> (2 files) [read: 52, write: 25]
+                            #	Writable files: Pileup_Set2.txt, Pileup_Set2.txt*
+                            #	Readable files: pileup.txt
+    ├─ PID 108131 1 [/usr/bin/python3]
+                    RMPESX </usr> (209 files) [enoent: 39, exec: 1, mmap: 53, mmapsh: 1, read: 262, stat: 305]
+                                        #	Executable: python3 Correction.py Pileup_Set1.txt ref.fasta lc.0.out Out.sam 10  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MRPE </home/scuzee/.local/lib/python3.10> (237 files) [enoent: 96, mmap: 86, read: 395, stat: 407]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          R </home/scuzee/Programming/makeflow-examples/hecil> (5 files) [read: 54]
+                    #	Readable files: Correction.py, Pileup_Set1.txt, ref.fasta, Out.sam
+    ├─ PID 108158 1 [/usr/bin/python3]
+                    RMPESX </usr> (209 files) [enoent: 39, exec: 1, mmap: 53, mmapsh: 1, read: 262, stat: 305]
+                                        #	Executable: python3 Correction.py Pileup_Set2.txt ref.fasta lc.1.out Out.sam 10  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MRPE </home/scuzee/.local/lib/python3.10> (237 files) [enoent: 96, mmap: 86, read: 395, stat: 407]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          R </home/scuzee/Programming/makeflow-examples/hecil> (5 files) [read: 54]
+                    #	Readable files: Correction.py, Pileup_Set2.txt, ref.fasta, Out.sam
+    ├─ PID 108167 1 [/usr/bin/cat]
+                    RMPEX </usr> (6 files) [enoent: 3, exec: 1, mmap: 5, read: 3, stat: 6]
+                                        #	Executable: cat corr.0.out corr.1.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          R </home/scuzee/Programming/makeflow-examples/hecil> (2 files) [read: 4]
+                    #	Readable files: corr.0.out, corr.1.out
+    ├─ PID 108169 1 [/usr/bin/python3]
+                    RMPESX </usr> (99 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 108, stat: 110]
+                                        #	Executable: python3 ./fasta_reduce ref.fasta 100  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (12 files) [read: 28, write: 20]
+                    #	Writable files: ref.fasta.0, ref.fasta.0*, ref.fasta.1, ref.fasta.1*, ref.fasta.2, ref.fasta.2*, ref.fasta.3, ref.fasta.3*, ref.fasta.4, ref.fasta.4*, ref.fasta.5, ref.fasta.5*, ref.fasta.6, ref.fasta.6*, ref.fasta.7, ref.fasta.7*, ref.fasta.8, ref.fasta.8*, ref.fasta.9, ref.fasta.9*
+                    #	Readable files: fasta_reduce, ref.fasta
+    ├─ PID 108170 1 [/usr/bin/seq]
+                    RMPEX </usr> (6 files) [enoent: 3, exec: 1, mmap: 5, read: 3, stat: 6]
+                                        #	Executable: seq 0 9  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    E </proc/108170> (0 files) [xxx]
+                    # 	Writable files: *pipe:[519998]
+    ├─ PID 108171 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.0 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.0, Corrected_ref.fasta.0*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.0, corr.out
+    ├─ PID 108172 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.1 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.1, Corrected_ref.fasta.1*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.1, corr.out
+    ├─ PID 108173 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.2 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.2, Corrected_ref.fasta.2*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.2, corr.out
+    ├─ PID 108174 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.3 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.3, Corrected_ref.fasta.3*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.3, corr.out
+    ├─ PID 108175 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.4 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.4, Corrected_ref.fasta.4*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.4, corr.out
+    ├─ PID 108176 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.5 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.5, Corrected_ref.fasta.5*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.5, corr.out
+    ├─ PID 108177 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.6 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.6, Corrected_ref.fasta.6*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.6, corr.out
+    ├─ PID 108178 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.7 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.7, Corrected_ref.fasta.7*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.7, corr.out
+    ├─ PID 108179 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.8 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.8, Corrected_ref.fasta.8*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.8, corr.out
+    ├─ PID 108180 1 [/usr/bin/python3]
+                    RMPESX </usr> (101 files) [enoent: 27, exec: 1, mmap: 17, mmapsh: 1, read: 111, stat: 113]
+                                        #	Executable: python3 Create_Corrected_AllLRReads.py ref.fasta.9 corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    MR </home/scuzee/.local/lib/python3.10> (1 files) [read: 3, stat: 6]
+          R </home/scuzee/Programming/makeflow-examples> (1 files) [read: 1]
+                    #	Readable files: 
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (4 files) [read: 16, write: 2]
+                    #	Writable files: Corrected_ref.fasta.9, Corrected_ref.fasta.9*
+                    #	Readable files: Create_Corrected_AllLRReads.py, ref.fasta.9, corr.out
+    ├─ PID 108181 1 [/usr/bin/cat]
+                    RMPEX </usr> (6 files) [enoent: 3, exec: 1, mmap: 5, read: 3, stat: 6]
+                                        #	Executable: cat Corrected_ref.fasta.0 Corrected_ref.fasta.1 Corrected_ref.fasta.2 Corrected_ref.fasta.3 Corrected_ref.fasta.4 Corrected_ref.fasta.5 Corrected_ref.fasta.6 Corrected_ref.fasta.7 Corrected_ref.fasta.8 Corrected_ref.fasta.9  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          R </home/scuzee/Programming/makeflow-examples/hecil> (10 files) [read: 30]
+                    #	Readable files: Corrected_ref.fasta.0, Corrected_ref.fasta.1, Corrected_ref.fasta.2, Corrected_ref.fasta.3, Corrected_ref.fasta.4, Corrected_ref.fasta.5, Corrected_ref.fasta.6, Corrected_ref.fasta.7, Corrected_ref.fasta.8, Corrected_ref.fasta.9
+          E </proc/108181> (0 files) [xxx]
+                    # 	Writable files: *pipe:[524076]
+    ├─ PID 108183 1 [/usr/bin/rm]
+                    RPX </usr> (3 files) [exec: 1, mmap: 5, read: 3]
+                                        #	Executable: rm Out.0.sam Out.1.sam Out.2.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.7.sam Out.8.sam Out.9.sam Out.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108184 1 [/usr/bin/rm]
+                    RPX </usr> (3 files) [exec: 1, mmap: 5, read: 3]
+                                        #	Executable: rm query.fastq.0 query.fastq.1 query.fastq.10 query.fastq.11 query.fastq.12 query.fastq.13 query.fastq.14 query.fastq.15 query.fastq.16 query.fastq.17 query.fastq.18 query.fastq.19 query.fastq.2 query.fastq.20 query.fastq.21 query.fastq.22 query.fastq.23 query.fastq.24 query.fastq.25 query.fastq.26 query.fastq.27 query.fastq.28 query.fastq.29 query.fastq.3 query.fastq.30 query.fastq.31 query.fastq.32 query.fastq.33 query.fastq.34 query.fastq.35 query.fastq.36 query.fastq.37 query.fastq.38 query.fastq.39 query.fastq.4 query.fastq.40 query.fastq.41 query.fastq.42 query.fastq.43 query.fastq.44 query.fastq.45 query.fastq.46 query.fastq.47 query.fastq.48 query.fastq.49 query.fastq.5 query.fastq.50 query.fastq.51 query.fastq.52 query.fastq.53 query.fastq.54 query.fastq.55 query.fastq.56 query.fastq.57 query.fastq.58 query.fastq.59 query.fastq.6 query.fastq.60 query.fastq.61 query.fastq.62 query.fastq.63 query.fastq.64 query.fastq.65 query.fastq.66 query.fastq.67 query.fastq.68 query.fastq.69 query.fastq.7 query.fastq.70 query.fastq.71 query.fastq.72 query.fastq.73 query.fastq.74 query.fastq.75 query.fastq.76 query.fastq.77 query.fastq.78 query.fastq.79 query.fastq.8 query.fastq.80 query.fastq.81 query.fastq.82 query.fastq.83 query.fastq.84 query.fastq.85 query.fastq.86 query.fastq.87 query.fastq.88 query.fastq.89 query.fastq.9 query.fastq.90 query.fastq.91 query.fastq.92 query.fastq.93 query.fastq.94 query.fastq.95 query.fastq.96 query.fastq.97 query.fastq.98 query.fastq.99  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108185 1 [/usr/bin/rm]
+                    RPX </usr> (3 files) [exec: 1, mmap: 5, read: 3]
+                                        #	Executable: rm ref.fasta.0 ref.fasta.1 ref.fasta.2 ref.fasta.3 ref.fasta.4 ref.fasta.5 ref.fasta.6 ref.fasta.7 ref.fasta.8 ref.fasta.9 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.fai ref.fasta.pac ref.fasta.sa  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108186 1 [/usr/bin/rm]
+                    RPX </usr> (3 files) [exec: 1, mmap: 5, read: 3]
+                                        #	Executable: rm Out.bam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108187 1 [/usr/bin/rm]
+                    RPX </usr> (3 files) [exec: 1, mmap: 5, read: 3]
+                                        #	Executable: rm View.bam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108188 1 [/usr/bin/rm]
+                    RPX </usr> (3 files) [exec: 1, mmap: 5, read: 3]
+                                        #	Executable: rm corr.0.out corr.1.out corr.out lc.0.out lc.1.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108189 1 [/usr/bin/rm]
+                    RPX </usr> (3 files) [exec: 1, mmap: 5, read: 3]
+                                        #	Executable: rm ref.fasta query.fastq ref.fastq  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108190 1 [/usr/bin/rm]
+                    RPX </usr> (3 files) [exec: 1, mmap: 5, read: 3]
+                                        #	Executable: rm Corrected_ref.fasta.0 Corrected_ref.fasta.1 Corrected_ref.fasta.2 Corrected_ref.fasta.3 Corrected_ref.fasta.4 Corrected_ref.fasta.5 Corrected_ref.fasta.6 Corrected_ref.fasta.7 Corrected_ref.fasta.8 Corrected_ref.fasta.9  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108191 1 [/usr/bin/rm]
+                    RPX </usr> (3 files) [exec: 1, mmap: 5, read: 3]
+                                        #	Executable: rm Corrected_ref.fasta  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108007 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee ref.fastq  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 30]
+                    #	Writable files: ref.fastq, ref.fastq*
+          E </proc/108007> (0 files) [xxx]
+                    # 	Readable files: pipe:[519898]
+    ├─ PID 108009 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee query.fastq  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 30]
+                    #	Writable files: query.fastq, query.fastq*
+          E </proc/108009> (0 files) [xxx]
+                    # 	Readable files: pipe:[523117]
+    ├─ PID 108011 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee ref.fasta  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 18]
+                    #	Writable files: ref.fasta, ref.fasta*
+          E </proc/108011> (0 files) [xxx]
+                    # 	Readable files: pipe:[523126]
+    ├─ PID 108016 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.0.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 7]
+                    #	Writable files: Out.0.sam, Out.0.sam*
+          E </proc/108016> (0 files) [xxx]
+                    # 	Readable files: pipe:[525342]
+    ├─ PID 108022 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.1.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 7]
+                    #	Writable files: Out.1.sam, Out.1.sam*
+          E </proc/108022> (0 files) [xxx]
+                    # 	Readable files: pipe:[519912]
+    ├─ PID 108028 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.2.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 7]
+                    #	Writable files: Out.2.sam, Out.2.sam*
+          E </proc/108028> (0 files) [xxx]
+                    # 	Readable files: pipe:[526339]
+    ├─ PID 108034 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.3.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 6]
+                    #	Writable files: Out.3.sam, Out.3.sam*
+          E </proc/108034> (0 files) [xxx]
+                    # 	Readable files: pipe:[524483]
+    ├─ PID 108040 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.4.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 7]
+                    #	Writable files: Out.4.sam, Out.4.sam*
+          E </proc/108040> (0 files) [xxx]
+                    # 	Readable files: pipe:[526340]
+    ├─ PID 108046 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.5.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 7]
+                    #	Writable files: Out.5.sam, Out.5.sam*
+          E </proc/108046> (0 files) [xxx]
+                    # 	Readable files: pipe:[525372]
+    ├─ PID 108052 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.6.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 8]
+                    #	Writable files: Out.6.sam, Out.6.sam*
+          E </proc/108052> (0 files) [xxx]
+                    # 	Readable files: pipe:[523141]
+                    # 	Writable files: *pipe:[519035]
+    ├─ PID 108058 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.7.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 6]
+                    #	Writable files: Out.7.sam, Out.7.sam*
+          E </proc/108058> (0 files) [xxx]
+                    # 	Readable files: pipe:[524484]
+    ├─ PID 108064 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.8.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 7]
+                    #	Writable files: Out.8.sam, Out.8.sam*
+          E </proc/108064> (0 files) [xxx]
+                    # 	Readable files: pipe:[526344]
+    ├─ PID 108070 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.9.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 7]
+                    #	Writable files: Out.9.sam, Out.9.sam*
+          E </proc/108070> (0 files) [xxx]
+                    # 	Readable files: pipe:[518080]
+    ├─ PID 108076 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Out.sam  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          RW </home/scuzee/Programming/makeflow-examples/hecil> (3 files) [read: 2, write: 16]
+                    #	Writable files: Out.sam, Out.sam*
+                    #	Readable files: Out.5.sam, Out.8.sam
+          E </proc/108076> (0 files) [xxx]
+                    # 	Readable files: pipe:[519059]
+                    # 	Writable files: *pipe:[525396]
+                    # 	Writable files: *pipe:[519937]
+    ├─ PID 108100 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee pileup.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 26]
+                    #	Writable files: pileup.txt, pileup.txt*
+          E </proc/108100> (0 files) [xxx]
+                    # 	Readable files: pipe:[519070]
+    ├─ PID 108132 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee corr.0.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108159 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee corr.1.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+    ├─ PID 108168 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee corr.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                    E </proc/108168> (0 files) [xxx]
+                    # 	Readable files: pipe:[519084]
+    ├─ PID 108182 1 [/usr/bin/tee]
+                    RMPEX </usr> (7 files) [enoent: 3, exec: 1, mmap: 6, read: 4, stat: 6]
+                                        #	Executable: tee Corrected_ref.fasta  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+          W </home/scuzee/Programming/makeflow-examples/hecil> (1 files) [write: 18]
+                    #	Writable files: Corrected_ref.fasta, Corrected_ref.fasta*
+          E </proc/108182> (0 files) [xxx]
+                    # 	Readable files: pipe:[524076]
+├─ PID 108114 0 [/usr/bin/grep]
+                RMPESX </usr> (16 files) [enoent: 6, exec: 1, mmap: 23, mmapsh: 1, read: 6, stat: 2]
+                                #	Executable: grep -n SEQ_ID:1:FLOW_LANE:1:1:1:1 pileup.txt  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil",
+                M </home/scuzee/miniconda3> (1 files) [stat: 2]
+                E </proc/108114> (0 files) [xxx]
+                # 	Writable files: *pipe:[519973]
+                # 	Readable files: pipe:[523155]
+                # 	Writable files: *pipe:[523155]
+                # 	Writable files: *pipe:[524060]
+CWD:  /home/scuzee/Programming/makeflow-examples/hecil

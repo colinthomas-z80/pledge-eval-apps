@@ -1,0 +1,87 @@
+BLASTP 2.13.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: Non-redundant UniProtKB/SwissProt sequences
+           486,626 sequences; 185,539,472 total letters
+
+
+
+Query= contig15
+
+Length=100
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H        a         alpha
+   0.324    0.131    0.508    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4544269560
+
+
+Query= contig16
+
+Length=100
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+A3CST9.1 RecName: Full=Digeranylgeranylglycerophospholipid reduct...  28.5    8.9  
+
+
+>A3CST9.1 RecName: Full=Digeranylgeranylglycerophospholipid reductase; 
+Short=DGGGPL reductase; AltName: Full=2,3-bis-O-geranylgeranylglyceryl 
+phosphate reductase; AltName: Full=Geranylgeranyl 
+reductase; Short=GGR [Methanoculleus marisnigri JR1]
+Length=398
+
+ Score = 28.5 bits (62),  Expect = 8.9, Method: Compositional matrix adjust.
+ Identities = 18/39 (46%), Positives = 18/39 (46%), Gaps = 1/39 (3%)
+
+Query  63   AGTAAGAAGGCTGGGTGAACTTGTC-CGTAGTCCAAGCC  100
+            AG AA      TGGG G A  TG      A  C AAG C
+Sbjct  278  AGDAARVVDPITGGGIGNAMYTGRLAAQVASKCIAAGDC  316
+
+
+
+Lambda      K        H        a         alpha
+   0.327    0.137    0.565    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4544269560
+
+
+  Database: Non-redundant UniProtKB/SwissProt sequences
+    Posted date:  Mar 3, 2026  6:50 AM
+  Number of letters in database: 185,539,472
+  Number of sequences in database:  486,626
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

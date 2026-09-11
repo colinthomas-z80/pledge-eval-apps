@@ -1,0 +1,30 @@
+
+========================[ Mar 6, 2026 10:48 AM ]========================
+ERROR: [000.000] No database name was specified
+
+========================[ Mar 6, 2026 10:53 AM ]========================
+ERROR: [000.000] No database name was specified
+
+========================[ Mar 6, 2026 11:00 AM ]========================
+Version 2.2.26 [Sep-21-2011]
+Started database file "nt"
+FDBFinish: Empty protein database...
+SUCCESS: formatted database nt
+
+========================[ Mar 6, 2026 11:01 AM ]========================
+Version 2.2.26 [Sep-21-2011]
+Started database file "nt"
+FDBFinish: Empty nucleotide database...
+SUCCESS: formatted database nt
+
+========================[ Mar 6, 2026 12:11 PM ]========================
+ERROR: [000.000] No database name was specified
+
+========================[ Mar 6, 2026 12:12 PM ]========================
+ERROR: [000.000] No database name was specified
+
+========================[ Mar 6, 2026 12:13 PM ]========================
+Version 2.2.26 [Sep-21-2011]
+Started database file "out.fasta"
+Formatted 506514 sequences in volume 0
+SUCCESS: formatted database out.fasta

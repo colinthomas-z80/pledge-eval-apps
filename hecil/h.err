@@ -1,0 +1,634 @@
+[bwa_index] Pack FASTA... 0.60 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=200000000, availableWord=26072744
+[BWTIncConstructFromPacked] 10 iterations done. 43007968 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 79453184 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 111841792 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 140624832 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 166203232 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 188933344 characters processed.
+[bwt_gen] Finished constructing BWT in 66 iterations.
+[bwa_index] 43.76 seconds elapse.
+[bwa_index] Update BWT... 0.33 sec
+[bwa_index] Pack forward-only FASTA... 0.33 sec
+[bwa_index] Construct SA from BWT and Occ... 23.94 sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa index ref.fasta
+[main] Real time: 69.084 sec; CPU: 68.958 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.0
+[main] Real time: 1.024 sec; CPU: 0.115 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.1
+[main] Real time: 0.942 sec; CPU: 0.122 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.2
+[main] Real time: 1.020 sec; CPU: 0.144 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.3
+[main] Real time: 0.986 sec; CPU: 0.122 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.4
+[main] Real time: 0.958 sec; CPU: 0.127 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.5
+[main] Real time: 1.062 sec; CPU: 0.123 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 7 sequences (700 bp)...
+[M::process] read 1 sequences (100 bp)...
+[M::mem_process_seqs] Processed 7 reads in 0.001 CPU sec, 0.001 real sec
+[M::mem_process_seqs] Processed 1 reads in 0.000 CPU sec, 0.000 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.6
+[main] Real time: 1.067 sec; CPU: 0.133 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.7
+[main] Real time: 0.941 sec; CPU: 0.128 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.8
+[main] Real time: 1.024 sec; CPU: 0.144 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 6 sequences (600 bp)...
+[M::process] read 2 sequences (200 bp)...
+[M::mem_process_seqs] Processed 6 reads in 0.001 CPU sec, 0.001 real sec
+[M::mem_process_seqs] Processed 2 reads in 0.000 CPU sec, 0.000 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.9
+[main] Real time: 1.001 sec; CPU: 0.129 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.10
+[main] Real time: 1.012 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.11
+[main] Real time: 0.944 sec; CPU: 0.132 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.12
+[main] Real time: 1.001 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.13
+[main] Real time: 1.047 sec; CPU: 0.133 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.14
+[main] Real time: 1.024 sec; CPU: 0.122 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.15
+[main] Real time: 1.010 sec; CPU: 0.128 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.16
+[main] Real time: 0.953 sec; CPU: 0.129 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.17
+[main] Real time: 1.003 sec; CPU: 0.138 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.18
+[main] Real time: 0.920 sec; CPU: 0.126 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 6 sequences (600 bp)...
+[M::process] read 2 sequences (200 bp)...
+[M::mem_process_seqs] Processed 6 reads in 0.001 CPU sec, 0.001 real sec
+[M::mem_process_seqs] Processed 2 reads in 0.000 CPU sec, 0.000 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.19
+[main] Real time: 1.009 sec; CPU: 0.130 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.20
+[main] Real time: 0.920 sec; CPU: 0.122 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.21
+[main] Real time: 0.974 sec; CPU: 0.125 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.002 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.22
+[main] Real time: 0.676 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.23
+[main] Real time: 1.071 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.24
+[main] Real time: 0.952 sec; CPU: 0.128 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.25
+[main] Real time: 0.991 sec; CPU: 0.124 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.26
+[main] Real time: 0.886 sec; CPU: 0.125 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.27
+[main] Real time: 1.027 sec; CPU: 0.143 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.28
+[main] Real time: 1.000 sec; CPU: 0.130 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.29
+[main] Real time: 0.918 sec; CPU: 0.123 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.30
+[main] Real time: 0.948 sec; CPU: 0.126 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.31
+[main] Real time: 0.943 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.32
+[main] Real time: 0.930 sec; CPU: 0.128 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.006 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.33
+[main] Real time: 0.938 sec; CPU: 0.124 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.34
+[main] Real time: 1.028 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.002 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.35
+[main] Real time: 0.715 sec; CPU: 0.135 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.36
+[main] Real time: 1.090 sec; CPU: 0.140 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.37
+[main] Real time: 0.977 sec; CPU: 0.129 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 9 sequences (900 bp)...
+[M::mem_process_seqs] Processed 9 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.38
+[main] Real time: 0.992 sec; CPU: 0.138 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.39
+[main] Real time: 0.863 sec; CPU: 0.123 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.40
+[main] Real time: 1.001 sec; CPU: 0.127 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.41
+[main] Real time: 0.983 sec; CPU: 0.123 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.42
+[main] Real time: 0.944 sec; CPU: 0.132 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.43
+[main] Real time: 0.965 sec; CPU: 0.128 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.44
+[main] Real time: 1.324 sec; CPU: 0.129 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.002 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.45
+[main] Real time: 1.048 sec; CPU: 0.137 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.46
+[main] Real time: 1.113 sec; CPU: 0.155 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.47
+[main] Real time: 1.016 sec; CPU: 0.137 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.48
+[main] Real time: 1.026 sec; CPU: 0.124 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.49
+[main] Real time: 0.883 sec; CPU: 0.130 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.50
+[main] Real time: 0.985 sec; CPU: 0.125 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.51
+[main] Real time: 1.034 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.52
+[main] Real time: 0.998 sec; CPU: 0.134 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.53
+[main] Real time: 1.039 sec; CPU: 0.135 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.54
+[main] Real time: 0.949 sec; CPU: 0.129 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.55
+[main] Real time: 0.993 sec; CPU: 0.127 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.56
+[main] Real time: 1.033 sec; CPU: 0.135 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 6 sequences (600 bp)...
+[M::process] read 2 sequences (200 bp)...
+[M::mem_process_seqs] Processed 6 reads in 0.001 CPU sec, 0.001 real sec
+[M::mem_process_seqs] Processed 2 reads in 0.000 CPU sec, 0.000 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.57
+[main] Real time: 0.931 sec; CPU: 0.129 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.58
+[main] Real time: 1.025 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.59
+[main] Real time: 1.102 sec; CPU: 0.130 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.60
+[main] Real time: 0.955 sec; CPU: 0.138 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.61
+[main] Real time: 0.981 sec; CPU: 0.130 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.62
+[main] Real time: 0.997 sec; CPU: 0.130 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.63
+[main] Real time: 1.026 sec; CPU: 0.136 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.64
+[main] Real time: 0.980 sec; CPU: 0.128 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.65
+[main] Real time: 0.951 sec; CPU: 0.130 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.66
+[main] Real time: 0.996 sec; CPU: 0.130 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.67
+[main] Real time: 0.991 sec; CPU: 0.127 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.68
+[main] Real time: 1.012 sec; CPU: 0.128 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.69
+[main] Real time: 0.982 sec; CPU: 0.128 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.70
+[main] Real time: 0.993 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.71
+[main] Real time: 0.956 sec; CPU: 0.126 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.72
+[main] Real time: 1.000 sec; CPU: 0.124 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.73
+[main] Real time: 0.931 sec; CPU: 0.139 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.74
+[main] Real time: 0.942 sec; CPU: 0.126 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.75
+[main] Real time: 1.040 sec; CPU: 0.132 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.76
+[main] Real time: 0.939 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.77
+[main] Real time: 0.997 sec; CPU: 0.144 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.78
+[main] Real time: 0.992 sec; CPU: 0.134 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.79
+[main] Real time: 0.926 sec; CPU: 0.129 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.80
+[main] Real time: 0.983 sec; CPU: 0.152 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.81
+[main] Real time: 1.002 sec; CPU: 0.130 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.008 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.82
+[main] Real time: 0.952 sec; CPU: 0.131 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.83
+[main] Real time: 0.912 sec; CPU: 0.138 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.84
+[main] Real time: 1.017 sec; CPU: 0.125 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.85
+[main] Real time: 0.972 sec; CPU: 0.121 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.86
+[main] Real time: 0.942 sec; CPU: 0.139 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.87
+[main] Real time: 1.006 sec; CPU: 0.136 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.88
+[main] Real time: 0.987 sec; CPU: 0.125 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.89
+[main] Real time: 0.989 sec; CPU: 0.125 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.90
+[main] Real time: 0.995 sec; CPU: 0.128 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.91
+[main] Real time: 0.998 sec; CPU: 0.127 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.92
+[main] Real time: 1.239 sec; CPU: 0.127 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.93
+[main] Real time: 1.109 sec; CPU: 0.161 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.94
+[main] Real time: 1.122 sec; CPU: 0.141 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.95
+[main] Real time: 1.099 sec; CPU: 0.134 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.002 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.96
+[main] Real time: 1.039 sec; CPU: 0.136 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.97
+[main] Real time: 1.080 sec; CPU: 0.142 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.001 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.98
+[main] Real time: 1.008 sec; CPU: 0.137 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 10 sequences (1000 bp)...
+[M::mem_process_seqs] Processed 10 reads in 0.002 CPU sec, 0.001 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: ./bwa mem ref.fasta query.fastq.99
+[main] Real time: 0.886 sec; CPU: 0.129 sec
+[mpileup] 1 samples in 1 input files
+Traceback (most recent call last):
+  File "/home/scuzee/Programming/makeflow-examples/hecil/Correction.py", line 130, in <module>
+    cov_p=int(col_p[3])
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/scuzee/Programming/makeflow-examples/hecil/Correction.py", line 130, in <module>
+    cov_p=int(col_p[3])
+IndexError: list index out of range

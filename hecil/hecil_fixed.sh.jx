@@ -1,0 +1,268 @@
+{
+  "rules": [
+    {
+      "command": "/usr/bin/perl fastq_reduce query.fastq 10",
+      "outputs": [
+        "query.fastq.0",
+        "query.fastq.1",
+        "query.fastq.2",
+        "query.fastq.3",
+        "query.fastq.4",
+        "query.fastq.5",
+        "query.fastq.6",
+        "query.fastq.7",
+        "query.fastq.8",
+        "query.fastq.9"
+      ],
+      "inputs": [
+        "fastq_reduce",
+        "query.fastq"
+      ]
+    },
+    {
+      "command": "./bwa index ref.fasta",
+      "outputs": [
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ],
+      "inputs": [
+        "bwa",
+        "ref.fasta"
+      ]
+    },
+    {
+      "command": "./samtools view -o View.bam -bS Out.sam",
+      "outputs": [
+        "View.bam"
+      ],
+      "inputs": [
+        "Out.sam",
+        "samtools"
+      ]
+    },
+    {
+      "command": "./samtools sort -o Out.bam View.bam",
+      "outputs": [
+        "Out.bam"
+      ],
+      "inputs": [
+        "View.bam",
+        "samtools"
+      ]
+    },
+    {
+      "command": "./fastq_generate.pl 1000 100 | /usr/bin/tee ref.fastq",
+      "outputs": [
+        "ref.fastq"
+      ],
+      "inputs": [
+        "fastq_generate.pl"
+      ]
+    },
+    {
+      "command": "./fastq_generate.pl 1000 100 ref.fastq | /usr/bin/tee query.fastq",
+      "outputs": [
+        "query.fastq"
+      ],
+      "inputs": [
+        "fastq_generate.pl",
+        "ref.fastq"
+      ]
+    },
+    {
+      "command": "./convert_fastq.py, /usr/bin/python3 ref.fastq | /usr/bin/tee ref.fasta",
+      "outputs": [
+        "ref.fasta"
+      ],
+      "inputs": [
+        "convert_fastq.py",
+        "ref.fastq"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.0 | /usr/bin/tee Out.0.sam",
+      "outputs": [
+        "Out.0.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.0",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.1 | /usr/bin/tee Out.1.sam",
+      "outputs": [],
+      "inputs": [
+        "bwa",
+        "query.fastq.1",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.2 | /usr/bin/tee Out.2.sam",
+      "outputs": [],
+      "inputs": [
+        "bwa",
+        "query.fastq.2",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.3 | /usr/bin/tee Out.3.sam",
+      "outputs": [
+        "Out.3.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.3",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.4 | /usr/bin/tee Out.4.sam",
+      "outputs": [
+        "Out.4.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.4",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.5 | /usr/bin/tee Out.5.sam",
+      "outputs": [
+        "Out.5.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.5",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.6 | /usr/bin/tee Out.6.sam",
+      "outputs": [
+        "Out.6.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.6",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.7 | /usr/bin/tee Out.7.sam",
+      "outputs": [],
+      "inputs": [
+        "bwa",
+        "query.fastq.7",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.8 | /usr/bin/tee Out.8.sam",
+      "outputs": [
+        "Out.8.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.8",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.9 | /usr/bin/tee Out.9.sam",
+      "outputs": [],
+      "inputs": [
+        "bwa",
+        "query.fastq.9",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./sam_cat.sh Out.0.sam Out.1.sam Out.2.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.7.sam Out.8.sam Out.9.sam | /usr/bin/tee Out.sam",
+      "outputs": [
+        "Out.sam"
+      ],
+      "inputs": [
+        "Out.5.sam",
+        "Out.8.sam",
+        "Out.0.sam",
+        "Out.3.sam",
+        "Out.4.sam",
+        "Out.5.sam",
+        "Out.6.sam",
+        "Out.8.sam",
+        "sam_cat.sh"
+      ]
+    },
+    {
+      "command": "./samtools mpileup -s -f ref.fasta Out.bam | /usr/bin/tee pileup.txt",
+      "outputs": [
+        "pileup.txt"
+      ],
+      "inputs": [
+        "Out.bam",
+        "ref.fasta",
+        "samtools"
+      ]
+    },
+    {
+      "command": "./Split_Pileup.sh pileup.txt 2 | ./Split_Pileup.sh pileup.txt 2",
+      "outputs": [],
+      "inputs": [
+        "Create_SubsetPileup.sh",
+        "Split_Pileup.sh",
+        "pileup.txt",
+        "Create_SubsetPileup.sh",
+        "Split_Pileup.sh",
+        "pileup.txt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# example: cmd > corr.0.out 2> corr.0.err ; echo "" >> lc.0.out ; echo "" >> corr.0.err 
+# to: cmd | tee corr.0.out ; echo "" | tee -a lc.0.out ; echo "" | tee -a corr.0.err
+while read p; \
+    do \
+       echo $p | \
+       sed -e 's/ > / | tee /g' | \
+       sed    -e 's/ 2>[^;]*/ /g' | \
+       sed    -e 's/ >> / | tee -a /g'; \
+    done

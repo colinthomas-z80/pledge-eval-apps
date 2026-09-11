@@ -1,0 +1,581 @@
+{
+  "rules": [
+    {
+      "command": "/usr/bin/perl fastq_reduce query.fastq 10",
+      "outputs": [
+        "query.fastq.0",
+        "query.fastq.1",
+        "query.fastq.2",
+        "query.fastq.3",
+        "query.fastq.4",
+        "query.fastq.5",
+        "query.fastq.6",
+        "query.fastq.7",
+        "query.fastq.8",
+        "query.fastq.9"
+      ],
+      "inputs": [
+        "fastq_reduce",
+        "query.fastq"
+      ]
+    },
+    {
+      "command": "./bwa index ref.fasta",
+      "outputs": [
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ],
+      "inputs": [
+        "bwa",
+        "ref.fasta"
+      ]
+    },
+    {
+      "command": "./samtools view -o View.bam -bS Out.sam",
+      "outputs": [
+        "View.bam"
+      ],
+      "inputs": [
+        "Out.sam",
+        "samtools"
+      ]
+    },
+    {
+      "command": "./samtools sort -o Out.bam View.bam",
+      "outputs": [
+        "Out.bam"
+      ],
+      "inputs": [
+        "View.bam",
+        "samtools"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Correction.py Pileup_Set1.txt ref.fasta lc.0.out Out.sam 10",
+      "outputs": [],
+      "inputs": [
+        "Correction.py",
+        "Out.sam",
+        "Pileup_Set1.txt",
+        "ref.fasta"
+      ]
+    },
+    {
+      "command": "/usr/bin/tee corr.0.out",
+      "outputs": [],
+      "inputs": [
+        "pipe\\:[505520]"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Correction.py Pileup_Set2.txt ref.fasta lc.1.out Out.sam 10",
+      "outputs": [],
+      "inputs": [
+        "Correction.py",
+        "Out.sam",
+        "Pileup_Set2.txt",
+        "ref.fasta"
+      ]
+    },
+    {
+      "command": "/usr/bin/cat corr.0.out corr.1.out",
+      "outputs": [
+        "cat_103372"
+      ],
+      "inputs": [
+        "corr.0.out",
+        "corr.1.out"
+      ]
+    },
+    {
+      "command": "/usr/bin/tee corr.out",
+      "outputs": [],
+      "inputs": [
+        "pipe\\:[503590]"
+      ]
+    },
+    {
+      "command": "./fasta_reduce, /usr/bin/python3 ref.fasta 100",
+      "outputs": [
+        "ref.fasta.0",
+        "ref.fasta.1",
+        "ref.fasta.2",
+        "ref.fasta.3",
+        "ref.fasta.4",
+        "ref.fasta.5",
+        "ref.fasta.6",
+        "ref.fasta.7",
+        "ref.fasta.8",
+        "ref.fasta.9"
+      ],
+      "inputs": [
+        "fasta_reduce",
+        "ref.fasta"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.0 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.0"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.0"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.1 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.1"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.1"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.2 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.2"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.2"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.3 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.3"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.3"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.4 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.4"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.4"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.5 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.5"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.5"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.6 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.6"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.6"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.7 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.7"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.7"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.8 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.8"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.8"
+      ]
+    },
+    {
+      "command": "/usr/bin/python3 Create_Corrected_AllLRReads.py ref.fasta.9 corr.out",
+      "outputs": [
+        "Corrected_ref.fasta.9"
+      ],
+      "inputs": [
+        "Create_Corrected_AllLRReads.py",
+        "corr.out",
+        "ref.fasta.9"
+      ]
+    },
+    {
+      "command": "/usr/bin/rm Out.bam",
+      "outputs": [
+        "rm_103391"
+      ],
+      "inputs": []
+    },
+    {
+      "command": "/usr/bin/rm corr.0.out corr.1.out corr.out lc.0.out lc.1.out",
+      "outputs": [
+        "rm_103393"
+      ],
+      "inputs": []
+    },
+    {
+      "command": "/usr/bin/rm Corrected_ref.fasta.0 Corrected_ref.fasta.1 Corrected_ref.fasta.2 Corrected_ref.fasta.3 Corrected_ref.fasta.4 Corrected_ref.fasta.5 Corrected_ref.fasta.6 Corrected_ref.fasta.7 Corrected_ref.fasta.8 Corrected_ref.fasta.9",
+      "outputs": [
+        "rm_103395"
+      ],
+      "inputs": []
+    },
+    {
+      "command": "./fastq_generate.pl 1000 100 | /usr/bin/tee ref.fastq",
+      "outputs": [
+        "ref.fastq"
+      ],
+      "inputs": [
+        "fastq_generate.pl"
+      ]
+    },
+    {
+      "command": "./fastq_generate.pl 1000 100 ref.fastq | /usr/bin/tee query.fastq",
+      "outputs": [
+        "query.fastq"
+      ],
+      "inputs": [
+        "fastq_generate.pl",
+        "ref.fastq"
+      ]
+    },
+    {
+      "command": "./convert_fastq.py, /usr/bin/python3 ref.fastq | /usr/bin/tee ref.fasta",
+      "outputs": [
+        "ref.fasta"
+      ],
+      "inputs": [
+        "convert_fastq.py",
+        "ref.fastq"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.0 | /usr/bin/tee Out.0.sam",
+      "outputs": [
+        "Out.0.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.0",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.1 | /usr/bin/tee Out.1.sam",
+      "outputs": [],
+      "inputs": [
+        "bwa",
+        "query.fastq.1",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.2 | /usr/bin/tee Out.2.sam",
+      "outputs": [
+        "Out.2.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.2",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.3 | /usr/bin/tee Out.3.sam",
+      "outputs": [],
+      "inputs": [
+        "bwa",
+        "query.fastq.3",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.4 | /usr/bin/tee Out.4.sam",
+      "outputs": [],
+      "inputs": [
+        "bwa",
+        "query.fastq.4",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.5 | /usr/bin/tee Out.5.sam",
+      "outputs": [],
+      "inputs": [
+        "bwa",
+        "query.fastq.5",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.6 | /usr/bin/tee Out.6.sam",
+      "outputs": [
+        "Out.6.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.6",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.7 | /usr/bin/tee Out.7.sam",
+      "outputs": [
+        "Out.7.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.7",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.8 | /usr/bin/tee Out.8.sam",
+      "outputs": [
+        "Out.8.sam"
+      ],
+      "inputs": [
+        "bwa",
+        "query.fastq.8",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./bwa mem ref.fasta query.fastq.9 | /usr/bin/tee Out.9.sam",
+      "outputs": [],
+      "inputs": [
+        "bwa",
+        "query.fastq.9",
+        "ref.fasta.amb",
+        "ref.fasta.ann",
+        "ref.fasta.bwt",
+        "ref.fasta.pac",
+        "ref.fasta.sa"
+      ]
+    },
+    {
+      "command": "./sam_cat.sh Out.0.sam Out.1.sam Out.2.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.7.sam Out.8.sam Out.9.sam | ./sam_cat.sh Out.0.sam Out.1.sam Out.2.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.7.sam Out.8.sam Out.9.sam",
+      "outputs": [
+        "pipe\\:[504308]"
+      ],
+      "inputs": [
+        "../../../../../usr/pipe\\:[502632]",
+        "../../../../../usr/pipe\\:[503549]",
+        "../../../../../usr/pipe\\:[503550]",
+        "../../../../../usr/pipe\\:[503552]",
+        "../../../../../usr/pipe\\:[507111]",
+        "../../../../../usr/pipe\\:[507134]",
+        "Out.0.sam",
+        "Out.2.sam",
+        "Out.6.sam",
+        "Out.7.sam",
+        "Out.8.sam",
+        "pipe\\:[504308]",
+        "pipe\\:[506412]",
+        "sam_cat.sh",
+        "../../../../../usr/pipe\\:[501712]",
+        "../../../../../usr/pipe\\:[502632]",
+        "../../../../../usr/pipe\\:[503549]",
+        "../../../../../usr/pipe\\:[503550]",
+        "../../../../../usr/pipe\\:[503552]",
+        "../../../../../usr/pipe\\:[507111]",
+        "../../../../../usr/pipe\\:[507134]",
+        "Out.0.sam",
+        "Out.2.sam",
+        "Out.6.sam",
+        "Out.7.sam",
+        "Out.8.sam",
+        "pipe\\:[504308]",
+        "pipe\\:[506412]",
+        "sam_cat.sh"
+      ]
+    },
+    {
+      "command": "./sam_cat.sh Out.0.sam Out.1.sam Out.2.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.7.sam Out.8.sam Out.9.sam | ./sam_cat.sh Out.0.sam Out.1.sam Out.2.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.7.sam Out.8.sam Out.9.sam | /usr/bin/tee, /usr/bin/cat Out.1.sam",
+      "outputs": [
+        "Out.sam",
+        "pipe\\:[504308]"
+      ],
+      "inputs": [
+        "pipe\\:[504308]",
+        "../../../../../usr/pipe\\:[501712]",
+        "../../../../../usr/pipe\\:[502632]",
+        "../../../../../usr/pipe\\:[503549]",
+        "../../../../../usr/pipe\\:[503550]",
+        "../../../../../usr/pipe\\:[503552]",
+        "../../../../../usr/pipe\\:[507111]",
+        "../../../../../usr/pipe\\:[507134]",
+        "Out.0.sam",
+        "Out.2.sam",
+        "Out.6.sam",
+        "Out.7.sam",
+        "Out.8.sam",
+        "pipe\\:[504308]",
+        "pipe\\:[506412]",
+        "sam_cat.sh",
+        "../../../../../usr/pipe\\:[501712]",
+        "../../../../../usr/pipe\\:[502632]",
+        "../../../../../usr/pipe\\:[503549]",
+        "../../../../../usr/pipe\\:[503550]",
+        "../../../../../usr/pipe\\:[503552]",
+        "../../../../../usr/pipe\\:[507111]",
+        "../../../../../usr/pipe\\:[507134]",
+        "Out.0.sam",
+        "Out.2.sam",
+        "Out.6.sam",
+        "Out.7.sam",
+        "Out.8.sam",
+        "pipe\\:[504308]",
+        "pipe\\:[506412]",
+        "sam_cat.sh"
+      ]
+    },
+    {
+      "command": "./samtools mpileup -s -f ref.fasta Out.bam | /usr/bin/tee pileup.txt",
+      "outputs": [
+        "pileup.txt"
+      ],
+      "inputs": [
+        "Out.bam",
+        "ref.fasta",
+        "samtools"
+      ]
+    },
+    {
+      "command": "./Split_Pileup.sh pileup.txt 2 | ./Split_Pileup.sh pileup.txt 2",
+      "outputs": [
+        "Pileup_Set1.txt",
+        "Pileup_Set2.txt",
+        "pipe\\:[501717]",
+        "pipe\\:[504362]",
+        "pipe\\:[504363]",
+        "pipe\\:[507147]",
+        "pipe\\:[507149]",
+        "pipe\\:[507968]",
+        "pipe\\:[508007]",
+        "Pileup_Set1.txt",
+        "Pileup_Set2.txt",
+        "pipe\\:[501713]",
+        "pipe\\:[501717]",
+        "pipe\\:[504362]",
+        "pipe\\:[504363]",
+        "pipe\\:[507147]",
+        "pipe\\:[507149]",
+        "pipe\\:[507968]",
+        "pipe\\:[508007]"
+      ],
+      "inputs": [
+        "Create_SubsetPileup.sh",
+        "Split_Pileup.sh",
+        "pileup.txt",
+        "pipe\\:[501717]",
+        "pipe\\:[501734]",
+        "pipe\\:[502641]",
+        "pipe\\:[504362]",
+        "pipe\\:[504363]",
+        "pipe\\:[504371]",
+        "pipe\\:[507147]",
+        "pipe\\:[507149]",
+        "pipe\\:[507968]",
+        "pipe\\:[507992]",
+        "pipe\\:[507994]",
+        "pipe\\:[508007]",
+        "Create_SubsetPileup.sh",
+        "Split_Pileup.sh",
+        "pileup.txt",
+        "pipe\\:[501713]",
+        "pipe\\:[501717]",
+        "pipe\\:[501734]",
+        "pipe\\:[502641]",
+        "pipe\\:[504362]",
+        "pipe\\:[504363]",
+        "pipe\\:[504371]",
+        "pipe\\:[507147]",
+        "pipe\\:[507149]",
+        "pipe\\:[507968]",
+        "pipe\\:[507992]",
+        "pipe\\:[507994]",
+        "pipe\\:[508007]"
+      ]
+    },
+    {
+      "command": "/usr/bin/cat Corrected_ref.fasta.0 Corrected_ref.fasta.1 Corrected_ref.fasta.2 Corrected_ref.fasta.3 Corrected_ref.fasta.4 Corrected_ref.fasta.5 Corrected_ref.fasta.6 Corrected_ref.fasta.7 Corrected_ref.fasta.8 Corrected_ref.fasta.9 | /usr/bin/tee Corrected_ref.fasta",
+      "outputs": [],
+      "inputs": [
+        "Corrected_ref.fasta.0",
+        "Corrected_ref.fasta.1",
+        "Corrected_ref.fasta.2",
+        "Corrected_ref.fasta.3",
+        "Corrected_ref.fasta.4",
+        "Corrected_ref.fasta.5",
+        "Corrected_ref.fasta.6",
+        "Corrected_ref.fasta.7",
+        "Corrected_ref.fasta.8",
+        "Corrected_ref.fasta.9"
+      ]
+    }
+  ]
+}

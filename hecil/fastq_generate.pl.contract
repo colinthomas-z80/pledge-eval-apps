@@ -1,0 +1,9 @@
+
+#Process Tree:
+├─ PID 0 0 [./fastq_generate.pl]
+        XR </home/scuzee/Programming/makeflow-examples/hecil> (2 files) [exec: 1, read: 3]
+                #	Executable: ./fastq_generate.pl  ATFDCWD: /home/scuzee/Programming/makeflow-examples/hecil/samtools-src",
+                #	Readable files: fastq_generate.pl, fastq_generate.pl
+        E </proc/0> (0 files) [xxx]
+                # 	Writable files: *pipe:[91650]
+CWD:  /home/scuzee/Programming/makeflow-examples/hecil

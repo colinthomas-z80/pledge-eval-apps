@@ -1,0 +1,183 @@
+
+{
+  "define":
+    {
+      "BWA":"./bwa",
+      "ARGS":"mem",
+      "SPLIT":"./fastq_reduce",
+      "CONCAT":"./sam_cat.sh",
+      "TOOLS":"./samtools",
+      "REF":"ref.fasta",
+      "REF_INDEX":
+        [
+          "ref.fasta."+x for x in ["amb","ann","bwt","pac","sa"]
+        ],
+      "PILEUP":"./Split_Pileup.sh",
+      "CREATE_PILEUP":"Create_SubsetPileup.sh",
+      "INPUT_PRE":"query.fastq",
+      "SEQ_PER_SPLIT":10,
+      "TOTAL_SEQ":100,
+      "PYTHON":"python",
+      "CORRECTION":"Correction.py",
+      "CORRECT_ALLLR":"Create_Corrected_AllLRReads.py"
+    },
+  "rules":
+    [
+      
+      {
+        "command":template("{BWA} index {REF} 2> index.err"),
+        "inputs":
+          [
+            BWA,
+            REF
+          ],
+        "outputs":
+          [
+            x for x in REF_INDEX
+          ],
+        "local_job":true
+      },
+      
+      {
+        "command":template("{SPLIT} {INPUT_PRE} {SEQ_PER_SPLIT}"),
+        "inputs":
+          [
+            SPLIT,
+            INPUT_PRE
+          ],
+        "outputs":
+          [
+            template("{INPUT_PRE}.{x}") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT))
+          ],
+        "local_job":true
+      },
+      
+      {
+        "command":template("{BWA} {ARGS} {REF} {INPUT_PRE}.{i} > Out.{i}.sam 2> mem.{i}.err"),
+        "inputs":
+          [
+            BWA,
+            x for x in REF_INDEX,
+            template("{INPUT_PRE}.{i}")
+          ],
+        "outputs":
+          [
+            template("Out.{i}.sam"),
+          ]
+      } for i in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT)),
+      
+      {
+        "command":format("%s %s > Out.sam",CONCAT,join([template("Out.{x}.sam") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT))])),
+        "inputs":
+          [
+            CONCAT,
+            template("Out.{x}.sam") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT))
+          ],
+        "outputs":
+          [
+            "Out.sam"
+          ],
+        "local_job":true
+      },
+      
+      
+      {
+        "command":template("{TOOLS} view -o View.bam -bS Out.sam"),
+        "inputs":
+          [
+            TOOLS,
+            "Out.sam"
+          ],
+        "outputs":
+          [
+            "View.bam",
+          ]
+      },
+
+      {
+        "command":template("{TOOLS} sort -o Out.bam View.bam 2>sort.err"),
+        "inputs":
+          [
+            TOOLS,
+            "View.bam"
+          ],
+        "outputs":
+          [
+            "Out.bam",
+          ]
+      },
+      
+      {
+        "command":template("{TOOLS} mpileup -s -f {REF} Out.bam > pileup.txt 2> pileup.err"),
+        "inputs":
+          [
+            TOOLS,
+            REF,
+            "Out.bam"
+          ],
+        "outputs":
+          [
+            "pileup.txt",
+            "ref.fasta.fai",
+          ]
+      },
+      
+      {
+        "command":template("{PILEUP} pileup.txt 2 2> Split_Pileup.err"),
+        "inputs":
+          [
+            PILEUP,
+            CREATE_PILEUP,
+            "pileup.txt"
+          ],
+        "outputs":
+          [
+            template("Pileup_Set{x}.txt") for x in range(1,3),
+            "List_RefHeader.txt"
+          ],
+        "local_job":true
+      },
+      
+      {
+        "command":template("{PYTHON} {CORRECTION} Pileup_Set{x}.txt {REF} lc.{x}.out Out.sam {CEIL} > corr.{x}.out 2> corr.{x}.err ; echo \"\" >> lc.{x}.out ; echo \"\" >> corr.{x}.out",{"CEIL": ceil(TOTAL_SEQ/SEQ_PER_SPLIT)}),
+        "inputs":
+          [
+            CORRECTION,
+            format("Pileup_Set%d.txt",x+1),
+            REF,
+            "Out.sam"
+          ],
+        "outputs":
+          [
+            template("corr.{x}.out"),
+            template("lc.{x}.out"),
+          ],
+        "local_job":true
+      } for x in range(2),
+      
+      {
+        "command":format("cat %s > corr.out",join([template("corr.{x}.out") for x in range(2)])),
+        "inputs":
+          [
+            template("corr.{x}.out") for x in range(2)
+          ],
+        "outputs":
+          [
+            "corr.out"
+          ],
+        "local_job":true
+      },
+      {
+        "command":format("cat %s > Corrected_ref.fasta",join([template("Corrected_ref.fasta.{x}") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT))])),
+        "inputs":
+          [
+            template("Corrected_ref.fasta.{x}") for x in range(ceil(TOTAL_SEQ/SEQ_PER_SPLIT))
+          ],
+        "outputs":
+          [
+            "Corrected_ref.fasta"
+          ],
+        "local_job":true
+      }
+    ]
+}

@@ -1,0 +1,110 @@
+all: pipe\:[519898] ref.fastq pipe\:[523117] query.fastq pipe\:[523126] ref.fasta query.fastq.0 query.fastq.1 query.fastq.10 query.fastq.11 query.fastq.12 query.fastq.13 query.fastq.14 query.fastq.15 query.fastq.16 query.fastq.17 query.fastq.18 query.fastq.19 query.fastq.2 query.fastq.20 query.fastq.21 query.fastq.22 query.fastq.23 query.fastq.24 query.fastq.25 query.fastq.26 query.fastq.27 query.fastq.28 query.fastq.29 query.fastq.3 query.fastq.30 query.fastq.31 query.fastq.32 query.fastq.33 query.fastq.34 query.fastq.35 query.fastq.36 query.fastq.37 query.fastq.38 query.fastq.39 query.fastq.4 query.fastq.40 query.fastq.41 query.fastq.42 query.fastq.43 query.fastq.44 query.fastq.45 query.fastq.46 query.fastq.47 query.fastq.48 query.fastq.49 query.fastq.5 query.fastq.50 query.fastq.51 query.fastq.52 query.fastq.53 query.fastq.54 query.fastq.55 query.fastq.56 query.fastq.57 query.fastq.58 query.fastq.59 query.fastq.6 query.fastq.60 query.fastq.61 query.fastq.62 query.fastq.63 query.fastq.64 query.fastq.65 query.fastq.66 query.fastq.67 query.fastq.68 query.fastq.69 query.fastq.7 query.fastq.70 query.fastq.71 query.fastq.72 query.fastq.73 query.fastq.74 query.fastq.75 query.fastq.76 query.fastq.77 query.fastq.78 query.fastq.79 query.fastq.8 query.fastq.80 query.fastq.81 query.fastq.82 query.fastq.83 query.fastq.84 query.fastq.85 query.fastq.86 query.fastq.87 query.fastq.88 query.fastq.89 query.fastq.9 query.fastq.90 query.fastq.91 query.fastq.92 query.fastq.93 query.fastq.94 query.fastq.95 query.fastq.96 query.fastq.97 query.fastq.98 query.fastq.99 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa pipe\:[524012] pipe\:[519035] pipe\:[525342] Out.0.sam pipe\:[519912] Out.1.sam pipe\:[519035] pipe\:[526339] Out.2.sam pipe\:[519035] pipe\:[524483] Out.3.sam pipe\:[526340] Out.4.sam pipe\:[525372] Out.5.sam pipe\:[519035] pipe\:[523141] Out.6.sam pipe\:[519035] pipe\:[524484] Out.7.sam pipe\:[526344] Out.8.sam pipe\:[518080] Out.9.sam pipe\:[519059] Out.sam pipe\:[519937] pipe\:[525396] View.bam Out.bam ref.fasta.fai pipe\:[519070] pileup.txt List_RefHeader.txt Pileup_Set1.txt Pileup_Set2.txt pipe\:[519072] pipe\:[519081] pipe\:[519082] pipe\:[523154] pipe\:[524057] pipe\:[524058] pipe\:[524059] pipe\:[524061] pipe\:[524531] pipe\:[524535]
+
+pipe\:[519898] &: fastq_generate.pl
+	 ./fastq_generate.pl 1000 100
+
+ref.fastq &: pipe\:[519898]
+	 /usr/bin/tee ref.fastq
+
+pipe\:[523117] &: fastq_generate.pl ref.fastq
+	 ./fastq_generate.pl 1000 100 ref.fastq
+
+query.fastq &: pipe\:[523117]
+	 /usr/bin/tee query.fastq
+
+pipe\:[523126] &: convert_fastq.py ref.fastq
+	 ./convert_fastq.py, /usr/bin/python3 ref.fastq
+
+ref.fasta &: pipe\:[523126]
+	 /usr/bin/tee ref.fasta
+
+query.fastq.0 query.fastq.1 query.fastq.10 query.fastq.11 query.fastq.12 query.fastq.13 query.fastq.14 query.fastq.15 query.fastq.16 query.fastq.17 query.fastq.18 query.fastq.19 query.fastq.2 query.fastq.20 query.fastq.21 query.fastq.22 query.fastq.23 query.fastq.24 query.fastq.25 query.fastq.26 query.fastq.27 query.fastq.28 query.fastq.29 query.fastq.3 query.fastq.30 query.fastq.31 query.fastq.32 query.fastq.33 query.fastq.34 query.fastq.35 query.fastq.36 query.fastq.37 query.fastq.38 query.fastq.39 query.fastq.4 query.fastq.40 query.fastq.41 query.fastq.42 query.fastq.43 query.fastq.44 query.fastq.45 query.fastq.46 query.fastq.47 query.fastq.48 query.fastq.49 query.fastq.5 query.fastq.50 query.fastq.51 query.fastq.52 query.fastq.53 query.fastq.54 query.fastq.55 query.fastq.56 query.fastq.57 query.fastq.58 query.fastq.59 query.fastq.6 query.fastq.60 query.fastq.61 query.fastq.62 query.fastq.63 query.fastq.64 query.fastq.65 query.fastq.66 query.fastq.67 query.fastq.68 query.fastq.69 query.fastq.7 query.fastq.70 query.fastq.71 query.fastq.72 query.fastq.73 query.fastq.74 query.fastq.75 query.fastq.76 query.fastq.77 query.fastq.78 query.fastq.79 query.fastq.8 query.fastq.80 query.fastq.81 query.fastq.82 query.fastq.83 query.fastq.84 query.fastq.85 query.fastq.86 query.fastq.87 query.fastq.88 query.fastq.89 query.fastq.9 query.fastq.90 query.fastq.91 query.fastq.92 query.fastq.93 query.fastq.94 query.fastq.95 query.fastq.96 query.fastq.97 query.fastq.98 query.fastq.99 &: fastq_reduce query.fastq
+	 /usr/bin/perl fastq_reduce query.fastq 10
+
+ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa &: bwa ref.fasta
+	 ./bwa index ref.fasta
+
+pipe\:[524012] &:
+	 /usr/bin/seq 0 9
+
+pipe\:[519035] pipe\:[525342] &: bwa query.fastq.0 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.0
+
+Out.0.sam &: pipe\:[525342]
+	 /usr/bin/tee Out.0.sam
+
+pipe\:[519912] &: bwa query.fastq.1 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.1
+
+Out.1.sam &: pipe\:[519912]
+	 /usr/bin/tee Out.1.sam
+
+pipe\:[519035] pipe\:[526339] &: bwa query.fastq.2 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.2
+
+Out.2.sam &: pipe\:[526339]
+	 /usr/bin/tee Out.2.sam
+
+pipe\:[519035] pipe\:[524483] &: bwa query.fastq.3 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.3
+
+Out.3.sam &: pipe\:[524483]
+	 /usr/bin/tee Out.3.sam
+
+pipe\:[526340] &: bwa query.fastq.4 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.4
+
+Out.4.sam &: pipe\:[526340]
+	 /usr/bin/tee Out.4.sam
+
+pipe\:[525372] &: bwa query.fastq.5 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.5
+
+Out.5.sam &: pipe\:[525372]
+	 /usr/bin/tee Out.5.sam
+
+pipe\:[519035] pipe\:[523141] &: bwa query.fastq.6 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.6
+
+Out.6.sam pipe\:[519035] &: pipe\:[523141]
+	 /usr/bin/tee Out.6.sam
+
+pipe\:[524484] &: bwa query.fastq.7 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.7
+
+Out.7.sam &: pipe\:[524484]
+	 /usr/bin/tee Out.7.sam
+
+pipe\:[526344] &: bwa query.fastq.8 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.8
+
+Out.8.sam &: pipe\:[526344]
+	 /usr/bin/tee Out.8.sam
+
+pipe\:[518080] &: bwa query.fastq.9 ref.fasta.amb ref.fasta.ann ref.fasta.bwt ref.fasta.pac ref.fasta.sa
+	 ./bwa mem ref.fasta query.fastq.9
+
+Out.9.sam &: pipe\:[518080]
+	 /usr/bin/tee Out.9.sam
+
+pipe\:[519059] &: ../../../../../usr/pipe\:[518104] ../../../../../usr/pipe\:[519936] ../../../../../usr/pipe\:[523146] ../../../../../usr/pipe\:[524515] ../../../../../usr/pipe\:[525396] Out.0.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.8.sam pipe\:[525404] sam_cat.sh
+	 ./sam_cat.sh Out.0.sam Out.1.sam Out.2.sam Out.3.sam Out.4.sam Out.5.sam Out.6.sam Out.7.sam Out.8.sam Out.9.sam
+
+Out.sam pipe\:[519937] pipe\:[525396] &: Out.5.sam Out.8.sam pipe\:[519059]
+	 /usr/bin/tee Out.sam
+
+View.bam &: Out.sam samtools
+	 ./samtools view -o View.bam -bS Out.sam
+
+Out.bam &: View.bam samtools
+	 ./samtools sort -o Out.bam View.bam
+
+ref.fasta.fai pipe\:[519070] &: Out.bam ref.fasta samtools
+	 ./samtools mpileup -s -f ref.fasta Out.bam
+
+pileup.txt &: pipe\:[519070]
+	 /usr/bin/tee pileup.txt
+
+List_RefHeader.txt Pileup_Set1.txt Pileup_Set2.txt pipe\:[519072] pipe\:[519081] pipe\:[519082] pipe\:[523154] pipe\:[524057] pipe\:[524058] pipe\:[524059] pipe\:[524061] pipe\:[524531] pipe\:[524535] &: Create_SubsetPileup.sh Split_Pileup.sh pileup.txt pipe\:[518125] pipe\:[519072] pipe\:[523154] pipe\:[523156] pipe\:[523157] pipe\:[524057] pipe\:[524058] pipe\:[524059] pipe\:[524060] pipe\:[524061] pipe\:[524531] pipe\:[524532] pipe\:[524534]
+	 ./Split_Pileup.sh pileup.txt 2
+

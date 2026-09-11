@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./blastall -p blastn -d nt -i small.fasta

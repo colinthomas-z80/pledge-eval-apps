@@ -1,0 +1,46 @@
+digraph {
+
+node [shape=ellipse,color = green,style = filled,fixedsize = false];
+N4 [label=""];
+N3 [label=""];
+N2 [label=""];
+N1 [label=""];
+N0 [label=""];
+
+node [shape=box,color=blue,style=filled,fixedsize=false];
+F7 [label=""];
+F5 [label=""];
+F6 [label=""];
+F9 [label="", color=red];
+F12 [label=""];
+F10 [label=""];
+F1 [label="", color=red];
+F0 [label="", color=red];
+F11 [label=""];
+F4 [label=""];
+F8 [label=""];
+F2 [label="", color=red];
+F3 [label=""];
+
+F0 -> N4;
+F1 -> N4;
+F2 -> N4;
+F3 -> N4;
+F4 -> N4;
+F0 -> N3;
+F1 -> N3;
+F2 -> N3;
+F5 -> N3;
+F4 -> N3;
+F6 -> N3;
+F7 -> N2;
+F8 -> N2;
+N2 -> F0;
+F9 -> N1;
+F10 -> N1;
+N1 -> F2;
+F1 -> N0;
+F11 -> N0;
+F12 -> N0;
+N0 -> F9;
+}

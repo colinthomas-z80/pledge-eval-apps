@@ -1,0 +1,93 @@
+
+#Process Tree:
+├─ PID 0 0 [./blast.sh]
+        XR </home/scuzee/Programming/makeflow-examples/blast> (3 files) [exec: 1, read: 7]
+                #	Executable: ./blast.sh  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast/nt",
+                #	Readable files: blast.sh, blast.sh
+    ├─ PID 143335 1 [./split_fasta, /home/scuzee/miniconda3/bin/python]
+                    MXRPE </home/scuzee/miniconda3> (137 files) [enoent: 95, exec: 1, mmap: 5, read: 180, stat: 193]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (13 files) [exec: 1, read: 11, write: 10]
+                    #	Executable: ./split_fasta 2 test.fasta  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.0, test.fasta.0*, test.fasta.1, test.fasta.1*, test.fasta.2, test.fasta.2*, test.fasta.3, test.fasta.3*, test.fasta.4, test.fasta.4*, test.fasta.5, test.fasta.5*, test.fasta.6, test.fasta.6*, test.fasta.7, test.fasta.7*, test.fasta.8, test.fasta.8*, test.fasta.9, test.fasta.9*
+                    #	Readable files: split_fasta, test.fasta, split_fasta
+    ├─ PID 143336 1 [/usr/bin/seq]
+                    RMPEX </usr> (6 files) [enoent: 3, exec: 1, mmap: 5, read: 3, stat: 6]
+                                        #	Executable: seq 0 9  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    E </proc/143336> (0 files) [xxx]
+                    # 	Writable files: *pipe:[743097]
+    ├─ PID 143337 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (7 files) [exec: 1, read: 4, write: 7]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.0 -out test.fasta.0.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.0.out, test.fasta.0.out*
+                    #	Readable files: test.fasta.0, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (5 files) [read: 4]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq
+    ├─ PID 143341 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (7 files) [exec: 1, read: 4, write: 7]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.1 -out test.fasta.1.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.1.out, test.fasta.1.out*
+                    #	Readable files: test.fasta.1, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (5 files) [read: 4]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq
+    ├─ PID 143343 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (7 files) [exec: 1, read: 4, write: 7]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.2 -out test.fasta.2.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.2.out, test.fasta.2.out*
+                    #	Readable files: test.fasta.2, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (5 files) [read: 4]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq
+    ├─ PID 143345 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (7 files) [exec: 1, read: 4, write: 7]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.3 -out test.fasta.3.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.3.out, test.fasta.3.out*
+                    #	Readable files: test.fasta.3, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (5 files) [read: 4]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq
+    ├─ PID 143347 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (7 files) [exec: 1, read: 4, write: 7]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.4 -out test.fasta.4.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.4.out, test.fasta.4.out*
+                    #	Readable files: test.fasta.4, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (5 files) [read: 4]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq
+    ├─ PID 143350 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (7 files) [exec: 1, read: 4, write: 7]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.5 -out test.fasta.5.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.5.out, test.fasta.5.out*
+                    #	Readable files: test.fasta.5, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (5 files) [read: 4]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq
+    ├─ PID 143354 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (7 files) [exec: 1, read: 4, write: 7]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.6 -out test.fasta.6.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.6.out, test.fasta.6.out*
+                    #	Readable files: test.fasta.6, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (5 files) [read: 4]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq
+    ├─ PID 143357 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (8 files) [exec: 1, read: 4, write: 8]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.7 -out test.fasta.7.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.7.out, test.fasta.7.out*
+                    #	Readable files: test.fasta.7, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (6 files) [read: 6]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq, swissprot.phr
+    ├─ PID 143363 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (7 files) [exec: 1, read: 4, write: 7]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.8 -out test.fasta.8.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.8.out, test.fasta.8.out*
+                    #	Readable files: test.fasta.8, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (5 files) [read: 4]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq
+    ├─ PID 143366 1 [./blastp]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (7 files) [exec: 1, read: 4, write: 7]
+                    #	Executable: ./blastp -db swissprot/swissprot -query test.fasta.9 -out test.fasta.9.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: test.fasta.9.out, test.fasta.9.out*
+                    #	Readable files: test.fasta.9, blastp
+          R </home/scuzee/Programming/makeflow-examples/blast/swissprot> (5 files) [read: 4]
+                    #	Readable files: swissprot.pin, swissprot.pdb, swissprot.psq
+    ├─ PID 143370 1 [./cat_blast]
+          XRW </home/scuzee/Programming/makeflow-examples/blast> (12 files) [exec: 1, read: 49, write: 1]
+                    #	Executable: ./cat_blast output.fasta test.fasta.1.out test.fasta.2.out test.fasta.3.out test.fasta.4.out test.fasta.5.out test.fasta.6.out test.fasta.7.out test.fasta.8.out test.fasta.9.out  ATFDCWD: /home/scuzee/Programming/makeflow-examples/blast",
+                    #	Writable files: output.fasta, output.fasta*
+                    #	Readable files: cat_blast, test.fasta.1.out, test.fasta.2.out, test.fasta.3.out, test.fasta.4.out, test.fasta.5.out, test.fasta.6.out, test.fasta.7.out, test.fasta.8.out, test.fasta.9.out, cat_blast
+CWD:  /home/scuzee/Programming/makeflow-examples/blast
