@@ -1,0 +1,13 @@
+name: default
+channels:
+- conda-forge
+- bioconda
+- nodefaults
+dependencies:
+- samtools >=1.24,<2
+- sra-tools >=3.4.1,<4
+- seqkit >=2.13.0,<3
+- levenshtein >=0.27.5,<0.28
+- ndcctools >=7.17.1,<8
+- star >=2.7.11b,<3
+- gatk >=3.6,<4
