@@ -1,4 +1,4 @@
-name: default
+name: star-gatk
 channels:
 - conda-forge
 - bioconda
