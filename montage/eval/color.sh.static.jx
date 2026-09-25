@@ -1,0 +1,92 @@
+{
+  "rules": [
+    {
+      "command": "mImgtbl raw_j rimages.tbl",
+      "outputs": [
+        "rimages.tbl"
+      ],
+      "inputs": [
+        "raw_j"
+      ]
+    },
+    {
+      "command": "mkdir projected_j; mProjExec -q -p raw_j rimages.tbl region.hdr projected_j stats.tbl",
+      "outputs": [
+        "projected_j"
+      ],
+      "inputs": [
+        "raw_j",
+        "region.hdr",
+        "rimages.tbl"
+      ]
+    },
+    {
+      "command": "mImgtbl projected_j pimages.tbl",
+      "outputs": [
+        "pimages.tbl"
+      ],
+      "inputs": [
+        "projected_j"
+      ]
+    },
+    {
+      "command": "mOverlaps pimages.tbl diffs_j.tbl",
+      "outputs": [
+        "diffs_j.tbl"
+      ],
+      "inputs": [
+        "pimages.tbl"
+      ]
+    },
+    {
+      "command": "mDiffFitExec -p projected_j diffs_j.tbl region.hdr diffs_j fits_j.tbl",
+      "outputs": [
+        "fits_j.tbl"
+      ],
+      "inputs": [
+        "diffs_j.tbl",
+        "projected_j",
+        "region.hdr"
+      ]
+    },
+    {
+      "command": "mBgModel pimages.tbl fits_j.tbl corrections_j.tbl",
+      "outputs": [
+        "corrections_j.tbl"
+      ],
+      "inputs": [
+        "pimages.tbl",
+	"fits_j.tbl"
+      ]
+    } ,
+    {
+      "command": "mkdir corrected_j; mBgExec -p projected_j pimages.tbl corrections_j.tbl corrected_j",
+      "outputs": [
+        "corrected_j"
+      ],
+      "inputs": [
+        "corrections_j.tbl",
+        "pimages.tbl",
+        "projected_j"
+      ]
+    },
+    {
+      "command": "mImgtbl corrected_j cimages.tbl",
+      "outputs": [
+        "cimages.tbl"
+      ],
+      "inputs": [
+        "corrected_j"
+      ]
+    },
+    {
+      "command": "mAdd -p corrected_j cimages.tbl region.hdr jband.fits",
+      "outputs": [],
+      "inputs": [
+        "cimages.tbl",
+        "corrected_j",
+        "region.hdr"
+      ]
+    }
+  ]
+}
