@@ -1,0 +1,21 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-433abee183edea52c82275c3277b333b "bin/sifting.py" 0
+FILE file-meta-e175d2d3b77a78fdc6fc9799ba6855cf "ALL.chr1.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf" 0
+FILE file-rnd-mqtaoyzqwmsyvrv "sifted.SIFT.chr1.txt" 0
+FILE file-meta-7cb6d7a71d497ea436db0b776e78ccb2 "columns.txt" 0
+FILE file-meta-2f6288f09d6b5f2180600985bd646f79 "bin/individuals.py" 0
+FILE file-meta-15c9e4fcdd2c4c4d29ea1c6a6a864ff7 "ALL.chr1.250000.vcf" 0
+FILE file-rnd-exhlspxnseuvpbs "chr1n-1-201.tar.gz" 0
+TASK T1 "bin/sifting.py" INPUTS file-meta-433abee183edea52c82275c3277b333b file-meta-e175d2d3b77a78fdc6fc9799ba6855cf OUTPUTS file-rnd-mqtaoyzqwmsyvrv 
+TASK T2 "bin/individuals.py" INPUTS file-meta-7cb6d7a71d497ea436db0b776e78ccb2 file-meta-2f6288f09d6b5f2180600985bd646f79 file-meta-15c9e4fcdd2c4c4d29ea1c6a6a864ff7 OUTPUTS file-rnd-exhlspxnseuvpbs 
+FILE file-meta-c66c882f8dc7249dbe713bc155ef9725 "bin/individuals_merge.py" 0
+FILE file-rnd-yppdmpwpsacswjf "chr1n.tar.gz" 0
+TASK T3 "bin/individuals_merge.py" INPUTS file-rnd-exhlspxnseuvpbs file-meta-c66c882f8dc7249dbe713bc155ef9725 OUTPUTS file-rnd-yppdmpwpsacswjf 
+FILE file-meta-e7076b986cf2bdb85dce236ae8ad8220 "bin/frequency.py" 0
+FILE file-meta-87c80c384df399b423570d17aca206a5 "EAS" 0
+FILE file-meta-cf9433d1ef78a30fa6bfa8d28658c94b "bin/mutation_overlap.py" 0
+TASK T5 "bin/mutation_overlap.py" INPUTS file-rnd-mqtaoyzqwmsyvrv file-meta-7cb6d7a71d497ea436db0b776e78ccb2 file-rnd-yppdmpwpsacswjf file-meta-cf9433d1ef78a30fa6bfa8d28658c94b file-meta-87c80c384df399b423570d17aca206a5 OUTPUTS 
+TASK T4 "bin/frequency.py" INPUTS file-rnd-mqtaoyzqwmsyvrv file-meta-7cb6d7a71d497ea436db0b776e78ccb2 file-rnd-yppdmpwpsacswjf file-meta-e7076b986cf2bdb85dce236ae8ad8220 file-meta-87c80c384df399b423570d17aca206a5 OUTPUTS 
+# end

@@ -1,0 +1,480 @@
+2026/09/25 08:54:43.74 vine_manager[1773321]vine: TaskVine version 8.0.0 DEVELOPMENT (released 2026-06-09 12:08:34 -0400)
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: Built by cthoma26@condorfe.crc.nd.edu on 2026-06-09 12:08:34 -0400
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: System: Linux condorfe.crc.nd.edu 5.14.0-687.10.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Mon May 18 15:13:25 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: Configuration: --with-base-dir /users/cthoma26/miniconda3/envs/cctools-dev --prefix /users/cthoma26/miniconda3/envs/cctools-dev --with-python3-path /users/cthoma26/miniconda3/envs/cctools-dev/bin/python3
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: manager timezone at startup: local_time=2026-09-25 12:54:43 tz_abbr=EDT tz_offset=+0000
+2026/09/25 12:54:43.74 vine_manager[1773321]tcp: listening on port 9129
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: manager start
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: Using default disconnect slow workers factor for 'default'.
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: workers connections -- known: 0, connecting: 0
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: log enabled and is being written to performance
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: transactions log enabled and is being written to transactions
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: graph log enabled and is being written to taskgraph
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: workers connections -- known: 0, connecting: 0
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: Manager is listening on port 9129.
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared feature `absolute_path'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set feature `remote_rename' to `%s=%s'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set feature `batch_log_name' to `%s.vine.log'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set feature `batch_log_transactions' to `%s.tr'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: created queue 0x55775c30f6a0 (vine)
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set logfile to `1kgenomes.sh.jx.vine.log'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set option `batch_log_transactions_name' to `1kgenomes.sh.jx.vine.log.tr'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `batch-options'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `password'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set option `manager-mode' to `standalone'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `name'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `debug'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `priority'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `keepalive-interval'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `keepalive-timeout'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set option `caching' to `workflow'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `wait-queue-size'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `amazon-config'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `working-dir'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `manager-preferred-connection'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set option `safe-submit-mode' to `no'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set option `ignore-mem-spec' to `no'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared option `mem-type'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set option `keep-wrapper-stdout' to `no'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set option `tlq-port' to `0'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set option `fast-abort' to `-1.000000'
+2026/09/25 12:54:43.74 vine_manager[1773321]vine: Using default disconnect slow workers factor for 'default'.
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set feature `local_job_queue' to `yes'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set feature `absolute_path' to `yes'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set feature `output_directories' to `yes'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set feature `batch_log_name' to `%s.batchlog'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: set feature `gc_size' to `yes'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: cleared feature `local_job_queue'
+2026/09/25 12:54:43.74 vine_manager[1773321]batch: created queue 0x55775c32d340 (local)
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: MAKEFLOW_INPUTS is not specified
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: Added bin/sifting.py to input list
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: Added bin/mutation_overlap.py to input list
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: Added ALL.chr1.250000.vcf to input list
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: Added bin/individuals_merge.py to input list
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: Added columns.txt to input list
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: Added bin/individuals.py to input list
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: Added EAS to input list
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: Added ALL.chr1.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf to input list
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: Added bin/frequency.py to input list
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: MAKEFLOW_OUTPUTS is not specified
+2026/09/25 12:54:43.74 vine_manager[1773321]makeflow: checking for consistency of batch system support...
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: file chr1n-1-201.tar.gz delete -> delete
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: node 0 failed -> waiting
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: file sifted.SIFT.chr1.txt receive -> waiting
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: file sifted.SIFT.chr1.txt waiting -> delete
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: node 2 complete -> waiting
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: file 1kgenomes.sh.jx.vine.log waiting -> running
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: file 1kgenomes.sh.jx.vine.log.tr waiting -> running
+2026/09/25 12:54:43.75 vine_manager[1773321]batch: set option `task-id' to `2'
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: file sifted.SIFT.chr1.txt delete -> running
+2026/09/25 12:54:43.75 vine_manager[1773321]vine: Task 1 state change: INITIAL (0) to READY (1)
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: node 2 was successfully submitted.
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: node 2 waiting -> running
+2026/09/25 12:54:43.75 vine_manager[1773321]batch: set option `task-id' to `0'
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: file chr1n-1-201.tar.gz delete -> running
+2026/09/25 12:54:43.75 vine_manager[1773321]vine: Task 2 state change: INITIAL (0) to READY (1)
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: node 0 was successfully submitted.
+2026/09/25 12:54:43.75 vine_manager[1773321]makeflow: node 0 waiting -> running
+2026/09/25 12:54:43.75 vine_manager[1773321]debug: warning: using plain-text when communicating with workers.
+2026/09/25 12:54:43.75 vine_manager[1773321]debug: warning: use encryption with a key and cert when creating the manager.
+2026/09/25 12:54:43.91 vine_manager[1773321]tcp: accepted connection from 10.32.82.69 port 40996
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: worker 10.32.82.69:40996 connected
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: rx from unknown (10.32.82.69:40996): taskvine 13 d12chas100.crc.nd.edu Linux x86_64 8.0.0
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: 1 workers are connected in total now
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) running CCTools version 8.0.0 on Linux (operating system) with architecture x86_64 is ready
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): info worker-id worker-23adfdf77157eab5629dc48bce129ef4
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): transfer-port 1024
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): info worker-end-time 0
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): alive
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): resources
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: cores 12
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: memory 16000
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: disk 25000
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: gpus 0
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: workers 1
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: tag 0
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: end
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) needs file bin/sifting.py as bin/sifting.py
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): put file-meta-433abee183edea52c82275c3277b333b 1 2910
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): file file-meta-433abee183edea52c82275c3277b333b 2910 0755 1790337813
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) received 0.00 MB in 0.00s (3.96s MB/s) average 3.96s MB/s
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) needs file ALL.chr1.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf as ALL.chr1.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): put file-meta-e175d2d3b77a78fdc6fc9799ba6855cf 1 1580478841
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) using conservative default average transfer rate of 1.00 MB/s
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) will try up to 15072 seconds to transfer this 1580.48 MB file.
+2026/09/25 12:54:43.91 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): file file-meta-e175d2d3b77a78fdc6fc9799ba6855cf 1580478841 0644 1790337752
+2026/09/25 12:54:57.31 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) received 1580.48 MB in 13.40s (117.95s MB/s) average 117.95s MB/s
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): task 1
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): cmd 93
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: bin/sifting.py ALL.chr1.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf 1
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): category default
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): cores 12.000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): gpus 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): memory 16000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): disk 18750
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): env 7
+CORES=1
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): infile file-meta-433abee183edea52c82275c3277b333b bin/sifting.py 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): infile file-meta-e175d2d3b77a78fdc6fc9799ba6855cf ALL.chr1.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): outfile file-rnd-mqtaoyzqwmsyvrv sifted.SIFT.chr1.txt 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): end
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) busy on 'bin/sifting.py ALL.chr1.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf 1'
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: Task 1 state change: READY (1) to RUNNING (2)
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: workers connections -- known: 1, connecting: 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: workers connections -- known: 1, connecting: 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): cache-update file-meta-433abee183edea52c82275c3277b333b 0 1 2910 1790337813 636 1790340883918865 X
+2026/09/25 12:54:57.32 vine_manager[1773321]tcp: accepted connection from 10.32.82.13 port 32778
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: worker 10.32.82.13:32778 connected
+2026/09/25 12:54:57.32 vine_manager[1773321]tcp: accepted connection from 10.32.81.189 port 44672
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: worker 10.32.81.189:44672 connected
+2026/09/25 12:54:57.32 vine_manager[1773321]tcp: accepted connection from 10.32.82.55 port 60554
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: worker 10.32.82.55:60554 connected
+2026/09/25 12:54:57.32 vine_manager[1773321]tcp: accepted connection from 10.32.82.51 port 34360
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: worker 10.32.82.51:34360 connected
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from unknown (10.32.82.51:34360): taskvine 13 d12chas091.crc.nd.edu Linux x86_64 8.0.0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: 2 workers are connected in total now
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: d12chas091.crc.nd.edu (10.32.82.51:34360) running CCTools version 8.0.0 on Linux (operating system) with architecture x86_64 is ready
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas091.crc.nd.edu (10.32.82.51:34360): info worker-id worker-8bf0681449c3f52ede7f18075fa920f4
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas091.crc.nd.edu (10.32.82.51:34360): transfer-port 1024
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas091.crc.nd.edu (10.32.82.51:34360): info worker-end-time 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas091.crc.nd.edu (10.32.82.51:34360): alive
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas091.crc.nd.edu (10.32.82.51:34360): resources
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: cores 12
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: memory 16000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: disk 25000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: gpus 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: workers 1
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tag 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: end
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from unknown (10.32.82.13:32778): taskvine 13 d12chas072.crc.nd.edu Linux x86_64 8.0.0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: 3 workers are connected in total now
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: d12chas072.crc.nd.edu (10.32.82.13:32778) running CCTools version 8.0.0 on Linux (operating system) with architecture x86_64 is ready
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas072.crc.nd.edu (10.32.82.13:32778): info worker-id worker-a92ddbb8a967d40cf638c0098799b771
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas072.crc.nd.edu (10.32.82.13:32778): transfer-port 1024
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas072.crc.nd.edu (10.32.82.13:32778): info worker-end-time 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas072.crc.nd.edu (10.32.82.13:32778): alive
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas072.crc.nd.edu (10.32.82.13:32778): resources
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: cores 12
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: memory 16000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: disk 25000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: gpus 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: workers 1
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tag 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: end
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from unknown (10.32.82.55:60554): taskvine 13 d12chas093.crc.nd.edu Linux x86_64 8.0.0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: 4 workers are connected in total now
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: d12chas093.crc.nd.edu (10.32.82.55:60554) running CCTools version 8.0.0 on Linux (operating system) with architecture x86_64 is ready
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas093.crc.nd.edu (10.32.82.55:60554): info worker-id worker-203fadbf7e207e82f72e1f0be31fa855
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas093.crc.nd.edu (10.32.82.55:60554): transfer-port 1024
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas093.crc.nd.edu (10.32.82.55:60554): info worker-end-time 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas093.crc.nd.edu (10.32.82.55:60554): alive
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas093.crc.nd.edu (10.32.82.55:60554): resources
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: cores 12
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: memory 16000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: disk 25000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: gpus 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: workers 1
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tag 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: end
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from unknown (10.32.81.189:44672): taskvine 13 d12chas032.crc.nd.edu Linux x86_64 8.0.0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: 5 workers are connected in total now
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) running CCTools version 8.0.0 on Linux (operating system) with architecture x86_64 is ready
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): info worker-id worker-d8624ccf13473777a6c5763f2a8fba73
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): transfer-port 1024
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): info worker-end-time 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): alive
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): resources
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: cores 12
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: memory 16000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: disk 25000
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: gpus 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: workers 1
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tag 0
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: end
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) needs file columns.txt as columns.txt
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): put file-meta-7cb6d7a71d497ea436db0b776e78ccb2 1 20078
+2026/09/25 12:54:57.32 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): file file-meta-7cb6d7a71d497ea436db0b776e78ccb2 20078 0644 1790337757
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) received 0.02 MB in 0.00s (26.52s MB/s) average 26.52s MB/s
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) needs file bin/individuals.py as bin/individuals.py
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): put file-meta-2f6288f09d6b5f2180600985bd646f79 1 4976
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): file file-meta-2f6288f09d6b5f2180600985bd646f79 4976 0755 1790337813
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) received 0.00 MB in 0.00s (6.57s MB/s) average 16.55s MB/s
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) needs file ALL.chr1.250000.vcf as ALL.chr1.250000.vcf
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): put file-meta-15c9e4fcdd2c4c4d29ea1c6a6a864ff7 1 2539456345
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) using overall manager average transfer rate of 112.40 MB/s
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) will try up to 215 seconds to transfer this 2539.46 MB file.
+2026/09/25 12:54:57.33 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): file file-meta-15c9e4fcdd2c4c4d29ea1c6a6a864ff7 2539456345 0644 1790337734
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) received 2539.46 MB in 21.55s (117.83s MB/s) average 117.83s MB/s
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): task 2
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): cmd 51
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: bin/individuals.py ALL.chr1.250000.vcf 1 1 201 6000
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): category default
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): cores 12.000
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): gpus 0
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): memory 16000
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): disk 18750
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): env 7
+CORES=1
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-meta-7cb6d7a71d497ea436db0b776e78ccb2 columns.txt 0
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-meta-2f6288f09d6b5f2180600985bd646f79 bin/individuals.py 0
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-meta-15c9e4fcdd2c4c4d29ea1c6a6a864ff7 ALL.chr1.250000.vcf 0
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): outfile file-rnd-exhlspxnseuvpbs chr1n-1-201.tar.gz 0
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): end
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) busy on 'bin/individuals.py ALL.chr1.250000.vcf 1 1 201 6000'
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: Task 2 state change: READY (1) to RUNNING (2)
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: workers connections -- known: 5, connecting: 0
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: workers connections -- known: 5, connecting: 0
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): cache-update file-meta-e175d2d3b77a78fdc6fc9799ba6855cf 0 1 1580478841 1790337752 13430942 1790340883919716 X
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): info tasks_running 1
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): cache-update file-rnd-mqtaoyzqwmsyvrv 0 0 1636846 1790340901 4943032 1790340897351812 X
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): complete 0 0 606 606 1790340897351812 1790340902294844 0 1
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: Receiving stdout of task 1 (size: 606 bytes) from 10.32.82.69:40996 (d12chas100.crc.nd.edu) ...
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: Retrieved 606 bytes from d12chas100.crc.nd.edu (10.32.82.69:40996)
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: Task 1 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): cache-update file-meta-7cb6d7a71d497ea436db0b776e78ccb2 0 1 20078 1790337757 484 1790340897329800 X
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): cache-update file-meta-2f6288f09d6b5f2180600985bd646f79 0 1 4976 1790337813 474 1790340897330724 X
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) sending back file-rnd-mqtaoyzqwmsyvrv to sifted.SIFT.chr1.txt
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): get file-rnd-mqtaoyzqwmsyvrv
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): file file-rnd-mqtaoyzqwmsyvrv 1636846 0644 1790340901
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) using worker's observed average transfer rate of 112.48 MB/s
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) will try up to 60 seconds to transfer this 1.64 MB file.
+2026/09/25 12:55:18.88 vine_manager[1773321]vine: Receiving file sifted.SIFT.chr1.txt (size: 1636846 bytes) from 10.32.82.69:40996 (d12chas100.crc.nd.edu) ...
+2026/09/25 12:55:18.90 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) sent 1.64 MB in 0.02s (72.15s MB/s) average 117.87s MB/s
+2026/09/25 12:55:18.90 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): kill 1
+2026/09/25 12:55:18.90 vine_manager[1773321]vine: Task 1 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/25 12:55:18.90 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) done in 34.99s total tasks 1 average 4.94s
+2026/09/25 12:55:18.90 vine_manager[1773321]vine: Task 1 state change: RETRIEVED (4) to DONE (5)
+2026/09/25 12:55:18.90 vine_manager[1773321]vine: workers connections -- known: 5, connecting: 0
+2026/09/25 12:55:18.90 vine_manager[1773321]makeflow: Job 1 has returned.
+2026/09/25 12:55:18.90 vine_manager[1773321]makeflow: File sifted.SIFT.chr1.txt created by rule 2.
+2026/09/25 12:55:18.90 vine_manager[1773321]makeflow: file sifted.SIFT.chr1.txt running -> receive
+2026/09/25 12:55:18.90 vine_manager[1773321]makeflow: node 2 running -> complete
+2026/09/25 12:55:18.91 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): cache-update file-meta-15c9e4fcdd2c4c4d29ea1c6a6a864ff7 0 1 2539456345 1790337734 21580805 1790340897331491 X
+2026/09/25 12:55:18.91 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): info tasks_running 1
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): cache-update file-rnd-exhlspxnseuvpbs 0 0 31270 1790340923 4732886 1790340918913275 X
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): complete 0 0 160620 0 1790340918913275 1790340923646161 0 2
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: Task 2 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): send_stdout 2
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): stdout 2 160620
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: Receiving stdout of task 2 (size: 160620 bytes) from 10.32.81.189:44672 (d12chas032.crc.nd.edu) ...
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: Retrieved 160620 bytes from d12chas032.crc.nd.edu (10.32.81.189:44672)
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) sending back file-rnd-exhlspxnseuvpbs to chr1n-1-201.tar.gz
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): get file-rnd-exhlspxnseuvpbs
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): file file-rnd-exhlspxnseuvpbs 31270 0644 1790340923
+2026/09/25 12:55:23.64 vine_manager[1773321]vine: Receiving file chr1n-1-201.tar.gz (size: 31270 bytes) from 10.32.81.189:44672 (d12chas032.crc.nd.edu) ...
+2026/09/25 12:55:23.65 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) sent 0.03 MB in 0.00s (8.52s MB/s) average 117.81s MB/s
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): kill 2
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: Task 2 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) done in 26.33s total tasks 1 average 4.73s
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: Task 2 state change: RETRIEVED (4) to DONE (5)
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: workers connections -- known: 5, connecting: 0
+2026/09/25 12:55:23.66 vine_manager[1773321]makeflow: Job 2 has returned.
+2026/09/25 12:55:23.66 vine_manager[1773321]makeflow: File chr1n-1-201.tar.gz created by rule 0.
+2026/09/25 12:55:23.66 vine_manager[1773321]makeflow: file chr1n-1-201.tar.gz running -> receive
+2026/09/25 12:55:23.66 vine_manager[1773321]makeflow: node 0 running -> complete
+2026/09/25 12:55:23.66 vine_manager[1773321]batch: set option `task-id' to `1'
+2026/09/25 12:55:23.66 vine_manager[1773321]makeflow: file chr1n.tar.gz waiting -> running
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: Task 3 state change: INITIAL (0) to READY (1)
+2026/09/25 12:55:23.66 vine_manager[1773321]makeflow: node 1 was successfully submitted.
+2026/09/25 12:55:23.66 vine_manager[1773321]makeflow: node 1 waiting -> running
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) needs file bin/individuals_merge.py as bin/individuals_merge.py
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): put file-meta-c66c882f8dc7249dbe713bc155ef9725 1 2076
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): file file-meta-c66c882f8dc7249dbe713bc155ef9725 2076 0755 1790337813
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) received 0.00 MB in 0.00s (3.33s MB/s) average 117.81s MB/s
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): task 3
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): cmd 45
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: bin/individuals_merge.py 1 chr1n-1-201.tar.gz
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): category default
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): cores 12.000
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): gpus 0
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): memory 16000
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): disk 16933
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): env 7
+CORES=1
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-rnd-exhlspxnseuvpbs chr1n-1-201.tar.gz 0
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-meta-c66c882f8dc7249dbe713bc155ef9725 bin/individuals_merge.py 0
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): outfile file-rnd-yppdmpwpsacswjf chr1n.tar.gz 0
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): end
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) busy on 'bin/individuals_merge.py 1 chr1n-1-201.tar.gz'
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: Task 3 state change: READY (1) to RUNNING (2)
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): cache-update file-meta-c66c882f8dc7249dbe713bc155ef9725 0 1 2076 1790337813 421 1790340923663905 X
+2026/09/25 12:55:23.66 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): info tasks_running 1
+2026/09/25 12:55:25.14 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): cache-update file-rnd-yppdmpwpsacswjf 0 0 31123 1790340925 1483882 1790340923664992 X
+2026/09/25 12:55:25.14 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): complete 0 0 273 273 1790340923664992 1790340925148874 0 3
+2026/09/25 12:55:25.14 vine_manager[1773321]vine: Receiving stdout of task 3 (size: 273 bytes) from 10.32.81.189:44672 (d12chas032.crc.nd.edu) ...
+2026/09/25 12:55:25.14 vine_manager[1773321]vine: Retrieved 273 bytes from d12chas032.crc.nd.edu (10.32.81.189:44672)
+2026/09/25 12:55:25.14 vine_manager[1773321]vine: Task 3 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/25 12:55:25.14 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) sending back file-rnd-yppdmpwpsacswjf to chr1n.tar.gz
+2026/09/25 12:55:25.14 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): get file-rnd-yppdmpwpsacswjf
+2026/09/25 12:55:25.14 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): file file-rnd-yppdmpwpsacswjf 31123 0644 1790340925
+2026/09/25 12:55:25.14 vine_manager[1773321]vine: Receiving file chr1n.tar.gz (size: 31123 bytes) from 10.32.81.189:44672 (d12chas032.crc.nd.edu) ...
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) sent 0.03 MB in 0.00s (11.31s MB/s) average 117.79s MB/s
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): kill 3
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: Task 3 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) done in 1.49s total tasks 2 average 3.11s
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: Task 3 state change: RETRIEVED (4) to DONE (5)
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: workers connections -- known: 5, connecting: 0
+2026/09/25 12:55:25.15 vine_manager[1773321]makeflow: Job 3 has returned.
+2026/09/25 12:55:25.15 vine_manager[1773321]makeflow: File chr1n.tar.gz created by rule 1.
+2026/09/25 12:55:25.15 vine_manager[1773321]makeflow: file chr1n.tar.gz running -> receive
+2026/09/25 12:55:25.15 vine_manager[1773321]makeflow: file chr1n-1-201.tar.gz receive -> complete
+2026/09/25 12:55:25.15 vine_manager[1773321]makeflow: node 1 running -> complete
+2026/09/25 12:55:25.15 vine_manager[1773321]batch: set option `task-id' to `4'
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: Task 4 state change: INITIAL (0) to READY (1)
+2026/09/25 12:55:25.15 vine_manager[1773321]makeflow: node 4 was successfully submitted.
+2026/09/25 12:55:25.15 vine_manager[1773321]makeflow: node 4 waiting -> running
+2026/09/25 12:55:25.15 vine_manager[1773321]batch: set option `task-id' to `3'
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: Task 5 state change: INITIAL (0) to READY (1)
+2026/09/25 12:55:25.15 vine_manager[1773321]makeflow: node 3 was successfully submitted.
+2026/09/25 12:55:25.15 vine_manager[1773321]makeflow: node 3 waiting -> running
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) will get columns.txt from url workerip://10.32.81.189:1024/file-meta-7cb6d7a71d497ea436db0b776e78ccb2
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): puturl workerip://10.32.81.189:1024/file-meta-7cb6d7a71d497ea436db0b776e78ccb2 file-meta-7cb6d7a71d497ea436db0b776e78ccb2 0 20078 0755 A1D31D1A-0431-44D7-AA6C-C4C438FD55F2
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) will get chr1n.tar.gz from url workerip://10.32.81.189:1024/file-rnd-yppdmpwpsacswjf
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): puturl workerip://10.32.81.189:1024/file-rnd-yppdmpwpsacswjf file-rnd-yppdmpwpsacswjf 0 31123 0755 7FFC30A4-5BFC-4B8E-87EB-7884C7193B03
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) needs file bin/frequency.py as bin/frequency.py
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): put file-meta-e7076b986cf2bdb85dce236ae8ad8220 1 10747
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): file file-meta-e7076b986cf2bdb85dce236ae8ad8220 10747 0755 1790337813
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) received 0.01 MB in 0.00s (12.79s MB/s) average 117.86s MB/s
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) needs file EAS as EAS
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): put file-meta-87c80c384df399b423570d17aca206a5 1 4896
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): file file-meta-87c80c384df399b423570d17aca206a5 4896 0644 1790337765
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) received 0.00 MB in 0.00s (4.24s MB/s) average 117.85s MB/s
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): task 4
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): cmd 30
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: bin/frequency.py -c 1 -pop EAS
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): category default
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): cores 12.000
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): gpus 0
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): memory 16000
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): disk 17617
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): env 7
+CORES=1
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): infile file-rnd-mqtaoyzqwmsyvrv sifted.SIFT.chr1.txt 0
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): infile file-meta-7cb6d7a71d497ea436db0b776e78ccb2 columns.txt 0
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): infile file-rnd-yppdmpwpsacswjf chr1n.tar.gz 0
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): infile file-meta-e7076b986cf2bdb85dce236ae8ad8220 bin/frequency.py 0
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): infile file-meta-87c80c384df399b423570d17aca206a5 EAS 0
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): end
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) busy on 'bin/frequency.py -c 1 -pop EAS'
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: Task 4 state change: READY (1) to RUNNING (2)
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) will get sifted.SIFT.chr1.txt from url workerip://10.32.82.69:1024/file-rnd-mqtaoyzqwmsyvrv
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): puturl workerip://10.32.82.69:1024/file-rnd-mqtaoyzqwmsyvrv file-rnd-mqtaoyzqwmsyvrv 0 1636846 0755 72994DAC-E040-4411-9EB7-41EB8AEBE859
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) needs file bin/mutation_overlap.py as bin/mutation_overlap.py
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): put file-meta-cf9433d1ef78a30fa6bfa8d28658c94b 1 17109
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): file file-meta-cf9433d1ef78a30fa6bfa8d28658c94b 17109 0755 1790337813
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) received 0.02 MB in 0.00s (23.76s MB/s) average 117.79s MB/s
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) needs file EAS as EAS
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): put file-meta-87c80c384df399b423570d17aca206a5 1 4896
+2026/09/25 12:55:25.15 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): file file-meta-87c80c384df399b423570d17aca206a5 4896 0644 1790337765
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) received 0.00 MB in 0.02s (0.23s MB/s) average 117.67s MB/s
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): task 5
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): cmd 37
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: bin/mutation_overlap.py -c 1 -pop EAS
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): category default
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): cores 12.000
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): gpus 0
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): memory 16000
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): disk 16932
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): env 7
+CORES=1
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-rnd-mqtaoyzqwmsyvrv sifted.SIFT.chr1.txt 0
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-meta-7cb6d7a71d497ea436db0b776e78ccb2 columns.txt 0
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-rnd-yppdmpwpsacswjf chr1n.tar.gz 0
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-meta-cf9433d1ef78a30fa6bfa8d28658c94b bin/mutation_overlap.py 0
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): infile file-meta-87c80c384df399b423570d17aca206a5 EAS 0
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): end
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) busy on 'bin/mutation_overlap.py -c 1 -pop EAS'
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: Task 5 state change: READY (1) to RUNNING (2)
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): cache-update file-meta-e7076b986cf2bdb85dce236ae8ad8220 0 1 10747 1790337813 157 1790340925153838 X
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): cache-update file-meta-87c80c384df399b423570d17aca206a5 0 1 4896 1790337765 545 1790340925154155 X
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): cache-update file-meta-7cb6d7a71d497ea436db0b776e78ccb2 2 0 20078 1790340925 2117 1790340925153254 A1D31D1A-0431-44D7-AA6C-C4C438FD55F2
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): cache-update file-rnd-yppdmpwpsacswjf 2 0 31123 1790340925 2251 1790340925153602 7FFC30A4-5BFC-4B8E-87EB-7884C7193B03
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): info tasks_running 1
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): cache-update file-meta-cf9433d1ef78a30fa6bfa8d28658c94b 0 1 17109 1790337813 280 1790340925155611 X
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): cache-update file-meta-87c80c384df399b423570d17aca206a5 0 1 4896 1790337765 674 1790340925156050 X
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): cache-update file-rnd-mqtaoyzqwmsyvrv 2 0 1636846 1790340925 15879 1790340925155382 72994DAC-E040-4411-9EB7-41EB8AEBE859
+2026/09/25 12:55:25.17 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): info tasks_running 1
+2026/09/25 12:55:30.18 vine_manager[1773321]vine: workers connections -- known: 5, connecting: 0
+2026/09/25 12:55:35.02 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): complete 0 0 3521 0 1790340925177689 1790340935029146 2 5
+2026/09/25 12:55:35.02 vine_manager[1773321]vine: Task 5 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/25 12:55:35.02 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): send_stdout 5
+2026/09/25 12:55:35.02 vine_manager[1773321]vine: rx from d12chas032.crc.nd.edu (10.32.81.189:44672): stdout 5 3521
+2026/09/25 12:55:35.02 vine_manager[1773321]vine: Receiving stdout of task 5 (size: 3521 bytes) from 10.32.81.189:44672 (d12chas032.crc.nd.edu) ...
+2026/09/25 12:55:35.02 vine_manager[1773321]vine: Retrieved 3521 bytes from d12chas032.crc.nd.edu (10.32.81.189:44672)
+2026/09/25 12:55:35.02 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): kill 5
+2026/09/25 12:55:35.02 vine_manager[1773321]vine: Task 5 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/25 12:55:35.03 vine_manager[1773321]vine: d12chas032.crc.nd.edu (10.32.81.189:44672) done in 9.87s total tasks 3 average 5.36s
+2026/09/25 12:55:35.03 vine_manager[1773321]vine: workers connections -- known: 5, connecting: 0
+2026/09/25 12:55:35.03 vine_manager[1773321]vine: Task 5 state change: RETRIEVED (4) to DONE (5)
+2026/09/25 12:55:35.03 vine_manager[1773321]makeflow: Job 5 has returned.
+2026/09/25 12:55:35.03 vine_manager[1773321]makeflow: node 3 running -> complete
+2026/09/25 12:56:22.90 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): complete 0 0 1500958 0 1790340925156749 1790340982903224 14 4
+2026/09/25 12:56:22.90 vine_manager[1773321]vine: Task 4 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/25 12:56:22.90 vine_manager[1773321]vine: workers connections -- known: 5, connecting: 0
+2026/09/25 12:56:22.90 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): send_stdout 4
+2026/09/25 12:56:22.90 vine_manager[1773321]vine: rx from d12chas100.crc.nd.edu (10.32.82.69:40996): stdout 4 1500958
+2026/09/25 12:56:22.90 vine_manager[1773321]vine: Receiving stdout of task 4 (size: 1500958 bytes) from 10.32.82.69:40996 (d12chas100.crc.nd.edu) ...
+2026/09/25 12:56:22.90 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) using worker's observed average transfer rate of 112.39 MB/s
+2026/09/25 12:56:22.90 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) will try up to 60 seconds to transfer this 1.50 MB file.
+2026/09/25 12:56:22.91 vine_manager[1773321]vine: Retrieved 1500958 bytes from d12chas100.crc.nd.edu (10.32.82.69:40996)
+2026/09/25 12:56:22.91 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): kill 4
+2026/09/25 12:56:22.91 vine_manager[1773321]vine: Task 4 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/25 12:56:22.91 vine_manager[1773321]vine: d12chas100.crc.nd.edu (10.32.82.69:40996) done in 57.76s total tasks 2 average 31.34s
+2026/09/25 12:56:22.91 vine_manager[1773321]vine: Task 4 state change: RETRIEVED (4) to DONE (5)
+2026/09/25 12:56:22.91 vine_manager[1773321]vine: workers connections -- known: 5, connecting: 0
+2026/09/25 12:56:23.03 vine_manager[1773321]makeflow: Job 4 has returned.
+2026/09/25 12:56:23.03 vine_manager[1773321]makeflow: file sifted.SIFT.chr1.txt receive -> complete
+2026/09/25 12:56:23.03 vine_manager[1773321]makeflow: file chr1n.tar.gz receive -> complete
+2026/09/25 12:56:23.03 vine_manager[1773321]makeflow: node 4 running -> complete
+2026/09/25 12:56:23.03 vine_manager[1773321]batch: deleting queue 0x55775c30f6a0
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas091.crc.nd.edu (10.32.82.51:34360): release
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: worker d12chas091.crc.nd.edu (10.32.82.51:34360) removed
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: Removing instances of worker from transfer table
+2026/09/25 12:56:23.11 vine_manager[1773321]tcp: disconnected from 10.32.82.51 port 34360
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: 4 workers connected in total now
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas072.crc.nd.edu (10.32.82.13:32778): release
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: worker d12chas072.crc.nd.edu (10.32.82.13:32778) removed
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: Removing instances of worker from transfer table
+2026/09/25 12:56:23.11 vine_manager[1773321]tcp: disconnected from 10.32.82.13 port 32778
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: 3 workers connected in total now
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas093.crc.nd.edu (10.32.82.55:60554): release
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: worker d12chas093.crc.nd.edu (10.32.82.55:60554) removed
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: Removing instances of worker from transfer table
+2026/09/25 12:56:23.11 vine_manager[1773321]tcp: disconnected from 10.32.82.55 port 60554
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: 2 workers connected in total now
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): release
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: worker d12chas100.crc.nd.edu (10.32.82.69:40996) removed
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: Removing instances of worker from transfer table
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): unlink file-meta-7cb6d7a71d497ea436db0b776e78ccb2
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): unlink file-meta-433abee183edea52c82275c3277b333b
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): unlink file-rnd-mqtaoyzqwmsyvrv
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): unlink file-meta-87c80c384df399b423570d17aca206a5
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): unlink file-meta-e7076b986cf2bdb85dce236ae8ad8220
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): unlink file-rnd-yppdmpwpsacswjf
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas100.crc.nd.edu (10.32.82.69:40996): unlink file-meta-e175d2d3b77a78fdc6fc9799ba6855cf
+2026/09/25 12:56:23.11 vine_manager[1773321]tcp: disconnected from 10.32.82.69 port 40996
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: 1 workers connected in total now
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): release
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: worker d12chas032.crc.nd.edu (10.32.81.189:44672) removed
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: Removing instances of worker from transfer table
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): unlink file-meta-7cb6d7a71d497ea436db0b776e78ccb2
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): unlink file-meta-cf9433d1ef78a30fa6bfa8d28658c94b
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): unlink file-rnd-mqtaoyzqwmsyvrv
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): unlink file-meta-87c80c384df399b423570d17aca206a5
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): unlink file-meta-2f6288f09d6b5f2180600985bd646f79
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): unlink file-rnd-exhlspxnseuvpbs
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): unlink file-rnd-yppdmpwpsacswjf
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): unlink file-meta-c66c882f8dc7249dbe713bc155ef9725
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: tx to d12chas032.crc.nd.edu (10.32.81.189:44672): unlink file-meta-15c9e4fcdd2c4c4d29ea1c6a6a864ff7
+2026/09/25 12:56:23.11 vine_manager[1773321]tcp: disconnected from 10.32.81.189 port 44672
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: 0 workers connected in total now
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: workers connections -- known: 0, connecting: 0
+2026/09/25 12:56:23.11 vine_manager[1773321]vine: deleting /groups/dthain/users/cthoma26/pledge-eval-apps/1000genome-workflow/eval/vine-run-info/2026-09-25T085443/staging
+2026/09/25 12:56:23.15 vine_manager[1773321]vine:   object  created   ref_added  deleted
+2026/09/25 12:56:23.15 vine_manager[1773321]vine: -----------------------------------
+2026/09/25 12:56:23.15 vine_manager[1773321]vine:    tasks        5        5       10 ok
+2026/09/25 12:56:23.15 vine_manager[1773321]vine:   mounts       20        0       20 ok
+2026/09/25 12:56:23.15 vine_manager[1773321]vine:    files       15       20       35 ok
+2026/09/25 12:56:23.15 vine_manager[1773321]vine: replicas       16        0       16 ok
+2026/09/25 12:56:23.15 vine_manager[1773321]vine:  workers        5        0        5 ok
+2026/09/25 12:56:23.15 vine_manager[1773321]vine: manager end
