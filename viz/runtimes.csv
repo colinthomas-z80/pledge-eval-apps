@@ -1,0 +1,13 @@
+1000-Genomes_Script,275.06
+1000-Genomes_Workflow,99.0
+Montage_Script,100
+Montage_Workflow,80
+PyCBC_Script,100
+PyCBC_Workflow,80
+GATK_Script,100
+GATK_Workflow,80
+GDAL_Script,100
+GDAL_Workflow,80
+XgFabric_Script,100
+XgFabric_Workflow,80
+
