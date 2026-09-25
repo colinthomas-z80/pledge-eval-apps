@@ -1,7 +1,7 @@
 1000-Genomes_Script,275.06
 1000-Genomes_Workflow,99.0
-Montage_Script,100
-Montage_Workflow,80
+Montage_Script,762
+Montage_Workflow,258
 PyCBC_Script,100
 PyCBC_Workflow,80
 GATK_Script,100
