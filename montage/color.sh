@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mHdr "NGC 3372" 2.0 region.hdr
+#mHdr "NGC 3372" 2.0 region.hdr
 
 # Perform the same processing as in the single-band example
 # script (singleband.sh) for all three 2MASS wavelengths.
@@ -40,7 +40,7 @@ mAdd -p corrected_j cimages.tbl region.hdr jband.fits
 
 #mShrink kband.fits ksmall.fits 5
 # mShrink hband.fits hsmall.fits 5
-mShrink jband.fits jsmall.fits 5
+#mShrink jband.fits jsmall.fits 5
 
 # mViewer -t 2 \
 #         -red   ksmall.fits 0s max gaussian-log \
@@ -48,4 +48,4 @@ mShrink jband.fits jsmall.fits 5
 #         -blue  jsmall.fits 0s max gaussian-log \
 #         -out   color_mosaic.png
 
-mViewer -ct 1 -gray jsmall.fits -2s max gaussian-log -out mosaic.png
+#mViewer -ct 1 -gray jsmall.fits -2s max gaussian-log -out mosaic.png
