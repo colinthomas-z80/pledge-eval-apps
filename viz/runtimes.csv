@@ -6,8 +6,9 @@ PyCBC_Script,100
 PyCBC_Workflow,80
 GATK_Script,100
 GATK_Workflow,80
-GDAL_Script,100
-GDAL_Workflow,80
+GDAL_Script,49.8
+GDAL_Workflow,11.07
 XgFabric_Script,100
 XgFabric_Workflow,80
-
+STAR_GATK_Script, 157.13
+STAR_GATK_Workflow, 80

@@ -22,6 +22,7 @@ if [[ $1 = "fetch" ]]; then
         echo $gt
         wget "https://geodata.ucdavis.edu/climate/worldclim/2_1/base/$gt.zip"
         unzip $gt.zip -d $gt
+        rm $gt.zip
     done
 elif [[ $1 = "clean" ]]; then
     echo "Cleaning up files..."
