@@ -1,0 +1,78 @@
+{
+  "rules": [
+    {
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.1.fa",
+      "outputs": [
+        "GRCh38.gencode.pa.genome.1.fa.fai"
+      ],
+      "inputs": [
+        "GRCh38.gencode.pa.genome.1.fa"
+      ]
+    },
+    {
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools index SRR10307460Aligned.sortedByCoord.out.bam",
+      "outputs": [
+        "SRR10307460Aligned.sortedByCoord.out.bam.bai"
+      ],
+      "inputs": [
+        "SRR10307460Aligned.sortedByCoord.out.bam"
+      ]
+    },
+    {
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.1.fa",
+      "outputs": [
+        "GRCh38.gencode.pa.genome.1.dict"
+      ],
+      "inputs": [
+        "GRCh38.gencode.pa.genome.1.fa",
+        "GRCh38.gencode.pa.genome.1.fa.fai",
+        "SRR10307460Aligned.sortedByCoord.out.bam",
+        "SRR10307460Aligned.sortedByCoord.out.bam.bai"
+      ]
+    },
+    {
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.1.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.1.gzi",
+      "outputs": [],
+      "inputs": [
+        "GRCh38.gencode.pa.genome.1.dict",
+        "GRCh38.gencode.pa.genome.1.fa",
+        "GRCh38.gencode.pa.genome.1.fa.fai",
+        "SRR10307460Aligned.sortedByCoord.out.bam",
+        "SRR10307460Aligned.sortedByCoord.out.bam.bai"
+      ]
+    },
+    {
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.*.fa --genomeSAindexNbases 2",
+      "outputs": [
+        "gdir/Genome",
+        "gdir/SA",
+        "gdir/SAindex",
+        "gdir/chrLength.txt",
+        "gdir/chrName.txt",
+        "gdir/chrStart.txt",
+        "gdir/genomeParameters.txt"
+      ],
+      "inputs": [
+        "../../../../../../software/Modules/5.6.1/init/bash",
+        "../../sep-star-gatk/bin/STAR",
+        "GRCh38.gencode.pa.genome.1.fa"
+      ]
+    },
+    {
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 1 --genomeDir gdir --readFilesIn shortened_SRR10307460_colin.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1",
+      "outputs": [
+        "SRR10307460Aligned.sortedByCoord.out.bam"
+	],
+      "inputs": [
+        "gdir/Genome",
+        "gdir/SA",
+        "gdir/SAindex",
+        "gdir/chrLength.txt",
+        "gdir/chrName.txt",
+        "gdir/chrStart.txt",
+        "gdir/genomeParameters.txt",
+        "shortened_SRR10307460_colin.fastq"
+      ]
+    }
+  ]
+}

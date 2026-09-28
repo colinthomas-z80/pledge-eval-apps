@@ -1,0 +1,63 @@
+
+#Process Tree:
+├─ PID 0 0 [./simple_star_gatk.sh]
+        R </groups/dthain/users/cthoma26/pledge-eval-apps> (1 files) [read: 2]
+                #	Readable files: 
+        XR </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk> (2 files) [exec: 1, read: 8]
+                #	Executable: ./simple_star_gatk.sh  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk",
+                #	Readable files: simple_star_gatk.sh, simple_star_gatk.sh
+        R </software/Modules/5.6.1/init> (1 files) [read: 2]
+                #	Readable files: bash
+    ├─ PID 225486 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR, /usr/bin/bash]
+          XR </groups/dthain/users/cthoma26/sep-star-gatk/bin> (3 files) [exec: 1, read: 5]
+                    #	Executable: STAR --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.1.fa --genomeSAindexNbases 2 
+                    #	Readable files: STAR
+          R </software/Modules/5.6.1/init> (1 files) [read: 2]
+                    #	Readable files: bash
+        ├─ PID 225493 2 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR-avx2]
+            RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk> (4 files) [read: 155, write: 19]
+                        #	Writable files: Log.out, Log.out*
+                        #	Readable files: GRCh38.gencode.pa.genome.1.fa
+            RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/gdir> (11 files) [read: 3, write: 34]
+                        #	Writable files: Log.out, chrName.txt, chrName.txt*, chrStart.txt, chrStart.txt*, chrLength.txt, chrLength.txt*, chrNameLength.txt, chrNameLength.txt*, SA_0*, genomeParameters.txt, genomeParameters.txt*, Genome*, SA*, SAindex, SAindex*
+                        #	Readable files: SA_0
+            X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (1 files) [exec: 1]
+                        #	Executable: /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR-avx2 --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.1.fa --genomeSAindexNbases 2  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk",
+    ├─ PID 225502 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR, /usr/bin/bash]
+                    RMPESX </usr> (21 files) [enoent: 3, exec: 1, mmap: 36, mmapsh: 2, read: 40, stat: 12]
+                                        #	Executable: bash /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 1 --genomeDir gdir --readFilesIn shortened_SRR10307460_colin.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk",
+          XR </groups/dthain/users/cthoma26/sep-star-gatk/bin> (3 files) [exec: 1, read: 5]
+                    #	Executable: STAR --runThreadN 1 --genomeDir gdir --readFilesIn shortened_SRR10307460_colin.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1 
+                    #	Readable files: STAR
+        ├─ PID 225509 2 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR-avx2]
+            RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk> (8 files) [read: 5, write: 117]
+                        #	Writable files: SRR10307460Log.out, SRR10307460Log.out*, SRR10307460Log.progress.out, SRR10307460Log.progress.out*, SRR10307460Aligned.out.bam, SRR10307460Aligned.out.bam*, SRR10307460Aligned.sortedByCoord.out.bam, SRR10307460Aligned.sortedByCoord.out.bam*, SRR10307460SJ.out.tab*, SRR10307460Log.final.out, SRR10307460Log.final.out*
+                        #	Readable files: shortened_SRR10307460_colin.fastq
+            R </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/gdir> (9 files) [read: 18]
+                        #	Readable files: genomeParameters.txt, chrName.txt, chrLength.txt, chrStart.txt, Genome, SA, SAindex
+            X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (1 files) [exec: 1]
+                        #	Executable: /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR-avx2 --runThreadN 1 --genomeDir gdir --readFilesIn shortened_SRR10307460_colin.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk",
+                        #	Readable files: libhts.so.1.24, libz.so.1.3.2, libstdc++.so.6.0.36, libgomp.so.1.0.0, libgcc_s.so.1, libdeflate.so.0, liblzma.so.5, libbz2.so.1.0.8
+    ├─ PID 214288 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools]
+          RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk> (2 files) [read: 12, write: 1]
+                    #	Writable files: GRCh38.gencode.pa.genome.1.fa.fai, GRCh38.gencode.pa.genome.1.fa.fai*
+                    #	Readable files: GRCh38.gencode.pa.genome.1.fa
+          X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (1 files) [exec: 1]
+                    #	Executable: samtools faidx GRCh38.gencode.pa.genome.1.fa  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk",
+
+    ├─ PID 214289 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk, /groups/dthain/users/cthoma26/sep-star-gatk/bin/python]
+          X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (3 files) [exec: 2]
+                    #	Executable: gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.1.fa  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk",
+          RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk> (2 files) [read: 12, write: 1]
+                    #	Readable files: GRCh38.gencode.pa.genome.1.fa, GRCh38.gencode.pa.genome.1.fa.fai
+                    #	Writable files: GRCh38.gencode.pa.genome.1.dict, GRCh38.gencode.pa.genome.1.dict*
+
+
+    ├─ PID 214376 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk, /groups/dthain/users/cthoma26/sep-star-gatk/bin/python]
+          X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (3 files) [exec: 2]
+                    #	Executable: gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.1.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.1.gzi  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk",
+          RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk> (2 files) [read: 12, write: 1]
+                    #	Readable files: GRCh38.gencode.pa.genome.1.fa, GRCh38.gencode.pa.genome.1.fa.fai, GRCh38.gencode.pa.genome.1.dict
+                    #	Writable files: SRR10307460Aligned.sortedByCoord.out.bam, SRR10307460Aligned.sortedByCoord.out.bam*
+
+CWD:  /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk
