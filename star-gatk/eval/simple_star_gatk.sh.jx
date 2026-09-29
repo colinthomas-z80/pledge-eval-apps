@@ -60,7 +60,7 @@
       ]
     },
     {
-      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 1 --genomeDir gdir --readFilesIn shortened_SRR10307460_colin.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1",
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 4 --genomeDir gdir --readFilesIn SRR10307460_1.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1",
       "outputs": [
         "SRR10307460Aligned.sortedByCoord.out.bam"
 	],
@@ -72,7 +72,7 @@
         "gdir/chrName.txt",
         "gdir/chrStart.txt",
         "gdir/genomeParameters.txt",
-        "shortened_SRR10307460_colin.fastq"
+        "SRR10307460_1.fastq"
       ]
     }
   ]
