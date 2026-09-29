@@ -1,0 +1,2 @@
+#!/bin/bash
+makeflow --jx scaled_gdal.sh.jx -T vine -p 9129
