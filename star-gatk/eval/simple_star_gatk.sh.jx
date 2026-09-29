@@ -1,0 +1,79 @@
+{
+  "define": {
+      "num_fasta":5  
+  },
+  "rules": [
+    {
+      "command": format("/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.%d.fa", idx),
+      "outputs": [
+        format("GRCh38.gencode.pa.genome.%d.fa.fai", idx)
+      ],
+      "inputs": [
+        format("GRCh38.gencode.pa.genome.%d.fa", idx) 
+      ]
+    } for idx in range(1, num_fasta),
+    {
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools index SRR10307460Aligned.sortedByCoord.out.bam",
+      "outputs": [
+        "SRR10307460Aligned.sortedByCoord.out.bam.bai"
+      ],
+      "inputs": [
+        "SRR10307460Aligned.sortedByCoord.out.bam"
+      ]
+    },
+    {
+      "command": format("/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.%d.fa", idx),
+      "outputs": [
+        format("GRCh38.gencode.pa.genome.%d.dict", idx)
+      ],
+      "inputs": [
+        format("GRCh38.gencode.pa.genome.%d.fa", idx),
+        format("GRCh38.gencode.pa.genome.%d.fa.fai", idx),
+        "SRR10307460Aligned.sortedByCoord.out.bam",
+        "SRR10307460Aligned.sortedByCoord.out.bam.bai"
+      ]
+    } for idx in range(1, num_fasta),
+    {
+      "command": format("/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.%d.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.%d.gzi", idx, idx),
+      "outputs": [],
+      "inputs": [
+        format("GRCh38.gencode.pa.genome.%d.dict", idx),
+        format("GRCh38.gencode.pa.genome.%d.fa", idx),
+        format("GRCh38.gencode.pa.genome.%d.fa.fai", idx),
+        "SRR10307460Aligned.sortedByCoord.out.bam",
+        "SRR10307460Aligned.sortedByCoord.out.bam.bai"
+      ]
+    } for idx in range(1, num_fasta),
+    {
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.*.fa --genomeSAindexNbases 2",
+      "outputs": [
+        "gdir/Genome",
+        "gdir/SA",
+        "gdir/SAindex",
+        "gdir/chrLength.txt",
+        "gdir/chrName.txt",
+        "gdir/chrStart.txt",
+        "gdir/genomeParameters.txt"
+      ],
+      "inputs": [
+        "GRCh38.gencode.pa.genome.1.fa"
+      ]
+    },
+    {
+      "command": "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 1 --genomeDir gdir --readFilesIn shortened_SRR10307460_colin.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1",
+      "outputs": [
+        "SRR10307460Aligned.sortedByCoord.out.bam"
+	],
+      "inputs": [
+        "gdir/Genome",
+        "gdir/SA",
+        "gdir/SAindex",
+        "gdir/chrLength.txt",
+        "gdir/chrName.txt",
+        "gdir/chrStart.txt",
+        "gdir/genomeParameters.txt",
+        "shortened_SRR10307460_colin.fastq"
+      ]
+    }
+  ]
+}

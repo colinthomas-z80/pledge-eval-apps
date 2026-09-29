@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rm *.bam -r gdir *.dict *.fai *.makeflowlog *.bai *.gzi *.idx *.out

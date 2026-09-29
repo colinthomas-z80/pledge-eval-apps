@@ -5,7 +5,7 @@ Montage_Workflow,258
 PyCBC_Script,100
 PyCBC_Workflow,80
 GATK_Script,100
-GATK_Workflow,80
+GATK_Workflow,33
 GDAL_Script,49.8
 GDAL_Workflow,11.07
 XgFabric_Script,100
