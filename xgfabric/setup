@@ -1,0 +1,8 @@
+# source this
+
+export PATH="bin/:$PATH"
+module --force purge
+module add openfoam/10.0/gcc/11.5.0 > /dev/null 2>&1
+module add paraview/5.11.2
+module load cuda 2>/dev/null || true
+module load cudnn 2>/dev/null || true

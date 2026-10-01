@@ -8,7 +8,7 @@ GATK_Script,275
 GATK_Workflow,70
 GDAL_Script,1970.50
 GDAL_Workflow,1414.21
-XgFabric_Script,100
-XgFabric_Workflow,80
+XgFabric_Script,1828
+XgFabric_Workflow,715
 STAR_GATK_Script, 157.13
 STAR_GATK_Workflow, 80
