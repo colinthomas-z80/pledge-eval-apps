@@ -55,7 +55,7 @@ elif [[ $1 = "clean" ]]; then
 else
     for gt in ${WCdata[@]}; do
         echo $gt
-        gdalbuildvrt $gt.vrt $gt/*.tif
+        gdalbuildvrt $gt.vrt $PWD/$gt/*.tif
     done
 
     for wc in ${WCdataPrefix[@]}; do
@@ -68,7 +68,7 @@ else
 
     for gt in ${WCdataLarge[@]}; do
         echo $gt
-        gdalbuildvrt $gt.vrt $gt/*.tif
+        gdalbuildvrt $gt.vrt $PWD/$gt/*.tif
     done
 
     for wc in ${WCdataPrefixLarge[@]}; do
