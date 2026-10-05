@@ -1,0 +1,506 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-e8537df69d0fcafd8da164422cf83a4b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_12.tif" 73148113
+FILE file-meta-198b6e638bb5b4405faf7e2e135e1705 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_11.tif" 69921477
+FILE file-meta-f863157289728497341c2dcb6623d6db "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_10.tif" 67859408
+FILE file-meta-adf1aba6a15bd8b2c441d41c334256ab "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_09.tif" 67781275
+FILE file-meta-7aab7fd8b4614148a35f1d3f302a512a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_08.tif" 64433426
+FILE file-meta-e4bb7cfc75e1ec14d084946095e94067 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_07.tif" 65085343
+FILE file-meta-cdaed39d6de7180c650c1856ab3ae3d5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_06.tif" 67033340
+FILE file-meta-726940b652086fd82aae376a5505c224 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_05.tif" 66286399
+FILE file-meta-d6b4eb250a69280868288d366b445273 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_04.tif" 69079917
+FILE file-meta-2c2621fb0aadca644276ab87c1c992f3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_03.tif" 71510653
+FILE file-meta-fc3a8999cc96736a5aa0079d754d8a8e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_02.tif" 74783877
+FILE file-meta-76277b80476a4e1266839a040fcd0944 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_wind/wc2.1_30s_wind_01.tif" 74956245
+FILE file-rnd-aphbcconmirgszh "wc2.1_30s_wind.vrt" 0
+FILE file-meta-ec9debb8f74aa70febd06debc9cc609d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_12.tif" 98347857
+FILE file-meta-adb36478bd7879ff75c7bb9b1c885ec9 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_11.tif" 101005040
+FILE file-meta-e3a99839f3f4b2b954ecd9bd67573ea2 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_10.tif" 110630187
+FILE file-meta-e7c89d62e772e1e63391fd916c9ac3a8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_09.tif" 121600839
+FILE file-meta-52aca906a2e7bf6f7dc6a82ee23b3e08 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_08.tif" 128853371
+FILE file-meta-6a3be6ce276f460ca2b4eafffb4b33ba "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_07.tif" 128697759
+FILE file-meta-7cbb10166188ea9b4060dbf139e772ea "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_06.tif" 122583204
+FILE file-meta-437881d8f3024e26d1e50d9a2e6394d5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_05.tif" 113121602
+FILE file-meta-5ffa82ab2cc1e2f0ffc22e47870f291e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_04.tif" 104375862
+FILE file-meta-e1a106c0a06ebced57ef5d099f351af0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_03.tif" 97557166
+FILE file-meta-460606ecf9d0e5efbd714791c127b349 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_02.tif" 96291931
+FILE file-meta-e1b3e969fe86d513e9f6f43991df8c4e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_vapr/wc2.1_30s_vapr_01.tif" 95594140
+FILE file-rnd-twnkxbgytwovvbt "wc2.1_30s_vapr.vrt" 0
+FILE file-meta-aa0af31217ec394987923a6c141d0327 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_12.tif" 384504946
+FILE file-meta-da2f7dc3cb4d5c9549e5c01fdbe1bc5e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_11.tif" 385276254
+FILE file-meta-d1881f07c7c6af3a30af41135295540e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_10.tif" 381908055
+FILE file-meta-a0081390bf47b0340deab7ff4d79063a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_09.tif" 377173548
+FILE file-meta-03c3eda7079b74b912752adfe3c09734 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_08.tif" 378183004
+FILE file-meta-7d1f22d3559852753d146ad845565629 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_07.tif" 382767826
+FILE file-meta-0e311099c894466f20ea6077326b1bac "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_06.tif" 382731596
+FILE file-meta-bcd2e21e7b9840d74a881a2d0b196b6a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_05.tif" 380939432
+FILE file-meta-12cae7a2463913ec0d1cc32e0b1ee571 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_04.tif" 385031777
+FILE file-meta-8991040811eb9c4cefb92ff53818f990 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_03.tif" 389567689
+FILE file-meta-a7d2d7ab6a2add626bd985575c08f972 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_02.tif" 389360209
+FILE file-meta-1f473526ac0c8a2e634a406f0968e84a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmin/wc2.1_30s_tmin_01.tif" 387544209
+FILE file-rnd-qqnqqjyogaflptm "wc2.1_30s_tmin.vrt" 0
+FILE file-meta-371e166f6f45e4046625e780bbf59da5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_12.tif" 372917292
+FILE file-meta-11045cf9bc232074db9d8619fc86cd61 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_11.tif" 376596173
+FILE file-meta-f20bc48d8f38761d3b1c7223719e3dd4 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_10.tif" 378768497
+FILE file-meta-271fe7de9b2d4e776c7b5389cf0526de "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_09.tif" 382335592
+FILE file-meta-8c517989a82f1ff80ec5c0141a82b948 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_08.tif" 384713482
+FILE file-meta-fa7d3b20b3db6b2d1bd7f99b07b05686 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_07.tif" 391079274
+FILE file-meta-4a5f9f024b3d2bbcad0019aa52d33813 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_06.tif" 391772317
+FILE file-meta-d63b1c7dfddccc166a85e1232ae4baf0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_05.tif" 392050502
+FILE file-meta-1a20ef91467a99938c8c0f29327f3b53 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_04.tif" 387328308
+FILE file-meta-a54735367bce3ff0d435663567c47b8a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_03.tif" 385030227
+FILE file-meta-a944d4565d8df9ab61e6286c5c2676ed "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_02.tif" 379257489
+FILE file-meta-d18f109d5777d70e3308b7d250771a9c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tmax/wc2.1_30s_tmax_01.tif" 377183142
+FILE file-rnd-uxdqqgfhuraalxs "wc2.1_30s_tmax.vrt" 0
+FILE file-meta-eb89f7a014ccdd6e14c0203e05fcf82d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_12.tif" 372483661
+FILE file-meta-9caa190157346e73e9c549f9dd0f1dfd "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_11.tif" 374605679
+FILE file-meta-854e3e4c16f7e2fade7d7cfcf92c694c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_10.tif" 373129743
+FILE file-meta-8eb9f298860090633333553b94e8c2e1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_09.tif" 370277974
+FILE file-meta-76a4fb5972cd2c1eb3c6c66c1dd05dcd "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_08.tif" 371825227
+FILE file-meta-0b6c6581166f71f85cbf8272220d924a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_07.tif" 379567210
+FILE file-meta-290a1445f5b8076ef27edcea1136c3e5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_06.tif" 381285953
+FILE file-meta-66052ff5bf55b38f4179cd9cbe47c146 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_05.tif" 380393604
+FILE file-meta-55e86df125195a368e2061a1971f15d0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_04.tif" 379140319
+FILE file-meta-9ebe1f8b2dcf57682b7b227d66360da4 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_03.tif" 380504954
+FILE file-meta-3b1d6cc2252fc224eb48f1c66e833d73 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_02.tif" 377356244
+FILE file-meta-34a8bf5409232996009bd5d280747d1f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_tavg/wc2.1_30s_tavg_01.tif" 376102335
+FILE file-meta-7b0827d6ec37c5092d485299313b0031 "wc2.1_30s_tavg" 4096
+FILE file-meta-4ac307eccee7c4b4b31ace0f42f6d66f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_12.tif" 226666534
+FILE file-meta-834710ce4199a1535ffec2159d538b5e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_11.tif" 221566058
+FILE file-meta-06dc2733c17814bc7dec93bc1b64bc68 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_10.tif" 220369772
+FILE file-meta-a2ca906aaed353029af4ab31c2efdf6d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_09.tif" 235906780
+FILE file-meta-61b8f9e5e9f582453b4f7dce897cc036 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_08.tif" 245998442
+FILE file-meta-cf3e408ba51712fde0c3e9f5d30b4a5a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_07.tif" 242424360
+FILE file-meta-2444999a4535acaa5370bfc36f93b315 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_06.tif" 234537979
+FILE file-meta-371d4f2ba3f2f7724b381c0f7433c34c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_05.tif" 223142314
+FILE file-meta-5126dc974870c832992929eb84febd5c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_04.tif" 227560059
+FILE file-meta-ebaa9b3846b68635564fba00758c99a1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_03.tif" 245035324
+FILE file-meta-12129c9c91fa5e3a363f4c2470ff0c63 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_02.tif" 249164287
+FILE file-meta-eb08829263c1fa04b9861d8f36e04077 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_srad/wc2.1_30s_srad_01.tif" 234220031
+FILE file-rnd-qjudgqodxdzcwoj "wc2.1_30s_srad.vrt" 0
+FILE file-meta-2c48a83029c1d718191d459bacf74c6d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_12.tif" 78025342
+FILE file-meta-82a53887ee88e61267f53894766f0dba "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_11.tif" 81716504
+FILE file-meta-471c980612ea736eb6939205df2cf292 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_10.tif" 94977702
+FILE file-meta-3eae3c8a282484d733be08fcc1812c9c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_09.tif" 90829431
+FILE file-meta-974d5ec907a9394ff568315fcc445918 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_08.tif" 96964870
+FILE file-meta-fca17df96d602e0b22ebafd12ef0190b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_07.tif" 94459125
+FILE file-meta-4efb3f37ef7144bfc52adfa1a430949e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_06.tif" 92524861
+FILE file-meta-8ffbea72d9265952c5830597cdae6be2 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_05.tif" 90386408
+FILE file-meta-dddbb2ec567cce88487301025de515b1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_04.tif" 91564709
+FILE file-meta-a62b43329e00f87c7eb4a3095ddac3a0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_03.tif" 88738160
+FILE file-meta-41069509cd071530d6f7af36a31d969d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_02.tif" 78453928
+FILE file-meta-24603e8186a4d99800c61d125079bddd "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_prec/wc2.1_30s_prec_01.tif" 76618603
+FILE file-rnd-jzmsmxwmeupcbyd "wc2.1_30s_prec.vrt" 0
+FILE file-meta-1cb16360ed7a791c1876ab4b9768fa74 "wc2.1_30s_elev/wc2.1_30s_elev.tif" 342195708
+FILE file-rnd-kugabtmoezpwwvr "wc2.1_30s_elev.vrt" 0
+FILE file-meta-57b4e3e9e84fd6e86a8c331510cebac0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_12.tif" 2328585
+FILE file-meta-bca3f5ec142421e01d9d2e04b726cbe0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_11.tif" 2356643
+FILE file-meta-865615ba425ad5675466edd20065c164 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_10.tif" 2343788
+FILE file-meta-5bb46d0b9a3df7ed1b6417e91663177c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_09.tif" 2344622
+FILE file-meta-9d665aa3ff2383ad0cc517746c44cd69 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_08.tif" 2297967
+FILE file-meta-30f486769a8ad3a8e2291034fed5ec83 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_07.tif" 2289694
+FILE file-meta-9f726f6a13b5b7844768aaf6e2de5fb6 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_06.tif" 2288604
+FILE file-meta-b5ab085083c69283b5047f18d48ec19a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_05.tif" 2309852
+FILE file-meta-f5b7cbf45af138e00f16f15b38fbd2d6 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_04.tif" 2331782
+FILE file-meta-814f4aca8a4ef80aa564c3adfb6cfb0f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_03.tif" 2355771
+FILE file-meta-5514d2c1492ec4642730bf5440a3e2aa "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_02.tif" 2382328
+FILE file-meta-8668b80a48849bbadf3749e2cd053e55 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_wind/wc2.1_10m_wind_01.tif" 2343529
+FILE file-meta-a23bf2caa64b13e7e5d17055015030ff "wc2.1_10m_wind" 4096
+FILE file-meta-e9b1c1a5671a9e3ce6822a15ee4079ef "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_12.tif" 2511566
+FILE file-meta-688b49ccb690072720261ec7456f33fc "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_11.tif" 2390011
+FILE file-meta-fa07814e7c3e873d9dd99d4dc010829f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_10.tif" 2227192
+FILE file-meta-58fe87d8d168746acf5011959272a62b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_09.tif" 2239016
+FILE file-meta-b96111875b5573624d3a33a6e4a6fbf0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_08.tif" 2285631
+FILE file-meta-e0c7f96bf62580ef01934575df4bf867 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_07.tif" 2178795
+FILE file-meta-45788b718d882401039c19c631f50081 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_06.tif" 2175984
+FILE file-meta-a16a3c868d9e1ea0de321ac3f0a652f9 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_05.tif" 2210701
+FILE file-meta-ce7c20ec9835387e96b99f40a2b12a2f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_04.tif" 2236410
+FILE file-meta-e9fb0455c57e5d724892c05b21d89dbf "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_03.tif" 2131087
+FILE file-meta-4d26250c286ca7d6ef9fba9bcdbc07a3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_02.tif" 2306465
+FILE file-meta-7bf9e38f2fc43ab36a865d19178209b3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_vapr/wc2.1_10m_vapr_01.tif" 2438633
+FILE file-rnd-cftbfhwowoorudb "wc2.1_10m_vapr.vrt" 0
+FILE file-meta-03f8154e0a8e0c6659bfc70f9b25cefa "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_12.tif" 3357203
+FILE file-meta-d7783543f5136098e0880d8fcd136a57 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_11.tif" 3360607
+FILE file-meta-35485da29dafa0d0f66d51f097e94ccb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_10.tif" 3349491
+FILE file-meta-03aaf73bc4e7d1ce157bee7af8ac49dd "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_09.tif" 3338897
+FILE file-meta-593e1198bbea8a37e4f57b6361696541 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_08.tif" 3294759
+FILE file-meta-7c24abad099976c9664153199239c7e9 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_07.tif" 3303387
+FILE file-meta-b3da63fbc5244c5b694c15080989de7a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_06.tif" 3324258
+FILE file-meta-203729fa6761514416272e0cd2a48450 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_05.tif" 3340230
+FILE file-meta-453aacd1ba778edaaeb53c748724f559 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_04.tif" 3345138
+FILE file-meta-6ee37938069f6f6e8455cdf8a2d36677 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_03.tif" 3357137
+FILE file-meta-d25d4def36266889f07e08f9a9e606f8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_02.tif" 3362897
+FILE file-meta-4854f25680cee97a5d32d1c41414bbbf "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmin/wc2.1_10m_tmin_01.tif" 3364940
+FILE file-rnd-luxswkxvmysabbb "wc2.1_10m_tmin.vrt" 0
+FILE file-meta-52b097537c9d5fd6e37bbb1761b94519 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_12.tif" 3319868
+FILE file-meta-291557f25824cd6e00defecfc898e931 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_11.tif" 3327722
+FILE file-meta-ef6f8308dd1afc55a937f063e1651243 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_10.tif" 3315723
+FILE file-meta-1d5ba6ba91c3c212fffb2951bc741be7 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_09.tif" 3304605
+FILE file-meta-ca6ce201e8e81364389016439e3b396d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_08.tif" 3312641
+FILE file-meta-5559aed59eaf91977e83d46ff52b58d7 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_07.tif" 3327880
+FILE file-meta-0872217d1119146c05c6cca3efd9180b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_06.tif" 3333420
+FILE file-meta-234acfb23208062b20170018349bb99a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_05.tif" 3329590
+FILE file-meta-10a90c2304dc3ae661ee3db482848760 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_04.tif" 3326324
+FILE file-meta-016982f477ff7b9316335c28d8ed667e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_03.tif" 3349350
+FILE file-meta-4f25eb6c6331f8dac2a7f9df80179780 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_02.tif" 3332395
+FILE file-meta-738a26e23d19bc6f03ee13908193643f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tmax/wc2.1_10m_tmax_01.tif" 3333656
+FILE file-rnd-isxygukpoavubaa "wc2.1_10m_tmax.vrt" 0
+FILE file-meta-f5d400789a54bf74bcddffcb71d4b766 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_12.tif" 3321918
+FILE file-meta-547f92b7ebfc0c506489032f98c80a48 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_11.tif" 3330831
+FILE file-meta-5af267bdfafe329eabb33a88ce98d33d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_10.tif" 3315887
+FILE file-meta-3919acd97d249ae3bef2c4039a9ea423 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_09.tif" 3299331
+FILE file-meta-23ba5d343f701bf56a6db452ef2d14f8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_08.tif" 3282471
+FILE file-meta-8cd3adc9c615afea7709e7dfe63d5b94 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_07.tif" 3307008
+FILE file-meta-42a9beb606c5b8389d108a9eedeca814 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_06.tif" 3313951
+FILE file-meta-46760b5fbdd6db062b1c70c473575108 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_05.tif" 3321149
+FILE file-meta-c7d07421649720a46b72cc789a0b6941 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_04.tif" 3321524
+FILE file-meta-20889edd39309840ab6d46891f65a850 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_03.tif" 3332330
+FILE file-meta-da1767309ddbb40bf9e80dff8e584643 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_02.tif" 3339463
+FILE file-meta-0d34f54e470cc99c1e6d0f9120febff3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_tavg/wc2.1_10m_tavg_01.tif" 3330920
+FILE file-rnd-scbhgocfbdfdmzu "wc2.1_10m_tavg.vrt" 0
+FILE file-meta-b2b6fd6f61d5b54ec910b598b3eeaa2c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_12.tif" 1417413
+FILE file-meta-4361a4d1378b8d7173041e9dd9fa85cd "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_11.tif" 1427739
+FILE file-meta-228178309bdaae3d8f26ad471d3509c2 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_10.tif" 1469130
+FILE file-meta-25121b857e52cfc914476ce8f52b5e0b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_09.tif" 1462877
+FILE file-meta-0eb338bf8b8c5bba84d4a6393f4b99ab "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_08.tif" 1266200
+FILE file-meta-ce1c948f4541378a308bd7488d0f0a49 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_07.tif" 1199413
+FILE file-meta-ca6eac56b05c0c71b286aa7d165392cd "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_06.tif" 1188020
+FILE file-meta-3757ad9b67da65129bc2bc591007f65f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_05.tif" 1204666
+FILE file-meta-a94055d114110201a3bbf4388d33acf4 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_04.tif" 1299504
+FILE file-meta-0ecddc789d2cfe8fae0b8b80315f1b41 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_03.tif" 1477504
+FILE file-meta-0dfd9b930eb0975d2105f09b8e05bdf3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_02.tif" 1480485
+FILE file-meta-601c1830cd385296415ee8e00e3ae37a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_srad/wc2.1_10m_srad_01.tif" 1436008
+FILE file-rnd-ftjwwjvcghapobd "wc2.1_10m_srad.vrt" 0
+FILE file-meta-f8c90d1a54ac569113cced7949f7b7f5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_12.tif" 581807
+FILE file-meta-d74f67ed16013986e34dc5f36aceffd3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_11.tif" 594226
+FILE file-meta-fe126b0a0e12d793dbfadab1c347dc71 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_10.tif" 642783
+FILE file-meta-88b358549bc8e3cc951b9b087d6b53a8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_09.tif" 628584
+FILE file-meta-2c9f463779ac8ec2359cc1dcd40635c7 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_08.tif" 669568
+FILE file-meta-5eed5f2b04ff27a1f3baf88f89548fd8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_07.tif" 632536
+FILE file-meta-263e6c89f9909f9ef6629a4bbeba43a1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_06.tif" 619008
+FILE file-meta-fd8db084ba30aab1c944ca03ace25809 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_05.tif" 624869
+FILE file-meta-27d2ac657b695045e16ba797b7c7dde1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_04.tif" 615576
+FILE file-meta-5d6da709c795c170c398806a8f695fff "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_03.tif" 615937
+FILE file-meta-b404afd3f5881515062eb558cb855567 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_02.tif" 576683
+FILE file-meta-03969a7f72ba3a593fd8498191e2955f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_prec/wc2.1_10m_prec_01.tif" 561700
+FILE file-rnd-uomiqsaadaxnlwu "wc2.1_10m_prec.vrt" 0
+FILE file-meta-25f3fd47f4ac083181ee6f5fad343c91 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_elev/wc2.1_10m_elev.tif" 1340441
+FILE file-rnd-jcrhaculylebnvt "wc2.1_10m_elev.vrt" 0
+FILE file-meta-c4855dd2eff63ff04a678d46ae29eb3d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_9.tif" 3763240
+FILE file-meta-556f80850ca46ddc3c48108527abea36 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_8.tif" 3716591
+FILE file-meta-fcdbc9c0497dc0823e0feb0971dd086d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_7.tif" 3488376
+FILE file-meta-003fc941dac50335ae518ac7c9a08830 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_6.tif" 3389668
+FILE file-meta-e9f9f4f369d867a04afff5b4df0b4cb9 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_5.tif" 3294017
+FILE file-meta-ef327ca25d1ab7d541205c3999366fc8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_4.tif" 3765363
+FILE file-meta-1bc435baa51753280adfbd08ed58563e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_3.tif" 3688862
+FILE file-meta-6f318fb118bf11f415123a1a4f5cb7fc "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_2.tif" 3676841
+FILE file-meta-29e8081540fd963babdc36cfd7802dcc "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_19.tif" 1584020
+FILE file-meta-0f8550f1f28bd381fd7d4321a90868a5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_18.tif" 1542436
+FILE file-meta-a104c900b2ab9806d7e64fb763b2aa0c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_17.tif" 1332407
+FILE file-meta-b7cfaba85ee6db88942394f7367285dc "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_16.tif" 1745906
+FILE file-meta-c76dbd5ffef056f6175d7bf02177cae8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_15.tif" 3496057
+FILE file-meta-7e9eabd122118b759a4eb3038f8470d9 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_14.tif" 1005665
+FILE file-meta-afadb971c7ca7c93bacdd2853def711c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_13.tif" 1513593
+FILE file-meta-d1b1e3a9a5ef1f261d3d49ee08af8f5f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_12.tif" 1963655
+FILE file-meta-384ca6fe91f30b2de6e67bbde5a51e0b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_11.tif" 3719101
+FILE file-meta-7f9e0254ea30707f8bfd90046968d4b8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_10.tif" 3665323
+FILE file-meta-9674c746553ca51d2bdc9a85f8fd086e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_10m_bio/wc2.1_10m_bio_1.tif" 3790814
+FILE file-meta-285a0c68b2ad54c288f3bbc303644383 "wc2.1_10m_bio" 4096
+FILE file-meta-ca3fc38b9b886e7f0aa9a3df4694d563 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_12.tif" 7221945
+FILE file-meta-e07c64a9a719cd5849dd262798c5b0eb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_11.tif" 7213721
+FILE file-meta-802b157b87c3b24485ccb5aaa3e712bc "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_10.tif" 7148156
+FILE file-meta-45d40834ebec162097c119c0a8864ff4 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_09.tif" 7161695
+FILE file-meta-0f03d9dadad6b8275cf57654e1ad670e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_08.tif" 6944210
+FILE file-meta-06481ab104eef914b86d5f025754f340 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_07.tif" 6920742
+FILE file-meta-78fc5739a249eb30620a702ea9692587 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_06.tif" 6998952
+FILE file-meta-c2ab1b48c2d31c271601d6a5879c727f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_05.tif" 7113621
+FILE file-meta-52eff10593ab5c9b09faa16a53d6c570 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_04.tif" 7226705
+FILE file-meta-6362653f82286eb94fe2c780036d7373 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_03.tif" 7343116
+FILE file-meta-cf304f3be1d016c2998872ea983a31a2 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_02.tif" 7418120
+FILE file-meta-55978aeac16b89620b34c38e874ba289 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_wind/wc2.1_5m_wind_01.tif" 7302226
+FILE file-meta-aee29a4daf890c320fedc872662a5385 "wc2.1_5m_wind" 4096
+FILE file-meta-8dd44d52ea263a226f53b828faa14c19 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_12.tif" 7979236
+FILE file-meta-25c807179070dbfebb64ec095392f171 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_11.tif" 7637038
+FILE file-meta-690cc479f4c66853aebb095954073752 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_10.tif" 7476660
+FILE file-meta-7cde2b03f4028ff9d53f338df17e663c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_09.tif" 7697775
+FILE file-meta-b4b350a5b7b082db8aafb0f465d82baa "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_08.tif" 7937523
+FILE file-meta-4d828d7532f2f53a7a48bbde276166d5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_07.tif" 7655071
+FILE file-meta-9b53117523cdfe7b8a10af2d242cca19 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_06.tif" 7545638
+FILE file-meta-bb3a71228fe96e86bcfefdd5d6aef6fa "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_05.tif" 7479684
+FILE file-meta-98de418c2ff548480c0f038e09aeffb7 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_04.tif" 7303959
+FILE file-meta-15a21db56ece58cd179114b065fddcc3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_03.tif" 6877244
+FILE file-meta-2e800586fbf2896eb6bebce52f43ea3a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_02.tif" 7296872
+FILE file-meta-2730375118d3bc1d47fdf65f145c83ee "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_vapr/wc2.1_5m_vapr_01.tif" 7682288
+FILE file-rnd-kzoxjmjlenuagyz "wc2.1_5m_vapr.vrt" 0
+FILE file-meta-66565498e7b08c92af65a2367fa238a5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_12.tif" 11153145
+FILE file-meta-1f92c7cf3003eecf8cd82807fd11f3a0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_11.tif" 11206115
+FILE file-meta-9adfc681e7476f8b7cc4b8bb0f9a675e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_10.tif" 11300758
+FILE file-meta-6892c27fd1a38b866e57c058a64995fc "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_09.tif" 11377454
+FILE file-meta-6ce45e2d770295e6401fea536c25b794 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_08.tif" 11186775
+FILE file-meta-d4342472492637155ff84df4436694b0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_07.tif" 11199089
+FILE file-meta-8cd87373bbc7202043a3c56e89c22e50 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_06.tif" 11312481
+FILE file-meta-b9a4aa5f19130eff63d4a50978d456b6 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_05.tif" 11393495
+FILE file-meta-14adacd68d234d0a16b1e8325bb77591 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_04.tif" 11332294
+FILE file-meta-8226b75b235a4bd0d19ed2489a4ef11d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_03.tif" 11245001
+FILE file-meta-9fd671e0f9c9f23756d41efad30b3eba "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_02.tif" 11176645
+FILE file-meta-c8e65aafb17c6d2019a14363ea5af5c9 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmin/wc2.1_5m_tmin_01.tif" 11170143
+FILE file-rnd-hujyelukxgewuis "wc2.1_5m_tmin.vrt" 0
+FILE file-meta-553ad715f09b842e107955ecbacb6898 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_12.tif" 11014744
+FILE file-meta-9e3ead5f918eceef18b075b3952cdb34 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_11.tif" 11089637
+FILE file-meta-d9b0778cd10981fcbe62bc9f404a435f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_10.tif" 11132196
+FILE file-meta-d34236596f403dda52106ad6cb5a88cb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_09.tif" 11054964
+FILE file-meta-abc0a856334b325acc4daef18bc955ae "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_08.tif" 10983899
+FILE file-meta-8d09549fe42b2a56096db7ef30a67b85 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_07.tif" 11024836
+FILE file-meta-bc4106b70c717b0de9c9308473a7f381 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_06.tif" 11054820
+FILE file-meta-199876744cbfde4e296780224bc7d58a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_05.tif" 11139334
+FILE file-meta-a1689dd6c2d06fcbbd13f7ce050564df "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_04.tif" 11193526
+FILE file-meta-15c785437c92d5676c4ce4097e829f6f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_03.tif" 11268671
+FILE file-meta-8b2eb660965b5d20466b59d1ca1e116d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_02.tif" 11109433
+FILE file-meta-3b6869dc83802e011e89ce317f5ccc8c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tmax/wc2.1_5m_tmax_01.tif" 11065709
+FILE file-rnd-ltjkbqicgwmwbxr "wc2.1_5m_tmax.vrt" 0
+FILE file-meta-6c714ca30d573cd0768a0b2fa6935094 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_12.tif" 10995525
+FILE file-meta-b2d8f2beed056a63726f39cea9c28f77 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_11.tif" 11062690
+FILE file-meta-c6fa527011339f3bc8d9fe27f411cf4c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_10.tif" 11128053
+FILE file-meta-e06a454cff9543d9c9d8f560da54aef6 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_09.tif" 11104367
+FILE file-meta-9328c09c337678b4cecb763eb6f75317 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_08.tif" 10987511
+FILE file-meta-33e26a1b60034fd077ed8655f4723afb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_07.tif" 11036214
+FILE file-meta-787719b63480e1ead6dd8c54f23f08ce "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_06.tif" 11110965
+FILE file-meta-c5054deeff16bec77195509a0f6ca3ba "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_05.tif" 11218968
+FILE file-meta-aba4929a54b47e40ff88915cf0a09851 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_04.tif" 11214784
+FILE file-meta-b2bf3985097f4c08b0b476674e1457a4 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_03.tif" 11154007
+FILE file-meta-29bc9a805e62c56d8fb1175c5cc3457d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_02.tif" 11077856
+FILE file-meta-ffd26dff746c5c2cbcee1ec289e6bd74 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_tavg/wc2.1_5m_tavg_01.tif" 11015478
+FILE file-rnd-itemwlqsdldplxp "wc2.1_5m_tavg.vrt" 0
+FILE file-meta-a66f605fbda985ba1a033bdb4c870ffa "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_12.tif" 5245808
+FILE file-meta-dfe575c5f3173144213fb09ef10d1c97 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_11.tif" 5260681
+FILE file-meta-2118f10ea93642e9d887e2adf19d79a1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_10.tif" 5421281
+FILE file-meta-6d21d4d5441cb2385c44df65c049e405 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_09.tif" 5398533
+FILE file-meta-08881dae61a3456457ee9b7c7b763b91 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_08.tif" 4603797
+FILE file-meta-8e2ce300f3c5e461d4c51358b62f8b19 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_07.tif" 4347747
+FILE file-meta-9215573ecba4dd3e35824ea04ed1cc84 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_06.tif" 4313173
+FILE file-meta-a49c34d3d253eb28b0398760678ecbb9 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_05.tif" 4361628
+FILE file-meta-5dcc0af2b67d7a2880be34e51f3c1149 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_04.tif" 4744938
+FILE file-meta-f58d87ff29589f5043cef945bb52d7c2 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_03.tif" 5454977
+FILE file-meta-bfabd5d4f3f75f573158ae99043fa664 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_02.tif" 5484053
+FILE file-meta-fd1b931ae29645e67ac1de219d4b566e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_srad/wc2.1_5m_srad_01.tif" 5313509
+FILE file-rnd-izojebrtckloobc "wc2.1_5m_srad.vrt" 0
+FILE file-meta-054ec4ecf3082b6d1df82338fc47dfa8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_12.tif" 1800931
+FILE file-meta-f9a6f3d840ea65359497db5137113f60 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_11.tif" 1845629
+FILE file-meta-53b3916709a4258f0349773f253167f8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_10.tif" 2031600
+FILE file-meta-d464bac1f9c7cee5290524e1800d31d9 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_09.tif" 1960859
+FILE file-meta-704079d6c96602713233d76cd533ae6b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_08.tif" 2093504
+FILE file-meta-5b073081de8138ecf5c3050439e7028c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_07.tif" 1983990
+FILE file-meta-904a08ee1f9f1910d3b1eecb3ccdd73d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_06.tif" 1945006
+FILE file-meta-2fec6e78d9dac88201d0349de6a703a2 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_05.tif" 1945154
+FILE file-meta-4894fe8fb763c19e2ee1ff1560527fd0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_04.tif" 1932611
+FILE file-meta-d0bc7b9c33310555ecf5eed9735ffe56 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_03.tif" 1943872
+FILE file-meta-771eccbc383aec627fd3f8fa142fb12f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_02.tif" 1798891
+FILE file-meta-67a86e4f00c1a6df18e5cc269d10f4da "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_prec/wc2.1_5m_prec_01.tif" 1741806
+FILE file-rnd-yzcxkshqngjixxq "wc2.1_5m_prec.vrt" 0
+FILE file-meta-9e114257c4c2e01890f01e4285a4094c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_elev/wc2.1_5m_elev.tif" 4866625
+FILE file-rnd-vemcookvrpflhit "wc2.1_5m_elev.vrt" 0
+FILE file-meta-93e200df5b3712162b7929dc63db7736 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_9.tif" 13322483
+FILE file-meta-6714713bcc9983fb9f4c90ca3702d801 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_8.tif" 13174146
+FILE file-meta-08a0be479fc0a673d13656090c0f19bb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_7.tif" 11673100
+FILE file-meta-cc8feb3f4749ecff13e3776d3fb4982d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_6.tif" 11357239
+FILE file-meta-a0036a89b77d507e661e6151cc40105b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_5.tif" 10861141
+FILE file-meta-5b8e02417e2f5a0ffd0206805255406e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_4.tif" 14471227
+FILE file-meta-33f505f8ee3a2048cece85c43b4087e5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_3.tif" 14239028
+FILE file-meta-dce07ecfc0b68611e5b771194220518c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_2.tif" 13146937
+FILE file-meta-13986efedc5697669fa186b67b844675 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_19.tif" 5376012
+FILE file-meta-071aa2d74129b8197d34dc92a3df7d46 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_18.tif" 5313371
+FILE file-meta-f9dc75cbb6fb85b89ed143f63554c439 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_17.tif" 4463837
+FILE file-meta-481d941968bcf7ae293f6b7d895b9b99 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_16.tif" 6042145
+FILE file-meta-8c0d3e11773d2eea2c04aba396904572 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_15.tif" 12987711
+FILE file-meta-8df25387cc6723504678f6642a8500d3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_14.tif" 3211489
+FILE file-meta-e65aa0cbaa2ea87920f81bd56689971a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_13.tif" 5080855
+FILE file-meta-b0b8fad435c9509b669638c6b3cd5b43 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_12.tif" 6998738
+FILE file-meta-aad6a8b5a627a300ac50ae6ec1257854 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_11.tif" 13230043
+FILE file-meta-e3716e6ed43182319c19d7c54697fc4c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_10.tif" 12899517
+FILE file-meta-36cf34f1c093ff2311f4662ea3279500 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_bio/wc2.1_5m_bio_1.tif" 14110480
+FILE file-meta-70268c86b1f104e5f69a1e3d3aaaa5cd "wc2.1_2.5m_bio" 4096
+FILE file-meta-d436cd8760d3ea40eda9068175a7fc74 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_12.tif" 19093523
+FILE file-meta-16eb24c7874724d8bb7bd52d65433337 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_11.tif" 18742079
+FILE file-meta-18472ee3e2821cc618b43a5fc612bded "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_10.tif" 18430188
+FILE file-meta-5d9f6bfb8de800222b8a805e6ac8dc67 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_09.tif" 18449013
+FILE file-meta-0eb24c65a956ee8a921eb0b9a29718be "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_08.tif" 17753157
+FILE file-meta-dfa6210feb11b4c49425be6c1474f664 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_07.tif" 17805753
+FILE file-meta-20873e4686db735ae5c4219cf6ebe2b0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_06.tif" 18147409
+FILE file-meta-909ef1340343c0558b44ab83d4786fb3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_05.tif" 18403768
+FILE file-meta-82fb7353218f1ed793c5adcf1ffe2fb6 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_04.tif" 18889688
+FILE file-meta-facb4c28fd57b0a901d8dc9861578a83 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_03.tif" 19337161
+FILE file-meta-bdd110a7681fceeb3731f0907ca85eb1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_02.tif" 19601228
+FILE file-meta-886f6a9591606f5e10cdee02a0a9c9d1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_wind/wc2.1_2.5m_wind_01.tif" 19361676
+FILE file-meta-5a501b7ef958ace6ab2e658fd17d0628 "wc2.1_2.5m_wind" 4096
+FILE file-meta-0339ff9a93568a096cf917fcc626afb5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_12.tif" 21839057
+FILE file-meta-b6e1d9c03c0d72a3462efa5955f26fc6 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_11.tif" 21457652
+FILE file-meta-4a50e76d49524a24e1496dbd839bb3f7 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_10.tif" 22196533
+FILE file-meta-1c339b179321fba62a62d4cec3488d5c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_09.tif" 23472824
+FILE file-meta-81a0c6d20ae9944d03e6d89f757caa62 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_08.tif" 24388947
+FILE file-meta-a7236f61e63b4ba08b840f82c2a26e56 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_07.tif" 23945502
+FILE file-meta-30d541d1a24341ec0e15a3229fc53db0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_06.tif" 23268038
+FILE file-meta-859b1eb2d159c08b97852644df1b141d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_05.tif" 22324580
+FILE file-meta-07b8458201463af97e6452e6db2366ca "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_04.tif" 21092831
+FILE file-meta-0d67295e36c663109b1c2ef481b4d8e3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_03.tif" 19772142
+FILE file-meta-443bebb2685965c6e8eaf237fdae3744 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_02.tif" 20315525
+FILE file-meta-461b699775746442e1d12ddd059ebb3a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_vapr/wc2.1_2.5m_vapr_01.tif" 21022823
+FILE file-rnd-qxtopfkmjihnezg "wc2.1_2.5m_vapr.vrt" 0
+FILE file-meta-a5e6bd0479f925f28e130759ce2d7b92 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_12.tif" 39065535
+FILE file-meta-4c0a78a4adf8d53d84f494ae171423dc "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_11.tif" 39230551
+FILE file-meta-eb1a015a8bf68f6db9b8273d66a16357 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_10.tif" 39351902
+FILE file-meta-6a2cfc2fcfa63cc41a86607233991cfd "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_09.tif" 39433800
+FILE file-meta-d7b89db38834b3edad10814c48c3b06c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_08.tif" 38939145
+FILE file-meta-0263e9da4ebe6b5dc73ec944d2f1cf30 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_07.tif" 39127732
+FILE file-meta-5dcf68c8c291e71399cbcaa867b24be3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_06.tif" 39370097
+FILE file-meta-7d8c341efba6a11c9afbd26577e1d73c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_05.tif" 39450252
+FILE file-meta-e44f6a4088f0e9787d0f243a3966247b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_04.tif" 39383659
+FILE file-meta-42ea5a5ea7221f8c7aac151dce7edc5f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_03.tif" 39458853
+FILE file-meta-9a60ad7eec929ac11f3c206f21a99231 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_02.tif" 39234997
+FILE file-meta-7d0219b82fa473f71451045cf099c5ef "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmin/wc2.1_2.5m_tmin_01.tif" 39177862
+FILE file-rnd-ptnfqotdbozqapq "wc2.1_2.5m_tmin.vrt" 0
+FILE file-meta-b2606a29f1188e80e2cd23859d9d00df "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_12.tif" 38331157
+FILE file-meta-2574706468d3c00680b310fd1bcd5fb7 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_11.tif" 38528829
+FILE file-meta-c17a090dde21bcc2e6c7f6bec07020f2 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_10.tif" 38559974
+FILE file-meta-4e1d597551345c391eb6346fc73457ea "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_09.tif" 38462806
+FILE file-meta-4e21d17712b7709ec98af9f5323be338 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_08.tif" 38432646
+FILE file-meta-0f9bc7759b45323a465485d5fe238fae "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_07.tif" 38712526
+FILE file-meta-e6663ec1b9471d81ed01cfc466172cb1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_06.tif" 38772970
+FILE file-meta-2ddaa08668827a946a8ceb27a8b3ab75 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_05.tif" 38997616
+FILE file-meta-d455b3fdf6a6769fb4b6d784f280c04c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_04.tif" 38992950
+FILE file-meta-67f3f6fd07acc3a3012e5daeae775dbf "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_03.tif" 39296884
+FILE file-meta-6b7d28e62317b60878bc229db7639645 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_02.tif" 38851661
+FILE file-meta-044d06057ab0feb181d957bbfc34a4e3 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tmax/wc2.1_2.5m_tmax_01.tif" 38594743
+FILE file-rnd-gkptkjkehzignwd "wc2.1_2.5m_tmax.vrt" 0
+FILE file-meta-cae987938d147cb24b2f51df1e448de0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_12.tif" 38359327
+FILE file-meta-885043b48e25388a7150b5ea101fcf14 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_11.tif" 38503573
+FILE file-meta-7a0eb117d2c7f57d531fe2461d26a6d5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_10.tif" 38555624
+FILE file-meta-7ccfff3b3b757c80be610a3ccada3b27 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_09.tif" 38381155
+FILE file-meta-3c0b6163da581e2f7325dbabaf380603 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_08.tif" 38146060
+FILE file-meta-b8f7112bda46c45ceb30f0624129f08e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_07.tif" 38469065
+FILE file-meta-b32a66e6be5932f6618e2b8d7f17d879 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_06.tif" 38781249
+FILE file-meta-6fe936824df2fbd9737f429d56633e26 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_05.tif" 38977348
+FILE file-meta-efeb7086a4bdd5eebb9098191ea227eb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_04.tif" 38915156
+FILE file-meta-164111c707d97da779a6278d66a48b73 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_03.tif" 38984608
+FILE file-meta-c88b82701416c88d4cc58341a35ac7eb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_02.tif" 38730032
+FILE file-meta-234654029aa645fa68e73e9f66d2a9b2 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_tavg/wc2.1_2.5m_tavg_01.tif" 38515392
+FILE file-rnd-mzyvcxpxcekvhpd "wc2.1_2.5m_tavg.vrt" 0
+FILE file-meta-a52a7127632d85061e610c08c2d5c14b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_12.tif" 19601216
+FILE file-meta-3f61a8eb50737f79e2c0cd8ae942eb48 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_11.tif" 19558939
+FILE file-meta-caf7065fc16fe814cf8fb6a606351e2a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_10.tif" 19940558
+FILE file-meta-98c8b29ad17f239c7859d8472627c180 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_09.tif" 20122091
+FILE file-meta-cb71f0a8d4b058c9c4e9967b0c902e5b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_08.tif" 17126664
+FILE file-meta-4db250bef8556f7d2e9b3ecf399310f1 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_07.tif" 16225489
+FILE file-meta-5216ddb60b4b3f3efa589b2a7d32ae26 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_06.tif" 16131725
+FILE file-meta-f23f53f776e4fd794803a835cfa18210 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_05.tif" 16228252
+FILE file-meta-c44c3d3ddbd3a759916a50dbb1141eef "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_04.tif" 17641324
+FILE file-meta-e1eec116a50694a60f08c940123b0dd9 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_03.tif" 20239457
+FILE file-meta-7061672ec3673ec69f3b15631257878f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_02.tif" 20416902
+FILE file-meta-fa92835f771c8cfe19ec632fa3479cfb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_srad/wc2.1_2.5m_srad_01.tif" 19799682
+FILE file-rnd-tjopzobdxgrtsmr "wc2.1_2.5m_srad.vrt" 0
+FILE file-meta-fe3547529f58393373e64b7116c15141 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_12.tif" 5625550
+FILE file-meta-e18d64205b646df2d61bd85c44d16ce8 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_11.tif" 5804089
+FILE file-meta-34b587c76ce642a51880b5455c7a5591 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_10.tif" 6507116
+FILE file-meta-20b57f6542caa517340500a514392b04 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_09.tif" 6216995
+FILE file-meta-da42ae638414b0a7ada79b67cd4e1e5e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_08.tif" 6658737
+FILE file-meta-4113d3dd241417d555ff1b0966f50696 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_07.tif" 6341313
+FILE file-meta-79311836bd16235b7a5154bcbb263960 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_06.tif" 6208893
+FILE file-meta-6bf2f1f99008b34a5f5e626c25ebffc4 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_05.tif" 6160611
+FILE file-meta-abb5af195a17d8d778e0863163d2544b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_04.tif" 6169475
+FILE file-meta-0597f0e5c1e65df489ab0e22e1bf4cdd "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_03.tif" 6199874
+FILE file-meta-41fa93722fa11b8cc29dfd15f201dfb0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_02.tif" 5653253
+FILE file-meta-c5584f1355e173f31eff8d7bb827c01d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_prec/wc2.1_2.5m_prec_01.tif" 5449882
+FILE file-rnd-pvzdmmnuoajwgcx "wc2.1_2.5m_prec.vrt" 0
+FILE file-meta-e49fe695b181cc00d1a3dbdfa92d461c "wc2.1_2.5m_elev/wc2.1_2.5m_elev.tif" 17738642
+FILE file-rnd-lpdvfhvfkdbdjdp "wc2.1_2.5m_elev.vrt" 0
+FILE file-meta-d62d853040a204aa8b361a64b90b3f25 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_9.tif" 47476729
+FILE file-meta-cb80330d8ee13614f2c11ef892a53d82 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_8.tif" 47120368
+FILE file-meta-14a96af88b2a145e3cc94e49669c11b5 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_7.tif" 41473061
+FILE file-meta-842e5a69f060c025f8366383b5b5da23 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_6.tif" 39919962
+FILE file-meta-71699558fded60b3fed781649c5192c6 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_5.tif" 37744099
+FILE file-meta-f00c8205f9f6bda467903871f5db998a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_4.tif" 56204551
+FILE file-meta-f60ae113c945586b734a7838e9d1259d "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_3.tif" 55441071
+FILE file-meta-74dc2f0043464eb104216b1196975ea0 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_2.tif" 47819954
+FILE file-meta-41946fe784d023fb1034823a700ff86f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_19.tif" 19210092
+FILE file-meta-6427ce7374095c2452f4eb9a5d5db0fb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_18.tif" 19474466
+FILE file-meta-20fb65984e432a6837e5af2e80ce47bf "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_17.tif" 15948202
+FILE file-meta-46869aec326abf2c89146d09ddbf7405 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_16.tif" 22123510
+FILE file-meta-c6aa79f16f479a1b454e37fbecf0cf50 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_15.tif" 48689231
+FILE file-meta-a21d581b1f479ad4df7be915458a9d2c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_14.tif" 11222411
+FILE file-meta-7f9d3ba040e22332cd0588cbef184ddb "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_13.tif" 18154358
+FILE file-meta-fe08bd7efe6abe698312cc88f319dc9e "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_12.tif" 25761708
+FILE file-meta-a0424ad855cb29bb42f2290d6a17baf2 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_11.tif" 47055428
+FILE file-meta-4c21159be875ceb57ce973574fa6c87b "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_10.tif" 46331330
+FILE file-meta-a6ff6cce946746dc383bc891de6e3c0a "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_bio/wc2.1_2.5m_bio_1.tif" 50198441
+FILE file-rnd-lohajjoqtprcikn "wc2.1_2.5m_bio.vrt" 0
+TASK T1 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-aphbcconmirgszh 
+TASK T6 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-qjudgqodxdzcwoj 
+TASK T7 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-jzmsmxwmeupcbyd 
+TASK T8 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS file-meta-1cb16360ed7a791c1876ab4b9768fa74 OUTPUTS file-rnd-kugabtmoezpwwvr 
+FILE file-rnd-occuclwetvsidee "wc2.1_30s_elev_wind_prec.tif" 0
+FILE file-rnd-fzadscanxltwnpk "wc2.1_30s_elev_prec_srad.tif" 0
+TASK T5 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-7b0827d6ec37c5092d485299313b0031 
+TASK T3 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-qqnqqjyogaflptm 
+TASK T2 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-twnkxbgytwovvbt 
+FILE file-rnd-lufoltbygzvtgrl "wc2.1_30s_elev_prec_vapr.tif" 0
+TASK T9 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-a23bf2caa64b13e7e5d17055015030ff 
+TASK T4 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-uxdqqgfhuraalxs 
+TASK T13 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-scbhgocfbdfdmzu 
+TASK T11 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-luxswkxvmysabbb 
+TASK T10 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-cftbfhwowoorudb 
+TASK T12 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-isxygukpoavubaa 
+TASK T14 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-ftjwwjvcghapobd 
+TASK T15 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-uomiqsaadaxnlwu 
+TASK T16 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-jcrhaculylebnvt 
+FILE file-rnd-vpcgwxyinisxqqc "wc2.1_10m_elev_prec_srad_vapr.tif" 0
+FILE file-rnd-sdjnmvioubblexf "wc2.1_10m_elev_prec_vapr_tavg.tif" 0
+FILE file-rnd-ubfywohxmqbuvps "wc2.1_10m_elev_tmax_tmin_vapr.tif" 0
+FILE file-rnd-izxzkcncfonnmvo "wc2.1_10m_elev_tavg_srad.tif" 0
+FILE file-rnd-yuyifzvrifbgznl "wc2.1_10m_elev_prec_srad.tif" 0
+TASK T17 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-285a0c68b2ad54c288f3bbc303644383 
+TASK T18 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-aee29a4daf890c320fedc872662a5385 
+TASK T20 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-hujyelukxgewuis 
+TASK T19 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-kzoxjmjlenuagyz 
+TASK T22 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-itemwlqsdldplxp 
+TASK T21 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-ltjkbqicgwmwbxr 
+TASK T24 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-yzcxkshqngjixxq 
+TASK T23 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-izojebrtckloobc 
+TASK T25 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-vemcookvrpflhit 
+FILE file-rnd-udemcnpwtlzscle "wc2.1_5m_elev_prec_srad_vapr.tif" 0
+FILE file-rnd-nwbyilsbzxlqdnf "wc2.1_5m_elev_prec_vapr_tavg.tif" 0
+FILE file-rnd-imhfkbvchaxsego "wc2.1_5m_elev_tmax_tmin_vapr.tif" 0
+FILE file-rnd-gnlzwchmgcqxriu "wc2.1_5m_elev_tavg_srad.tif" 0
+FILE file-rnd-inybliwlpmxccrl "wc2.1_5m_elev_prec_srad.tif" 0
+TASK T26 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-70268c86b1f104e5f69a1e3d3aaaa5cd 
+TASK T27 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-5a501b7ef958ace6ab2e658fd17d0628 
+TASK T28 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-qxtopfkmjihnezg 
+TASK T29 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-ptnfqotdbozqapq 
+TASK T30 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-gkptkjkehzignwd 
+TASK T33 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-pvzdmmnuoajwgcx 
+TASK T31 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-mzyvcxpxcekvhpd 
+TASK T34 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS file-meta-e49fe695b181cc00d1a3dbdfa92d461c OUTPUTS file-rnd-lpdvfhvfkdbdjdp 
+FILE file-rnd-onlbezriwxhqefz "wc2.1_2.5m_elev_prec_vapr_tavg.tif" 0
+FILE file-rnd-prfyjwfebmerirq "wc2.1_2.5m_elev_tmax_tmin_vapr.tif" 0
+TASK T32 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-tjopzobdxgrtsmr 
+FILE file-rnd-ngiebjigmhiisfw "wc2.1_2.5m_elev_prec_srad_vapr.tif" 0
+FILE file-rnd-vrzhjvnxqummbui "wc2.1_2.5m_elev_tavg_srad.tif" 0
+FILE file-rnd-ghnnhsvtbsexesg "wc2.1_2.5m_elev_prec_srad.tif" 0
+TASK T35 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-lohajjoqtprcikn 
+TASK T40 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-cftbfhwowoorudb file-rnd-scbhgocfbdfdmzu file-rnd-uomiqsaadaxnlwu file-rnd-jcrhaculylebnvt OUTPUTS file-rnd-sdjnmvioubblexf 
+TASK T39 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-cftbfhwowoorudb file-rnd-ftjwwjvcghapobd file-rnd-uomiqsaadaxnlwu file-rnd-jcrhaculylebnvt OUTPUTS file-rnd-vpcgwxyinisxqqc 
+TASK T42 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-scbhgocfbdfdmzu file-rnd-ftjwwjvcghapobd file-rnd-jcrhaculylebnvt OUTPUTS file-rnd-izxzkcncfonnmvo 
+TASK T41 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-cftbfhwowoorudb file-rnd-luxswkxvmysabbb file-rnd-isxygukpoavubaa file-rnd-jcrhaculylebnvt OUTPUTS file-rnd-ubfywohxmqbuvps 
+TASK T43 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-ftjwwjvcghapobd file-rnd-uomiqsaadaxnlwu file-rnd-jcrhaculylebnvt OUTPUTS file-rnd-yuyifzvrifbgznl 
+TASK T44 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-kzoxjmjlenuagyz file-rnd-izojebrtckloobc file-rnd-yzcxkshqngjixxq file-rnd-vemcookvrpflhit OUTPUTS file-rnd-udemcnpwtlzscle 
+TASK T45 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-kzoxjmjlenuagyz file-rnd-itemwlqsdldplxp file-rnd-yzcxkshqngjixxq file-rnd-vemcookvrpflhit OUTPUTS file-rnd-nwbyilsbzxlqdnf 
+TASK T48 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-izojebrtckloobc file-rnd-yzcxkshqngjixxq file-rnd-vemcookvrpflhit OUTPUTS file-rnd-inybliwlpmxccrl 
+TASK T47 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-itemwlqsdldplxp file-rnd-izojebrtckloobc file-rnd-vemcookvrpflhit OUTPUTS file-rnd-gnlzwchmgcqxriu 
+TASK T46 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-kzoxjmjlenuagyz file-rnd-hujyelukxgewuis file-rnd-ltjkbqicgwmwbxr file-rnd-vemcookvrpflhit OUTPUTS file-rnd-imhfkbvchaxsego 
+TASK T53 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-tjopzobdxgrtsmr file-rnd-pvzdmmnuoajwgcx file-rnd-lpdvfhvfkdbdjdp OUTPUTS file-rnd-ghnnhsvtbsexesg 
+TASK T51 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-qxtopfkmjihnezg file-rnd-tjopzobdxgrtsmr file-rnd-pvzdmmnuoajwgcx file-rnd-lpdvfhvfkdbdjdp OUTPUTS file-rnd-ngiebjigmhiisfw 
+TASK T49 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-qxtopfkmjihnezg file-rnd-mzyvcxpxcekvhpd file-rnd-pvzdmmnuoajwgcx file-rnd-lpdvfhvfkdbdjdp OUTPUTS file-rnd-onlbezriwxhqefz 
+TASK T52 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-mzyvcxpxcekvhpd file-rnd-tjopzobdxgrtsmr file-rnd-lpdvfhvfkdbdjdp OUTPUTS file-rnd-vrzhjvnxqummbui 
+TASK T50 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-qxtopfkmjihnezg file-rnd-ptnfqotdbozqapq file-rnd-gkptkjkehzignwd file-rnd-lpdvfhvfkdbdjdp OUTPUTS file-rnd-prfyjwfebmerirq 
+TASK T36 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-aphbcconmirgszh file-rnd-jzmsmxwmeupcbyd file-rnd-kugabtmoezpwwvr OUTPUTS file-rnd-occuclwetvsidee 
+TASK T38 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-twnkxbgytwovvbt file-rnd-jzmsmxwmeupcbyd file-rnd-kugabtmoezpwwvr OUTPUTS file-rnd-lufoltbygzvtgrl 
+# end

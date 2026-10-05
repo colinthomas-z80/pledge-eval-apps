@@ -1,0 +1,113 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-rnd-rzbstfgrgiqutbt "wc2.1_30s_wind.vrt" 0
+FILE file-rnd-egnahfoaivawoji "wc2.1_30s_vapr.vrt" 0
+FILE file-rnd-hxvqeomfjodwzyr "wc2.1_30s_tmin.vrt" 0
+FILE file-rnd-xapoumznkuhljfd "wc2.1_30s_tmax.vrt" 0
+FILE file-meta-7b0827d6ec37c5092d485299313b0031 "wc2.1_30s_tavg" 4096
+FILE file-rnd-kasgadtlnlrwfbt "wc2.1_30s_srad.vrt" 0
+FILE file-rnd-wgjvvdgyysxattn "wc2.1_30s_prec.vrt" 0
+FILE file-meta-12ae2aaca719615b5a6ea564891ddf6f "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_elev/wc2.1_30s_elev.tif" 342195708
+FILE file-rnd-vppexeofkssdphp "wc2.1_30s_elev.vrt" 0
+FILE file-meta-a23bf2caa64b13e7e5d17055015030ff "wc2.1_10m_wind" 4096
+FILE file-rnd-ycivatuqaaijgdc "wc2.1_10m_vapr.vrt" 0
+FILE file-rnd-npldprpjzrbydvq "wc2.1_10m_tmin.vrt" 0
+FILE file-rnd-idgrvshvpbbxpfl "wc2.1_10m_tmax.vrt" 0
+FILE file-rnd-tfwnkteesaskyly "wc2.1_10m_tavg.vrt" 0
+FILE file-rnd-altkqvniwbsfkef "wc2.1_10m_srad.vrt" 0
+FILE file-rnd-ieqdycrtvwanxfy "wc2.1_10m_prec.vrt" 0
+FILE file-rnd-tqkxgivegtsbyhy "wc2.1_10m_elev.vrt" 0
+FILE file-meta-285a0c68b2ad54c288f3bbc303644383 "wc2.1_10m_bio" 4096
+FILE file-meta-aee29a4daf890c320fedc872662a5385 "wc2.1_5m_wind" 4096
+FILE file-rnd-acbzklamkdkygns "wc2.1_5m_vapr.vrt" 0
+FILE file-rnd-dnxtsrfnixqtpaa "wc2.1_5m_tmin.vrt" 0
+FILE file-rnd-blzjcjvdvomkskc "wc2.1_5m_tmax.vrt" 0
+FILE file-rnd-awjdfwbfifzweps "wc2.1_5m_tavg.vrt" 0
+FILE file-rnd-amfydlkowolfyym "wc2.1_5m_srad.vrt" 0
+FILE file-rnd-jzipmdflxzuwhix "wc2.1_5m_prec.vrt" 0
+FILE file-meta-9e114257c4c2e01890f01e4285a4094c "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_elev/wc2.1_5m_elev.tif" 4866625
+FILE file-rnd-wdenricagjqbdsj "wc2.1_5m_elev.vrt" 0
+FILE file-meta-70268c86b1f104e5f69a1e3d3aaaa5cd "wc2.1_2.5m_bio" 4096
+FILE file-meta-5a501b7ef958ace6ab2e658fd17d0628 "wc2.1_2.5m_wind" 4096
+FILE file-rnd-ouqgmjejuqnrunk "wc2.1_2.5m_vapr.vrt" 0
+FILE file-rnd-ksmklnmyzqficel "wc2.1_2.5m_tmin.vrt" 0
+FILE file-rnd-snmmaplzvgbqyje "wc2.1_2.5m_tmax.vrt" 0
+FILE file-rnd-sxqxjwbxatufnca "wc2.1_2.5m_tavg.vrt" 0
+FILE file-rnd-znqdgeuhcdchpha "wc2.1_2.5m_srad.vrt" 0
+FILE file-rnd-ifvywudzycnjzfv "wc2.1_2.5m_prec.vrt" 0
+FILE file-meta-bbf69613d84595ba3e405bfb6ee8a729 "/users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_2.5m_elev/wc2.1_2.5m_elev.tif" 17738642
+FILE file-rnd-izwtvdwxtrgmnmf "wc2.1_2.5m_elev.vrt" 0
+FILE file-rnd-zximrcgdpswemhn "wc2.1_2.5m_bio.vrt" 0
+TASK T1 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-rzbstfgrgiqutbt 
+TASK T6 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-kasgadtlnlrwfbt 
+TASK T4 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-xapoumznkuhljfd 
+TASK T8 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-vppexeofkssdphp 
+TASK T10 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-ycivatuqaaijgdc 
+TASK T12 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-idgrvshvpbbxpfl 
+TASK T13 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-tfwnkteesaskyly 
+TASK T14 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-altkqvniwbsfkef 
+TASK T7 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-wgjvvdgyysxattn 
+FILE file-rnd-swauheywqhortwc "wc2.1_30s_elev_wind_prec.tif" 0
+FILE file-rnd-tjucxndkkdxkabd "wc2.1_30s_elev_prec_srad.tif" 0
+TASK T16 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-tqkxgivegtsbyhy 
+FILE file-rnd-csnwzbpuskkyjpj "wc2.1_10m_elev_tavg_srad.tif" 0
+TASK T15 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-ieqdycrtvwanxfy 
+FILE file-rnd-uxreuoerfgbpbbt "wc2.1_10m_elev_prec_srad_vapr.tif" 0
+FILE file-rnd-pychkoyrfqvvvbo "wc2.1_10m_elev_prec_vapr_tavg.tif" 0
+FILE file-rnd-askgnbielfkwcnc "wc2.1_10m_elev_prec_srad.tif" 0
+TASK T18 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-aee29a4daf890c320fedc872662a5385 
+TASK T3 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-hxvqeomfjodwzyr 
+TASK T9 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-a23bf2caa64b13e7e5d17055015030ff 
+TASK T20 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-dnxtsrfnixqtpaa 
+TASK T19 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-acbzklamkdkygns 
+TASK T23 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-amfydlkowolfyym 
+TASK T24 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-jzipmdflxzuwhix 
+TASK T17 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-285a0c68b2ad54c288f3bbc303644383 
+TASK T25 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-wdenricagjqbdsj 
+FILE file-rnd-qjtcuvyogktsulz "wc2.1_5m_elev_prec_srad_vapr.tif" 0
+FILE file-rnd-yxqpreabwagjwoz "wc2.1_5m_elev_prec_srad.tif" 0
+TASK T11 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-npldprpjzrbydvq 
+FILE file-rnd-tbhpiyaxizujxte "wc2.1_10m_elev_tmax_tmin_vapr.tif" 0
+TASK T28 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-ouqgmjejuqnrunk 
+TASK T26 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-70268c86b1f104e5f69a1e3d3aaaa5cd 
+TASK T21 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-blzjcjvdvomkskc 
+FILE file-rnd-wsqgipadvolsoeb "wc2.1_5m_elev_tmax_tmin_vapr.tif" 0
+TASK T30 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-snmmaplzvgbqyje 
+TASK T22 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-awjdfwbfifzweps 
+FILE file-rnd-xiehnkroiogshid "wc2.1_5m_elev_prec_vapr_tavg.tif" 0
+FILE file-rnd-iwyyeoxcjfeksff "wc2.1_5m_elev_tavg_srad.tif" 0
+TASK T31 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-sxqxjwbxatufnca 
+TASK T33 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-ifvywudzycnjzfv 
+TASK T27 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-5a501b7ef958ace6ab2e658fd17d0628 
+TASK T29 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-ksmklnmyzqficel 
+TASK T32 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-znqdgeuhcdchpha 
+TASK T35 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-zximrcgdpswemhn 
+TASK T34 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-izwtvdwxtrgmnmf 
+FILE file-rnd-piiidypqbdouvrn "wc2.1_2.5m_elev_prec_srad_vapr.tif" 0
+FILE file-rnd-uaesvapvhocmykq "wc2.1_2.5m_elev_prec_vapr_tavg.tif" 0
+FILE file-rnd-iohlxkibakegfqh "wc2.1_2.5m_elev_tmax_tmin_vapr.tif" 0
+FILE file-rnd-xtyhiuinftpxxtd "wc2.1_2.5m_elev_tavg_srad.tif" 0
+FILE file-rnd-rnsmtzrfgfznteh "wc2.1_2.5m_elev_prec_srad.tif" 0
+TASK T2 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-rnd-egnahfoaivawoji 
+FILE file-rnd-xnkauzgmhavcboq "wc2.1_30s_elev_prec_vapr.tif" 0
+TASK T5 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalbuildvrt" INPUTS OUTPUTS file-meta-7b0827d6ec37c5092d485299313b0031 
+TASK T41 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-altkqvniwbsfkef file-rnd-ieqdycrtvwanxfy file-rnd-tqkxgivegtsbyhy OUTPUTS file-rnd-askgnbielfkwcnc 
+TASK T38 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-tfwnkteesaskyly file-rnd-altkqvniwbsfkef file-rnd-tqkxgivegtsbyhy OUTPUTS file-rnd-csnwzbpuskkyjpj 
+TASK T40 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-ycivatuqaaijgdc file-rnd-tfwnkteesaskyly file-rnd-ieqdycrtvwanxfy file-rnd-tqkxgivegtsbyhy OUTPUTS file-rnd-pychkoyrfqvvvbo 
+TASK T39 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-ycivatuqaaijgdc file-rnd-altkqvniwbsfkef file-rnd-ieqdycrtvwanxfy file-rnd-tqkxgivegtsbyhy OUTPUTS file-rnd-uxreuoerfgbpbbt 
+TASK T43 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-amfydlkowolfyym file-rnd-jzipmdflxzuwhix file-rnd-wdenricagjqbdsj OUTPUTS file-rnd-yxqpreabwagjwoz 
+TASK T44 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-ycivatuqaaijgdc file-rnd-npldprpjzrbydvq file-rnd-idgrvshvpbbxpfl file-rnd-tqkxgivegtsbyhy OUTPUTS file-rnd-tbhpiyaxizujxte 
+TASK T47 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-awjdfwbfifzweps file-rnd-amfydlkowolfyym file-rnd-wdenricagjqbdsj OUTPUTS file-rnd-iwyyeoxcjfeksff 
+TASK T42 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-acbzklamkdkygns file-rnd-amfydlkowolfyym file-rnd-jzipmdflxzuwhix file-rnd-wdenricagjqbdsj OUTPUTS file-rnd-qjtcuvyogktsulz 
+TASK T46 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-acbzklamkdkygns file-rnd-awjdfwbfifzweps file-rnd-jzipmdflxzuwhix file-rnd-wdenricagjqbdsj OUTPUTS file-rnd-xiehnkroiogshid 
+TASK T45 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-acbzklamkdkygns file-rnd-dnxtsrfnixqtpaa file-rnd-blzjcjvdvomkskc file-rnd-wdenricagjqbdsj OUTPUTS file-rnd-wsqgipadvolsoeb 
+TASK T52 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-znqdgeuhcdchpha file-rnd-ifvywudzycnjzfv file-rnd-izwtvdwxtrgmnmf OUTPUTS file-rnd-rnsmtzrfgfznteh 
+TASK T48 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-ouqgmjejuqnrunk file-rnd-znqdgeuhcdchpha file-rnd-ifvywudzycnjzfv file-rnd-izwtvdwxtrgmnmf OUTPUTS file-rnd-piiidypqbdouvrn 
+TASK T49 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-ouqgmjejuqnrunk file-rnd-sxqxjwbxatufnca file-rnd-ifvywudzycnjzfv file-rnd-izwtvdwxtrgmnmf OUTPUTS file-rnd-uaesvapvhocmykq 
+TASK T51 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-sxqxjwbxatufnca file-rnd-znqdgeuhcdchpha file-rnd-izwtvdwxtrgmnmf OUTPUTS file-rnd-xtyhiuinftpxxtd 
+TASK T50 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-ouqgmjejuqnrunk file-rnd-ksmklnmyzqficel file-rnd-snmmaplzvgbqyje file-rnd-izwtvdwxtrgmnmf OUTPUTS file-rnd-iohlxkibakegfqh 
+TASK T36 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-rzbstfgrgiqutbt file-rnd-wgjvvdgyysxattn file-rnd-vppexeofkssdphp OUTPUTS file-rnd-swauheywqhortwc 
+TASK T53 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-egnahfoaivawoji file-rnd-wgjvvdgyysxattn file-rnd-vppexeofkssdphp OUTPUTS file-rnd-xnkauzgmhavcboq 
+TASK T37 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-rnd-kasgadtlnlrwfbt file-rnd-wgjvvdgyysxattn file-rnd-vppexeofkssdphp OUTPUTS file-rnd-tjucxndkkdxkabd 
+# end

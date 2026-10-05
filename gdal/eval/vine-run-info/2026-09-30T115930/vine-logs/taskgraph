@@ -1,0 +1,16 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-dc91dcb1840544b8b503502b7e45ecdf "wc2.1_30s_wind.vrt" 6999
+FILE file-meta-3054afda89165e020b5fab287e12d6f6 "wc2.1_30s_prec.vrt" 6739
+FILE file-meta-64dc950ca78f7df7326bbd89cf963f49 "wc2.1_30s_elev.vrt" 1394
+FILE file-rnd-tynozzdmevdsnfn "wc2.1_30s_elev_wind_prec.tif" 0
+FILE file-meta-fe79043f6d6b9b65c234ae78051493bd "wc2.1_30s_vapr.vrt" 7007
+FILE file-rnd-hdsjmsllgkiyoob "wc2.1_30s_elev_prec_vapr.tif" 0
+FILE file-meta-b4217fc7554ea62092dc2fe50cd3e3a6 "wc2.1_30s_srad.vrt" 6739
+FILE file-rnd-wcabxqdnggxicyj "wc2.1_30s_elev_prec_srad.tif" 0
+TASK T1 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-dc91dcb1840544b8b503502b7e45ecdf file-meta-3054afda89165e020b5fab287e12d6f6 file-meta-64dc950ca78f7df7326bbd89cf963f49 OUTPUTS file-rnd-tynozzdmevdsnfn 
+TASK T2 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-fe79043f6d6b9b65c234ae78051493bd file-meta-3054afda89165e020b5fab287e12d6f6 file-meta-64dc950ca78f7df7326bbd89cf963f49 OUTPUTS file-rnd-hdsjmsllgkiyoob 
+TASK T3 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-b4217fc7554ea62092dc2fe50cd3e3a6 file-meta-3054afda89165e020b5fab287e12d6f6 file-meta-64dc950ca78f7df7326bbd89cf963f49 OUTPUTS file-rnd-wcabxqdnggxicyj 
+TASK T4 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-dc91dcb1840544b8b503502b7e45ecdf file-meta-3054afda89165e020b5fab287e12d6f6 file-meta-64dc950ca78f7df7326bbd89cf963f49 OUTPUTS file-rnd-tynozzdmevdsnfn 
+# end

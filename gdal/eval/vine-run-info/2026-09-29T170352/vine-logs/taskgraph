@@ -1,0 +1,64 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-4be302f85b6ee8bf4ae44fd5d6cb68bd "wc2.1_30s_wind.vrt" 6483
+FILE file-meta-531658b633aff7bf6d8b459803564cbe "wc2.1_30s_prec.vrt" 6223
+FILE file-meta-d9b0fd74dfd4bc964f04fe5d83034b06 "wc2.1_30s_elev.vrt" 1394
+FILE file-rnd-ierrgrqrpxrxftc "wc2.1_30s_elev_wind_prec.tif" 0
+FILE file-meta-1aa38760bcfb3d7585e990fd8c9a24b4 "wc2.1_30s_vapr.vrt" 6491
+FILE file-rnd-oumkjgmziebqric "wc2.1_30s_elev_prec_vapr.tif" 0
+FILE file-meta-3702693617d75f9a38b56c85ee6288d6 "wc2.1_30s_srad.vrt" 6223
+FILE file-rnd-uxavyrmdvyepwmn "wc2.1_30s_elev_prec_srad.tif" 0
+FILE file-meta-67e007aeb2010a78d019c5a9cacd3823 "wc2.1_10m_vapr.vrt" 6361
+FILE file-meta-f442dec0a30eaa69503ff2dc4473ebc6 "wc2.1_10m_srad.vrt" 6101
+FILE file-meta-4562edda24776f06f8f31139e768af87 "wc2.1_10m_prec.vrt" 6145
+FILE file-meta-795960f4f85ddefbac3cc669038158a5 "wc2.1_10m_elev.vrt" 1385
+FILE file-meta-1dc52a89d9976e71b62e2e70789c1fa4 "wc2.1_10m_tavg.vrt" 6353
+FILE file-meta-0f011347e170f7352d45b14bdb7873bd "wc2.1_10m_tmin.vrt" 6353
+FILE file-meta-74df4fd84c72207ec096c75a1e14d1ed "wc2.1_10m_tmax.vrt" 6353
+FILE file-meta-1e09010ab892ad3859911a7458ac7f07 "wc2.1_5m_vapr.vrt" 6381
+FILE file-meta-0cf2f49a7aab343771d02ce86253af02 "wc2.1_5m_srad.vrt" 6121
+FILE file-meta-815b2b3f9c5bb46c9b2701bc2ba95375 "wc2.1_5m_prec.vrt" 6121
+FILE file-meta-459b0f7d91daa273d79c47bd2b823559 "wc2.1_5m_elev.vrt" 1383
+FILE file-meta-b9309a1f05b8b6cd3155c13e1234217b "wc2.1_5m_tavg.vrt" 6329
+FILE file-meta-b9e2791be288a0dbe3359fa42c31b95c "wc2.1_5m_tmin.vrt" 6329
+FILE file-meta-9715ba7d369c399ae22a864afea021c6 "wc2.1_5m_tmax.vrt" 6329
+FILE file-meta-289b414010e4e4d821a97cb9a98237fb "wc2.1_2.5m_vapr.vrt" 6429
+FILE file-meta-30a98a9eac289b355d36aa980b30c540 "wc2.1_2.5m_srad.vrt" 6169
+FILE file-meta-d13b28fee1491d1127177fb5ec877214 "wc2.1_2.5m_prec.vrt" 6169
+FILE file-meta-6a4c6309b3c51361f2608062cdae73be "wc2.1_2.5m_elev.vrt" 1387
+FILE file-meta-fde8e4b830e972fc246a14bacaf05adf "wc2.1_2.5m_tavg.vrt" 6377
+FILE file-meta-88a866b88d9e01678cebb9b0586b3c7d "wc2.1_2.5m_tmin.vrt" 6377
+FILE file-meta-26881f6b1cc9769b53c8e25cfcfa661d "wc2.1_2.5m_tmax.vrt" 6377
+TASK T2 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-1aa38760bcfb3d7585e990fd8c9a24b4 file-meta-531658b633aff7bf6d8b459803564cbe file-meta-d9b0fd74dfd4bc964f04fe5d83034b06 OUTPUTS file-rnd-oumkjgmziebqric 
+TASK T1 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-4be302f85b6ee8bf4ae44fd5d6cb68bd file-meta-531658b633aff7bf6d8b459803564cbe file-meta-d9b0fd74dfd4bc964f04fe5d83034b06 OUTPUTS file-rnd-ierrgrqrpxrxftc 
+TASK T8 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-f442dec0a30eaa69503ff2dc4473ebc6 file-meta-4562edda24776f06f8f31139e768af87 file-meta-795960f4f85ddefbac3cc669038158a5 OUTPUTS 
+TASK T5 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-67e007aeb2010a78d019c5a9cacd3823 file-meta-1dc52a89d9976e71b62e2e70789c1fa4 file-meta-4562edda24776f06f8f31139e768af87 file-meta-795960f4f85ddefbac3cc669038158a5 OUTPUTS 
+TASK T4 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-67e007aeb2010a78d019c5a9cacd3823 file-meta-f442dec0a30eaa69503ff2dc4473ebc6 file-meta-4562edda24776f06f8f31139e768af87 file-meta-795960f4f85ddefbac3cc669038158a5 OUTPUTS 
+TASK T18 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T15 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-289b414010e4e4d821a97cb9a98237fb file-meta-fde8e4b830e972fc246a14bacaf05adf file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T16 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-289b414010e4e4d821a97cb9a98237fb file-meta-88a866b88d9e01678cebb9b0586b3c7d file-meta-26881f6b1cc9769b53c8e25cfcfa661d file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T17 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-fde8e4b830e972fc246a14bacaf05adf file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T24 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T25 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-289b414010e4e4d821a97cb9a98237fb file-meta-fde8e4b830e972fc246a14bacaf05adf file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T27 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-fde8e4b830e972fc246a14bacaf05adf file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T26 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-289b414010e4e4d821a97cb9a98237fb file-meta-88a866b88d9e01678cebb9b0586b3c7d file-meta-26881f6b1cc9769b53c8e25cfcfa661d file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T28 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T29 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-289b414010e4e4d821a97cb9a98237fb file-meta-fde8e4b830e972fc246a14bacaf05adf file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T30 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-fde8e4b830e972fc246a14bacaf05adf file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T32 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T31 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-289b414010e4e4d821a97cb9a98237fb file-meta-88a866b88d9e01678cebb9b0586b3c7d file-meta-26881f6b1cc9769b53c8e25cfcfa661d file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T33 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-289b414010e4e4d821a97cb9a98237fb file-meta-fde8e4b830e972fc246a14bacaf05adf file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T35 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T6 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-67e007aeb2010a78d019c5a9cacd3823 file-meta-0f011347e170f7352d45b14bdb7873bd file-meta-74df4fd84c72207ec096c75a1e14d1ed file-meta-795960f4f85ddefbac3cc669038158a5 OUTPUTS 
+TASK T37 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-289b414010e4e4d821a97cb9a98237fb file-meta-fde8e4b830e972fc246a14bacaf05adf file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T34 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-fde8e4b830e972fc246a14bacaf05adf file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T38 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-30a98a9eac289b355d36aa980b30c540 file-meta-d13b28fee1491d1127177fb5ec877214 file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T36 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-289b414010e4e4d821a97cb9a98237fb file-meta-88a866b88d9e01678cebb9b0586b3c7d file-meta-26881f6b1cc9769b53c8e25cfcfa661d file-meta-6a4c6309b3c51361f2608062cdae73be OUTPUTS 
+TASK T3 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-3702693617d75f9a38b56c85ee6288d6 file-meta-531658b633aff7bf6d8b459803564cbe file-meta-d9b0fd74dfd4bc964f04fe5d83034b06 OUTPUTS file-rnd-uxavyrmdvyepwmn 
+TASK T7 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-1dc52a89d9976e71b62e2e70789c1fa4 file-meta-f442dec0a30eaa69503ff2dc4473ebc6 file-meta-795960f4f85ddefbac3cc669038158a5 OUTPUTS 
+TASK T10 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-1e09010ab892ad3859911a7458ac7f07 file-meta-b9309a1f05b8b6cd3155c13e1234217b file-meta-815b2b3f9c5bb46c9b2701bc2ba95375 file-meta-459b0f7d91daa273d79c47bd2b823559 OUTPUTS 
+TASK T11 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-1e09010ab892ad3859911a7458ac7f07 file-meta-b9e2791be288a0dbe3359fa42c31b95c file-meta-9715ba7d369c399ae22a864afea021c6 file-meta-459b0f7d91daa273d79c47bd2b823559 OUTPUTS 
+TASK T12 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-b9309a1f05b8b6cd3155c13e1234217b file-meta-0cf2f49a7aab343771d02ce86253af02 file-meta-459b0f7d91daa273d79c47bd2b823559 OUTPUTS 
+TASK T13 "/users/aiglesi3/pledge-eval-apps/gdal/.pixi/envs/default/bin/gdalwarp" INPUTS file-meta-0cf2f49a7aab343771d02ce86253af02 file-meta-815b2b3f9c5bb46c9b2701bc2ba95375 file-meta-459b0f7d91daa273d79c47bd2b823559 OUTPUTS 
+# end
