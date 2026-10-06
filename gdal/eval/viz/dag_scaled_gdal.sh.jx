@@ -1,0 +1,463 @@
+{
+  "rules": [
+    {
+      "command": "gdalbuildvrt wc2.1_2.5m_bio.vrt wc2.1_2.5m_bio/wc2.1_2.5m_bio_10.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_11.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_12.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_13.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_14.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_15.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_16.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_17.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_18.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_19.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_1.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_2.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_3.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_4.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_5.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_6.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_7.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_8.tif wc2.1_2.5m_bio/wc2.1_2.5m_bio_9.tif",
+        
+      "outputs": ["wc2.1_2.5m_bio.vrt"],
+      "inputs": [
+        "wc2.1_2.5m_bio/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_2.5m_elev.vrt wc2.1_2.5m_elev/wc2.1_2.5m_elev.tif",
+      "outputs": [
+        "wc2.1_2.5m_elev.vrt"
+      ],
+      "inputs": [
+        "wc2.1_2.5m_elev/wc2.1_2.5m_elev.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_2.5m_prec.vrt",
+      "outputs": [
+        "wc2.1_2.5m_prec.vrt"
+      ],
+      "inputs": [
+        "wc2.1_2.5m_prec/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_2.5m_srad.vrt",
+      "outputs": [
+        "wc2.1_2.5m_srad.vrt"
+      ],
+      "inputs": [
+        "wc2.1_2.5m_srad/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_2.5m_tavg.vrt",
+      "outputs": [
+        "wc2.1_2.5m_tavg.vrt"
+      ],
+      "inputs": [
+        "wc2.1_2.5m_tavg/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_2.5m_tmax.vrt",
+      "outputs": [
+        "wc2.1_2.5m_tmax.vrt"
+      ],
+      "inputs": [
+        "wc2.1_2.5m_tmax/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_2.5m_tmin.vrt",
+      "outputs": [
+        "wc2.1_2.5m_tmin.vrt"
+      ],
+      "inputs": [
+        "wc2.1_2.5m_tmin/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_2.5m_vapr.vrt",
+      "outputs": [
+        "wc2.1_2.5m_vapr.vrt"
+      ],
+      "inputs": [
+        "wc2.1_2.5m_vapr/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_2.5m_wind.vrt",
+      "outputs": ["wc2.1_2.5m_wind"],
+      "inputs": [
+        "wc2.1_2.5m_wind/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_5m_bio.vrt",
+      "outputs": ["wc2.1_2.5m_bio"],
+      "inputs": [
+        "wc2.1_5m_bio/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_5m_elev.vrt /users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_5m_elev/wc2.1_5m_elev.tif",
+      "outputs": [
+        "wc2.1_5m_elev.vrt"
+      ],
+      "inputs": [
+        "wc2.1_5m_elev/wc2.1_5m_elev.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_5m_prec.vrt",
+      "outputs": [
+        "wc2.1_5m_prec.vrt"
+      ],
+      "inputs": [
+        "wc2.1_5m_prec/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_5m_srad.vrt",
+      "outputs": [
+        "wc2.1_5m_srad.vrt"
+      ],
+      "inputs": [
+        "wc2.1_5m_srad/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_5m_tavg.vrt ",
+      "outputs": [
+        "wc2.1_5m_tavg.vrt"
+      ],
+      "inputs": [
+        "wc2.1_5m_tavg/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_5m_tmax.vrt",
+      "outputs": [
+        "wc2.1_5m_tmax.vrt"
+      ],
+      "inputs": [
+        "wc2.1_5m_tmax/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_5m_tmin.vrt",
+      "outputs": [
+        "wc2.1_5m_tmin.vrt"
+      ],
+      "inputs": [
+        "wc2.1_5m_tmin/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_5m_vapr.vrt",
+      "outputs": [
+        "wc2.1_5m_vapr.vrt"
+      ],
+      "inputs": [
+        "wc2.1_5m_vapr/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_5m_wind.vrt",
+      "outputs": ["wc2.1_5m_wind"],
+      "inputs": [
+        "wc2.1_5m_wind/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_10m_bio.vrt",
+      "outputs": ["wc2.1_10m_bio"],
+      "inputs": [
+        "wc2.1_10m_bio/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_10m_elev.vrt",
+      "outputs": [
+        "wc2.1_10m_elev.vrt"
+      ],
+      "inputs": [
+        "wc2.1_10m_elev/wc2.1_10m_elev.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_10m_prec.vrt",
+      "outputs": [
+        "wc2.1_10m_prec.vrt"
+      ],
+      "inputs": [
+        "wc2.1_10m_prec/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_10m_srad.vrt",
+      "outputs": [
+        "wc2.1_10m_srad.vrt"
+      ],
+      "inputs": [
+        "wc2.1_10m_srad/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_10m_tavg.vrt",
+      "outputs": [
+        "wc2.1_10m_tavg.vrt"
+      ],
+      "inputs": [
+        "wc2.1_10m_tavg/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_10m_tmax.vrt",
+      "outputs": [
+        "wc2.1_10m_tmax.vrt"
+      ],
+      "inputs": [
+        "wc2.1_10m_tmax/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_10m_tmin.vrt",
+      "outputs": [
+        "wc2.1_10m_tmin.vrt"
+      ],
+      "inputs": [
+        "wc2.1_10m_tmin/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_10m_vapr.vrt",
+      "outputs": [
+        "wc2.1_10m_vapr.vrt"
+      ],
+      "inputs": [
+        "wc2.1_10m_vapr/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_10m_wind.vrt",
+      "outputs": ["wc2.1_10m_wind"],
+      "inputs": [
+        "wc2.1_10m_wind/*.tif"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_2.5m_prec.vrt wc2.1_2.5m_srad.vrt wc2.1_2.5m_elev.vrt wc2.1_2.5m_elev_prec_srad.tif",
+      "outputs": ["wc2.1_2.5m_elev_prec_srad.tif"],
+      "inputs": [
+        "wc2.1_2.5m_elev.vrt",
+        "wc2.1_2.5m_prec.vrt",
+        "wc2.1_2.5m_srad.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_2.5m_tavg.vrt wc2.1_2.5m_srad.vrt wc2.1_2.5m_elev.vrt wc2.1_2.5m_elev_tavg_srad.tif",
+      "outputs": ["wc2.1_2.5m_elev_tavg_srad.tif"],
+      "inputs": [
+        "wc2.1_2.5m_elev.vrt",
+        "wc2.1_2.5m_srad.vrt",
+        "wc2.1_2.5m_tavg.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_2.5m_tmax.vrt wc2.1_2.5m_tmin.vrt wc2.1_2.5m_vapr.vrt wc2.1_2.5m_elev.vrt wc2.1_2.5m_elev_tmax_tmin_vapr.tif",
+      "outputs": ["wc2.1_2.5m_elev_tmax_tmin_vapr.tif"],
+      "inputs": [
+        "wc2.1_2.5m_elev.vrt",
+        "wc2.1_2.5m_tmax.vrt",
+        "wc2.1_2.5m_tmin.vrt",
+        "wc2.1_2.5m_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_2.5m_prec.vrt wc2.1_2.5m_vapr.vrt wc2.1_2.5m_tavg.vrt wc2.1_2.5m_elev.vrt wc2.1_2.5m_elev_prec_vapr_tavg.tif",
+      "outputs": ["wc2.1_2.5m_elev_prec_vapr_tavg.tif"],
+      "inputs": [
+        "wc2.1_2.5m_elev.vrt",
+        "wc2.1_2.5m_prec.vrt",
+        "wc2.1_2.5m_tavg.vrt",
+        "wc2.1_2.5m_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_2.5m_prec.vrt wc2.1_2.5m_srad.vrt wc2.1_2.5m_vapr.vrt wc2.1_2.5m_elev.vrt wc2.1_2.5m_elev_prec_srad_vapr.tif",
+      "outputs": ["wc2.1_2.5m_elev_prec_srad_vapr.tif"],
+      "inputs": [
+        "wc2.1_2.5m_elev.vrt",
+        "wc2.1_2.5m_prec.vrt",
+        "wc2.1_2.5m_srad.vrt",
+        "wc2.1_2.5m_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_5m_prec.vrt wc2.1_5m_srad.vrt wc2.1_5m_elev.vrt wc2.1_5m_elev_prec_srad.tif",
+      "outputs": ["wc2.1_5m_elev_prec_srad.tif"],
+      "inputs": [
+        "wc2.1_5m_elev.vrt",
+        "wc2.1_5m_prec.vrt",
+        "wc2.1_5m_srad.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_5m_tavg.vrt wc2.1_5m_srad.vrt wc2.1_5m_elev.vrt wc2.1_5m_elev_tavg_srad.tif",
+      "outputs": ["wc2.1_5m_elev_tavg_srad.tif"],
+      "inputs": [
+        "wc2.1_5m_elev.vrt",
+        "wc2.1_5m_srad.vrt",
+        "wc2.1_5m_tavg.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_5m_tmax.vrt wc2.1_5m_tmin.vrt wc2.1_5m_vapr.vrt wc2.1_5m_elev.vrt wc2.1_5m_elev_tmax_tmin_vapr.tif",
+      "outputs": ["wc2.1_5m_elev_tmax_tmin_vapr.tif"],
+      "inputs": [
+        "wc2.1_5m_elev.vrt",
+        "wc2.1_5m_tmax.vrt",
+        "wc2.1_5m_tmin.vrt",
+        "wc2.1_5m_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_5m_prec.vrt wc2.1_5m_vapr.vrt wc2.1_5m_tavg.vrt wc2.1_5m_elev.vrt wc2.1_5m_elev_prec_vapr_tavg.tif",
+      "outputs": ["wc2.1_5m_elev_prec_vapr_tavg.tif"],
+      "inputs": [
+        "wc2.1_5m_elev.vrt",
+        "wc2.1_5m_prec.vrt",
+        "wc2.1_5m_tavg.vrt",
+        "wc2.1_5m_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_5m_prec.vrt wc2.1_5m_srad.vrt wc2.1_5m_vapr.vrt wc2.1_5m_elev.vrt wc2.1_5m_elev_prec_srad_vapr.tif",
+      "outputs": ["wc2.1_5m_elev_prec_srad_vapr.tif"],
+      "inputs": [
+        "wc2.1_5m_elev.vrt",
+        "wc2.1_5m_prec.vrt",
+        "wc2.1_5m_srad.vrt",
+        "wc2.1_5m_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_10m_prec.vrt wc2.1_10m_srad.vrt wc2.1_10m_elev.vrt wc2.1_10m_elev_prec_srad.tif",
+      "outputs": ["wc2.1_10m_elev_prec_srad.tif"],
+      "inputs": [
+        "wc2.1_10m_elev.vrt",
+        "wc2.1_10m_prec.vrt",
+        "wc2.1_10m_srad.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_10m_tavg.vrt wc2.1_10m_srad.vrt wc2.1_10m_elev.vrt wc2.1_10m_elev_tavg_srad.tif",
+      "outputs": ["wc2.1_10m_elev_tavg_srad.tif"],
+      "inputs": [
+        "wc2.1_10m_elev.vrt",
+        "wc2.1_10m_srad.vrt",
+        "wc2.1_10m_tavg.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_10m_tmax.vrt wc2.1_10m_tmin.vrt wc2.1_10m_vapr.vrt wc2.1_10m_elev.vrt wc2.1_10m_elev_tmax_tmin_vapr.tif",
+      "outputs": ["wc2.1_10m_elev_tmax_tmin_vapr.tif"],
+      "inputs": [
+        "wc2.1_10m_elev.vrt",
+        "wc2.1_10m_tmax.vrt",
+        "wc2.1_10m_tmin.vrt",
+        "wc2.1_10m_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_10m_prec.vrt wc2.1_10m_vapr.vrt wc2.1_10m_tavg.vrt wc2.1_10m_elev.vrt wc2.1_10m_elev_prec_vapr_tavg.tif",
+      "outputs": ["wc2.1_10m_elev_prec_vapr_tavg.tif"],
+      "inputs": [
+        "wc2.1_10m_elev.vrt",
+        "wc2.1_10m_prec.vrt",
+        "wc2.1_10m_tavg.vrt",
+        "wc2.1_10m_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_10m_prec.vrt wc2.1_10m_srad.vrt wc2.1_10m_vapr.vrt wc2.1_10m_elev.vrt wc2.1_10m_elev_prec_srad_vapr.tif",
+      "outputs": ["wc2.1_10m_elev_prec_srad_vapr.tif"],
+      "inputs": [
+        "wc2.1_10m_elev.vrt",
+        "wc2.1_10m_prec.vrt",
+        "wc2.1_10m_srad.vrt",
+        "wc2.1_10m_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_30s_elev.vrt /users/aiglesi3/pledge-eval-apps/gdal/eval/wc2.1_30s_elev/wc2.1_30s_elev.tif",
+      "outputs": ["wc2.1_30s_elev.vrt"],
+      "inputs": [
+        "wc2.1_30s_elev/wc2.1_30s_elev.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_30s_prec.vrt",
+      "outputs": ["wc2.1_30s_prec.vrt"],
+      "inputs": [
+        "wc2.1_30s_prec/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_30s_srad.vrt ",
+      "outputs": ["wc2.1_30s_srad.vrt"],
+      "inputs": [
+        "wc2.1_30s_srad/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_30s_tavg.vrt",
+      "outputs": ["wc2.1_30s_tavg"],
+      "inputs": [
+        "wc2.1_30s_tavg/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_30s_tmax.vrt ",
+      "outputs": ["wc2.1_30s_tmax.vrt"],
+      "inputs": [
+        "wc2.1_30s_tmax/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_30s_tmin.vrt ",
+      "outputs": ["wc2.1_30s_tmin.vrt"],
+      "inputs": [
+        "wc2.1_30s_tmin/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_30s_vapr.vrt ",
+      "outputs": ["wc2.1_30s_vapr.vrt"],
+      "inputs": [
+        "wc2.1_30s_vapr/*.tif"
+      ]
+    },
+    {
+      "command": "gdalbuildvrt wc2.1_30s_wind.vrt",
+      "outputs": ["wc2.1_30s_wind.vrt"],
+      "inputs": [
+        "wc2.1_30s_wind/*.tif",
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_30s_prec.vrt wc2.1_30s_srad.vrt wc2.1_30s_elev.vrt wc2.1_30s_elev_prec_srad.tif",
+      "outputs": ["wc2.1_30s_elev_prec_srad.tif"],
+      "inputs": [
+        "wc2.1_30s_elev.vrt",
+        "wc2.1_30s_prec.vrt",
+        "wc2.1_30s_srad.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_30s_prec.vrt wc2.1_30s_vapr.vrt wc2.1_30s_elev.vrt wc2.1_30s_elev_prec_vapr.tif",
+      "outputs": ["wc2.1_30s_elev_prec_vapr.tif"],
+      "inputs": [
+        "wc2.1_30s_elev.vrt",
+        "wc2.1_30s_prec.vrt",
+        "wc2.1_30s_vapr.vrt"
+      ]
+    },
+    {
+      "command": "gdalwarp -of GTiff -r bilinear -multi wc2.1_30s_prec.vrt wc2.1_30s_wind.vrt wc2.1_30s_elev.vrt wc2.1_30s_elev_wind_prec.tif",
+      "outputs": ["wc2.1_30s_elev_wind_prec.tif"],
+      "inputs": [
+        "wc2.1_30s_elev.vrt",
+        "wc2.1_30s_prec.vrt",
+        "wc2.1_30s_wind.vrt"
+      ]
+    }
+  ]
+}
