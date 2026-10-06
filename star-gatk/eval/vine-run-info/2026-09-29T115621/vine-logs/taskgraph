@@ -1,0 +1,4 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+# end

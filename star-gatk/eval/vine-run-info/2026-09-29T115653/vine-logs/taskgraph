@@ -1,0 +1,56 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-73ab1707b2d09f492364ded97a3529b4 "GRCh38.gencode.pa.genome.1.fa" 610008
+FILE file-rnd-kxgedyyzdfhtmbu "gdir/genomeParameters.txt" 0
+FILE file-rnd-evzvtsrcraxbjjj "gdir/chrStart.txt" 0
+FILE file-rnd-lcnbeykwqrfkqfr "gdir/chrName.txt" 0
+FILE file-rnd-dtzikqwvqtipwzj "gdir/chrLength.txt" 0
+FILE file-rnd-iczbmboegkoaqfk "gdir/SAindex" 0
+FILE file-rnd-sbegcxcdnzpwyde "gdir/SA" 0
+FILE file-rnd-wasimlfkdgpefpr "gdir/Genome" 0
+FILE file-meta-384459b6d56cea5c3323cb2498e06d69 "GRCh38.gencode.pa.genome.4.fa" 610008
+FILE file-rnd-fcenyeyjlxtigze "GRCh38.gencode.pa.genome.4.fa.fai" 0
+FILE file-meta-1467182208570f28e7af125a7309885f "GRCh38.gencode.pa.genome.3.fa" 610008
+FILE file-rnd-jiuvcphpwwdaubt "GRCh38.gencode.pa.genome.3.fa.fai" 0
+FILE file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 "GRCh38.gencode.pa.genome.2.fa" 610008
+FILE file-rnd-icibwwqdphwnypd "GRCh38.gencode.pa.genome.2.fa.fai" 0
+FILE file-rnd-sdayccdqvnimnso "GRCh38.gencode.pa.genome.1.fa.fai" 0
+TASK T2 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-meta-384459b6d56cea5c3323cb2498e06d69 OUTPUTS file-rnd-fcenyeyjlxtigze 
+TASK T3 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-meta-1467182208570f28e7af125a7309885f OUTPUTS file-rnd-jiuvcphpwwdaubt 
+TASK T4 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 OUTPUTS file-rnd-icibwwqdphwnypd 
+TASK T5 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-sdayccdqvnimnso 
+TASK T1 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR" INPUTS file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-kxgedyyzdfhtmbu file-rnd-evzvtsrcraxbjjj file-rnd-lcnbeykwqrfkqfr file-rnd-dtzikqwvqtipwzj file-rnd-iczbmboegkoaqfk file-rnd-sbegcxcdnzpwyde file-rnd-wasimlfkdgpefpr 
+FILE file-meta-e467c783df2e40b7798c326cd42bb40b "shortened_SRR10307460_colin.fastq" 6786
+FILE file-rnd-wqyoyslxuijhefd "SRR10307460Aligned.sortedByCoord.out.bam" 0
+TASK T6 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR" INPUTS file-meta-e467c783df2e40b7798c326cd42bb40b file-rnd-kxgedyyzdfhtmbu file-rnd-evzvtsrcraxbjjj file-rnd-lcnbeykwqrfkqfr file-rnd-dtzikqwvqtipwzj file-rnd-iczbmboegkoaqfk file-rnd-sbegcxcdnzpwyde file-rnd-wasimlfkdgpefpr OUTPUTS file-rnd-wqyoyslxuijhefd 
+FILE file-rnd-zgcdwvnhqozfers "SRR10307460Aligned.sortedByCoord.out.bam.bai" 0
+TASK T7 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-rnd-wqyoyslxuijhefd OUTPUTS file-rnd-zgcdwvnhqozfers 
+FILE file-rnd-mqnkthvryzjsnsa "GRCh38.gencode.pa.genome.4.dict" 0
+FILE file-rnd-fpelmevhsqsdvww "GRCh38.gencode.pa.genome.3.dict" 0
+FILE file-rnd-fkbdpqfbbkwfbuk "GRCh38.gencode.pa.genome.2.dict" 0
+FILE file-rnd-prejsrlhysjxleu "GRCh38.gencode.pa.genome.1.dict" 0
+TASK T8 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-fcenyeyjlxtigze file-meta-384459b6d56cea5c3323cb2498e06d69 OUTPUTS file-rnd-mqnkthvryzjsnsa 
+TASK T10 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-icibwwqdphwnypd file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 OUTPUTS file-rnd-fkbdpqfbbkwfbuk 
+TASK T11 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-sdayccdqvnimnso file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-prejsrlhysjxleu 
+TASK T9 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-jiuvcphpwwdaubt file-meta-1467182208570f28e7af125a7309885f OUTPUTS file-rnd-fpelmevhsqsdvww 
+TASK T12 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-fcenyeyjlxtigze file-meta-384459b6d56cea5c3323cb2498e06d69 file-rnd-mqnkthvryzjsnsa OUTPUTS 
+TASK T16 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-fcenyeyjlxtigze file-meta-384459b6d56cea5c3323cb2498e06d69 file-rnd-mqnkthvryzjsnsa OUTPUTS 
+TASK T15 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-jiuvcphpwwdaubt file-meta-1467182208570f28e7af125a7309885f file-rnd-fpelmevhsqsdvww OUTPUTS 
+TASK T17 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-fcenyeyjlxtigze file-meta-384459b6d56cea5c3323cb2498e06d69 file-rnd-mqnkthvryzjsnsa OUTPUTS 
+TASK T19 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-fcenyeyjlxtigze file-meta-384459b6d56cea5c3323cb2498e06d69 file-rnd-mqnkthvryzjsnsa OUTPUTS 
+TASK T13 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-icibwwqdphwnypd file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 file-rnd-fkbdpqfbbkwfbuk OUTPUTS 
+TASK T20 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-fcenyeyjlxtigze file-meta-384459b6d56cea5c3323cb2498e06d69 file-rnd-mqnkthvryzjsnsa OUTPUTS 
+TASK T21 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-icibwwqdphwnypd file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 file-rnd-fkbdpqfbbkwfbuk OUTPUTS 
+TASK T22 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-fcenyeyjlxtigze file-meta-384459b6d56cea5c3323cb2498e06d69 file-rnd-mqnkthvryzjsnsa OUTPUTS 
+TASK T23 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-icibwwqdphwnypd file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 file-rnd-fkbdpqfbbkwfbuk OUTPUTS 
+TASK T18 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-jiuvcphpwwdaubt file-meta-1467182208570f28e7af125a7309885f file-rnd-fpelmevhsqsdvww OUTPUTS 
+TASK T24 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-icibwwqdphwnypd file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 file-rnd-fkbdpqfbbkwfbuk OUTPUTS 
+TASK T14 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-sdayccdqvnimnso file-meta-73ab1707b2d09f492364ded97a3529b4 file-rnd-prejsrlhysjxleu OUTPUTS 
+TASK T26 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-icibwwqdphwnypd file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 file-rnd-fkbdpqfbbkwfbuk OUTPUTS 
+TASK T25 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-jiuvcphpwwdaubt file-meta-1467182208570f28e7af125a7309885f file-rnd-fpelmevhsqsdvww OUTPUTS 
+TASK T27 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-icibwwqdphwnypd file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 file-rnd-fkbdpqfbbkwfbuk OUTPUTS 
+TASK T28 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-jiuvcphpwwdaubt file-meta-1467182208570f28e7af125a7309885f file-rnd-fpelmevhsqsdvww OUTPUTS 
+TASK T29 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-jiuvcphpwwdaubt file-meta-1467182208570f28e7af125a7309885f file-rnd-fpelmevhsqsdvww OUTPUTS 
+TASK T30 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-zgcdwvnhqozfers file-rnd-wqyoyslxuijhefd file-rnd-jiuvcphpwwdaubt file-meta-1467182208570f28e7af125a7309885f file-rnd-fpelmevhsqsdvww OUTPUTS 
+# end

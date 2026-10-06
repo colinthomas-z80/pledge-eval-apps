@@ -1,0 +1,939 @@
+2026/09/29 12:10:31.21 vine_manager[483653]vine: TaskVine version 7.17.2 FINAL (released 2026-09-25 14:30:55 +0000)
+2026/09/29 16:10:31.21 vine_manager[483653]vine: Built by conda@50c254fb89b0 on 2026-09-25 14:30:55 +0000
+2026/09/29 16:10:31.21 vine_manager[483653]vine: System: Linux 50c254fb89b0 6.17.0-1022-azure #22-Ubuntu SMP Mon Jul 27 17:24:03 UTC 2026 x86_64 GNU/Linux
+2026/09/29 16:10:31.21 vine_manager[483653]vine: Configuration: --debug --prefix /groups/dthain/users/cthoma26/sep-star-gatk --with-base-dir /groups/dthain/users/cthoma26/sep-star-gatk --with-readline-path no --with-perl-path no --without-system-parrot --without-system-prune --without-system-umbrella --without-system-weaver
+2026/09/29 16:10:31.21 vine_manager[483653]vine: manager timezone at startup: local_time=2026-09-29 16:10:31 tz_abbr=EDT tz_offset=+0000
+2026/09/29 16:10:31.21 vine_manager[483653]tcp: listening on port 9129
+2026/09/29 16:10:31.21 vine_manager[483653]vine: manager start
+2026/09/29 16:10:31.21 vine_manager[483653]vine: Using default disconnect slow workers factor for 'default'.
+2026/09/29 16:10:31.21 vine_manager[483653]vine: workers connections -- known: 0, connecting: 0
+2026/09/29 16:10:31.21 vine_manager[483653]vine: log enabled and is being written to performance
+2026/09/29 16:10:31.21 vine_manager[483653]vine: transactions log enabled and is being written to transactions
+2026/09/29 16:10:31.21 vine_manager[483653]vine: graph log enabled and is being written to taskgraph
+2026/09/29 16:10:31.21 vine_manager[483653]vine: workers connections -- known: 0, connecting: 0
+2026/09/29 16:10:31.21 vine_manager[483653]vine: Manager is listening on port 9129.
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared feature `absolute_path'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set feature `remote_rename' to `%s=%s'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set feature `batch_log_name' to `%s.vine.log'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set feature `batch_log_transactions' to `%s.tr'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: created queue 0x55e60bd9de60 (vine)
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set logfile to `simple_star_gatk.sh.jx.vine.log'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set option `batch_log_transactions_name' to `simple_star_gatk.sh.jx.vine.log.tr'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `batch-options'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `password'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set option `manager-mode' to `standalone'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `name'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `debug'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `priority'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `keepalive-interval'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `keepalive-timeout'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set option `caching' to `workflow'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `wait-queue-size'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `amazon-config'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `working-dir'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `manager-preferred-connection'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set option `safe-submit-mode' to `no'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set option `ignore-mem-spec' to `no'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared option `mem-type'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set option `keep-wrapper-stdout' to `no'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set option `tlq-port' to `0'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set option `fast-abort' to `-1.000000'
+2026/09/29 16:10:31.21 vine_manager[483653]vine: Using default disconnect slow workers factor for 'default'.
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set feature `local_job_queue' to `yes'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set feature `absolute_path' to `yes'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set feature `output_directories' to `yes'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set feature `batch_log_name' to `%s.batchlog'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: set feature `gc_size' to `yes'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: cleared feature `local_job_queue'
+2026/09/29 16:10:31.21 vine_manager[483653]batch: created queue 0x55e60bdbb5e0 (local)
+2026/09/29 16:10:31.21 vine_manager[483653]makeflow: MAKEFLOW_INPUTS is not specified
+2026/09/29 16:10:31.21 vine_manager[483653]makeflow: Added SRR10307460_1.fastq to input list
+2026/09/29 16:10:31.21 vine_manager[483653]makeflow: Added GRCh38.gencode.pa.genome.1.fa to input list
+2026/09/29 16:10:31.21 vine_manager[483653]makeflow: Added GRCh38.gencode.pa.genome.3.fa to input list
+2026/09/29 16:10:31.21 vine_manager[483653]makeflow: Added GRCh38.gencode.pa.genome.2.fa to input list
+2026/09/29 16:10:31.21 vine_manager[483653]makeflow: Added GRCh38.gencode.pa.genome.4.fa to input list
+2026/09/29 16:10:31.21 vine_manager[483653]makeflow: MAKEFLOW_OUTPUTS is not specified
+2026/09/29 16:10:31.21 vine_manager[483653]makeflow: checking for consistency of batch system support...
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file simple_star_gatk.sh.jx.vine.log waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file simple_star_gatk.sh.jx.vine.log.tr waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]batch: set option `task-id' to `13'
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file gdir/genomeParameters.txt waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file gdir/chrStart.txt waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file gdir/chrName.txt waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file gdir/chrLength.txt waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file gdir/SAindex waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file gdir/SA waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file gdir/Genome waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]vine: Task 1 state change: INITIAL (0) to READY (1)
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 13 was successfully submitted.
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 13 waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]batch: set option `task-id' to `3'
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.4.fa.fai waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]vine: Task 2 state change: INITIAL (0) to READY (1)
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 3 was successfully submitted.
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 3 waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]batch: set option `task-id' to `2'
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.3.fa.fai waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]vine: Task 3 state change: INITIAL (0) to READY (1)
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 2 was successfully submitted.
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 2 waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]batch: set option `task-id' to `1'
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.2.fa.fai waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]vine: Task 4 state change: INITIAL (0) to READY (1)
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 1 was successfully submitted.
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 1 waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]batch: set option `task-id' to `0'
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.1.fa.fai waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]vine: Task 5 state change: INITIAL (0) to READY (1)
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 0 was successfully submitted.
+2026/09/29 16:10:31.22 vine_manager[483653]makeflow: node 0 waiting -> running
+2026/09/29 16:10:31.22 vine_manager[483653]debug: warning: using plain-text when communicating with workers.
+2026/09/29 16:10:31.22 vine_manager[483653]debug: warning: use encryption with a key and cert when creating the manager.
+2026/09/29 16:10:35.45 vine_manager[483653]tcp: accepted connection from 10.32.93.116 port 47754
+2026/09/29 16:10:35.45 vine_manager[483653]vine: worker 10.32.93.116:47754 connected
+2026/09/29 16:10:35.45 vine_manager[483653]vine: rx from unknown (10.32.93.116:47754): taskvine 13 sa-rtx6ka-004.crc.nd.edu Linux x86_64 7.17.2
+2026/09/29 16:10:35.45 vine_manager[483653]vine: 1 workers are connected in total now
+2026/09/29 16:10:35.45 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) running CCTools version 7.17.2 on Linux (operating system) with architecture x86_64 is ready
+2026/09/29 16:10:35.45 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): info worker-id worker-04e406e82e1afea9c39a20ba6783dfbc
+2026/09/29 16:10:35.45 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): feature NVIDIA%20RTX%206000%20Ada%20Generation
+2026/09/29 16:10:35.45 vine_manager[483653]vine: Feature found: NVIDIA RTX 6000 Ada Generation
+2026/09/29 16:10:35.45 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): transfer-port 1024
+2026/09/29 16:10:35.45 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): info worker-end-time 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): alive
+2026/09/29 16:10:35.45 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): resources
+2026/09/29 16:10:35.45 vine_manager[483653]vine: cores 12
+2026/09/29 16:10:35.45 vine_manager[483653]vine: memory 16000
+2026/09/29 16:10:35.45 vine_manager[483653]vine: disk 25000
+2026/09/29 16:10:35.45 vine_manager[483653]vine: gpus 6
+2026/09/29 16:10:35.45 vine_manager[483653]vine: workers 1
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tag 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: end
+2026/09/29 16:10:35.45 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) needs file GRCh38.gencode.pa.genome.1.fa as GRCh38.gencode.pa.genome.1.fa
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): put file-meta-73ab1707b2d09f492364ded97a3529b4 1 610008
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-meta-73ab1707b2d09f492364ded97a3529b4 610008 0644 1790696351
+2026/09/29 16:10:35.45 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) received 0.61 MB in 0.00s (567.98s MB/s) average 567.98s MB/s
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): task 1
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cmd 182
+2026/09/29 16:10:35.45 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.*.fa --genomeSAindexNbases 2
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): category default
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cores 12.000
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): gpus 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): memory 16000
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): disk 18749
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): env 7
+CORES=1
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-meta-73ab1707b2d09f492364ded97a3529b4 GRCh38.gencode.pa.genome.1.fa 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): outfile file-rnd-emdyxxbnkhmkfog gdir/genomeParameters.txt 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): outfile file-rnd-fqopqhzcpbhjrzt gdir/chrStart.txt 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): outfile file-rnd-amxwfnzaryxwgdj gdir/chrName.txt 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): outfile file-rnd-dirdtoxskjkhanl gdir/chrLength.txt 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): outfile file-rnd-asjwesgyuhtdddr gdir/SAindex 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): outfile file-rnd-arjndwiiuuuhrbj gdir/SA 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): outfile file-rnd-wubrhamkolimvbw gdir/Genome 0
+2026/09/29 16:10:35.45 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): end
+2026/09/29 16:10:35.45 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.*.fa --genomeSAindexNbases 2'
+2026/09/29 16:10:35.45 vine_manager[483653]vine: Task 1 state change: READY (1) to RUNNING (2)
+2026/09/29 16:10:35.45 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-meta-73ab1707b2d09f492364ded97a3529b4 0 1 610008 1790696351 1158 1790698235452682 X
+2026/09/29 16:10:35.45 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): info tasks_running 1
+2026/09/29 16:10:35.46 vine_manager[483653]tcp: accepted connection from 10.32.93.188 port 36270
+2026/09/29 16:10:35.46 vine_manager[483653]vine: worker 10.32.93.188:36270 connected
+2026/09/29 16:10:35.46 vine_manager[483653]vine: rx from unknown (10.32.93.188:36270): taskvine 13 d64cepyc012.crc.nd.edu Linux x86_64 7.17.2
+2026/09/29 16:10:35.46 vine_manager[483653]vine: 2 workers are connected in total now
+2026/09/29 16:10:35.46 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) running CCTools version 7.17.2 on Linux (operating system) with architecture x86_64 is ready
+2026/09/29 16:10:35.46 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): info worker-id worker-38cae32afad4e56e746d8e8e1a5d312c
+2026/09/29 16:10:35.46 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): transfer-port 1024
+2026/09/29 16:10:35.46 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): info worker-end-time 0
+2026/09/29 16:10:35.46 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): alive
+2026/09/29 16:10:35.46 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): resources
+2026/09/29 16:10:35.46 vine_manager[483653]vine: cores 12
+2026/09/29 16:10:35.46 vine_manager[483653]vine: memory 16000
+2026/09/29 16:10:35.46 vine_manager[483653]vine: disk 25000
+2026/09/29 16:10:35.46 vine_manager[483653]vine: gpus 0
+2026/09/29 16:10:35.46 vine_manager[483653]vine: workers 1
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tag 0
+2026/09/29 16:10:35.46 vine_manager[483653]vine: end
+2026/09/29 16:10:35.46 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) needs file GRCh38.gencode.pa.genome.4.fa as GRCh38.gencode.pa.genome.4.fa
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): put file-meta-384459b6d56cea5c3323cb2498e06d69 1 610008
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): file file-meta-384459b6d56cea5c3323cb2498e06d69 610008 0644 1790697340
+2026/09/29 16:10:35.46 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) received 0.61 MB in 0.00s (525.87s MB/s) average 525.87s MB/s
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): task 2
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cmd 92
+2026/09/29 16:10:35.46 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.4.fa
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): category default
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cores 12.000
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): gpus 0
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): memory 16000
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): disk 18749
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): env 7
+CORES=1
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-meta-384459b6d56cea5c3323cb2498e06d69 GRCh38.gencode.pa.genome.4.fa 0
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): outfile file-rnd-gorocvnrwcplgxr GRCh38.gencode.pa.genome.4.fa.fai 0
+2026/09/29 16:10:35.46 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): end
+2026/09/29 16:10:35.46 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.4.fa'
+2026/09/29 16:10:35.46 vine_manager[483653]vine: Task 2 state change: READY (1) to RUNNING (2)
+2026/09/29 16:10:35.46 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-meta-384459b6d56cea5c3323cb2498e06d69 0 1 610008 1790697340 1257 1790698235466055 X
+2026/09/29 16:10:35.46 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): info tasks_running 1
+2026/09/29 16:10:35.47 vine_manager[483653]tcp: accepted connection from 10.32.93.216 port 52308
+2026/09/29 16:10:35.47 vine_manager[483653]vine: worker 10.32.93.216:52308 connected
+2026/09/29 16:10:35.47 vine_manager[483653]vine: rx from unknown (10.32.93.216:52308): taskvine 13 qa-l40s-006.crc.nd.edu Linux x86_64 7.17.2
+2026/09/29 16:10:35.47 vine_manager[483653]vine: 3 workers are connected in total now
+2026/09/29 16:10:35.47 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) running CCTools version 7.17.2 on Linux (operating system) with architecture x86_64 is ready
+2026/09/29 16:10:35.47 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): info worker-id worker-77b35e846bf0812bd10ac9cd9bf7f49c
+2026/09/29 16:10:35.47 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): feature NVIDIA%20L40S
+2026/09/29 16:10:35.47 vine_manager[483653]vine: Feature found: NVIDIA L40S
+2026/09/29 16:10:35.47 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): transfer-port 1028
+2026/09/29 16:10:35.47 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): info worker-end-time 0
+2026/09/29 16:10:35.47 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): alive
+2026/09/29 16:10:35.47 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): resources
+2026/09/29 16:10:35.47 vine_manager[483653]vine: cores 12
+2026/09/29 16:10:35.47 vine_manager[483653]vine: memory 16000
+2026/09/29 16:10:35.47 vine_manager[483653]vine: disk 25000
+2026/09/29 16:10:35.47 vine_manager[483653]vine: gpus 4
+2026/09/29 16:10:35.47 vine_manager[483653]vine: workers 1
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tag 0
+2026/09/29 16:10:35.47 vine_manager[483653]vine: end
+2026/09/29 16:10:35.47 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) needs file GRCh38.gencode.pa.genome.3.fa as GRCh38.gencode.pa.genome.3.fa
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): put file-meta-1467182208570f28e7af125a7309885f 1 610008
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): file file-meta-1467182208570f28e7af125a7309885f 610008 0644 1790697337
+2026/09/29 16:10:35.47 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) received 0.61 MB in 0.00s (557.08s MB/s) average 557.08s MB/s
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): task 3
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cmd 92
+2026/09/29 16:10:35.47 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.3.fa
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): category default
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cores 12.000
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): gpus 0
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): memory 16000
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): disk 18749
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): env 7
+CORES=1
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-meta-1467182208570f28e7af125a7309885f GRCh38.gencode.pa.genome.3.fa 0
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): outfile file-rnd-ftxgyktjjenpinz GRCh38.gencode.pa.genome.3.fa.fai 0
+2026/09/29 16:10:35.47 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): end
+2026/09/29 16:10:35.47 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.3.fa'
+2026/09/29 16:10:35.47 vine_manager[483653]vine: Task 3 state change: READY (1) to RUNNING (2)
+2026/09/29 16:10:35.47 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cache-update file-meta-1467182208570f28e7af125a7309885f 0 1 610008 1790697337 1726 1790698235477572 X
+2026/09/29 16:10:35.47 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): info tasks_running 1
+2026/09/29 16:10:35.48 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-rnd-gorocvnrwcplgxr 0 0 20 1790698235 14733 1790698235467788 X
+2026/09/29 16:10:35.48 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): complete 0 0 0 0 1790698235467788 1790698235482521 0 2
+2026/09/29 16:10:35.48 vine_manager[483653]vine: Task 2 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:10:35.48 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sending back file-rnd-gorocvnrwcplgxr to GRCh38.gencode.pa.genome.4.fa.fai
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): get file-rnd-gorocvnrwcplgxr
+2026/09/29 16:10:35.48 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): file file-rnd-gorocvnrwcplgxr 20 0644 1790698235
+2026/09/29 16:10:35.48 vine_manager[483653]vine: Receiving file GRCh38.gencode.pa.genome.4.fa.fai (size: 20 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:10:35.48 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sent 0.00 MB in 0.00s (0.01s MB/s) average 189.04s MB/s
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): kill 2
+2026/09/29 16:10:35.48 vine_manager[483653]vine: Task 2 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:10:35.48 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) done in 0.02s total tasks 1 average 0.01s
+2026/09/29 16:10:35.48 vine_manager[483653]vine: Task 2 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:10:35.48 vine_manager[483653]vine: workers connections -- known: 3, connecting: 0
+2026/09/29 16:10:35.48 vine_manager[483653]makeflow: Job 2 has returned.
+2026/09/29 16:10:35.48 vine_manager[483653]makeflow: File GRCh38.gencode.pa.genome.4.fa.fai created by rule 3.
+2026/09/29 16:10:35.48 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.4.fa.fai running -> receive
+2026/09/29 16:10:35.48 vine_manager[483653]makeflow: node 3 running -> complete
+2026/09/29 16:10:35.48 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) needs file GRCh38.gencode.pa.genome.2.fa as GRCh38.gencode.pa.genome.2.fa
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): put file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 1 610008
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): file file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 610008 0644 1790697335
+2026/09/29 16:10:35.48 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) received 0.61 MB in 0.00s (658.05s MB/s) average 293.70s MB/s
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): task 4
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cmd 92
+2026/09/29 16:10:35.48 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.2.fa
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): category default
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cores 12.000
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): gpus 0
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): memory 16000
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): disk 18748
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): env 7
+CORES=1
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 GRCh38.gencode.pa.genome.2.fa 0
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): outfile file-rnd-omwgoytodpmxmyj GRCh38.gencode.pa.genome.2.fa.fai 0
+2026/09/29 16:10:35.48 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): end
+2026/09/29 16:10:35.48 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.2.fa'
+2026/09/29 16:10:35.48 vine_manager[483653]vine: Task 4 state change: READY (1) to RUNNING (2)
+2026/09/29 16:10:35.48 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 0 1 610008 1790697335 979 1790698235485647 X
+2026/09/29 16:10:35.48 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): info tasks_running 1
+2026/09/29 16:10:35.49 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-rnd-omwgoytodpmxmyj 0 0 20 1790698235 10801 1790698235487193 X
+2026/09/29 16:10:35.49 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): complete 0 0 0 0 1790698235487193 1790698235497994 0 4
+2026/09/29 16:10:35.49 vine_manager[483653]vine: Task 4 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:10:35.49 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sending back file-rnd-omwgoytodpmxmyj to GRCh38.gencode.pa.genome.2.fa.fai
+2026/09/29 16:10:35.49 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): get file-rnd-omwgoytodpmxmyj
+2026/09/29 16:10:35.49 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): file file-rnd-omwgoytodpmxmyj 20 0644 1790698235
+2026/09/29 16:10:35.49 vine_manager[483653]vine: Receiving file GRCh38.gencode.pa.genome.2.fa.fai (size: 20 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:10:35.50 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sent 0.00 MB in 0.00s (0.00s MB/s) average 147.96s MB/s
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): kill 4
+2026/09/29 16:10:35.50 vine_manager[483653]vine: Task 4 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:10:35.50 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) done in 0.02s total tasks 2 average 0.01s
+2026/09/29 16:10:35.50 vine_manager[483653]vine: Task 4 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:10:35.50 vine_manager[483653]vine: workers connections -- known: 3, connecting: 0
+2026/09/29 16:10:35.50 vine_manager[483653]makeflow: Job 4 has returned.
+2026/09/29 16:10:35.50 vine_manager[483653]makeflow: File GRCh38.gencode.pa.genome.2.fa.fai created by rule 1.
+2026/09/29 16:10:35.50 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.2.fa.fai running -> receive
+2026/09/29 16:10:35.50 vine_manager[483653]makeflow: node 1 running -> complete
+2026/09/29 16:10:35.50 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) will get GRCh38.gencode.pa.genome.1.fa from url workerip://10.32.93.116:1024/file-meta-73ab1707b2d09f492364ded97a3529b4
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): puturl workerip://10.32.93.116:1024/file-meta-73ab1707b2d09f492364ded97a3529b4 file-meta-73ab1707b2d09f492364ded97a3529b4 0 610008 0755 62DE0CAA-70B2-4BC3-A776-B2314B53DF6C
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): task 5
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cmd 92
+2026/09/29 16:10:35.50 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.1.fa
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): category default
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cores 12.000
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): gpus 0
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): memory 16000
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): disk 18748
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): env 7
+CORES=1
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-meta-73ab1707b2d09f492364ded97a3529b4 GRCh38.gencode.pa.genome.1.fa 0
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): outfile file-rnd-qbqgjeqaekzipsf GRCh38.gencode.pa.genome.1.fa.fai 0
+2026/09/29 16:10:35.50 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): end
+2026/09/29 16:10:35.50 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools faidx GRCh38.gencode.pa.genome.1.fa'
+2026/09/29 16:10:35.50 vine_manager[483653]vine: Task 5 state change: READY (1) to RUNNING (2)
+2026/09/29 16:10:35.50 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-meta-73ab1707b2d09f492364ded97a3529b4 2 0 610008 1790698235 2471 1790698235502852 62DE0CAA-70B2-4BC3-A776-B2314B53DF6C
+2026/09/29 16:10:35.50 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): info tasks_running 1
+2026/09/29 16:10:35.51 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-rnd-qbqgjeqaekzipsf 0 0 20 1790698235 10400 1790698235505819 X
+2026/09/29 16:10:35.51 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): complete 0 0 0 0 1790698235505819 1790698235516219 0 5
+2026/09/29 16:10:35.51 vine_manager[483653]vine: Task 5 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:10:35.51 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sending back file-rnd-qbqgjeqaekzipsf to GRCh38.gencode.pa.genome.1.fa.fai
+2026/09/29 16:10:35.51 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): get file-rnd-qbqgjeqaekzipsf
+2026/09/29 16:10:35.51 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): file file-rnd-qbqgjeqaekzipsf 20 0644 1790698235
+2026/09/29 16:10:35.51 vine_manager[483653]vine: Receiving file GRCh38.gencode.pa.genome.1.fa.fai (size: 20 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:10:35.51 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sent 0.00 MB in 0.00s (0.01s MB/s) average 120.78s MB/s
+2026/09/29 16:10:35.51 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): kill 5
+2026/09/29 16:10:35.51 vine_manager[483653]vine: Task 5 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:10:35.51 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) done in 0.02s total tasks 3 average 0.01s
+2026/09/29 16:10:35.51 vine_manager[483653]vine: Task 5 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:10:35.51 vine_manager[483653]vine: workers connections -- known: 3, connecting: 0
+2026/09/29 16:10:35.51 vine_manager[483653]makeflow: Job 5 has returned.
+2026/09/29 16:10:35.51 vine_manager[483653]makeflow: File GRCh38.gencode.pa.genome.1.fa.fai created by rule 0.
+2026/09/29 16:10:35.51 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.1.fa.fai running -> receive
+2026/09/29 16:10:35.51 vine_manager[483653]makeflow: node 0 running -> complete
+2026/09/29 16:10:35.55 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cache-update file-rnd-ftxgyktjjenpinz 0 0 20 1790698235 71954 1790698235479764 X
+2026/09/29 16:10:35.55 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): complete 0 0 0 0 1790698235479764 1790698235551718 0 3
+2026/09/29 16:10:35.55 vine_manager[483653]vine: Task 3 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:10:35.55 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) sending back file-rnd-ftxgyktjjenpinz to GRCh38.gencode.pa.genome.3.fa.fai
+2026/09/29 16:10:35.55 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): get file-rnd-ftxgyktjjenpinz
+2026/09/29 16:10:35.55 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): file file-rnd-ftxgyktjjenpinz 20 0644 1790698235
+2026/09/29 16:10:35.55 vine_manager[483653]vine: Receiving file GRCh38.gencode.pa.genome.3.fa.fai (size: 20 bytes) from 10.32.93.216:52308 (qa-l40s-006.crc.nd.edu) ...
+2026/09/29 16:10:35.55 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) sent 0.00 MB in 0.00s (0.01s MB/s) average 210.43s MB/s
+2026/09/29 16:10:35.55 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): kill 3
+2026/09/29 16:10:35.55 vine_manager[483653]vine: Task 3 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:10:35.55 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) done in 0.08s total tasks 1 average 0.07s
+2026/09/29 16:10:35.55 vine_manager[483653]vine: Task 3 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:10:35.55 vine_manager[483653]vine: workers connections -- known: 3, connecting: 0
+2026/09/29 16:10:35.55 vine_manager[483653]makeflow: Job 3 has returned.
+2026/09/29 16:10:35.55 vine_manager[483653]makeflow: File GRCh38.gencode.pa.genome.3.fa.fai created by rule 2.
+2026/09/29 16:10:35.55 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.3.fa.fai running -> receive
+2026/09/29 16:10:35.55 vine_manager[483653]makeflow: node 2 running -> complete
+2026/09/29 16:10:35.63 vine_manager[483653]tcp: accepted connection from 10.32.88.239 port 57358
+2026/09/29 16:10:35.63 vine_manager[483653]vine: worker 10.32.88.239:57358 connected
+2026/09/29 16:10:35.63 vine_manager[483653]vine: rx from unknown (10.32.88.239:57358): taskvine 13 qa-rtx6k-005.crc.nd.edu Linux x86_64 7.17.2
+2026/09/29 16:10:35.63 vine_manager[483653]vine: 4 workers are connected in total now
+2026/09/29 16:10:35.63 vine_manager[483653]vine: qa-rtx6k-005.crc.nd.edu (10.32.88.239:57358) running CCTools version 7.17.2 on Linux (operating system) with architecture x86_64 is ready
+2026/09/29 16:10:35.63 vine_manager[483653]vine: rx from qa-rtx6k-005.crc.nd.edu (10.32.88.239:57358): info worker-id worker-21a625cedd8bd0399725c2a76662a470
+2026/09/29 16:10:35.63 vine_manager[483653]vine: rx from qa-rtx6k-005.crc.nd.edu (10.32.88.239:57358): feature Quadro%20RTX%206000
+2026/09/29 16:10:35.63 vine_manager[483653]vine: Feature found: Quadro RTX 6000
+2026/09/29 16:10:35.63 vine_manager[483653]vine: rx from qa-rtx6k-005.crc.nd.edu (10.32.88.239:57358): transfer-port 1024
+2026/09/29 16:10:35.63 vine_manager[483653]vine: rx from qa-rtx6k-005.crc.nd.edu (10.32.88.239:57358): info worker-end-time 0
+2026/09/29 16:10:35.63 vine_manager[483653]vine: rx from qa-rtx6k-005.crc.nd.edu (10.32.88.239:57358): alive
+2026/09/29 16:10:35.63 vine_manager[483653]vine: rx from qa-rtx6k-005.crc.nd.edu (10.32.88.239:57358): resources
+2026/09/29 16:10:35.63 vine_manager[483653]vine: cores 12
+2026/09/29 16:10:35.63 vine_manager[483653]vine: memory 16000
+2026/09/29 16:10:35.63 vine_manager[483653]vine: disk 25000
+2026/09/29 16:10:35.63 vine_manager[483653]vine: gpus 4
+2026/09/29 16:10:35.63 vine_manager[483653]vine: workers 1
+2026/09/29 16:10:35.63 vine_manager[483653]vine: tag 0
+2026/09/29 16:10:35.63 vine_manager[483653]vine: end
+2026/09/29 16:10:35.63 vine_manager[483653]tcp: accepted connection from 10.32.93.118 port 56412
+2026/09/29 16:10:35.63 vine_manager[483653]vine: worker 10.32.93.118:56412 connected
+2026/09/29 16:10:35.64 vine_manager[483653]vine: rx from unknown (10.32.93.118:56412): taskvine 13 sa-rtx6ka-005.crc.nd.edu Linux x86_64 7.17.2
+2026/09/29 16:10:35.64 vine_manager[483653]vine: 5 workers are connected in total now
+2026/09/29 16:10:35.64 vine_manager[483653]vine: sa-rtx6ka-005.crc.nd.edu (10.32.93.118:56412) running CCTools version 7.17.2 on Linux (operating system) with architecture x86_64 is ready
+2026/09/29 16:10:35.64 vine_manager[483653]vine: rx from sa-rtx6ka-005.crc.nd.edu (10.32.93.118:56412): info worker-id worker-8deddcd2b3120e74d7f883e863596eb7
+2026/09/29 16:10:35.64 vine_manager[483653]vine: rx from sa-rtx6ka-005.crc.nd.edu (10.32.93.118:56412): feature NVIDIA%20RTX%206000%20Ada%20Generation
+2026/09/29 16:10:35.64 vine_manager[483653]vine: Feature found: NVIDIA RTX 6000 Ada Generation
+2026/09/29 16:10:35.64 vine_manager[483653]vine: rx from sa-rtx6ka-005.crc.nd.edu (10.32.93.118:56412): transfer-port 1024
+2026/09/29 16:10:35.64 vine_manager[483653]vine: rx from sa-rtx6ka-005.crc.nd.edu (10.32.93.118:56412): info worker-end-time 0
+2026/09/29 16:10:35.64 vine_manager[483653]vine: rx from sa-rtx6ka-005.crc.nd.edu (10.32.93.118:56412): alive
+2026/09/29 16:10:35.64 vine_manager[483653]vine: rx from sa-rtx6ka-005.crc.nd.edu (10.32.93.118:56412): resources
+2026/09/29 16:10:35.64 vine_manager[483653]vine: cores 12
+2026/09/29 16:10:35.64 vine_manager[483653]vine: memory 16000
+2026/09/29 16:10:35.64 vine_manager[483653]vine: disk 25000
+2026/09/29 16:10:35.64 vine_manager[483653]vine: gpus 6
+2026/09/29 16:10:35.64 vine_manager[483653]vine: workers 1
+2026/09/29 16:10:35.64 vine_manager[483653]vine: tag 0
+2026/09/29 16:10:35.64 vine_manager[483653]vine: end
+2026/09/29 16:10:35.84 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-rnd-emdyxxbnkhmkfog 0 0 643 1790698235 394084 1790698235454208 X
+2026/09/29 16:10:35.84 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-rnd-fqopqhzcpbhjrzt 0 0 9 1790698235 394084 1790698235454208 X
+2026/09/29 16:10:35.84 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-rnd-amxwfnzaryxwgdj 0 0 5 1790698235 394084 1790698235454208 X
+2026/09/29 16:10:35.84 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-rnd-dirdtoxskjkhanl 0 0 7 1790698235 394084 1790698235454208 X
+2026/09/29 16:10:35.84 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-rnd-asjwesgyuhtdddr 0 0 123 1790698235 394084 1790698235454208 X
+2026/09/29 16:10:35.84 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-rnd-arjndwiiuuuhrbj 0 0 3630003 1790698235 394084 1790698235454208 X
+2026/09/29 16:10:35.84 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-rnd-wubrhamkolimvbw 0 0 786432 1790698235 394084 1790698235454208 X
+2026/09/29 16:10:35.84 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): complete 0 0 950 950 1790698235454208 1790698235848292 0 1
+2026/09/29 16:10:35.84 vine_manager[483653]vine: Receiving stdout of task 1 (size: 950 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:10:35.84 vine_manager[483653]vine: Retrieved 950 bytes from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754)
+2026/09/29 16:10:35.84 vine_manager[483653]vine: Task 1 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:10:35.84 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sending back file-rnd-emdyxxbnkhmkfog to gdir/genomeParameters.txt
+2026/09/29 16:10:35.84 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): get file-rnd-emdyxxbnkhmkfog
+2026/09/29 16:10:35.84 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-rnd-emdyxxbnkhmkfog 643 0644 1790698235
+2026/09/29 16:10:35.84 vine_manager[483653]vine: Receiving file gdir/genomeParameters.txt (size: 643 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:10:35.85 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sent 0.00 MB in 0.00s (0.14s MB/s) average 109.18s MB/s
+2026/09/29 16:10:35.85 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sending back file-rnd-fqopqhzcpbhjrzt to gdir/chrStart.txt
+2026/09/29 16:10:35.85 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): get file-rnd-fqopqhzcpbhjrzt
+2026/09/29 16:10:35.85 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-rnd-fqopqhzcpbhjrzt 9 0644 1790698235
+2026/09/29 16:10:35.85 vine_manager[483653]vine: Receiving file gdir/chrStart.txt (size: 9 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:10:35.85 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sent 0.00 MB in 0.00s (0.00s MB/s) average 67.43s MB/s
+2026/09/29 16:10:35.85 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sending back file-rnd-amxwfnzaryxwgdj to gdir/chrName.txt
+2026/09/29 16:10:35.85 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): get file-rnd-amxwfnzaryxwgdj
+2026/09/29 16:10:35.85 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-rnd-amxwfnzaryxwgdj 5 0644 1790698235
+2026/09/29 16:10:35.85 vine_manager[483653]vine: Receiving file gdir/chrName.txt (size: 5 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:10:35.86 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sent 0.00 MB in 0.00s (0.00s MB/s) average 45.94s MB/s
+2026/09/29 16:10:35.86 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sending back file-rnd-dirdtoxskjkhanl to gdir/chrLength.txt
+2026/09/29 16:10:35.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): get file-rnd-dirdtoxskjkhanl
+2026/09/29 16:10:35.86 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-rnd-dirdtoxskjkhanl 7 0644 1790698235
+2026/09/29 16:10:35.86 vine_manager[483653]vine: Receiving file gdir/chrLength.txt (size: 7 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:10:35.86 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sent 0.00 MB in 0.00s (0.00s MB/s) average 34.71s MB/s
+2026/09/29 16:10:35.86 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sending back file-rnd-asjwesgyuhtdddr to gdir/SAindex
+2026/09/29 16:10:35.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): get file-rnd-asjwesgyuhtdddr
+2026/09/29 16:10:35.86 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-rnd-asjwesgyuhtdddr 123 0644 1790698235
+2026/09/29 16:10:35.86 vine_manager[483653]vine: Receiving file gdir/SAindex (size: 123 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:10:35.86 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sent 0.00 MB in 0.00s (0.03s MB/s) average 28.55s MB/s
+2026/09/29 16:10:35.87 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sending back file-rnd-arjndwiiuuuhrbj to gdir/SA
+2026/09/29 16:10:35.87 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): get file-rnd-arjndwiiuuuhrbj
+2026/09/29 16:10:35.87 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-rnd-arjndwiiuuuhrbj 3630003 0644 1790698235
+2026/09/29 16:10:35.87 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) using conservative default average transfer rate of 1.00 MB/s
+2026/09/29 16:10:35.87 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) will try up to 60 seconds to transfer this 3.63 MB file.
+2026/09/29 16:10:35.87 vine_manager[483653]vine: Receiving file gdir/SA (size: 3630003 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:10:35.88 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sent 3.63 MB in 0.02s (188.77s MB/s) average 104.39s MB/s
+2026/09/29 16:10:35.88 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sending back file-rnd-wubrhamkolimvbw to gdir/Genome
+2026/09/29 16:10:35.88 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): get file-rnd-wubrhamkolimvbw
+2026/09/29 16:10:35.89 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-rnd-wubrhamkolimvbw 786432 0644 1790698235
+2026/09/29 16:10:35.89 vine_manager[483653]vine: Receiving file gdir/Genome (size: 786432 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:10:35.93 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sent 0.79 MB in 0.05s (16.15s MB/s) average 56.28s MB/s
+2026/09/29 16:10:35.93 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): kill 1
+2026/09/29 16:10:35.93 vine_manager[483653]vine: Task 1 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:10:35.93 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) done in 0.49s total tasks 1 average 0.39s
+2026/09/29 16:10:35.93 vine_manager[483653]vine: Task 1 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:10:35.93 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: Job 1 has returned.
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: File gdir/genomeParameters.txt created by rule 13.
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: file gdir/genomeParameters.txt running -> receive
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: File gdir/chrStart.txt created by rule 13.
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: file gdir/chrStart.txt running -> receive
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: File gdir/chrName.txt created by rule 13.
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: file gdir/chrName.txt running -> receive
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: File gdir/chrLength.txt created by rule 13.
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: file gdir/chrLength.txt running -> receive
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: File gdir/SAindex created by rule 13.
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: file gdir/SAindex running -> receive
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: File gdir/SA created by rule 13.
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: file gdir/SA running -> receive
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: File gdir/Genome created by rule 13.
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: file gdir/Genome running -> receive
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: node 13 running -> complete
+2026/09/29 16:10:35.93 vine_manager[483653]batch: set option `task-id' to `14'
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: file SRR10307460Aligned.sortedByCoord.out.bam waiting -> running
+2026/09/29 16:10:35.93 vine_manager[483653]vine: Task 6 state change: INITIAL (0) to READY (1)
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: node 14 was successfully submitted.
+2026/09/29 16:10:35.93 vine_manager[483653]makeflow: node 14 waiting -> running
+2026/09/29 16:10:35.93 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) needs file SRR10307460_1.fastq as SRR10307460_1.fastq
+2026/09/29 16:10:35.93 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): put file-meta-b1c940b9b165b237c7a0e48460406245 1 44199886
+2026/09/29 16:10:35.93 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) using conservative default average transfer rate of 1.00 MB/s
+2026/09/29 16:10:35.93 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) will try up to 421 seconds to transfer this 44.20 MB file.
+2026/09/29 16:10:35.93 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-meta-b1c940b9b165b237c7a0e48460406245 44199886 0644 1790697844
+2026/09/29 16:10:35.97 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) received 44.20 MB in 0.03s (1264.15s MB/s) average 396.05s MB/s
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): task 6
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cmd 254
+2026/09/29 16:10:35.97 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 4 --genomeDir gdir --readFilesIn SRR10307460_1.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): category default
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cores 12.000
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): gpus 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): memory 16000
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): disk 18711
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): env 7
+CORES=1
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-meta-b1c940b9b165b237c7a0e48460406245 SRR10307460_1.fastq 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-rnd-emdyxxbnkhmkfog gdir/genomeParameters.txt 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-rnd-fqopqhzcpbhjrzt gdir/chrStart.txt 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-rnd-amxwfnzaryxwgdj gdir/chrName.txt 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-rnd-dirdtoxskjkhanl gdir/chrLength.txt 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-rnd-asjwesgyuhtdddr gdir/SAindex 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-rnd-arjndwiiuuuhrbj gdir/SA 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-rnd-wubrhamkolimvbw gdir/Genome 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): outfile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:10:35.97 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): end
+2026/09/29 16:10:35.97 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 4 --genomeDir gdir --readFilesIn SRR10307460_1.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1'
+2026/09/29 16:10:35.97 vine_manager[483653]vine: Task 6 state change: READY (1) to RUNNING (2)
+2026/09/29 16:10:35.97 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-meta-b1c940b9b165b237c7a0e48460406245 0 1 44199886 1790697844 37983 1790698235939540 X
+2026/09/29 16:10:35.97 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): info tasks_running 1
+2026/09/29 16:10:40.98 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:31.99 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-rnd-hkoguvuvtcmqeet 0 0 309702 1790698291 56018286 1790698235978104 X
+2026/09/29 16:11:31.99 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): complete 0 0 613 613 1790698235978104 1790698291996390 47 6
+2026/09/29 16:11:31.99 vine_manager[483653]vine: Receiving stdout of task 6 (size: 613 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:11:31.99 vine_manager[483653]vine: Retrieved 613 bytes from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754)
+2026/09/29 16:11:31.99 vine_manager[483653]vine: Task 6 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:31.99 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:31.99 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sending back file-rnd-hkoguvuvtcmqeet to SRR10307460Aligned.sortedByCoord.out.bam
+2026/09/29 16:11:31.99 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): get file-rnd-hkoguvuvtcmqeet
+2026/09/29 16:11:31.99 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-rnd-hkoguvuvtcmqeet 309702 0644 1790698291
+2026/09/29 16:11:31.99 vine_manager[483653]vine: Receiving file SRR10307460Aligned.sortedByCoord.out.bam (size: 309702 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:11:32.00 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sent 0.31 MB in 0.00s (74.90s MB/s) average 385.71s MB/s
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): kill 6
+2026/09/29 16:11:32.00 vine_manager[483653]vine: Task 6 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:32.00 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) done in 56.06s total tasks 2 average 28.21s
+2026/09/29 16:11:32.00 vine_manager[483653]vine: Task 6 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:32.00 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: Job 6 has returned.
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: File SRR10307460Aligned.sortedByCoord.out.bam created by rule 14.
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: file SRR10307460Aligned.sortedByCoord.out.bam running -> receive
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: file gdir/genomeParameters.txt receive -> complete
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: file gdir/chrStart.txt receive -> complete
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: file gdir/chrName.txt receive -> complete
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: file gdir/chrLength.txt receive -> complete
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: file gdir/SAindex receive -> complete
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: file gdir/SA receive -> complete
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: file gdir/Genome receive -> complete
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: node 14 running -> complete
+2026/09/29 16:11:32.00 vine_manager[483653]batch: set option `task-id' to `4'
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: file SRR10307460Aligned.sortedByCoord.out.bam.bai waiting -> running
+2026/09/29 16:11:32.00 vine_manager[483653]vine: Task 7 state change: INITIAL (0) to READY (1)
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: node 4 was successfully submitted.
+2026/09/29 16:11:32.00 vine_manager[483653]makeflow: node 4 waiting -> running
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): task 7
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cmd 103
+2026/09/29 16:11:32.00 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools index SRR10307460Aligned.sortedByCoord.out.bam
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): category default
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cores 1.000
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): gpus 0
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): memory 30
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): disk 47
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): env 7
+CORES=1
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): infile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): outfile file-rnd-yiytjovnpzdkluy SRR10307460Aligned.sortedByCoord.out.bam.bai 0
+2026/09/29 16:11:32.00 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): end
+2026/09/29 16:11:32.00 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools index SRR10307460Aligned.sortedByCoord.out.bam'
+2026/09/29 16:11:32.00 vine_manager[483653]vine: Task 7 state change: READY (1) to RUNNING (2)
+2026/09/29 16:11:32.00 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): info tasks_running 1
+2026/09/29 16:11:32.05 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): cache-update file-rnd-yiytjovnpzdkluy 0 0 936 1790698292 49295 1790698292003802 X
+2026/09/29 16:11:32.05 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): complete 0 0 0 0 1790698292003802 1790698292053097 0 7
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 7 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:32.05 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sending back file-rnd-yiytjovnpzdkluy to SRR10307460Aligned.sortedByCoord.out.bam.bai
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): get file-rnd-yiytjovnpzdkluy
+2026/09/29 16:11:32.05 vine_manager[483653]vine: rx from sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): file file-rnd-yiytjovnpzdkluy 936 0644 1790698292
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Receiving file SRR10307460Aligned.sortedByCoord.out.bam.bai (size: 936 bytes) from 10.32.93.116:47754 (sa-rtx6ka-004.crc.nd.edu) ...
+2026/09/29 16:11:32.05 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) sent 0.00 MB in 0.00s (0.47s MB/s) average 379.86s MB/s
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): kill 7
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 7 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:32.05 vine_manager[483653]vine: sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) done in 0.05s total tasks 3 average 18.82s
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 7 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:32.05 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: Job 7 has returned.
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: File SRR10307460Aligned.sortedByCoord.out.bam.bai created by rule 4.
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: file SRR10307460Aligned.sortedByCoord.out.bam.bai running -> receive
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: node 4 running -> complete
+2026/09/29 16:11:32.05 vine_manager[483653]batch: set option `task-id' to `8'
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.4.dict waiting -> running
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 8 state change: INITIAL (0) to READY (1)
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: node 8 was successfully submitted.
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: node 8 waiting -> running
+2026/09/29 16:11:32.05 vine_manager[483653]batch: set option `task-id' to `7'
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.3.dict waiting -> running
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 9 state change: INITIAL (0) to READY (1)
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: node 7 was successfully submitted.
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: node 7 waiting -> running
+2026/09/29 16:11:32.05 vine_manager[483653]batch: set option `task-id' to `6'
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.2.dict waiting -> running
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 10 state change: INITIAL (0) to READY (1)
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: node 6 was successfully submitted.
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: node 6 waiting -> running
+2026/09/29 16:11:32.05 vine_manager[483653]batch: set option `task-id' to `5'
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.1.dict waiting -> running
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 11 state change: INITIAL (0) to READY (1)
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: node 5 was successfully submitted.
+2026/09/29 16:11:32.05 vine_manager[483653]makeflow: node 5 waiting -> running
+2026/09/29 16:11:32.05 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) will get SRR10307460Aligned.sortedByCoord.out.bam.bai from url workerip://10.32.93.116:1024/file-rnd-yiytjovnpzdkluy
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): puturl workerip://10.32.93.116:1024/file-rnd-yiytjovnpzdkluy file-rnd-yiytjovnpzdkluy 0 936 0755 4738932D-41FF-435E-AEA6-0029898F32F5
+2026/09/29 16:11:32.05 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) will get SRR10307460Aligned.sortedByCoord.out.bam from url workerip://10.32.93.116:1024/file-rnd-hkoguvuvtcmqeet
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): puturl workerip://10.32.93.116:1024/file-rnd-hkoguvuvtcmqeet file-rnd-hkoguvuvtcmqeet 0 309702 0755 D5B56CF8-1780-4002-B30C-2D23C05F1546
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): task 8
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cmd 110
+2026/09/29 16:11:32.05 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.4.fa
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): category default
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cores 1.000
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): gpus 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): memory 30
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): disk 47
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): env 7
+CORES=1
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-yiytjovnpzdkluy SRR10307460Aligned.sortedByCoord.out.bam.bai 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-gorocvnrwcplgxr GRCh38.gencode.pa.genome.4.fa.fai 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-meta-384459b6d56cea5c3323cb2498e06d69 GRCh38.gencode.pa.genome.4.fa 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): outfile file-rnd-asxnwrcrznldoio GRCh38.gencode.pa.genome.4.dict 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): end
+2026/09/29 16:11:32.05 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.4.fa'
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 8 state change: READY (1) to RUNNING (2)
+2026/09/29 16:11:32.05 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) will get SRR10307460Aligned.sortedByCoord.out.bam.bai from url workerip://10.32.93.116:1024/file-rnd-yiytjovnpzdkluy
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): puturl workerip://10.32.93.116:1024/file-rnd-yiytjovnpzdkluy file-rnd-yiytjovnpzdkluy 0 936 0755 42C5CD59-4C1C-4820-ACCF-8BB2FB6F94C9
+2026/09/29 16:11:32.05 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) will get SRR10307460Aligned.sortedByCoord.out.bam from url workerip://10.32.93.116:1024/file-rnd-hkoguvuvtcmqeet
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): puturl workerip://10.32.93.116:1024/file-rnd-hkoguvuvtcmqeet file-rnd-hkoguvuvtcmqeet 0 309702 0755 8BB05CFF-8D7A-4A6B-B55B-148802B6A51E
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): task 9
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cmd 110
+2026/09/29 16:11:32.05 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.3.fa
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): category default
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cores 1.000
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): gpus 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): memory 30
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): disk 47
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): env 7
+CORES=1
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-rnd-yiytjovnpzdkluy SRR10307460Aligned.sortedByCoord.out.bam.bai 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-rnd-ftxgyktjjenpinz GRCh38.gencode.pa.genome.3.fa.fai 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-meta-1467182208570f28e7af125a7309885f GRCh38.gencode.pa.genome.3.fa 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): outfile file-rnd-hdxuvxieftjvorn GRCh38.gencode.pa.genome.3.dict 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): end
+2026/09/29 16:11:32.05 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.3.fa'
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 9 state change: READY (1) to RUNNING (2)
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): task 10
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cmd 110
+2026/09/29 16:11:32.05 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.2.fa
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): category default
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cores 1.000
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): gpus 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): memory 30
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): disk 47
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): env 7
+CORES=1
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-yiytjovnpzdkluy SRR10307460Aligned.sortedByCoord.out.bam.bai 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-omwgoytodpmxmyj GRCh38.gencode.pa.genome.2.fa.fai 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 GRCh38.gencode.pa.genome.2.fa 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): outfile file-rnd-xnncqoulufcqapg GRCh38.gencode.pa.genome.2.dict 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): end
+2026/09/29 16:11:32.05 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.2.fa'
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 10 state change: READY (1) to RUNNING (2)
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): task 11
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cmd 110
+2026/09/29 16:11:32.05 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.1.fa
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): category default
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cores 1.000
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): gpus 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): memory 30
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): disk 47
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): env 7
+CORES=1
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-yiytjovnpzdkluy SRR10307460Aligned.sortedByCoord.out.bam.bai 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-qbqgjeqaekzipsf GRCh38.gencode.pa.genome.1.fa.fai 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-meta-73ab1707b2d09f492364ded97a3529b4 GRCh38.gencode.pa.genome.1.fa 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): outfile file-rnd-howsjpzvhltevgi GRCh38.gencode.pa.genome.1.dict 0
+2026/09/29 16:11:32.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): end
+2026/09/29 16:11:32.05 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.1.fa'
+2026/09/29 16:11:32.05 vine_manager[483653]vine: Task 11 state change: READY (1) to RUNNING (2)
+2026/09/29 16:11:32.05 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-rnd-yiytjovnpzdkluy 2 0 936 1790698292 1970 1790698292056240 4738932D-41FF-435E-AEA6-0029898F32F5
+2026/09/29 16:11:32.05 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cache-update file-rnd-yiytjovnpzdkluy 2 0 936 1790698292 1949 1790698292056811 42C5CD59-4C1C-4820-ACCF-8BB2FB6F94C9
+2026/09/29 16:11:32.05 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-rnd-hkoguvuvtcmqeet 2 0 309702 1790698292 2774 1790698292056730 D5B56CF8-1780-4002-B30C-2D23C05F1546
+2026/09/29 16:11:32.06 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cache-update file-rnd-hkoguvuvtcmqeet 2 0 309702 1790698292 2772 1790698292057193 8BB05CFF-8D7A-4A6B-B55B-148802B6A51E
+2026/09/29 16:11:32.06 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): info tasks_running 1
+2026/09/29 16:11:32.06 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): info tasks_running 3
+2026/09/29 16:11:33.53 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cache-update file-rnd-hdxuvxieftjvorn 0 0 170 1790698293 1472793 1790698292060445 X
+2026/09/29 16:11:33.53 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): complete 0 0 1694 0 1790698292060445 1790698293533238 0 9
+2026/09/29 16:11:33.53 vine_manager[483653]vine: Task 9 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): send_stdout 9
+2026/09/29 16:11:33.53 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): stdout 9 1694
+2026/09/29 16:11:33.53 vine_manager[483653]vine: Receiving stdout of task 9 (size: 1694 bytes) from 10.32.93.216:52308 (qa-l40s-006.crc.nd.edu) ...
+2026/09/29 16:11:33.53 vine_manager[483653]vine: Retrieved 1694 bytes from qa-l40s-006.crc.nd.edu (10.32.93.216:52308)
+2026/09/29 16:11:33.53 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) sending back file-rnd-hdxuvxieftjvorn to GRCh38.gencode.pa.genome.3.dict
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): get file-rnd-hdxuvxieftjvorn
+2026/09/29 16:11:33.53 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): file file-rnd-hdxuvxieftjvorn 170 0644 1790698293
+2026/09/29 16:11:33.53 vine_manager[483653]vine: Receiving file GRCh38.gencode.pa.genome.3.dict (size: 170 bytes) from 10.32.93.216:52308 (qa-l40s-006.crc.nd.edu) ...
+2026/09/29 16:11:33.53 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) sent 0.00 MB in 0.00s (0.08s MB/s) average 119.25s MB/s
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): kill 9
+2026/09/29 16:11:33.53 vine_manager[483653]vine: Task 9 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:33.53 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) done in 1.48s total tasks 2 average 0.77s
+2026/09/29 16:11:33.53 vine_manager[483653]vine: Task 9 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:33.53 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:33.53 vine_manager[483653]makeflow: Job 9 has returned.
+2026/09/29 16:11:33.53 vine_manager[483653]makeflow: File GRCh38.gencode.pa.genome.3.dict created by rule 7.
+2026/09/29 16:11:33.53 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.3.dict running -> receive
+2026/09/29 16:11:33.53 vine_manager[483653]makeflow: node 7 running -> complete
+2026/09/29 16:11:33.53 vine_manager[483653]batch: set option `task-id' to `11'
+2026/09/29 16:11:33.53 vine_manager[483653]vine: Task 12 state change: INITIAL (0) to READY (1)
+2026/09/29 16:11:33.53 vine_manager[483653]makeflow: node 11 was successfully submitted.
+2026/09/29 16:11:33.53 vine_manager[483653]makeflow: node 11 waiting -> running
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): task 12
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cmd 223
+2026/09/29 16:11:33.53 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.3.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.3.gzi
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): category default
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): cores 1.000
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): gpus 0
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): memory 30
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): disk 47
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): env 7
+CORES=1
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-rnd-yiytjovnpzdkluy SRR10307460Aligned.sortedByCoord.out.bam.bai 0
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-rnd-ftxgyktjjenpinz GRCh38.gencode.pa.genome.3.fa.fai 0
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-meta-1467182208570f28e7af125a7309885f GRCh38.gencode.pa.genome.3.fa 0
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): infile file-rnd-hdxuvxieftjvorn GRCh38.gencode.pa.genome.3.dict 0
+2026/09/29 16:11:33.53 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): end
+2026/09/29 16:11:33.53 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.3.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.3.gzi'
+2026/09/29 16:11:33.53 vine_manager[483653]vine: Task 12 state change: READY (1) to RUNNING (2)
+2026/09/29 16:11:33.53 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): info tasks_running 1
+2026/09/29 16:11:33.69 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-rnd-howsjpzvhltevgi 0 0 171 1790698293 1635471 1790698292061217 X
+2026/09/29 16:11:33.69 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): complete 0 0 1695 0 1790698292061217 1790698293696688 0 11
+2026/09/29 16:11:33.69 vine_manager[483653]vine: Task 11 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:33.69 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): send_stdout 11
+2026/09/29 16:11:33.69 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): stdout 11 1695
+2026/09/29 16:11:33.69 vine_manager[483653]vine: Receiving stdout of task 11 (size: 1695 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:11:33.69 vine_manager[483653]vine: Retrieved 1695 bytes from d64cepyc012.crc.nd.edu (10.32.93.188:36270)
+2026/09/29 16:11:33.69 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sending back file-rnd-howsjpzvhltevgi to GRCh38.gencode.pa.genome.1.dict
+2026/09/29 16:11:33.69 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): get file-rnd-howsjpzvhltevgi
+2026/09/29 16:11:33.69 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): file file-rnd-howsjpzvhltevgi 171 0644 1790698293
+2026/09/29 16:11:33.69 vine_manager[483653]vine: Receiving file GRCh38.gencode.pa.genome.1.dict (size: 171 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:11:33.69 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sent 0.00 MB in 0.00s (0.07s MB/s) average 96.74s MB/s
+2026/09/29 16:11:33.69 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): kill 11
+2026/09/29 16:11:33.69 vine_manager[483653]vine: Task 11 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:33.69 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) done in 1.64s total tasks 4 average 0.42s
+2026/09/29 16:11:33.69 vine_manager[483653]vine: Task 11 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:33.70 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:33.70 vine_manager[483653]makeflow: Job 11 has returned.
+2026/09/29 16:11:33.70 vine_manager[483653]makeflow: File GRCh38.gencode.pa.genome.1.dict created by rule 5.
+2026/09/29 16:11:33.70 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.1.dict running -> receive
+2026/09/29 16:11:33.70 vine_manager[483653]makeflow: node 5 running -> complete
+2026/09/29 16:11:33.70 vine_manager[483653]batch: set option `task-id' to `9'
+2026/09/29 16:11:33.70 vine_manager[483653]vine: Task 13 state change: INITIAL (0) to READY (1)
+2026/09/29 16:11:33.70 vine_manager[483653]makeflow: node 9 was successfully submitted.
+2026/09/29 16:11:33.70 vine_manager[483653]makeflow: node 9 waiting -> running
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): task 13
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cmd 223
+2026/09/29 16:11:33.70 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.1.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.1.gzi
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): category default
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cores 1.000
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): gpus 0
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): memory 30
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): disk 47
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): env 7
+CORES=1
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-yiytjovnpzdkluy SRR10307460Aligned.sortedByCoord.out.bam.bai 0
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-qbqgjeqaekzipsf GRCh38.gencode.pa.genome.1.fa.fai 0
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-meta-73ab1707b2d09f492364ded97a3529b4 GRCh38.gencode.pa.genome.1.fa 0
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-howsjpzvhltevgi GRCh38.gencode.pa.genome.1.dict 0
+2026/09/29 16:11:33.70 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): end
+2026/09/29 16:11:33.70 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.1.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.1.gzi'
+2026/09/29 16:11:33.70 vine_manager[483653]vine: Task 13 state change: READY (1) to RUNNING (2)
+2026/09/29 16:11:33.70 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): info tasks_running 3
+2026/09/29 16:11:33.71 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-rnd-asxnwrcrznldoio 0 0 170 1790698293 1657117 1790698292060127 X
+2026/09/29 16:11:33.71 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): complete 0 0 1694 0 1790698292060127 1790698293717244 0 8
+2026/09/29 16:11:33.71 vine_manager[483653]vine: Task 8 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:33.71 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): send_stdout 8
+2026/09/29 16:11:33.71 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): stdout 8 1694
+2026/09/29 16:11:33.71 vine_manager[483653]vine: Receiving stdout of task 8 (size: 1694 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:11:33.71 vine_manager[483653]vine: Retrieved 1694 bytes from d64cepyc012.crc.nd.edu (10.32.93.188:36270)
+2026/09/29 16:11:33.71 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sending back file-rnd-asxnwrcrznldoio to GRCh38.gencode.pa.genome.4.dict
+2026/09/29 16:11:33.71 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): get file-rnd-asxnwrcrznldoio
+2026/09/29 16:11:33.71 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): file file-rnd-asxnwrcrznldoio 170 0644 1790698293
+2026/09/29 16:11:33.71 vine_manager[483653]vine: Receiving file GRCh38.gencode.pa.genome.4.dict (size: 170 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:11:33.71 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sent 0.00 MB in 0.00s (0.08s MB/s) average 82.35s MB/s
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): kill 8
+2026/09/29 16:11:33.72 vine_manager[483653]vine: Task 8 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:33.72 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) done in 1.66s total tasks 5 average 0.67s
+2026/09/29 16:11:33.72 vine_manager[483653]vine: Task 8 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:33.72 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:33.72 vine_manager[483653]makeflow: Job 8 has returned.
+2026/09/29 16:11:33.72 vine_manager[483653]makeflow: File GRCh38.gencode.pa.genome.4.dict created by rule 8.
+2026/09/29 16:11:33.72 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.4.dict running -> receive
+2026/09/29 16:11:33.72 vine_manager[483653]makeflow: node 8 running -> complete
+2026/09/29 16:11:33.72 vine_manager[483653]batch: set option `task-id' to `12'
+2026/09/29 16:11:33.72 vine_manager[483653]vine: Task 14 state change: INITIAL (0) to READY (1)
+2026/09/29 16:11:33.72 vine_manager[483653]makeflow: node 12 was successfully submitted.
+2026/09/29 16:11:33.72 vine_manager[483653]makeflow: node 12 waiting -> running
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): task 14
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cmd 223
+2026/09/29 16:11:33.72 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.4.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.4.gzi
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): category default
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cores 1.000
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): gpus 0
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): memory 30
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): disk 47
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): env 7
+CORES=1
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-yiytjovnpzdkluy SRR10307460Aligned.sortedByCoord.out.bam.bai 0
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-gorocvnrwcplgxr GRCh38.gencode.pa.genome.4.fa.fai 0
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-meta-384459b6d56cea5c3323cb2498e06d69 GRCh38.gencode.pa.genome.4.fa 0
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-asxnwrcrznldoio GRCh38.gencode.pa.genome.4.dict 0
+2026/09/29 16:11:33.72 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): end
+2026/09/29 16:11:33.72 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.4.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.4.gzi'
+2026/09/29 16:11:33.72 vine_manager[483653]vine: Task 14 state change: READY (1) to RUNNING (2)
+2026/09/29 16:11:33.72 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): info tasks_running 3
+2026/09/29 16:11:35.22 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): complete 0 2 3133 0 1790698293537324 1790698295219864 0 12
+2026/09/29 16:11:35.22 vine_manager[483653]vine: Task 12 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:35.22 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): send_stdout 12
+2026/09/29 16:11:35.22 vine_manager[483653]vine: rx from qa-l40s-006.crc.nd.edu (10.32.93.216:52308): stdout 12 3133
+2026/09/29 16:11:35.22 vine_manager[483653]vine: Receiving stdout of task 12 (size: 3133 bytes) from 10.32.93.216:52308 (qa-l40s-006.crc.nd.edu) ...
+2026/09/29 16:11:35.22 vine_manager[483653]vine: Retrieved 3133 bytes from qa-l40s-006.crc.nd.edu (10.32.93.216:52308)
+2026/09/29 16:11:35.22 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): kill 12
+2026/09/29 16:11:35.22 vine_manager[483653]vine: Task 12 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:35.22 vine_manager[483653]vine: qa-l40s-006.crc.nd.edu (10.32.93.216:52308) done in 1.68s total tasks 3 average 1.08s
+2026/09/29 16:11:35.22 vine_manager[483653]vine: Task 12 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:35.22 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:35.22 vine_manager[483653]makeflow: Job 12 has returned.
+2026/09/29 16:11:35.22 vine_manager[483653]makeflow_hook: skipping makeflow.failed.11 since it already exists
+2026/09/29 16:11:35.22 vine_manager[483653]error: rule 11 failed, cannot move outputs
+2026/09/29 16:11:35.22 vine_manager[483653]error: hook Fail Dir:node_fail returned 1
+2026/09/29 16:11:35.22 vine_manager[483653]makeflow: node 11 running -> failed
+2026/09/29 16:11:39.04 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): cache-update file-rnd-xnncqoulufcqapg 0 0 171 1790698298 6983628 1790698292060683 X
+2026/09/29 16:11:39.04 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): complete 0 0 1695 0 1790698292060683 1790698299044311 1 10
+2026/09/29 16:11:39.04 vine_manager[483653]vine: Task 10 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:39.04 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): send_stdout 10
+2026/09/29 16:11:39.04 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): stdout 10 1695
+2026/09/29 16:11:39.04 vine_manager[483653]vine: Receiving stdout of task 10 (size: 1695 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:11:39.04 vine_manager[483653]vine: Retrieved 1695 bytes from d64cepyc012.crc.nd.edu (10.32.93.188:36270)
+2026/09/29 16:11:39.04 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sending back file-rnd-xnncqoulufcqapg to GRCh38.gencode.pa.genome.2.dict
+2026/09/29 16:11:39.04 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): get file-rnd-xnncqoulufcqapg
+2026/09/29 16:11:39.04 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): file file-rnd-xnncqoulufcqapg 171 0644 1790698298
+2026/09/29 16:11:39.04 vine_manager[483653]vine: Receiving file GRCh38.gencode.pa.genome.2.dict (size: 171 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:11:39.04 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) sent 0.00 MB in 0.00s (0.05s MB/s) average 67.51s MB/s
+2026/09/29 16:11:39.04 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): kill 10
+2026/09/29 16:11:39.04 vine_manager[483653]vine: Task 10 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:39.04 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) done in 6.99s total tasks 6 average 1.72s
+2026/09/29 16:11:39.04 vine_manager[483653]vine: Task 10 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:39.04 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:39.04 vine_manager[483653]makeflow: Job 10 has returned.
+2026/09/29 16:11:39.04 vine_manager[483653]makeflow: File GRCh38.gencode.pa.genome.2.dict created by rule 6.
+2026/09/29 16:11:39.04 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.2.dict running -> receive
+2026/09/29 16:11:39.04 vine_manager[483653]makeflow: node 6 running -> complete
+2026/09/29 16:11:39.04 vine_manager[483653]batch: set option `task-id' to `10'
+2026/09/29 16:11:39.04 vine_manager[483653]vine: Task 15 state change: INITIAL (0) to READY (1)
+2026/09/29 16:11:39.04 vine_manager[483653]makeflow: node 10 was successfully submitted.
+2026/09/29 16:11:39.04 vine_manager[483653]makeflow: node 10 waiting -> running
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): task 15
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cmd 223
+2026/09/29 16:11:39.05 vine_manager[483653]vine: /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.2.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.2.gzi
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): category default
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): cores 1.000
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): gpus 0
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): memory 30
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): disk 47
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): env 7
+CORES=1
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-yiytjovnpzdkluy SRR10307460Aligned.sortedByCoord.out.bam.bai 0
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-hkoguvuvtcmqeet SRR10307460Aligned.sortedByCoord.out.bam 0
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-omwgoytodpmxmyj GRCh38.gencode.pa.genome.2.fa.fai 0
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 GRCh38.gencode.pa.genome.2.fa 0
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): infile file-rnd-xnncqoulufcqapg GRCh38.gencode.pa.genome.2.dict 0
+2026/09/29 16:11:39.05 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): end
+2026/09/29 16:11:39.05 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) busy on '/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.2.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.2.gzi'
+2026/09/29 16:11:39.05 vine_manager[483653]vine: Task 15 state change: READY (1) to RUNNING (2)
+2026/09/29 16:11:39.05 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): info tasks_running 3
+2026/09/29 16:11:39.23 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): complete 0 2 3133 0 1790698293721293 1790698299232212 1 14
+2026/09/29 16:11:39.23 vine_manager[483653]vine: Task 14 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:39.23 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): send_stdout 14
+2026/09/29 16:11:39.23 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): stdout 14 3133
+2026/09/29 16:11:39.23 vine_manager[483653]vine: Receiving stdout of task 14 (size: 3133 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:11:39.23 vine_manager[483653]vine: Retrieved 3133 bytes from d64cepyc012.crc.nd.edu (10.32.93.188:36270)
+2026/09/29 16:11:39.23 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): kill 14
+2026/09/29 16:11:39.23 vine_manager[483653]vine: Task 14 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:39.23 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) done in 5.51s total tasks 7 average 2.26s
+2026/09/29 16:11:39.23 vine_manager[483653]vine: Task 14 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:39.23 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:39.23 vine_manager[483653]makeflow: Job 14 has returned.
+2026/09/29 16:11:39.23 vine_manager[483653]makeflow_hook: skipping makeflow.failed.12 since it already exists
+2026/09/29 16:11:39.23 vine_manager[483653]error: rule 12 failed, cannot move outputs
+2026/09/29 16:11:39.23 vine_manager[483653]error: hook Fail Dir:node_fail returned 1
+2026/09/29 16:11:39.23 vine_manager[483653]makeflow: node 12 running -> failed
+2026/09/29 16:11:39.65 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): complete 0 0 5282 0 1790698293701104 1790698299656576 1 13
+2026/09/29 16:11:39.65 vine_manager[483653]vine: Task 13 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:39.65 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): send_stdout 13
+2026/09/29 16:11:39.65 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): stdout 13 5282
+2026/09/29 16:11:39.65 vine_manager[483653]vine: Receiving stdout of task 13 (size: 5282 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:11:39.65 vine_manager[483653]vine: Retrieved 5282 bytes from d64cepyc012.crc.nd.edu (10.32.93.188:36270)
+2026/09/29 16:11:39.65 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): kill 13
+2026/09/29 16:11:39.65 vine_manager[483653]vine: Task 13 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:39.65 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) done in 5.96s total tasks 8 average 2.72s
+2026/09/29 16:11:39.65 vine_manager[483653]vine: Task 13 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:39.65 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:39.65 vine_manager[483653]makeflow: Job 13 has returned.
+2026/09/29 16:11:39.65 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.1.fa.fai receive -> complete
+2026/09/29 16:11:39.65 vine_manager[483653]makeflow: file GRCh38.gencode.pa.genome.1.dict receive -> complete
+2026/09/29 16:11:39.65 vine_manager[483653]makeflow: node 9 running -> complete
+2026/09/29 16:11:40.86 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): complete 0 2 3133 0 1790698299050956 1790698300860672 0 15
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Task 15 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): send_stdout 15
+2026/09/29 16:11:40.86 vine_manager[483653]vine: rx from d64cepyc012.crc.nd.edu (10.32.93.188:36270): stdout 15 3133
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Receiving stdout of task 15 (size: 3133 bytes) from 10.32.93.188:36270 (d64cepyc012.crc.nd.edu) ...
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Retrieved 3133 bytes from d64cepyc012.crc.nd.edu (10.32.93.188:36270)
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): kill 15
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Task 15 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2026/09/29 16:11:40.86 vine_manager[483653]vine: d64cepyc012.crc.nd.edu (10.32.93.188:36270) done in 1.81s total tasks 9 average 2.62s
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Task 15 state change: RETRIEVED (4) to DONE (5)
+2026/09/29 16:11:40.86 vine_manager[483653]vine: workers connections -- known: 5, connecting: 0
+2026/09/29 16:11:40.86 vine_manager[483653]makeflow: Job 15 has returned.
+2026/09/29 16:11:40.86 vine_manager[483653]makeflow_hook: skipping makeflow.failed.10 since it already exists
+2026/09/29 16:11:40.86 vine_manager[483653]error: rule 10 failed, cannot move outputs
+2026/09/29 16:11:40.86 vine_manager[483653]error: hook Fail Dir:node_fail returned 1
+2026/09/29 16:11:40.86 vine_manager[483653]makeflow: node 10 running -> failed
+2026/09/29 16:11:40.86 vine_manager[483653]batch: deleting queue 0x55e60bd9de60
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): release
+2026/09/29 16:11:40.86 vine_manager[483653]vine: worker d64cepyc012.crc.nd.edu (10.32.93.188:36270) removed
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Removing instances of worker from transfer table
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-rnd-gorocvnrwcplgxr
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-rnd-asxnwrcrznldoio
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-meta-384459b6d56cea5c3323cb2498e06d69
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-rnd-hkoguvuvtcmqeet
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-rnd-xnncqoulufcqapg
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-rnd-qbqgjeqaekzipsf
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-rnd-yiytjovnpzdkluy
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-rnd-howsjpzvhltevgi
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-meta-73ab1707b2d09f492364ded97a3529b4
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-rnd-omwgoytodpmxmyj
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to d64cepyc012.crc.nd.edu (10.32.93.188:36270): unlink file-meta-b76dab2c718369c8ff3a32fbb9cc5f77
+2026/09/29 16:11:40.86 vine_manager[483653]tcp: disconnected from 10.32.93.188 port 36270
+2026/09/29 16:11:40.86 vine_manager[483653]vine: 4 workers connected in total now
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-005.crc.nd.edu (10.32.93.118:56412): release
+2026/09/29 16:11:40.86 vine_manager[483653]vine: worker sa-rtx6ka-005.crc.nd.edu (10.32.93.118:56412) removed
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Removing instances of worker from transfer table
+2026/09/29 16:11:40.86 vine_manager[483653]tcp: disconnected from 10.32.93.118 port 56412
+2026/09/29 16:11:40.86 vine_manager[483653]vine: 3 workers connected in total now
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): release
+2026/09/29 16:11:40.86 vine_manager[483653]vine: worker qa-l40s-006.crc.nd.edu (10.32.93.216:52308) removed
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Removing instances of worker from transfer table
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): unlink file-rnd-hdxuvxieftjvorn
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): unlink file-rnd-hkoguvuvtcmqeet
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): unlink file-meta-1467182208570f28e7af125a7309885f
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): unlink file-rnd-yiytjovnpzdkluy
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to qa-l40s-006.crc.nd.edu (10.32.93.216:52308): unlink file-rnd-ftxgyktjjenpinz
+2026/09/29 16:11:40.86 vine_manager[483653]tcp: disconnected from 10.32.93.216 port 52308
+2026/09/29 16:11:40.86 vine_manager[483653]vine: 2 workers connected in total now
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): release
+2026/09/29 16:11:40.86 vine_manager[483653]vine: worker sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754) removed
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Removing instances of worker from transfer table
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-rnd-wubrhamkolimvbw
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-meta-b1c940b9b165b237c7a0e48460406245
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-rnd-hkoguvuvtcmqeet
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-rnd-arjndwiiuuuhrbj
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-rnd-asjwesgyuhtdddr
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-rnd-emdyxxbnkhmkfog
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-rnd-yiytjovnpzdkluy
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-meta-73ab1707b2d09f492364ded97a3529b4
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-rnd-dirdtoxskjkhanl
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-rnd-amxwfnzaryxwgdj
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to sa-rtx6ka-004.crc.nd.edu (10.32.93.116:47754): unlink file-rnd-fqopqhzcpbhjrzt
+2026/09/29 16:11:40.86 vine_manager[483653]tcp: disconnected from 10.32.93.116 port 47754
+2026/09/29 16:11:40.86 vine_manager[483653]vine: 1 workers connected in total now
+2026/09/29 16:11:40.86 vine_manager[483653]vine: tx to qa-rtx6k-005.crc.nd.edu (10.32.88.239:57358): release
+2026/09/29 16:11:40.86 vine_manager[483653]vine: worker qa-rtx6k-005.crc.nd.edu (10.32.88.239:57358) removed
+2026/09/29 16:11:40.86 vine_manager[483653]vine: Removing instances of worker from transfer table
+2026/09/29 16:11:40.86 vine_manager[483653]tcp: disconnected from 10.32.88.239 port 57358
+2026/09/29 16:11:40.86 vine_manager[483653]vine: 0 workers connected in total now
+2026/09/29 16:11:40.86 vine_manager[483653]vine: workers connections -- known: 0, connecting: 0
+2026/09/29 16:11:40.86 vine_manager[483653]vine: deleting /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval/vine-run-info/2026-09-29T121031/staging
+2026/09/29 16:11:40.87 vine_manager[483653]vine:   object  created   ref_added  deleted
+2026/09/29 16:11:40.87 vine_manager[483653]vine: -----------------------------------
+2026/09/29 16:11:40.87 vine_manager[483653]vine:    tasks       15       15       30 ok
+2026/09/29 16:11:40.87 vine_manager[483653]vine:   mounts       67        0       67 ok
+2026/09/29 16:11:40.87 vine_manager[483653]vine:    files       27       67       94 ok
+2026/09/29 16:11:40.87 vine_manager[483653]vine: replicas       27        0       27 ok
+2026/09/29 16:11:40.87 vine_manager[483653]vine:  workers        5        0        5 ok
+2026/09/29 16:11:40.87 vine_manager[483653]vine: manager end

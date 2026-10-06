@@ -1,0 +1,16 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-73ab1707b2d09f492364ded97a3529b4 "GRCh38.gencode.pa.genome.1.fa" 610008
+FILE file-meta-33ec388892c4d31a359e32c7cb5bf698 "../../../sep-star-gatk/bin/STAR" 456
+FILE file-meta-79e9197a96d079e712a18a0c95103543 "../../../../../../../software/Modules/5.6.1/init/bash" 1732
+FILE file-rnd-jddlvkkrjpdhchx "gdir/genomeParameters.txt" 0
+FILE file-rnd-mewwkedaxxfcsxm "gdir/chrStart.txt" 0
+FILE file-rnd-habicjzujxhgdgn "gdir/chrName.txt" 0
+FILE file-rnd-qthgnpneoewutnw "gdir/chrLength.txt" 0
+FILE file-rnd-grilfzenzricbwk "gdir/SAindex" 0
+FILE file-rnd-kfjliqhwkszqobs "gdir/SA" 0
+FILE file-rnd-zbutezanpskrhno "gdir/Genome" 0
+FILE file-rnd-znszixfkwakbjas "GRCh38.gencode.pa.genome.1.fa.fai" 0
+TASK T2 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-znszixfkwakbjas 
+# end

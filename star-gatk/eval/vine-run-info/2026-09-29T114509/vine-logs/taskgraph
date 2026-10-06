@@ -1,0 +1,22 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-73ab1707b2d09f492364ded97a3529b4 "GRCh38.gencode.pa.genome.1.fa" 610008
+FILE file-rnd-glxpukxvrluhwkh "gdir/genomeParameters.txt" 0
+FILE file-rnd-hqqwapokkcnsuwp "gdir/chrStart.txt" 0
+FILE file-rnd-ivzxxoygbomfnnn "gdir/chrName.txt" 0
+FILE file-rnd-wlrzqmqphpxyplp "gdir/chrLength.txt" 0
+FILE file-rnd-owbslmntypncpnu "gdir/SAindex" 0
+FILE file-rnd-uflarlryfpzhvpt "gdir/SA" 0
+FILE file-rnd-snoxfwmolkksdvl "gdir/Genome" 0
+TASK T1 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR" INPUTS file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-glxpukxvrluhwkh file-rnd-hqqwapokkcnsuwp file-rnd-ivzxxoygbomfnnn file-rnd-wlrzqmqphpxyplp file-rnd-owbslmntypncpnu file-rnd-uflarlryfpzhvpt file-rnd-snoxfwmolkksdvl 
+FILE file-meta-e467c783df2e40b7798c326cd42bb40b "shortened_SRR10307460_colin.fastq" 6786
+FILE file-rnd-czxfgpwgwrjnoms "SRR10307460Aligned.sortedByCoord.out.bam" 0
+TASK T2 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR" INPUTS file-meta-e467c783df2e40b7798c326cd42bb40b file-rnd-glxpukxvrluhwkh file-rnd-hqqwapokkcnsuwp file-rnd-ivzxxoygbomfnnn file-rnd-wlrzqmqphpxyplp file-rnd-owbslmntypncpnu file-rnd-uflarlryfpzhvpt file-rnd-snoxfwmolkksdvl OUTPUTS file-rnd-czxfgpwgwrjnoms 
+FILE file-rnd-ysneohlfavmfbop "SRR10307460Aligned.sortedByCoord.out.bam.bai" 0
+TASK T3 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-rnd-czxfgpwgwrjnoms OUTPUTS file-rnd-ysneohlfavmfbop 
+FILE file-meta-cd4a0316e15a7363501a07a57b5968f1 "GRCh38.gencode.pa.genome.1.fa.fai" 20
+FILE file-rnd-uxyyxhgsaptunho "GRCh38.gencode.pa.genome.1.dict" 0
+TASK T4 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-ysneohlfavmfbop file-rnd-czxfgpwgwrjnoms file-meta-cd4a0316e15a7363501a07a57b5968f1 file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-uxyyxhgsaptunho 
+TASK T5 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-ysneohlfavmfbop file-rnd-czxfgpwgwrjnoms file-meta-cd4a0316e15a7363501a07a57b5968f1 file-meta-73ab1707b2d09f492364ded97a3529b4 file-rnd-uxyyxhgsaptunho OUTPUTS 
+# end

@@ -1,0 +1,23 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-73ab1707b2d09f492364ded97a3529b4 "GRCh38.gencode.pa.genome.1.fa" 610008
+FILE file-rnd-xbgftcxukseoioq "gdir/genomeParameters.txt" 0
+FILE file-rnd-nxqpxabnguikdfh "gdir/chrStart.txt" 0
+FILE file-rnd-smurnqtmhznpcyv "gdir/chrName.txt" 0
+FILE file-rnd-cjxfjlbbakuqfko "gdir/chrLength.txt" 0
+FILE file-rnd-krirpubtwgiydmu "gdir/SAindex" 0
+FILE file-rnd-cpcpvbdwpuwqura "gdir/SA" 0
+FILE file-rnd-uohasajaijdesaa "gdir/Genome" 0
+FILE file-rnd-souewyrjgdwnagw "GRCh38.gencode.pa.genome.1.fa.fai" 0
+TASK T1 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR" INPUTS file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-xbgftcxukseoioq file-rnd-nxqpxabnguikdfh file-rnd-smurnqtmhznpcyv file-rnd-cjxfjlbbakuqfko file-rnd-krirpubtwgiydmu file-rnd-cpcpvbdwpuwqura file-rnd-uohasajaijdesaa 
+FILE file-meta-e467c783df2e40b7798c326cd42bb40b "shortened_SRR10307460_colin.fastq" 6786
+FILE file-rnd-ticoyeazyxgkzrj "SRR10307460Aligned.sortedByCoord.out.bam" 0
+TASK T2 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-souewyrjgdwnagw 
+TASK T3 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR" INPUTS file-meta-e467c783df2e40b7798c326cd42bb40b file-rnd-xbgftcxukseoioq file-rnd-nxqpxabnguikdfh file-rnd-smurnqtmhznpcyv file-rnd-cjxfjlbbakuqfko file-rnd-krirpubtwgiydmu file-rnd-cpcpvbdwpuwqura file-rnd-uohasajaijdesaa OUTPUTS file-rnd-ticoyeazyxgkzrj 
+FILE file-rnd-msftnhcqetzezen "SRR10307460Aligned.sortedByCoord.out.bam.bai" 0
+TASK T4 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-rnd-ticoyeazyxgkzrj OUTPUTS file-rnd-msftnhcqetzezen 
+FILE file-rnd-gyazjhyqlyklujd "GRCh38.gencode.pa.genome.1.dict" 0
+TASK T5 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-msftnhcqetzezen file-rnd-ticoyeazyxgkzrj file-rnd-souewyrjgdwnagw file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-gyazjhyqlyklujd 
+TASK T6 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-rnd-msftnhcqetzezen file-rnd-ticoyeazyxgkzrj file-rnd-souewyrjgdwnagw file-meta-73ab1707b2d09f492364ded97a3529b4 file-rnd-gyazjhyqlyklujd OUTPUTS 
+# end

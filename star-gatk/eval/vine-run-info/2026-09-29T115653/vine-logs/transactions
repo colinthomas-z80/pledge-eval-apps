@@ -1,0 +1,231 @@
+# time manager_pid MANAGER manager_pid START|END time_from_origin
+# time manager_pid WORKER worker_id CONNECTION host:port
+# time manager_pid WORKER worker_id DISCONNECTION (UNKNOWN|IDLE_OUT|FAST_ABORT|FAILURE|STATUS_WORKER|EXPLICIT|XFER_ERRORS)
+# time manager_pid WORKER worker_id RESOURCES {resources}
+# time manager_pid WORKER worker_id CACHE_UPDATE filename size_in_mb wall_time_us start_time_us
+# time manager_pid WORKER worker_id TRANSFER (INPUT|OUTPUT) filename size_in_mb wall_time_us start_time_us
+# time manager_pid CATEGORY name MAX {resources_max_per_task}
+# time manager_pid CATEGORY name MIN {resources_min_per_task_per_worker}
+# time manager_pid CATEGORY name FIRST (FIXED|MAX|MIN_WASTE|MAX_THROUGHPUT) {resources_requested}
+# time manager_pid TASK task_id WAITING category_name (FIRST_RESOURCES|MAX_RESOURCES) attempt_number {resources_requested}
+# time manager_pid TASK task_id RUNNING worker_id (FIRST_RESOURCES|MAX_RESOURCES) {resources_allocated}
+# time manager_pid TASK task_id WAITING_RETRIEVAL worker_id
+# time manager_pid TASK task_id RETRIEVED (SUCCESS|UNKNOWN|INPUT_MISSING|OUTPUT_MISSING|STDOUT_MISSING|SIGNAL|RESOURCE_EXHAUSTION|MAX_RETRIES|MAX_END_TIME|MAX_WALL_TIME|FORSAKEN) {limits_exceeded} {resources_measured}
+# time manager_pid TASK task_id DONE (SUCCESS|UNKNOWN|INPUT_MISSING|OUTPUT_MISSING|STDOUT_MISSING|SIGNAL|RESOURCE_EXHAUSTION|MAX_RETRIES|MAX_END_TIME|MAX_WALL_TIME|FORSAKEN) exit_code
+# time manager_pid LIBRARY library_id (WAITING|SENT|STARTED|FAILURE) worker_id
+# time manager_pid APPLICATION message*
+1790697413090883 474747 MANAGER 474747 START 0
+1790697413093698 474747 TASK 1 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697413094062 474747 TASK 2 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697413094383 474747 TASK 3 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697413094752 474747 TASK 4 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697413094818 474747 TASK 5 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697420605475 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CONNECTION 10.32.93.188:36424
+1790697420605651 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 RESOURCES {"memory":[16000,"MB"],"disk":[25000,"MB"],"cores":[12,"cores"]}
+1790697420607922 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER INPUT file-meta-73ab1707b2d09f492364ded97a3529b4 610008 2239 1790697420605681
+1790697420608144 474747 TASK 1 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697420.605668,"s"],"time_commit_end":[1790697420.608111,"s"],"time_input_mgr":[0.002443,"s"],"size_input_mgr":[0.5817489624023438,"MB"],"memory":[16000,"MB"],"disk":[18749,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697420608558 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-meta-73ab1707b2d09f492364ded97a3529b4 610008 2654 1790697420605834
+1790697420639771 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CONNECTION 10.32.93.216:57938
+1790697420639851 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a RESOURCES {"memory":[16000,"MB"],"disk":[25000,"MB"],"cores":[12,"cores"]}
+1790697420705240 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER INPUT file-meta-384459b6d56cea5c3323cb2498e06d69 610008 65367 1790697420639871
+1790697420705387 474747 TASK 2 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697420.639864,"s"],"time_commit_end":[1790697420.705361,"s"],"time_input_mgr":[0.065497,"s"],"size_input_mgr":[0.5817489624023438,"MB"],"memory":[16000,"MB"],"disk":[18749,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697420705425 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-meta-384459b6d56cea5c3323cb2498e06d69 610008 64854 1790697420639927
+1790697420751041 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-rnd-fcenyeyjlxtigze 20 45063 1790697420705757
+1790697420751074 474747 TASK 2 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697420754186 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER OUTPUT file-rnd-fcenyeyjlxtigze 20 3096 1790697420751079
+1790697420754476 474747 CATEGORY default MAX {}
+1790697420754482 474747 CATEGORY default MIN {}
+1790697420754485 474747 CATEGORY default FIRST FIXED {}
+1790697420754551 474747 TASK 2 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697420.705757,"s"],"time_worker_end":[1790697420.75082,"s"],"time_output_mgr":[0.00339,"s"],"size_output_mgr":[1.9073486328125e-05,"MB"],"time_commit_start":[1790697420.639864,"s"],"time_commit_end":[1790697420.705361,"s"],"time_input_mgr":[0.065497,"s"],"size_input_mgr":[0.5817489624023438,"MB"],"start":[1790697420.705757,"s"],"end":[1790697420.75082,"s"],"wall_time":[0.045063,"s"],"memory":[16000,"MB"],"disk":[18749,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697420754573 474747 TASK 2 DONE SUCCESS  0 
+1790697420771671 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER INPUT file-meta-1467182208570f28e7af125a7309885f 610008 16988 1790697420754681
+1790697420771828 474747 TASK 3 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697420.754675,"s"],"time_commit_end":[1790697420.771802,"s"],"time_input_mgr":[0.017127,"s"],"size_input_mgr":[0.5817489624023438,"MB"],"memory":[16000,"MB"],"disk":[18748,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697420771854 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-meta-1467182208570f28e7af125a7309885f 610008 16833 1790697420754721
+1790697420783681 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-rnd-jiuvcphpwwdaubt 20 11257 1790697420772221
+1790697420783710 474747 TASK 3 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697420785740 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER OUTPUT file-rnd-jiuvcphpwwdaubt 20 2015 1790697420783714
+1790697420786134 474747 TASK 3 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697420.772221,"s"],"time_worker_end":[1790697420.783478,"s"],"time_output_mgr":[0.002358,"s"],"size_output_mgr":[1.9073486328125e-05,"MB"],"time_commit_start":[1790697420.754675,"s"],"time_commit_end":[1790697420.771802,"s"],"time_input_mgr":[0.017127,"s"],"size_input_mgr":[0.5817489624023438,"MB"],"start":[1790697420.772221,"s"],"end":[1790697420.783478,"s"],"wall_time":[0.011257,"s"],"memory":[16000,"MB"],"disk":[18748,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697420786155 474747 TASK 3 DONE SUCCESS  0 
+1790697420825439 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER INPUT file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 610008 39194 1790697420786243
+1790697420825628 474747 TASK 4 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697420.786237,"s"],"time_commit_end":[1790697420.825602,"s"],"time_input_mgr":[0.039365,"s"],"size_input_mgr":[0.5817489624023438,"MB"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697420825652 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 610008 35200 1790697420786288
+1790697420857268 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-rnd-icibwwqdphwnypd 20 31040 1790697420826015
+1790697420857295 474747 TASK 4 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697420859364 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER OUTPUT file-rnd-icibwwqdphwnypd 20 2054 1790697420857299
+1790697420859675 474747 TASK 4 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697420.826015,"s"],"time_worker_end":[1790697420.857055,"s"],"time_output_mgr":[0.002313,"s"],"size_output_mgr":[1.9073486328125e-05,"MB"],"time_commit_start":[1790697420.786237,"s"],"time_commit_end":[1790697420.825602,"s"],"time_input_mgr":[0.039365,"s"],"size_input_mgr":[0.5817489624023438,"MB"],"start":[1790697420.826015,"s"],"end":[1790697420.857055,"s"],"wall_time":[0.03104,"s"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697420859696 474747 TASK 4 DONE SUCCESS  0 
+1790697420859953 474747 TASK 5 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697420.859781,"s"],"time_commit_end":[1790697420.859926,"s"],"time_input_mgr":[0.000145,"s"],"size_input_mgr":[0,"MB"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697420863504 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-meta-73ab1707b2d09f492364ded97a3529b4 610008 3495 1790697420859837
+1790697420904184 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-rnd-sdayccdqvnimnso 20 40288 1790697420863704
+1790697420904212 474747 TASK 5 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697420915973 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER OUTPUT file-rnd-sdayccdqvnimnso 20 11745 1790697420904216
+1790697420916373 474747 TASK 5 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697420.863704,"s"],"time_worker_end":[1790697420.903992,"s"],"time_output_mgr":[0.012096,"s"],"size_output_mgr":[1.9073486328125e-05,"MB"],"time_commit_start":[1790697420.859781,"s"],"time_commit_end":[1790697420.859926,"s"],"time_input_mgr":[0.000145,"s"],"size_input_mgr":[0,"MB"],"start":[1790697420.863704,"s"],"end":[1790697420.903992,"s"],"wall_time":[0.040288,"s"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697420916394 474747 TASK 5 DONE SUCCESS  0 
+1790697421276103 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-kxgedyyzdfhtmbu 643 666788 1790697420609057
+1790697421276287 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-evzvtsrcraxbjjj 9 666788 1790697420609057
+1790697421276422 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-lcnbeykwqrfkqfr 5 666788 1790697420609057
+1790697421276537 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-dtzikqwvqtipwzj 7 666788 1790697420609057
+1790697421276636 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-iczbmboegkoaqfk 123 666788 1790697420609057
+1790697421276752 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-sbegcxcdnzpwyde 3630003 666788 1790697420609057
+1790697421276833 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-wasimlfkdgpefpr 786432 666788 1790697420609057
+1790697421276899 474747 TASK 1 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697421282201 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-kxgedyyzdfhtmbu 643 5286 1790697421276904
+1790697421286245 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-evzvtsrcraxbjjj 9 3657 1790697421282577
+1790697421290600 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-lcnbeykwqrfkqfr 5 3988 1790697421286600
+1790697421295083 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-dtzikqwvqtipwzj 7 3970 1790697421291102
+1790697421298997 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-iczbmboegkoaqfk 123 3636 1790697421295350
+1790697421326772 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-sbegcxcdnzpwyde 3630003 27442 1790697421299304
+1790697421338260 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-wasimlfkdgpefpr 786432 10910 1790697421327338
+1790697421339090 474747 TASK 1 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697420.609057,"s"],"time_worker_end":[1790697421.275845,"s"],"time_output_mgr":[0.062111,"s"],"size_output_mgr":[4.212591171264648,"MB"],"time_commit_start":[1790697420.605668,"s"],"time_commit_end":[1790697420.608111,"s"],"time_input_mgr":[0.002443,"s"],"size_input_mgr":[0.5817489624023438,"MB"],"start":[1790697420.609057,"s"],"end":[1790697421.275845,"s"],"wall_time":[0.666788,"s"],"memory":[16000,"MB"],"disk":[18749,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697421339121 474747 TASK 1 DONE SUCCESS  0 
+1790697421339357 474747 TASK 6 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697421340341 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER INPUT file-meta-e467c783df2e40b7798c326cd42bb40b 6786 910 1790697421339430
+1790697421340560 474747 TASK 6 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697421.339422,"s"],"time_commit_end":[1790697421.340532,"s"],"time_input_mgr":[0.00111,"s"],"size_input_mgr":[0.006471633911132812,"MB"],"memory":[16000,"MB"],"disk":[18742,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697421340586 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-meta-e467c783df2e40b7798c326cd42bb40b 6786 653 1790697421339585
+1790697421550425 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-wqyoyslxuijhefd 434 208756 1790697421341410
+1790697421550484 474747 TASK 6 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697421554029 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-wqyoyslxuijhefd 434 3530 1790697421550488
+1790697421554646 474747 TASK 6 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697421.34141,"s"],"time_worker_end":[1790697421.550166,"s"],"time_output_mgr":[0.004097,"s"],"size_output_mgr":[0.0004138946533203125,"MB"],"time_commit_start":[1790697421.339422,"s"],"time_commit_end":[1790697421.340532,"s"],"time_input_mgr":[0.00111,"s"],"size_input_mgr":[0.006471633911132812,"MB"],"start":[1790697421.34141,"s"],"end":[1790697421.550166,"s"],"wall_time":[0.208756,"s"],"memory":[16000,"MB"],"disk":[18742,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697421554666 474747 TASK 6 DONE SUCCESS  0 
+1790697421554827 474747 TASK 7 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697421555003 474747 TASK 7 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697421.554858,"s"],"time_commit_end":[1790697421.554977,"s"],"time_input_mgr":[0.000119,"s"],"size_input_mgr":[0,"MB"],"memory":[16000,"MB"],"disk":[18745,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697421578365 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-zgcdwvnhqozfers 24 22546 1790697421555662
+1790697421578388 474747 TASK 7 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697421584559 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-zgcdwvnhqozfers 24 6154 1790697421578392
+1790697421585505 474747 TASK 7 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697421.555662,"s"],"time_worker_end":[1790697421.578208,"s"],"time_output_mgr":[0.007052,"s"],"size_output_mgr":[2.288818359375e-05,"MB"],"time_commit_start":[1790697421.554858,"s"],"time_commit_end":[1790697421.554977,"s"],"time_input_mgr":[0.000119,"s"],"size_input_mgr":[0,"MB"],"start":[1790697421.555662,"s"],"end":[1790697421.578208,"s"],"wall_time":[0.022546,"s"],"memory":[16000,"MB"],"disk":[18745,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697421585526 474747 TASK 7 DONE SUCCESS  0 
+1790697421586294 474747 TASK 8 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697421586908 474747 TASK 9 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697421588038 474747 TASK 10 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697421588105 474747 TASK 11 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697421589777 474747 TASK 8 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697421.588141,"s"],"time_commit_end":[1790697421.589748,"s"],"time_input_mgr":[0.001607,"s"],"size_input_mgr":[0,"MB"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697421591644 474747 TASK 9 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697421.589797,"s"],"time_commit_end":[1790697421.591619,"s"],"time_input_mgr":[0.001822,"s"],"size_input_mgr":[0,"MB"],"memory":[16000,"MB"],"disk":[18745,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697421591678 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-rnd-zgcdwvnhqozfers 24 2068 1790697421588316
+1790697421591692 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-rnd-wqyoyslxuijhefd 434 1936 1790697421588649
+1790697421592267 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-jiuvcphpwwdaubt 20 2193 1790697421589971
+1790697421594284 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-meta-1467182208570f28e7af125a7309885f 610008 2542 1790697421591655
+1790697423004860 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-rnd-mqnkthvryzjsnsa 170 1413530 1790697421591027
+1790697423004874 474747 TASK 8 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697423007720 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER OUTPUT file-rnd-mqnkthvryzjsnsa 170 2679 1790697423005027
+1790697423008083 474747 TASK 8 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697421.591027,"s"],"time_worker_end":[1790697423.004557,"s"],"time_output_mgr":[0.003137,"s"],"size_output_mgr":[0.0001621246337890625,"MB"],"time_commit_start":[1790697421.588141,"s"],"time_commit_end":[1790697421.589748,"s"],"time_input_mgr":[0.001607,"s"],"size_input_mgr":[0,"MB"],"start":[1790697421.591027,"s"],"end":[1790697423.004557,"s"],"wall_time":[1.41353,"s"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697423008105 474747 TASK 8 DONE SUCCESS  0 
+1790697423008234 474747 TASK 12 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697423008794 474747 TASK 10 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697423.008272,"s"],"time_commit_end":[1790697423.008768,"s"],"time_input_mgr":[0.000496,"s"],"size_input_mgr":[0,"MB"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697424425123 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-rnd-fkbdpqfbbkwfbuk 171 1415402 1790697423009368
+1790697424425153 474747 TASK 10 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697424427813 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER OUTPUT file-rnd-fkbdpqfbbkwfbuk 171 2500 1790697424425301
+1790697424428304 474747 TASK 10 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697423.009368,"s"],"time_worker_end":[1790697424.42477,"s"],"time_output_mgr":[0.003081,"s"],"size_output_mgr":[0.0001630783081054688,"MB"],"time_commit_start":[1790697423.008272,"s"],"time_commit_end":[1790697423.008768,"s"],"time_input_mgr":[0.000496,"s"],"size_input_mgr":[0,"MB"],"start":[1790697423.009368,"s"],"end":[1790697424.42477,"s"],"wall_time":[1.415402,"s"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697424428325 474747 TASK 10 DONE SUCCESS  0 
+1790697424428462 474747 TASK 13 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697424429084 474747 TASK 11 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697424.428498,"s"],"time_commit_end":[1790697424.429058,"s"],"time_input_mgr":[0.00056,"s"],"size_input_mgr":[0,"MB"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697425847575 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a CACHE_UPDATE file-rnd-prejsrlhysjxleu 171 1417721 1790697424429563
+1790697425848434 474747 TASK 11 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697425850824 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a TRANSFER OUTPUT file-rnd-prejsrlhysjxleu 171 2228 1790697425848585
+1790697425851157 474747 TASK 11 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697424.429563,"s"],"time_worker_end":[1790697425.847284,"s"],"time_output_mgr":[0.002658,"s"],"size_output_mgr":[0.0001630783081054688,"MB"],"time_commit_start":[1790697424.428498,"s"],"time_commit_end":[1790697424.429058,"s"],"time_input_mgr":[0.00056,"s"],"size_input_mgr":[0,"MB"],"start":[1790697424.429563,"s"],"end":[1790697425.847284,"s"],"wall_time":[1.417721,"s"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697425851178 474747 TASK 11 DONE SUCCESS  0 
+1790697425851307 474747 TASK 14 READY default FIRST_RESOURCES 1 {"disk":[0,"MB"]}
+1790697425852406 474747 TASK 12 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697425.851347,"s"],"time_commit_end":[1790697425.852379,"s"],"time_input_mgr":[0.001032,"s"],"size_input_mgr":[0,"MB"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697426940199 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-fpelmevhsqsdvww 170 5344800 1790697421594743
+1790697426940233 474747 TASK 9 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697426942637 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 TRANSFER OUTPUT file-rnd-fpelmevhsqsdvww 170 2170 1790697426940426
+1790697426943037 474747 TASK 9 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697421.594743,"s"],"time_worker_end":[1790697426.939543,"s"],"time_output_mgr":[0.002688,"s"],"size_output_mgr":[0.0001621246337890625,"MB"],"time_commit_start":[1790697421.589797,"s"],"time_commit_end":[1790697421.591619,"s"],"time_input_mgr":[0.001822,"s"],"size_input_mgr":[0,"MB"],"start":[1790697421.594743,"s"],"end":[1790697426.939543,"s"],"wall_time":[5.3448,"s"],"memory":[16000,"MB"],"disk":[18745,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697426943077 474747 TASK 9 DONE SUCCESS  0 
+1790697426943615 474747 TASK 15 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697426944343 474747 TASK 13 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697426.943687,"s"],"time_commit_end":[1790697426.94431,"s"],"time_input_mgr":[0.000623,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697426944548 474747 TASK 14 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697426.944394,"s"],"time_commit_end":[1790697426.944522,"s"],"time_input_mgr":[0.000128,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697426944975 474747 TASK 15 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697426.944567,"s"],"time_commit_end":[1790697426.944945,"s"],"time_input_mgr":[0.000378,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697426946497 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-icibwwqdphwnypd 20 2058 1790697426944289
+1790697426947140 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-sdayccdqvnimnso 20 1587 1790697426945471
+1790697426947261 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-fkbdpqfbbkwfbuk 171 2216 1790697426944984
+1790697426947615 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-rnd-prejsrlhysjxleu 171 1787 1790697426945744
+1790697426948651 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 CACHE_UPDATE file-meta-b76dab2c718369c8ff3a32fbb9cc5f77 610008 3811 1790697426944747
+1790697427507241 474747 TASK 12 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697427507622 474747 TASK 12 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697425.852882,"s"],"time_worker_end":[1790697427.506974,"s"],"time_output_mgr":[0.000289,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697425.851347,"s"],"time_commit_end":[1790697425.852379,"s"],"time_input_mgr":[0.001032,"s"],"size_input_mgr":[0,"MB"],"start":[1790697425.852882,"s"],"end":[1790697427.506974,"s"],"wall_time":[1.654092,"s"],"memory":[16000,"MB"],"disk":[18747,"MB"],"gpus":[0,"gpus"],"cores":[12,"cores"]}
+1790697427507673 474747 TASK 12 DONE SUCCESS  2 
+1790697427517406 474747 TASK 16 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697427517960 474747 TASK 16 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697427.517492,"s"],"time_commit_end":[1790697427.517922,"s"],"time_input_mgr":[0.00043,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697429063946 474747 TASK 16 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697429064267 474747 TASK 16 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697427.518469,"s"],"time_worker_end":[1790697429.063661,"s"],"time_output_mgr":[0.000212,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697427.517492,"s"],"time_commit_end":[1790697427.517922,"s"],"time_input_mgr":[0.00043,"s"],"size_input_mgr":[0,"MB"],"start":[1790697427.518469,"s"],"end":[1790697429.063661,"s"],"wall_time":[1.545192,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697429064301 474747 TASK 16 DONE SUCCESS  2 
+1790697429295095 474747 TASK 17 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697429295471 474747 TASK 17 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697429.295168,"s"],"time_commit_end":[1790697429.295432,"s"],"time_input_mgr":[0.000264,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697429452217 474747 TASK 15 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697429452536 474747 TASK 15 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697426.946959,"s"],"time_worker_end":[1790697429.452023,"s"],"time_output_mgr":[0.000231,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697426.944567,"s"],"time_commit_end":[1790697426.944945,"s"],"time_input_mgr":[0.000378,"s"],"size_input_mgr":[0,"MB"],"start":[1790697426.946959,"s"],"end":[1790697429.452023,"s"],"wall_time":[2.505064,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697429452571 474747 TASK 15 DONE SUCCESS  2 
+1790697429465660 474747 TASK 18 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697429465918 474747 TASK 18 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697429.465735,"s"],"time_commit_end":[1790697429.465887,"s"],"time_input_mgr":[0.000152,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697430884498 474747 TASK 17 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697430884803 474747 TASK 17 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697429.296176,"s"],"time_worker_end":[1790697430.883173,"s"],"time_output_mgr":[0.000213,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697429.295168,"s"],"time_commit_end":[1790697429.295432,"s"],"time_input_mgr":[0.000264,"s"],"size_input_mgr":[0,"MB"],"start":[1790697429.296176,"s"],"end":[1790697430.883173,"s"],"wall_time":[1.586997,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697430884838 474747 TASK 17 DONE SUCCESS  2 
+1790697431164471 474747 TASK 19 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697431164729 474747 TASK 19 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697431.164542,"s"],"time_commit_end":[1790697431.164701,"s"],"time_input_mgr":[0.000159,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697432713917 474747 TASK 19 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697432714210 474747 TASK 19 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697431.165708,"s"],"time_worker_end":[1790697432.713685,"s"],"time_output_mgr":[0.000207,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697431.164542,"s"],"time_commit_end":[1790697431.164701,"s"],"time_input_mgr":[0.000159,"s"],"size_input_mgr":[0,"MB"],"start":[1790697431.165708,"s"],"end":[1790697432.713685,"s"],"wall_time":[1.547977,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697432714245 474747 TASK 19 DONE SUCCESS  2 
+1790697433165028 474747 TASK 20 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697433171974 474747 TASK 20 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697433.165099,"s"],"time_commit_end":[1790697433.171939,"s"],"time_input_mgr":[0.00684,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697433899292 474747 TASK 13 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697433899564 474747 TASK 13 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697426.949141,"s"],"time_worker_end":[1790697433.897052,"s"],"time_output_mgr":[0.000183,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697426.943687,"s"],"time_commit_end":[1790697426.94431,"s"],"time_input_mgr":[0.000623,"s"],"size_input_mgr":[0,"MB"],"start":[1790697426.949141,"s"],"end":[1790697433.897052,"s"],"wall_time":[6.947911,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697433899599 474747 TASK 13 DONE SUCCESS  2 
+1790697433909523 474747 TASK 21 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697433910328 474747 TASK 21 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697433.909595,"s"],"time_commit_end":[1790697433.910298,"s"],"time_input_mgr":[0.000703,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697434795191 474747 TASK 20 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697434795488 474747 TASK 20 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697433.172884,"s"],"time_worker_end":[1790697434.794978,"s"],"time_output_mgr":[0.000203,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697433.165099,"s"],"time_commit_end":[1790697433.171939,"s"],"time_input_mgr":[0.00684,"s"],"size_input_mgr":[0,"MB"],"start":[1790697433.172884,"s"],"end":[1790697434.794978,"s"],"wall_time":[1.622094,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697434795525 474747 TASK 20 DONE SUCCESS  2 
+1790697434805373 474747 TASK 22 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697434805839 474747 TASK 22 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697434.805434,"s"],"time_commit_end":[1790697434.805812,"s"],"time_input_mgr":[0.000378,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697435757724 474747 TASK 21 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697435757966 474747 TASK 21 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697433.911194,"s"],"time_worker_end":[1790697435.756469,"s"],"time_output_mgr":[0.00018,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697433.909595,"s"],"time_commit_end":[1790697433.910298,"s"],"time_input_mgr":[0.000703,"s"],"size_input_mgr":[0,"MB"],"start":[1790697433.911194,"s"],"end":[1790697435.756469,"s"],"wall_time":[1.845275,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697435758004 474747 TASK 21 DONE SUCCESS  2 
+1790697435823657 474747 TASK 23 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697435823860 474747 TASK 23 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697435.823696,"s"],"time_commit_end":[1790697435.823833,"s"],"time_input_mgr":[0.000137,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697436267029 474747 TASK 22 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697436267276 474747 TASK 22 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697434.806414,"s"],"time_worker_end":[1790697436.266888,"s"],"time_output_mgr":[0.000187,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697434.805434,"s"],"time_commit_end":[1790697434.805812,"s"],"time_input_mgr":[0.000378,"s"],"size_input_mgr":[0,"MB"],"start":[1790697434.806414,"s"],"end":[1790697436.266888,"s"],"wall_time":[1.460474,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697436267300 474747 TASK 22 DONE SUCCESS  2 
+1790697437434352 474747 TASK 23 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697437434677 474747 TASK 23 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697435.824711,"s"],"time_worker_end":[1790697437.434191,"s"],"time_output_mgr":[0.000251,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697435.823696,"s"],"time_commit_end":[1790697435.823833,"s"],"time_input_mgr":[0.000137,"s"],"size_input_mgr":[0,"MB"],"start":[1790697435.824711,"s"],"end":[1790697437.434191,"s"],"wall_time":[1.60948,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697437434707 474747 TASK 23 DONE SUCCESS  2 
+1790697437448157 474747 TASK 24 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697437448356 474747 TASK 24 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697437.448203,"s"],"time_commit_end":[1790697437.44833,"s"],"time_input_mgr":[0.000127,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697439105732 474747 TASK 18 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697439106043 474747 TASK 18 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697429.466686,"s"],"time_worker_end":[1790697439.105072,"s"],"time_output_mgr":[0.000217,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697429.465735,"s"],"time_commit_end":[1790697429.465887,"s"],"time_input_mgr":[0.000152,"s"],"size_input_mgr":[0,"MB"],"start":[1790697429.466686,"s"],"end":[1790697439.105072,"s"],"wall_time":[9.638386000000001,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697439106080 474747 TASK 18 DONE SUCCESS  2 
+1790697439118464 474747 TASK 25 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697439119283 474747 TASK 25 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697439.118536,"s"],"time_commit_end":[1790697439.119251,"s"],"time_input_mgr":[0.000715,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697439149962 474747 TASK 24 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697439150241 474747 TASK 24 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697437.448847,"s"],"time_worker_end":[1790697439.149748,"s"],"time_output_mgr":[0.0002,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697437.448203,"s"],"time_commit_end":[1790697437.44833,"s"],"time_input_mgr":[0.000127,"s"],"size_input_mgr":[0,"MB"],"start":[1790697437.448847,"s"],"end":[1790697439.149748,"s"],"wall_time":[1.700901,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697439150292 474747 TASK 24 DONE SUCCESS  2 
+1790697439214462 474747 TASK 26 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697439214777 474747 TASK 26 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697439.21453,"s"],"time_commit_end":[1790697439.214738,"s"],"time_input_mgr":[0.000208,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697439519586 474747 TASK 14 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697439519857 474747 TASK 14 RETRIEVED SUCCESS  0  {} {"time_worker_start":[1790697426.948074,"s"],"time_worker_end":[1790697439.519391,"s"],"time_output_mgr":[0.000184,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697426.944394,"s"],"time_commit_end":[1790697426.944522,"s"],"time_input_mgr":[0.000128,"s"],"size_input_mgr":[0,"MB"],"start":[1790697426.948074,"s"],"end":[1790697439.519391,"s"],"wall_time":[12.571317,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697439519893 474747 TASK 14 DONE SUCCESS  0 
+1790697440684267 474747 TASK 26 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697440684586 474747 TASK 26 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697439.215383,"s"],"time_worker_end":[1790697440.683083,"s"],"time_output_mgr":[0.000225,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697439.21453,"s"],"time_commit_end":[1790697439.214738,"s"],"time_input_mgr":[0.000208,"s"],"size_input_mgr":[0,"MB"],"start":[1790697439.215383,"s"],"end":[1790697440.683083,"s"],"wall_time":[1.4677,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697440684639 474747 TASK 26 DONE SUCCESS  2 
+1790697440711828 474747 TASK 27 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697440712351 474747 TASK 27 RUNNING worker-6222a30466220a340bbf4c780b0d204a  FIRST_RESOURCES {"time_commit_start":[1790697440.711897,"s"],"time_commit_end":[1790697440.712315,"s"],"time_input_mgr":[0.000418,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697441028004 474747 TASK 25 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697441028252 474747 TASK 25 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697439.120021,"s"],"time_worker_end":[1790697441.027824,"s"],"time_output_mgr":[0.000163,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697439.118536,"s"],"time_commit_end":[1790697439.119251,"s"],"time_input_mgr":[0.000715,"s"],"size_input_mgr":[0,"MB"],"start":[1790697439.120021,"s"],"end":[1790697441.027824,"s"],"wall_time":[1.907803,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697441028288 474747 TASK 25 DONE SUCCESS  2 
+1790697441046329 474747 TASK 28 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697441046593 474747 TASK 28 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697441.046398,"s"],"time_commit_end":[1790697441.046565,"s"],"time_input_mgr":[0.000167,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697442295877 474747 TASK 27 WAITING_RETRIEVAL worker-6222a30466220a340bbf4c780b0d204a 
+1790697442296160 474747 TASK 27 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697440.712928,"s"],"time_worker_end":[1790697442.295648,"s"],"time_output_mgr":[0.0002,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697440.711897,"s"],"time_commit_end":[1790697440.712315,"s"],"time_input_mgr":[0.000418,"s"],"size_input_mgr":[0,"MB"],"start":[1790697440.712928,"s"],"end":[1790697442.295648,"s"],"wall_time":[1.58272,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697442296191 474747 TASK 27 DONE SUCCESS  2 
+1790697443054966 474747 TASK 28 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697443055231 474747 TASK 28 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697441.047344,"s"],"time_worker_end":[1790697443.052715,"s"],"time_output_mgr":[0.000173,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697441.046398,"s"],"time_commit_end":[1790697441.046565,"s"],"time_input_mgr":[0.000167,"s"],"size_input_mgr":[0,"MB"],"start":[1790697441.047344,"s"],"end":[1790697443.052715,"s"],"wall_time":[2.005371,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697443055267 474747 TASK 28 DONE SUCCESS  2 
+1790697443073319 474747 TASK 29 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697443073548 474747 TASK 29 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697443.073388,"s"],"time_commit_end":[1790697443.073519,"s"],"time_input_mgr":[0.000131,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697444942704 474747 TASK 29 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697444942983 474747 TASK 29 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697443.074462,"s"],"time_worker_end":[1790697444.942538,"s"],"time_output_mgr":[0.000191,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697443.073388,"s"],"time_commit_end":[1790697443.073519,"s"],"time_input_mgr":[0.000131,"s"],"size_input_mgr":[0,"MB"],"start":[1790697443.074462,"s"],"end":[1790697444.942538,"s"],"wall_time":[1.868076,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697444943021 474747 TASK 29 DONE SUCCESS  2 
+1790697444958025 474747 TASK 30 READY default FIRST_RESOURCES 1 {"disk":[1,"MB"]}
+1790697444958323 474747 TASK 30 RUNNING worker-433273243629f6af9ea3d5d332ef7119  FIRST_RESOURCES {"time_commit_start":[1790697444.958098,"s"],"time_commit_end":[1790697444.958261,"s"],"time_input_mgr":[0.000163,"s"],"size_input_mgr":[0,"MB"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697446806214 474747 TASK 30 WAITING_RETRIEVAL worker-433273243629f6af9ea3d5d332ef7119 
+1790697446806599 474747 TASK 30 RETRIEVED SUCCESS  2  {} {"time_worker_start":[1790697444.959148,"s"],"time_worker_end":[1790697446.806033,"s"],"time_output_mgr":[0.000294,"s"],"size_output_mgr":[0,"MB"],"time_commit_start":[1790697444.958098,"s"],"time_commit_end":[1790697444.958261,"s"],"time_input_mgr":[0.000163,"s"],"size_input_mgr":[0,"MB"],"start":[1790697444.959148,"s"],"end":[1790697446.806033,"s"],"wall_time":[1.846885,"s"],"memory":[1,"MB"],"disk":[1,"MB"],"gpus":[0,"gpus"],"cores":[1,"cores"]}
+1790697446806638 474747 TASK 30 DONE SUCCESS  2 
+1790697446828717 474747 WORKER worker-433273243629f6af9ea3d5d332ef7119 DISCONNECTION EXPLICIT
+1790697446828956 474747 WORKER worker-6222a30466220a340bbf4c780b0d204a DISCONNECTION EXPLICIT
+1790697446832602 474747 MANAGER 474747 END 33743028
