@@ -1,0 +1,43 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-88a50b11e94bfcf908b44ba5be5ba77a "match_strain.py" 3497
+FILE file-meta-1b9d9f2c3b2e1eb066c6b16e66a39131 "data/L1_strain_4.hdf5" 315092
+FILE file-rnd-jkyvsbaudiglcji "L1_5-10_4.csv" 0
+FILE file-meta-fea4d83db5fce031bd384a62546b2b53 "data/L1_strain_3.hdf5" 314922
+FILE file-rnd-koxflogcehxfroj "L1_5-10_3.csv" 0
+FILE file-meta-c3ab44e77e1d3026d989a121284a6a72 "data/L1_strain_2.hdf5" 315139
+FILE file-rnd-uiswadaarhlltpg "L1_5-10_2.csv" 0
+FILE file-meta-788562871bd3003d343aca2a02a7886b "data/L1_strain_1.hdf5" 315369
+FILE file-rnd-dibvrujikwknofa "L1_5-10_1.csv" 0
+FILE file-meta-6cda0ce42e5ca6c55a65a2c7d2a0433b "data/H1_strain_4.hdf5" 326432
+FILE file-rnd-fxcngucsuqakgyy "H1_5-10_4.csv" 0
+FILE file-meta-2e0c8e99169799055fc7529b1868854c "data/H1_strain_3.hdf5" 326824
+FILE file-rnd-wsqxpyqgbxncgws "H1_5-10_3.csv" 0
+FILE file-meta-323babf0366e4d9779f233bcca59ed2c "data/H1_strain_2.hdf5" 326525
+FILE file-rnd-jququacgfuegxte "H1_5-10_2.csv" 0
+FILE file-meta-58efe263a8b21c2ab3fdbb5f12bdd81a "data/H1_strain_1.hdf5" 326887
+FILE file-rnd-mijarmpxmfuefpe "H1_5-10_1.csv" 0
+TASK T1 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-88a50b11e94bfcf908b44ba5be5ba77a file-meta-1b9d9f2c3b2e1eb066c6b16e66a39131 OUTPUTS file-rnd-jkyvsbaudiglcji 
+TASK T4 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-88a50b11e94bfcf908b44ba5be5ba77a file-meta-788562871bd3003d343aca2a02a7886b OUTPUTS file-rnd-dibvrujikwknofa 
+TASK T3 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-88a50b11e94bfcf908b44ba5be5ba77a file-meta-c3ab44e77e1d3026d989a121284a6a72 OUTPUTS file-rnd-uiswadaarhlltpg 
+TASK T5 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-88a50b11e94bfcf908b44ba5be5ba77a file-meta-6cda0ce42e5ca6c55a65a2c7d2a0433b OUTPUTS file-rnd-fxcngucsuqakgyy 
+FILE file-meta-bfe152d14899bd3958a3c9356d8dcce6 "coincidence.py" 2354
+FILE file-rnd-sddrcupemszwzjq "5-10_4_coincident_events.csv" 0
+TASK T2 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-88a50b11e94bfcf908b44ba5be5ba77a file-meta-fea4d83db5fce031bd384a62546b2b53 OUTPUTS file-rnd-koxflogcehxfroj 
+TASK T9 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-bfe152d14899bd3958a3c9356d8dcce6 file-rnd-jkyvsbaudiglcji file-rnd-fxcngucsuqakgyy OUTPUTS file-rnd-sddrcupemszwzjq 
+FILE file-meta-087250f56f3a8ebd86def0da9075bc0c "make_inference.py" 4984
+TASK T7 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-88a50b11e94bfcf908b44ba5be5ba77a file-meta-323babf0366e4d9779f233bcca59ed2c OUTPUTS file-rnd-jququacgfuegxte 
+FILE file-rnd-rwqvxpaiiinvakk "5-10_2_coincident_events.csv" 0
+TASK T10 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-087250f56f3a8ebd86def0da9075bc0c file-rnd-sddrcupemszwzjq OUTPUTS 
+TASK T6 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-88a50b11e94bfcf908b44ba5be5ba77a file-meta-2e0c8e99169799055fc7529b1868854c OUTPUTS file-rnd-wsqxpyqgbxncgws 
+FILE file-rnd-hjdkgeujpajdbfk "5-10_3_coincident_events.csv" 0
+TASK T11 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-bfe152d14899bd3958a3c9356d8dcce6 file-rnd-uiswadaarhlltpg file-rnd-jququacgfuegxte OUTPUTS file-rnd-rwqvxpaiiinvakk 
+TASK T13 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-087250f56f3a8ebd86def0da9075bc0c file-rnd-rwqvxpaiiinvakk OUTPUTS 
+TASK T8 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-88a50b11e94bfcf908b44ba5be5ba77a file-meta-58efe263a8b21c2ab3fdbb5f12bdd81a OUTPUTS file-rnd-mijarmpxmfuefpe 
+FILE file-rnd-dxnegmwbdwozjth "5-10_1_coincident_events.csv" 0
+TASK T12 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-bfe152d14899bd3958a3c9356d8dcce6 file-rnd-koxflogcehxfroj file-rnd-wsqxpyqgbxncgws OUTPUTS file-rnd-hjdkgeujpajdbfk 
+TASK T15 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-087250f56f3a8ebd86def0da9075bc0c file-rnd-hjdkgeujpajdbfk OUTPUTS 
+TASK T14 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-bfe152d14899bd3958a3c9356d8dcce6 file-rnd-dibvrujikwknofa file-rnd-mijarmpxmfuefpe OUTPUTS file-rnd-dxnegmwbdwozjth 
+TASK T16 "/groups/dthain/users/cthoma26/annotations/pycbc/env/bin/python" INPUTS file-meta-087250f56f3a8ebd86def0da9075bc0c file-rnd-dxnegmwbdwozjth OUTPUTS 
+# end
