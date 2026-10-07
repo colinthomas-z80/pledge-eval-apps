@@ -1,0 +1,54 @@
+{
+  "define":{
+	"num_sims":72
+	}
+  "rules": [
+    {
+      "command": "mkdir -p  runs/run_debug/data; /groups/dthain/users/cthoma26/pledge-eval-apps/xgfabric/.pixi/envs/default/bin/python3 utils/load_historical_data.py -W woof://128.111.45.61/davisstations/daviscupsout --output-dir=runs/run_debug/data -n 1",
+      "outputs": [
+        "runs/run_debug/data/sensor_data.txt"
+      ],
+      "inputs": [
+        "utils/load_historical_data.py"
+      ]
+    },
+    {
+      "command": "/groups/dthain/users/cthoma26/pledge-eval-apps/xgfabric/.pixi/envs/default/bin/python3 utils/convert_cspot_to_csv.py runs/run_debug/data/sensor_data.txt runs/run_debug/data/sensor_out.csv",
+      "outputs": [
+        "runs/run_debug/data/sensor_out.csv"
+      ],
+      "inputs": [
+        "runs/run_debug/data/sensor_data.txt",
+        "utils/convert_cspot_to_csv.py"
+      ]
+    },
+    {
+      "command": "mkdir runs/run_debug/params ; /groups/dthain/users/cthoma26/pledge-eval-apps/xgfabric/.pixi/envs/default/bin/python3 utils/sensor_to_sim_params.py runs/run_debug/data/sensor_out.csv runs/run_debug/params/sim_params.csv 1",
+      "outputs": [
+        "runs/run_debug/params/sim_params.csv"
+      ],
+      "inputs": [
+        "runs/run_debug/data/sensor_out.csv",
+        "utils/sensor_to_sim_params.py"
+      ]
+    },
+    {
+      "command": "/groups/dthain/users/cthoma26/pledge-eval-apps/xgfabric/.pixi/envs/default/bin/python3 utils/generate_params.py runs/run_debug/params/sim_params.csv runs/run_debug/params",
+      "outputs": [],
+      "inputs": [
+        "runs/run_debug/params/sim_params.csv",
+        "utils/generate_params.py"
+      ]
+    },
+    {
+      "command": "/groups/dthain/users/cthoma26/pledge-eval-apps/xgfabric/phase2.sh",
+      "outputs": [],
+      "inputs": [
+        "runs/run_debug/data/sensor_data.txt"
+        "runs/run_debug/data/sensor_out.csv"
+        "runs/run_debug/params/sim_params.csv",
+        "utils/generate_params.py"
+      ]
+    } for s in range(num_sims)
+  ]
+}
