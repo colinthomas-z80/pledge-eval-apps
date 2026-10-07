@@ -1,0 +1,81 @@
+{
+  "define": {
+      "num_fasta":12
+  },
+  "rules": [
+    {
+      "command": format("samtools faidx GRCh38.gencode.pa.genome.%d.fa", idx),
+      "outputs": [
+        format("GRCh38.gencode.pa.genome.%d.fa.fai", idx)
+      ],
+      "inputs": [
+        format("GRCh38.gencode.pa.genome.%d.fa", idx) 
+      ]
+    } for idx in range(1, num_fasta),
+    {
+      "command": "samtools index SRR10307460Aligned.sortedByCoord.out.bam",
+      "outputs": [
+        "SRR10307460Aligned.sortedByCoord.out.bam.bai"
+      ],
+      "inputs": [
+        "SRR10307460Aligned.sortedByCoord.out.bam"
+      ]
+    },
+    {
+      "command": format("gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.%d.fa", idx),
+      "outputs": [
+        format("GRCh38.gencode.pa.genome.%d.dict", idx)
+      ],
+      "inputs": [
+        format("GRCh38.gencode.pa.genome.%d.fa", idx),
+        format("GRCh38.gencode.pa.genome.%d.fa.fai", idx),
+        "SRR10307460Aligned.sortedByCoord.out.bam",
+        "SRR10307460Aligned.sortedByCoord.out.bam.bai"
+      ]
+    } for idx in range(1, num_fasta),
+    {
+      "command": format("gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.%d.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.%d.gzi", idx, idx),
+      "outputs": [
+	format("SRR10307460.g.vcf.%d.gzi", idx)
+      ],
+      "inputs": [
+        format("GRCh38.gencode.pa.genome.%d.dict", idx),
+        format("GRCh38.gencode.pa.genome.%d.fa", idx),
+        format("GRCh38.gencode.pa.genome.%d.fa.fai", idx),
+        "SRR10307460Aligned.sortedByCoord.out.bam",
+        "SRR10307460Aligned.sortedByCoord.out.bam.bai"
+      ]
+    } for idx in range(1, num_fasta),
+    {
+      "command": "STAR --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.*.fa --genomeSAindexNbases 2",
+      "outputs": [
+        "gdir/Genome",
+        "gdir/SA",
+        "gdir/SAindex",
+        "gdir/chrLength.txt",
+        "gdir/chrName.txt",
+        "gdir/chrStart.txt",
+        "gdir/genomeParameters.txt"
+      ],
+      "inputs": [
+        "GRCh38.gencode.pa.genome.1.fa"
+      ]
+    },
+    {
+      "command": "STAR --runThreadN 4 --genomeDir gdir --readFilesIn SRR10307460_1.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1",
+      "outputs": [
+        "SRR10307460Aligned.sortedByCoord.out.bam"
+	],
+      "inputs": [
+        "gdir/Genome",
+        "gdir/SA",
+        "gdir/SAindex",
+        "gdir/chrLength.txt",
+        "gdir/chrName.txt",
+        "gdir/chrStart.txt",
+        "gdir/genomeParameters.txt",
+        "SRR10307460_1.fastq"
+      ]
+    }
+  ]
+}
