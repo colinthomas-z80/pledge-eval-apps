@@ -1,0 +1,248 @@
+
+#Process Tree:
+├─ PID 0 0 [./simple_star_gatk.sh]
+        R </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk> (1 files) [read: 1]
+                #	Readable files: 
+        XR </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval> (2 files) [exec: 1, read: 8]
+                #	Executable: ./simple_star_gatk.sh  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                #	Readable files: simple_star_gatk.sh, simple_star_gatk.sh
+        R </software/Modules/5.6.1/init> (1 files) [read: 2]
+                #	Readable files: bash
+    ├─ PID 2873566 1 [/usr/bin/tclsh]
+                    RMPSX </usr> (11 files) [exec: 1, mmap: 21, mmapsh: 1, read: 31, stat: 3]
+                                        #	Executable: /usr/bin/tclsh /software/Modules/5.6.1/libexec/modulecmd.tcl bash autoinit  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+          R </software/Modules/5.6.1/etc> (2 files) [read: 3]
+                    #	Readable files: siteconfig.tcl
+          R </software/Modules/5.6.1/lib> (1 files) [read: 2]
+                    #	Readable files: libtclenvmodules.so
+          R </software/Modules/5.6.1/libexec> (1 files) [read: 183]
+                    #	Readable files: modulecmd.tcl
+          R </software/Modules/modules/system_modules/CRC_default> (1 files) [read: 3]
+                    #	Readable files: 1.1
+          E </proc/2873566> (0 files) [xxx]
+                    # 	Readable files: pipe:[17334157]
+                    # 	Writable files: *pipe:[17334157]
+                    # 	Readable files: pipe:[17262234]
+        ├─ PID 2873567 2 [/usr/bin/manpath]
+                        RPESX </usr> (27 files) [enoent: 10, exec: 1, mmap: 24, mmapsh: 1, read: 23]
+                                                #	Executable: manpath  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                        E </proc/2873567> (0 files) [xxx]
+                        # 	Writable files: *pipe:[17262234]
+    ├─ PID 2873568 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR, /usr/bin/bash]
+                    RMPESX </usr> (21 files) [enoent: 3, exec: 1, mmap: 36, mmapsh: 2, read: 40, stat: 12]
+                                        #	Executable: bash /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.1.fa GRCh38.gencode.pa.genome.2.fa GRCh38.gencode.pa.genome.3.fa GRCh38.gencode.pa.genome.4.fa GRCh38.gencode.pa.genome.5.fa --genomeSAindexNbases 2  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+          XR </groups/dthain/users/cthoma26/sep-star-gatk/bin> (3 files) [exec: 1, read: 5]
+                    #	Executable: STAR --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.1.fa GRCh38.gencode.pa.genome.2.fa GRCh38.gencode.pa.genome.3.fa GRCh38.gencode.pa.genome.4.fa GRCh38.gencode.pa.genome.5.fa --genomeSAindexNbases 2 
+                    #	Readable files: STAR
+          R </software/Modules/5.6.1/init> (1 files) [read: 2]
+                    #	Readable files: bash
+          E </proc/2873568> (0 files) [xxx]
+                    # 	Readable files: pipe:[17262238]
+                    # 	Readable files: pipe:[17363979]
+                    # 	Readable files: pipe:[17332558]
+                    # 	Readable files: pipe:[17363988]
+                    # 	Readable files: pipe:[17334176]
+        ├─ PID 2873569 2 [/usr/bin/tclsh, /usr/bin/manpath]
+                        RMPSX </usr> (12 files) [exec: 2, mmap: 21, mmapsh: 1, read: 31, stat: 3]
+                                                #	Executable: /usr/bin/tclsh /software/Modules/5.6.1/libexec/modulecmd.tcl bash autoinit  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                                                #	Executable: manpath  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+            R </software/Modules/5.6.1/etc> (2 files) [read: 3]
+                        #	Readable files: siteconfig.tcl
+            R </software/Modules/5.6.1/lib> (1 files) [read: 2]
+                        #	Readable files: libtclenvmodules.so
+            R </software/Modules/5.6.1/libexec> (1 files) [read: 183]
+                        #	Readable files: modulecmd.tcl
+            R </software/Modules/modules/system_modules/CRC_default> (1 files) [read: 3]
+                        #	Readable files: 1.1
+            E </proc/2873569> (0 files) [xxx]
+                        # 	Readable files: pipe:[17363979]
+                        # 	Writable files: *pipe:[17363979]
+                        # 	Readable files: pipe:[17262238]
+            ├─ PID 2873572 3 [/usr/bin/dirname]
+                            RMPESX </usr> (18 files) [enoent: 1, exec: 1, mmap: 16, mmapsh: 1, read: 19, stat: 6]
+                                                        #	Executable: dirname -- /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                            E </proc/2873572> (0 files) [xxx]
+                            # 	Writable files: *pipe:[17332558]
+        ├─ PID 2873573 2 [/usr/bin/basename]
+                        RMPESX </usr> (18 files) [enoent: 1, exec: 1, mmap: 16, mmapsh: 1, read: 19, stat: 6]
+                                                #	Executable: basename /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                        E </proc/2873573> (0 files) [xxx]
+                        # 	Writable files: *pipe:[17334176]
+        ├─ PID 2873574 2 [/usr/bin/grep]
+                        RPSX </usr> (19 files) [exec: 1, mmap: 24, mmapsh: 1, read: 23]
+                                                #	Executable: grep -q avx2 /proc/cpuinfo  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+        ├─ PID 2873575 2 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR-avx2]
+            RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval> (8 files) [read: 771, write: 19]
+                        #	Writable files: Log.out, Log.out*
+                        #	Readable files: GRCh38.gencode.pa.genome.1.fa, GRCh38.gencode.pa.genome.2.fa, GRCh38.gencode.pa.genome.3.fa, GRCh38.gencode.pa.genome.4.fa, GRCh38.gencode.pa.genome.5.fa
+            RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval/gdir> (11 files) [read: 3, write: 38]
+                        #	Writable files: Log.out, chrName.txt, chrName.txt*, chrStart.txt, chrStart.txt*, chrLength.txt, chrLength.txt*, chrNameLength.txt, chrNameLength.txt*, SA_0*, genomeParameters.txt, genomeParameters.txt*, Genome*, SA*, SAindex, SAindex*
+                        #	Readable files: SA_0
+            X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (1 files) [exec: 1]
+                        #	Executable: /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR-avx2 --runThreadN 1 --runMode genomeGenerate --genomeDir gdir --genomeFastaFiles GRCh38.gencode.pa.genome.1.fa GRCh38.gencode.pa.genome.2.fa GRCh38.gencode.pa.genome.3.fa GRCh38.gencode.pa.genome.4.fa GRCh38.gencode.pa.genome.5.fa --genomeSAindexNbases 2  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+            R </groups/dthain/users/cthoma26/sep-star-gatk/lib> (8 files) [read: 16]
+                        #	Readable files: libhts.so.1.24, libz.so.1.3.2, libstdc++.so.6.0.36, libgomp.so.1.0.0, libgcc_s.so.1, libdeflate.so.0, liblzma.so.5, libbz2.so.1.0.8
+    ├─ PID 2873579 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR, /usr/bin/bash]
+                    RMPESX </usr> (21 files) [enoent: 3, exec: 1, mmap: 36, mmapsh: 2, read: 40, stat: 12]
+                                        #	Executable: bash /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR --runThreadN 4 --genomeDir gdir --readFilesIn shortened_SRR10307460_colin.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+          XR </groups/dthain/users/cthoma26/sep-star-gatk/bin> (3 files) [exec: 1, read: 5]
+                    #	Executable: STAR --runThreadN 4 --genomeDir gdir --readFilesIn shortened_SRR10307460_colin.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1 
+                    #	Readable files: STAR
+          R </software/Modules/5.6.1/init> (1 files) [read: 2]
+                    #	Readable files: bash
+          E </proc/2873579> (0 files) [xxx]
+                    # 	Readable files: pipe:[17259377]
+                    # 	Readable files: pipe:[17364002]
+                    # 	Readable files: pipe:[17332560]
+                    # 	Readable files: pipe:[17334186]
+                    # 	Readable files: pipe:[17339191]
+        ├─ PID 2873580 2 [/usr/bin/tclsh, /usr/bin/manpath]
+                        RMPSX </usr> (12 files) [exec: 2, mmap: 21, mmapsh: 1, read: 31, stat: 3]
+                                                #	Executable: /usr/bin/tclsh /software/Modules/5.6.1/libexec/modulecmd.tcl bash autoinit  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                                                #	Executable: manpath  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+            R </software/Modules/5.6.1/etc> (2 files) [read: 3]
+                        #	Readable files: siteconfig.tcl
+            R </software/Modules/5.6.1/lib> (1 files) [read: 2]
+                        #	Readable files: libtclenvmodules.so
+            R </software/Modules/5.6.1/libexec> (1 files) [read: 183]
+                        #	Readable files: modulecmd.tcl
+            R </software/Modules/modules/system_modules/CRC_default> (1 files) [read: 3]
+                        #	Readable files: 1.1
+            E </proc/2873580> (0 files) [xxx]
+                        # 	Readable files: pipe:[17364002]
+                        # 	Writable files: *pipe:[17364002]
+                        # 	Readable files: pipe:[17259377]
+            ├─ PID 2873583 3 [/usr/bin/dirname]
+                            RMPESX </usr> (18 files) [enoent: 1, exec: 1, mmap: 16, mmapsh: 1, read: 19, stat: 6]
+                                                        #	Executable: dirname -- /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                            E </proc/2873583> (0 files) [xxx]
+                            # 	Writable files: *pipe:[17332560]
+        ├─ PID 2873584 2 [/usr/bin/basename]
+                        RMPESX </usr> (18 files) [enoent: 1, exec: 1, mmap: 16, mmapsh: 1, read: 19, stat: 6]
+                                                #	Executable: basename /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                        E </proc/2873584> (0 files) [xxx]
+                        # 	Writable files: *pipe:[17339191]
+        ├─ PID 2873585 2 [/usr/bin/grep]
+                        RPSX </usr> (19 files) [exec: 1, mmap: 24, mmapsh: 1, read: 23]
+                                                #	Executable: grep -q avx2 /proc/cpuinfo  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+        ├─ PID 2873586 2 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR-avx2]
+            RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval> (8 files) [read: 3, write: 77]
+                        #	Writable files: SRR10307460Log.out, SRR10307460Log.out*, SRR10307460Log.progress.out, SRR10307460Log.progress.out*, SRR10307460Aligned.out.bam, SRR10307460Aligned.out.bam*, SRR10307460Aligned.sortedByCoord.out.bam, SRR10307460Aligned.sortedByCoord.out.bam*, SRR10307460SJ.out.tab*, SRR10307460Log.final.out, SRR10307460Log.final.out*
+                        #	Readable files: shortened_SRR10307460_colin.fastq
+            R </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval/SRR10307460_STARtmp> (2 files) [read: 2]
+                        #	Readable files: 
+            R </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval/SRR10307460_STARtmp/BAMsort> (55 files) [read: 13]
+                        #	Readable files: b48
+            R </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval/gdir> (9 files) [read: 18]
+                        #	Readable files: genomeParameters.txt, chrName.txt, chrLength.txt, chrStart.txt, Genome, SA, SAindex
+            X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (1 files) [exec: 1]
+                        #	Executable: /groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR-avx2 --runThreadN 4 --genomeDir gdir --readFilesIn shortened_SRR10307460_colin.fastq --outFileNamePrefix SRR10307460 --outSAMtype BAM SortedByCoordinate Unsorted --outSAMattrRGline ID:srr SM:Sample1 PL : ILLUMINA LB:Lib1  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+            R </groups/dthain/users/cthoma26/sep-star-gatk/lib> (8 files) [read: 16]
+                        #	Readable files: libhts.so.1.24, libz.so.1.3.2, libstdc++.so.6.0.36, libgomp.so.1.0.0, libgcc_s.so.1, libdeflate.so.0, liblzma.so.5, libbz2.so.1.0.8
+    ├─ PID 2873594 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools]
+          RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval> (2 files) [read: 6, write: 1]
+                    #	Writable files: SRR10307460Aligned.sortedByCoord.out.bam.bai, SRR10307460Aligned.sortedByCoord.out.bam.bai*
+                    #	Readable files: SRR10307460Aligned.sortedByCoord.out.bam
+          X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (1 files) [exec: 1]
+                    #	Executable: samtools index SRR10307460Aligned.sortedByCoord.out.bam  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib> (7 files) [read: 14]
+                    #	Readable files: libhts.so.1.24, libtinfow.so.6.6, libncursesw.so.6.6, libz.so.1.3.2, libdeflate.so.0, liblzma.so.5, libbz2.so.1.0.8
+    ├─ PID 2873595 1 [/usr/bin/seq]
+                    RMPESX </usr> (18 files) [enoent: 1, exec: 1, mmap: 16, mmapsh: 1, read: 19, stat: 6]
+                                        #	Executable: seq 1 1  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                    E </proc/2873595> (0 files) [xxx]
+                    # 	Writable files: *pipe:[17339194]
+    ├─ PID 2873596 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools]
+          RW </groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval> (2 files) [read: 12, write: 1]
+                    #	Writable files: GRCh38.gencode.pa.genome.1.fa.fai, GRCh38.gencode.pa.genome.1.fa.fai*
+                    #	Readable files: GRCh38.gencode.pa.genome.1.fa
+          X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (1 files) [exec: 1]
+                    #	Executable: samtools faidx GRCh38.gencode.pa.genome.1.fa  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib> (7 files) [read: 14]
+                    #	Readable files: libhts.so.1.24, libtinfow.so.6.6, libncursesw.so.6.6, libz.so.1.3.2, libdeflate.so.0, liblzma.so.5, libbz2.so.1.0.8
+    ├─ PID 2873597 1 [/usr/bin/rm]
+                    RPSX </usr> (17 files) [exec: 1, mmap: 16, mmapsh: 1, read: 19]
+                                        #	Executable: rm GRCh38.gencode.pa.genome.1.dict  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+    ├─ PID 2873598 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk, /groups/dthain/users/cthoma26/sep-star-gatk/bin/python]
+          X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (3 files) [exec: 2]
+                    #	Executable: gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.1.fa  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                    #	Executable: python /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk CreateSequenceDictionary -R GRCh38.gencode.pa.genome.1.fa  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib> (3 files) [read: 3]
+                    #	Readable files: libcrypto.so.3
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14> (22 files) [read: 5]
+                    #	Readable files: 
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/__pycache__> (17 files) [read: 51]
+                    #	Readable files: subprocess.cpython-314.pyc, locale.cpython-314.pyc, functools.cpython-314.pyc, keyword.cpython-314.pyc, operator.cpython-314.pyc, reprlib.cpython-314.pyc, types.cpython-314.pyc, signal.cpython-314.pyc, enum.cpython-314.pyc, threading.cpython-314.pyc, _weakrefset.cpython-314.pyc, warnings.cpython-314.pyc, _py_warnings.cpython-314.pyc, contextlib.cpython-314.pyc, selectors.cpython-314.pyc, hashlib.cpython-314.pyc, copyreg.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/collections/__pycache__> (1 files) [read: 3]
+                    #	Readable files: __init__.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/encodings/__pycache__> (4 files) [read: 12]
+                    #	Readable files: __init__.cpython-314.pyc, aliases.cpython-314.pyc, utf_8.cpython-314.pyc, utf_8_sig.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/lib-dynload> (6 files) [read: 12]
+                    #	Readable files: fcntl.cpython-314-x86_64-linux-gnu.so, _posixsubprocess.cpython-314-x86_64-linux-gnu.so, select.cpython-314-x86_64-linux-gnu.so, math.cpython-314-x86_64-linux-gnu.so, _hashlib.cpython-314-x86_64-linux-gnu.so, _blake2.cpython-314-x86_64-linux-gnu.so
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/re/__pycache__> (5 files) [read: 15]
+                    #	Readable files: __init__.cpython-314.pyc, _compiler.cpython-314.pyc, _parser.cpython-314.pyc, _constants.cpython-314.pyc, _casefix.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/site-packages> (2 files) [read: 6]
+                    #	Readable files: conda-site.pth, distutils-precedence.pth
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/site-packages/_distutils_hack/__pycache__> (1 files) [read: 3]
+                    #	Readable files: __init__.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/share> (1 files) [read: 2]
+                    #	Readable files: 
+          R </groups/dthain/users/cthoma26/sep-star-gatk/share/gatk4-4.6.2.0-0> (2 files) [read: 9]
+                    #	Readable files: gatk
+          R </groups/dthain/users/cthoma26/sep-star-gatk/ssl> (1 files) [read: 4]
+                    #	Readable files: openssl.cnf
+          E </proc/2873598> (0 files) [xxx]
+                    # 	Readable files: pipe:[17357240]
+    ├─ PID 2873673 1 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk, /groups/dthain/users/cthoma26/sep-star-gatk/bin/python]
+          X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (3 files) [exec: 2]
+                    #	Executable: gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.1.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.1.gz  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+                    #	Executable: python /groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk --java-options -Xmx16g HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.1.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.1.gz  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib> (3 files) [read: 3]
+                    #	Readable files: libcrypto.so.3
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14> (22 files) [read: 5]
+                    #	Readable files: 
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/__pycache__> (17 files) [read: 51]
+                    #	Readable files: subprocess.cpython-314.pyc, locale.cpython-314.pyc, functools.cpython-314.pyc, keyword.cpython-314.pyc, operator.cpython-314.pyc, reprlib.cpython-314.pyc, types.cpython-314.pyc, signal.cpython-314.pyc, enum.cpython-314.pyc, threading.cpython-314.pyc, _weakrefset.cpython-314.pyc, warnings.cpython-314.pyc, _py_warnings.cpython-314.pyc, contextlib.cpython-314.pyc, selectors.cpython-314.pyc, hashlib.cpython-314.pyc, copyreg.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/collections/__pycache__> (1 files) [read: 3]
+                    #	Readable files: __init__.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/encodings/__pycache__> (4 files) [read: 12]
+                    #	Readable files: __init__.cpython-314.pyc, aliases.cpython-314.pyc, utf_8.cpython-314.pyc, utf_8_sig.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/lib-dynload> (6 files) [read: 12]
+                    #	Readable files: fcntl.cpython-314-x86_64-linux-gnu.so, _posixsubprocess.cpython-314-x86_64-linux-gnu.so, select.cpython-314-x86_64-linux-gnu.so, math.cpython-314-x86_64-linux-gnu.so, _hashlib.cpython-314-x86_64-linux-gnu.so, _blake2.cpython-314-x86_64-linux-gnu.so
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/re/__pycache__> (5 files) [read: 15]
+                    #	Readable files: __init__.cpython-314.pyc, _compiler.cpython-314.pyc, _parser.cpython-314.pyc, _constants.cpython-314.pyc, _casefix.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/site-packages> (2 files) [read: 6]
+                    #	Readable files: conda-site.pth, distutils-precedence.pth
+          R </groups/dthain/users/cthoma26/sep-star-gatk/lib/python3.14/site-packages/_distutils_hack/__pycache__> (1 files) [read: 3]
+                    #	Readable files: __init__.cpython-314.pyc
+          R </groups/dthain/users/cthoma26/sep-star-gatk/share> (1 files) [read: 2]
+                    #	Readable files: 
+          R </groups/dthain/users/cthoma26/sep-star-gatk/share/gatk4-4.6.2.0-0> (2 files) [read: 9]
+                    #	Readable files: gatk
+          R </groups/dthain/users/cthoma26/sep-star-gatk/ssl> (1 files) [read: 4]
+                    #	Readable files: openssl.cnf
+          E </proc/2873673> (0 files) [xxx]
+                    # 	Readable files: pipe:[17342364]
+├─ PID 2873599 0 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/java]
+        X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (1 files) [exec: 1]
+                #	Executable: java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /groups/dthain/users/cthoma26/sep-star-gatk/share/gatk4-4.6.2.0-0/gatk-package-4.6.2.0-local.jar CreateSequenceDictionary -R GRCh38.gencode.pa.genome.1.fa  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+        R </groups/dthain/users/cthoma26/sep-star-gatk/lib> (3 files) [read: 6]
+                #	Readable files: libz.so.1.3.2, libstdc++.so.6.0.36, libgcc_s.so.1
+        R </groups/dthain/users/cthoma26/sep-star-gatk/lib/jvm/lib> (2 files) [read: 5]
+                #	Readable files: libjli.so, jvm.cfg
+        R </groups/dthain/users/cthoma26/sep-star-gatk/lib/jvm/lib/server> (1 files) [read: 2]
+                #	Readable files: libjvm.so
+        R </groups/dthain/users/cthoma26/sep-star-gatk/share/gatk4-4.6.2.0-0> (1 files) [read: 8]
+                #	Readable files: gatk-package-4.6.2.0-local.jar
+├─ PID 2873674 0 [/groups/dthain/users/cthoma26/sep-star-gatk/bin/java]
+        X </groups/dthain/users/cthoma26/sep-star-gatk/bin> (1 files) [exec: 1]
+                #	Executable: java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx16g -jar /groups/dthain/users/cthoma26/sep-star-gatk/share/gatk4-4.6.2.0-0/gatk-package-4.6.2.0-local.jar HaplotypeCaller --native-pair-hmm-threads 1 -R GRCh38.gencode.pa.genome.1.fa -I SRR10307460Aligned.sortedByCoord.out.bam -O SRR10307460.g.vcf.1.gz  ATFDCWD: /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval",
+        R </groups/dthain/users/cthoma26/sep-star-gatk/lib> (3 files) [read: 6]
+                #	Readable files: libz.so.1.3.2, libstdc++.so.6.0.36, libgcc_s.so.1
+        R </groups/dthain/users/cthoma26/sep-star-gatk/lib/jvm/lib> (2 files) [read: 5]
+                #	Readable files: libjli.so, jvm.cfg
+        R </groups/dthain/users/cthoma26/sep-star-gatk/lib/jvm/lib/server> (1 files) [read: 2]
+                #	Readable files: libjvm.so
+        R </groups/dthain/users/cthoma26/sep-star-gatk/share/gatk4-4.6.2.0-0> (1 files) [read: 8]
+                #	Readable files: gatk-package-4.6.2.0-local.jar
+CWD:  /groups/dthain/users/cthoma26/pledge-eval-apps/star-gatk/eval
