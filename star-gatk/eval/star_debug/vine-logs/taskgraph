@@ -1,0 +1,102 @@
+# taskvine taskgraph version 2
+# TASK taskid "program" INPUTS fileid1 fileid fileid3 ... OUTPUTS fileid4 fileid5 ...
+# FILE fileid "source" size
+FILE file-meta-73ab1707b2d09f492364ded97a3529b4 "GRCh38.gencode.pa.genome.1.fa" 610008
+FILE file-rnd-syaiekplutvsfdu "gdir/genomeParameters.txt" 0
+FILE file-rnd-lvilmfodspclnzm "gdir/chrStart.txt" 0
+FILE file-rnd-dkapvpdtpaugtyh "gdir/chrName.txt" 0
+FILE file-rnd-kcwcccibkxzjroa "gdir/chrLength.txt" 0
+FILE file-rnd-ulkxcjaknzlvizb "gdir/SAindex" 0
+FILE file-rnd-wxhdzryksyiyhoq "gdir/SA" 0
+FILE file-rnd-mzczmraanxpqzhq "gdir/Genome" 0
+TASK T1 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR" INPUTS file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-rnd-syaiekplutvsfdu file-rnd-lvilmfodspclnzm file-rnd-dkapvpdtpaugtyh file-rnd-kcwcccibkxzjroa file-rnd-ulkxcjaknzlvizb file-rnd-wxhdzryksyiyhoq file-rnd-mzczmraanxpqzhq 
+FILE file-meta-b1c940b9b165b237c7a0e48460406245 "SRR10307460_1.fastq" 44199886
+FILE file-meta-c67de815e1461fc6a9df818a1ba4277e "SRR10307460Aligned.sortedByCoord.out.bam" 735
+TASK T2 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/STAR" INPUTS file-meta-b1c940b9b165b237c7a0e48460406245 file-rnd-syaiekplutvsfdu file-rnd-lvilmfodspclnzm file-rnd-dkapvpdtpaugtyh file-rnd-kcwcccibkxzjroa file-rnd-ulkxcjaknzlvizb file-rnd-wxhdzryksyiyhoq file-rnd-mzczmraanxpqzhq OUTPUTS file-meta-c67de815e1461fc6a9df818a1ba4277e 
+FILE file-meta-89bcfab11bef59968ec8c248f4aaf7b6 "SRR10307460Aligned.sortedByCoord.out.bam.bai" 408
+TASK T3 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/samtools" INPUTS file-meta-c67de815e1461fc6a9df818a1ba4277e OUTPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 
+FILE file-meta-ccbec47ccd539fc91f14e894933f9069 "GRCh38.gencode.pa.genome.9.fa.fai" 20
+FILE file-meta-24715b1190be4bc97c6aaf19cf22d830 "GRCh38.gencode.pa.genome.9.fa" 610008
+FILE file-rnd-knkyabcvgngbbds "GRCh38.gencode.pa.genome.9.dict" 0
+FILE file-meta-e78df8fe98490adcae99bad942ce7b83 "GRCh38.gencode.pa.genome.8.fa.fai" 20
+FILE file-meta-a54d78c3d6eb34435ac203292746cf9f "GRCh38.gencode.pa.genome.8.fa" 610008
+FILE file-rnd-achxrhfwpgasusp "GRCh38.gencode.pa.genome.8.dict" 0
+FILE file-meta-cf25e47f29902df10967da89b1b131a6 "GRCh38.gencode.pa.genome.7.fa.fai" 20
+FILE file-meta-5745466028830fdbdaa3a337836ba487 "GRCh38.gencode.pa.genome.7.fa" 610008
+FILE file-rnd-ymrljmwgokkuwfr "GRCh38.gencode.pa.genome.7.dict" 0
+FILE file-meta-f5738f7711041f77ab8273daeb229a38 "GRCh38.gencode.pa.genome.6.fa.fai" 20
+FILE file-meta-248c114c82a14fd39ecff3b9eb2a8a0b "GRCh38.gencode.pa.genome.6.fa" 610008
+FILE file-rnd-mjpkrkoehjgxwnt "GRCh38.gencode.pa.genome.6.dict" 0
+FILE file-meta-eddbd35175aad1dad57c9e1408c2a4ee "GRCh38.gencode.pa.genome.5.fa.fai" 20
+FILE file-meta-bbe4850fddb35988aac8b9fc73674310 "GRCh38.gencode.pa.genome.5.fa" 610008
+FILE file-meta-a5dce9ca4236cbf5c81c9bf48f25c550 "GRCh38.gencode.pa.genome.5.dict" 171
+FILE file-meta-c726d1cbe7d9e83ae4330c373842aede "GRCh38.gencode.pa.genome.4.fa.fai" 20
+FILE file-meta-275696a113645a60e07ad1bba1593718 "GRCh38.gencode.pa.genome.4.fa" 610008
+FILE file-meta-e93bd151836a7bbdb5d6abb83051fbb1 "GRCh38.gencode.pa.genome.4.dict" 171
+FILE file-meta-2f9996d30de4bcc3d66e679cd1f725df "GRCh38.gencode.pa.genome.3.fa.fai" 20
+FILE file-meta-0213bda68c80348f53a1e2c195f42bc2 "GRCh38.gencode.pa.genome.3.fa" 610008
+FILE file-meta-2e302a77e45f2091e1aba140eedc3510 "GRCh38.gencode.pa.genome.3.dict" 171
+FILE file-meta-0f71f7bed0d186cfe0d253d7c7b419cb "GRCh38.gencode.pa.genome.2.fa.fai" 20
+FILE file-meta-c7e8a41cb1739aa7c1f22a21bb42ee60 "GRCh38.gencode.pa.genome.2.fa" 610008
+FILE file-meta-2d681937ae59d6d8080a52eaa0e271cd "GRCh38.gencode.pa.genome.2.dict" 171
+FILE file-meta-edd7253eca485b5bdc44eb3c7dd6a284 "GRCh38.gencode.pa.genome.1.fa.fai" 20
+FILE file-meta-e016af0a3da731955b67576e5969bf44 "GRCh38.gencode.pa.genome.1.dict" 171
+TASK T9 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-c726d1cbe7d9e83ae4330c373842aede file-meta-275696a113645a60e07ad1bba1593718 OUTPUTS file-meta-e93bd151836a7bbdb5d6abb83051fbb1 
+TASK T6 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-cf25e47f29902df10967da89b1b131a6 file-meta-5745466028830fdbdaa3a337836ba487 OUTPUTS file-rnd-ymrljmwgokkuwfr 
+TASK T11 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-0f71f7bed0d186cfe0d253d7c7b419cb file-meta-c7e8a41cb1739aa7c1f22a21bb42ee60 OUTPUTS file-meta-2d681937ae59d6d8080a52eaa0e271cd 
+TASK T4 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-ccbec47ccd539fc91f14e894933f9069 file-meta-24715b1190be4bc97c6aaf19cf22d830 OUTPUTS file-rnd-knkyabcvgngbbds 
+TASK T5 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-e78df8fe98490adcae99bad942ce7b83 file-meta-a54d78c3d6eb34435ac203292746cf9f OUTPUTS file-rnd-achxrhfwpgasusp 
+TASK T7 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-f5738f7711041f77ab8273daeb229a38 file-meta-248c114c82a14fd39ecff3b9eb2a8a0b OUTPUTS file-rnd-mjpkrkoehjgxwnt 
+TASK T10 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-2f9996d30de4bcc3d66e679cd1f725df file-meta-0213bda68c80348f53a1e2c195f42bc2 OUTPUTS file-meta-2e302a77e45f2091e1aba140eedc3510 
+TASK T12 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-edd7253eca485b5bdc44eb3c7dd6a284 file-meta-73ab1707b2d09f492364ded97a3529b4 OUTPUTS file-meta-e016af0a3da731955b67576e5969bf44 
+TASK T8 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-eddbd35175aad1dad57c9e1408c2a4ee file-meta-bbe4850fddb35988aac8b9fc73674310 OUTPUTS file-meta-a5dce9ca4236cbf5c81c9bf48f25c550 
+TASK T17 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-e78df8fe98490adcae99bad942ce7b83 file-meta-a54d78c3d6eb34435ac203292746cf9f file-rnd-achxrhfwpgasusp OUTPUTS 
+TASK T13 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-c726d1cbe7d9e83ae4330c373842aede file-meta-275696a113645a60e07ad1bba1593718 file-meta-e93bd151836a7bbdb5d6abb83051fbb1 OUTPUTS 
+TASK T15 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-0f71f7bed0d186cfe0d253d7c7b419cb file-meta-c7e8a41cb1739aa7c1f22a21bb42ee60 file-meta-2d681937ae59d6d8080a52eaa0e271cd OUTPUTS 
+TASK T14 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-cf25e47f29902df10967da89b1b131a6 file-meta-5745466028830fdbdaa3a337836ba487 file-rnd-ymrljmwgokkuwfr OUTPUTS 
+TASK T16 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-ccbec47ccd539fc91f14e894933f9069 file-meta-24715b1190be4bc97c6aaf19cf22d830 file-rnd-knkyabcvgngbbds OUTPUTS 
+TASK T18 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-f5738f7711041f77ab8273daeb229a38 file-meta-248c114c82a14fd39ecff3b9eb2a8a0b file-rnd-mjpkrkoehjgxwnt OUTPUTS 
+TASK T21 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-eddbd35175aad1dad57c9e1408c2a4ee file-meta-bbe4850fddb35988aac8b9fc73674310 file-meta-a5dce9ca4236cbf5c81c9bf48f25c550 OUTPUTS 
+TASK T19 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-2f9996d30de4bcc3d66e679cd1f725df file-meta-0213bda68c80348f53a1e2c195f42bc2 file-meta-2e302a77e45f2091e1aba140eedc3510 OUTPUTS 
+TASK T20 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-edd7253eca485b5bdc44eb3c7dd6a284 file-meta-73ab1707b2d09f492364ded97a3529b4 file-meta-e016af0a3da731955b67576e5969bf44 OUTPUTS 
+TASK T22 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-e78df8fe98490adcae99bad942ce7b83 file-meta-a54d78c3d6eb34435ac203292746cf9f file-rnd-achxrhfwpgasusp OUTPUTS 
+TASK T25 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-cf25e47f29902df10967da89b1b131a6 file-meta-5745466028830fdbdaa3a337836ba487 file-rnd-ymrljmwgokkuwfr OUTPUTS 
+TASK T28 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-eddbd35175aad1dad57c9e1408c2a4ee file-meta-bbe4850fddb35988aac8b9fc73674310 file-meta-a5dce9ca4236cbf5c81c9bf48f25c550 OUTPUTS 
+TASK T29 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-2f9996d30de4bcc3d66e679cd1f725df file-meta-0213bda68c80348f53a1e2c195f42bc2 file-meta-2e302a77e45f2091e1aba140eedc3510 OUTPUTS 
+TASK T27 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-f5738f7711041f77ab8273daeb229a38 file-meta-248c114c82a14fd39ecff3b9eb2a8a0b file-rnd-mjpkrkoehjgxwnt OUTPUTS 
+TASK T23 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-c726d1cbe7d9e83ae4330c373842aede file-meta-275696a113645a60e07ad1bba1593718 file-meta-e93bd151836a7bbdb5d6abb83051fbb1 OUTPUTS 
+TASK T26 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-ccbec47ccd539fc91f14e894933f9069 file-meta-24715b1190be4bc97c6aaf19cf22d830 file-rnd-knkyabcvgngbbds OUTPUTS 
+TASK T34 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-f5738f7711041f77ab8273daeb229a38 file-meta-248c114c82a14fd39ecff3b9eb2a8a0b file-rnd-mjpkrkoehjgxwnt OUTPUTS 
+TASK T32 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-eddbd35175aad1dad57c9e1408c2a4ee file-meta-bbe4850fddb35988aac8b9fc73674310 file-meta-a5dce9ca4236cbf5c81c9bf48f25c550 OUTPUTS 
+TASK T33 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-2f9996d30de4bcc3d66e679cd1f725df file-meta-0213bda68c80348f53a1e2c195f42bc2 file-meta-2e302a77e45f2091e1aba140eedc3510 OUTPUTS 
+TASK T35 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-c726d1cbe7d9e83ae4330c373842aede file-meta-275696a113645a60e07ad1bba1593718 file-meta-e93bd151836a7bbdb5d6abb83051fbb1 OUTPUTS 
+TASK T24 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-0f71f7bed0d186cfe0d253d7c7b419cb file-meta-c7e8a41cb1739aa7c1f22a21bb42ee60 file-meta-2d681937ae59d6d8080a52eaa0e271cd OUTPUTS 
+TASK T31 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-cf25e47f29902df10967da89b1b131a6 file-meta-5745466028830fdbdaa3a337836ba487 file-rnd-ymrljmwgokkuwfr OUTPUTS 
+TASK T36 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-ccbec47ccd539fc91f14e894933f9069 file-meta-24715b1190be4bc97c6aaf19cf22d830 file-rnd-knkyabcvgngbbds OUTPUTS 
+TASK T30 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-e78df8fe98490adcae99bad942ce7b83 file-meta-a54d78c3d6eb34435ac203292746cf9f file-rnd-achxrhfwpgasusp OUTPUTS 
+TASK T38 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-eddbd35175aad1dad57c9e1408c2a4ee file-meta-bbe4850fddb35988aac8b9fc73674310 file-meta-a5dce9ca4236cbf5c81c9bf48f25c550 OUTPUTS 
+TASK T37 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-f5738f7711041f77ab8273daeb229a38 file-meta-248c114c82a14fd39ecff3b9eb2a8a0b file-rnd-mjpkrkoehjgxwnt OUTPUTS 
+TASK T39 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-2f9996d30de4bcc3d66e679cd1f725df file-meta-0213bda68c80348f53a1e2c195f42bc2 file-meta-2e302a77e45f2091e1aba140eedc3510 OUTPUTS 
+TASK T40 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-c726d1cbe7d9e83ae4330c373842aede file-meta-275696a113645a60e07ad1bba1593718 file-meta-e93bd151836a7bbdb5d6abb83051fbb1 OUTPUTS 
+TASK T42 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-cf25e47f29902df10967da89b1b131a6 file-meta-5745466028830fdbdaa3a337836ba487 file-rnd-ymrljmwgokkuwfr OUTPUTS 
+TASK T43 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-ccbec47ccd539fc91f14e894933f9069 file-meta-24715b1190be4bc97c6aaf19cf22d830 file-rnd-knkyabcvgngbbds OUTPUTS 
+TASK T41 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-0f71f7bed0d186cfe0d253d7c7b419cb file-meta-c7e8a41cb1739aa7c1f22a21bb42ee60 file-meta-2d681937ae59d6d8080a52eaa0e271cd OUTPUTS 
+TASK T44 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-e78df8fe98490adcae99bad942ce7b83 file-meta-a54d78c3d6eb34435ac203292746cf9f file-rnd-achxrhfwpgasusp OUTPUTS 
+TASK T45 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-eddbd35175aad1dad57c9e1408c2a4ee file-meta-bbe4850fddb35988aac8b9fc73674310 file-meta-a5dce9ca4236cbf5c81c9bf48f25c550 OUTPUTS 
+TASK T46 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-f5738f7711041f77ab8273daeb229a38 file-meta-248c114c82a14fd39ecff3b9eb2a8a0b file-rnd-mjpkrkoehjgxwnt OUTPUTS 
+TASK T47 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-2f9996d30de4bcc3d66e679cd1f725df file-meta-0213bda68c80348f53a1e2c195f42bc2 file-meta-2e302a77e45f2091e1aba140eedc3510 OUTPUTS 
+TASK T48 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-c726d1cbe7d9e83ae4330c373842aede file-meta-275696a113645a60e07ad1bba1593718 file-meta-e93bd151836a7bbdb5d6abb83051fbb1 OUTPUTS 
+TASK T50 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-ccbec47ccd539fc91f14e894933f9069 file-meta-24715b1190be4bc97c6aaf19cf22d830 file-rnd-knkyabcvgngbbds OUTPUTS 
+TASK T49 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-cf25e47f29902df10967da89b1b131a6 file-meta-5745466028830fdbdaa3a337836ba487 file-rnd-ymrljmwgokkuwfr OUTPUTS 
+TASK T51 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-0f71f7bed0d186cfe0d253d7c7b419cb file-meta-c7e8a41cb1739aa7c1f22a21bb42ee60 file-meta-2d681937ae59d6d8080a52eaa0e271cd OUTPUTS 
+TASK T52 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-e78df8fe98490adcae99bad942ce7b83 file-meta-a54d78c3d6eb34435ac203292746cf9f file-rnd-achxrhfwpgasusp OUTPUTS 
+TASK T54 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-f5738f7711041f77ab8273daeb229a38 file-meta-248c114c82a14fd39ecff3b9eb2a8a0b file-rnd-mjpkrkoehjgxwnt OUTPUTS 
+TASK T55 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-2f9996d30de4bcc3d66e679cd1f725df file-meta-0213bda68c80348f53a1e2c195f42bc2 file-meta-2e302a77e45f2091e1aba140eedc3510 OUTPUTS 
+TASK T53 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-eddbd35175aad1dad57c9e1408c2a4ee file-meta-bbe4850fddb35988aac8b9fc73674310 file-meta-a5dce9ca4236cbf5c81c9bf48f25c550 OUTPUTS 
+TASK T57 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-ccbec47ccd539fc91f14e894933f9069 file-meta-24715b1190be4bc97c6aaf19cf22d830 file-rnd-knkyabcvgngbbds OUTPUTS 
+TASK T58 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-cf25e47f29902df10967da89b1b131a6 file-meta-5745466028830fdbdaa3a337836ba487 file-rnd-ymrljmwgokkuwfr OUTPUTS 
+TASK T56 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-c726d1cbe7d9e83ae4330c373842aede file-meta-275696a113645a60e07ad1bba1593718 file-meta-e93bd151836a7bbdb5d6abb83051fbb1 OUTPUTS 
+TASK T60 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-e78df8fe98490adcae99bad942ce7b83 file-meta-a54d78c3d6eb34435ac203292746cf9f file-rnd-achxrhfwpgasusp OUTPUTS 
+TASK T59 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-0f71f7bed0d186cfe0d253d7c7b419cb file-meta-c7e8a41cb1739aa7c1f22a21bb42ee60 file-meta-2d681937ae59d6d8080a52eaa0e271cd OUTPUTS 
+TASK T61 "/groups/dthain/users/cthoma26/sep-star-gatk/bin/gatk" INPUTS file-meta-89bcfab11bef59968ec8c248f4aaf7b6 file-meta-c67de815e1461fc6a9df818a1ba4277e file-meta-0f71f7bed0d186cfe0d253d7c7b419cb file-meta-c7e8a41cb1739aa7c1f22a21bb42ee60 file-meta-2d681937ae59d6d8080a52eaa0e271cd OUTPUTS 
+# end
