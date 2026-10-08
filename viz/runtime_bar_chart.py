@@ -2,6 +2,7 @@ import csv
 from collections import OrderedDict
 
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
 import numpy as np
 
 
@@ -35,6 +36,8 @@ def plot_grouped_bars(rows):
 
 	prefixes = list(OrderedDict((prefix, None) for prefix, _, _ in rows).keys())
 	variants = list(OrderedDict((variant, None) for _, variant, _ in rows).keys())
+	primary_prefixes = prefixes[:-2] if len(prefixes) > 2 else []
+	secondary_prefixes = prefixes[-2:] if len(prefixes) > 2 else prefixes
 
 	values_by_prefix = {prefix: {variant: 0.0 for variant in variants} for prefix in prefixes}
 	for prefix, variant, value in rows:
@@ -44,11 +47,41 @@ def plot_grouped_bars(rows):
 	bar_width = 0.8 / max(1, len(variants))
 
 	fig, ax = plt.subplots(figsize=(10, 5))
+	ax_right = ax.twinx()
+	ax.set_zorder(2)
+	ax_right.set_zorder(1)
+	ax.patch.set_visible(False)
+
+	left_max = max((values_by_prefix[prefix][variant] for prefix in primary_prefixes for variant in variants), default=0.0)
+	right_max = max((values_by_prefix[prefix][variant] for prefix in secondary_prefixes for variant in variants), default=0.0)
+	ax.set_ylim(0, left_max * 1.15 if left_max else 1.0)
+	ax_right.set_ylim(0, right_max * 1.1 if right_max else 1.0)
+	ax.yaxis.set_major_locator(mticker.MaxNLocator(nbins=4))
+	ax_right.yaxis.set_major_locator(mticker.MaxNLocator(nbins=4))
+	ax.tick_params(axis="y", labelsize=20)
+	ax_right.tick_params(axis="y", labelsize=20)
+
+	legend_handles = {}
 
 	for i, variant in enumerate(variants):
 		offsets = x - 0.4 + (i + 0.5) * bar_width
-		variant_values = [values_by_prefix[prefix][variant] for prefix in prefixes]
-		bars = ax.bar(offsets, variant_values, width=bar_width, label=variant)
+		primary_values = [values_by_prefix[prefix][variant] for prefix in primary_prefixes]
+		secondary_values = [values_by_prefix[prefix][variant] for prefix in secondary_prefixes]
+
+		bars = ax.bar(offsets[: len(primary_prefixes)], primary_values, width=bar_width, label=variant)
+		if bars and variant not in legend_handles:
+			legend_handles[variant] = bars
+
+		secondary_bars = []
+		if secondary_prefixes:
+			secondary_bars = ax_right.bar(
+				offsets[len(primary_prefixes) :],
+				secondary_values,
+				width=bar_width,
+				label=variant,
+			)
+			if secondary_bars and variant not in legend_handles:
+				legend_handles[variant] = secondary_bars
 
 		for bar in bars:
 			h = bar.get_height()
@@ -59,16 +92,34 @@ def plot_grouped_bars(rows):
 					f"{h:.2f}",
 					ha="center",
 					va="bottom",
-					fontsize=8,
+					fontsize=20,
 				)
 
-	ax.set_xlabel("Application")
-	ax.set_ylabel("Runtime (seconds)")
-	ax.set_xticks(x)
-	ax.set_xticklabels(prefixes)
-	ax.legend(title="Runtime")
-	ax.grid(axis="y", linestyle="--", alpha=0.3)
+		for bar in secondary_bars:
+			h = bar.get_height()
+			if h > 999:
+				ax_right.text(
+					bar.get_x() + bar.get_width() / 2,
+					h,
+					f"{h:.2f}",
+					ha="center",
+					va="bottom",
+					fontsize=20,
+				)
 
+	ax.set_xlabel("Application", fontsize=20)
+	ax.set_ylabel("Runtime (seconds)", fontsize=20)
+	#ax_right.set_ylabel("Runtime (seconds)")
+	ax.set_xticks(x)
+	ax.set_xticklabels(prefixes, fontsize=18)
+	if secondary_prefixes:
+		separator_x = len(primary_prefixes) - 0.5
+		ax.axvline(separator_x, color="black", linestyle="--", linewidth=1, alpha=1)
+	ax.grid(axis="y", linestyle="--", alpha=0.3)
+	ax_right.grid(False)
+
+	legend = ax.legend(legend_handles.values(), legend_handles.keys(), loc="lower right", fontsize=20, title_fontsize=20)
+	legend.set_zorder(1000)
 	plt.tight_layout()
 	plt.savefig("grouped_runtimes.png", dpi=300)
 	plt.show()
