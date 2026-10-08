@@ -42,15 +42,15 @@ elif [[ $1 = "clean" ]]; then
 else
     for gt in ${WCdata[@]}; do
         echo $gt
-        gdalbuildvrt $gt.vrt $gt/*.tif
+        gdalbuildvrt $gt.vrt $(pwd)/$gt/*.tif
     done
 
     for wc in ${WCdataPrefix[@]}; do
-        gdalwarp -of GTiff -r bilinear -multi "${wc}_prec.vrt" "${wc}_srad.vrt" "${wc}_elev.vrt" "${wc}_elev_prec_srad.tif"
-        gdalwarp -of GTiff -r bilinear -multi "${wc}_tavg.vrt" "${wc}_srad.vrt" "${wc}_elev.vrt" "${wc}_elev_tavg_srad.tif"
-        gdalwarp -of GTiff -r bilinear -multi "${wc}_tmax.vrt" "${wc}_tmin.vrt" "${wc}_vapr.vrt" "${wc}_elev.vrt" "${wc}_elev_tmax_tmin_vapr.tif"
-        gdalwarp -of GTiff -r bilinear -multi "${wc}_prec.vrt" "${wc}_vapr.vrt" "${wc}_tavg.vrt" "${wc}_elev.vrt" "${wc}_elev_prec_vapr_tavg.tif"
-        gdalwarp -of GTiff -r bilinear -multi "${wc}_prec.vrt" "${wc}_srad.vrt" "${wc}_vapr.vrt" "${wc}_elev.vrt" "${wc}_elev_prec_srad_vapr.tif"
+        gdalwarp -of GTiff -r bilinear -multi "$(pwd)/${wc}_prec.vrt" "$(pwd)/${wc}_srad.vrt" "$(pwd)/${wc}_elev.vrt" "$(pwd)/${wc}_elev_prec_srad.tif"
+        gdalwarp -of GTiff -r bilinear -multi "$(pwd)/${wc}_tavg.vrt" "$(pwd)/${wc}_srad.vrt" "$(pwd)/${wc}_elev.vrt" "$(pwd)/${wc}_elev_tavg_srad.tif"
+        gdalwarp -of GTiff -r bilinear -multi "$(pwd)/${wc}_tmax.vrt" "$(pwd)/${wc}_tmin.vrt" "$(pwd)/${wc}_vapr.vrt" "$(pwd)/${wc}_elev.vrt" "$(pwd)/${wc}_elev_tmax_tmin_vapr.tif"
+        gdalwarp -of GTiff -r bilinear -multi "$(pwd)/${wc}_prec.vrt" "$(pwd)/${wc}_vapr.vrt" "$(pwd)/${wc}_tavg.vrt" "$(pwd)/${wc}_elev.vrt" "$(pwd)/${wc}_elev_prec_vapr_tavg.tif"
+        gdalwarp -of GTiff -r bilinear -multi "$(pwd)/${wc}_prec.vrt" "$(pwd)/${wc}_srad.vrt" "$(pwd)/${wc}_vapr.vrt" "$(pwd)/${wc}_elev.vrt" "$(pwd)/${wc}_elev_prec_srad_vapr.tif"
     done
 fi
 
